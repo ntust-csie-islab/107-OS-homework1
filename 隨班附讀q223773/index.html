@@ -34,12 +34,21 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><p>xv6 筆記</p><h2 id="Chapter-0"><a class="anchor hidden-xs" href="#Chapter-0" title="Chapter-0"><span class="octicon octicon-link"></span></a>Chapter 0</h2><h3 id="OS-Interface"><a class="anchor hidden-xs" href="#OS-Interface" title="OS-Interface"><span class="octicon octicon-link"></span></a>OS Interface</h3><h4 id="OS-Main-Job"><a class="anchor hidden-xs" href="#OS-Main-Job" title="OS-Main-Job"><span class="octicon octicon-link"></span></a>OS Main Job</h4><ol>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><p>xv6 作業筆記 沈孟虹</p><h2 id="Chapter-0-Operating-system-interfaces"><a class="anchor hidden-xs" href="#Chapter-0-Operating-system-interfaces" title="Chapter-0-Operating-system-interfaces"><span class="octicon octicon-link"></span></a>Chapter 0 Operating system interfaces</h2><h3 id="01-前言"><a class="anchor hidden-xs" href="#01-前言" title="01-前言"><span class="octicon octicon-link"></span></a>0.1 前言</h3><h4 id="011-重點0"><a class="anchor hidden-xs" href="#011-重點0" title="011-重點0"><span class="octicon octicon-link"></span></a>0.1.1 重點</h4><ul>
+<li>OS Main Job
+<ol>
 <li>提供多個 process 比硬體更多有用的服務與資源。</li>
 <li>管理和抽象低階硬體。</li>
 <li>提供多個 process 可同時 (或看起來同時) 運行並使用硬體資源。</li>
 <li>控制多個 process，使process之間可以共享數據及合作。</li>
-</ol><h4 id="名詞解釋"><a class="anchor hidden-xs" href="#名詞解釋" title="名詞解釋"><span class="octicon octicon-link"></span></a>名詞解釋</h4><ul>
+</ol>
+</li>
+<li>kernel 使用CPU的硬體保護機制，確保 user process 只能用自己的memory。</li>
+<li>只有kernel擁有這些硬體操作權限。</li>
+<li>當 user process 調用 kernel 時， kernel 會提升這些權限並執行預定義功能。</li>
+<li>xv6中所有system call:<br>
+<img src="https://i.imgur.com/3vaWIPu.png" alt=""></li>
+</ul><h4 id="012-名詞解釋"><a class="anchor hidden-xs" href="#012-名詞解釋" title="012-名詞解釋"><span class="octicon octicon-link"></span></a>0.1.2 名詞解釋</h4><ul>
 <li>kernel: 一個特殊的 program 提供服務給 process.</li>
 <li>process: 運行中的 program，擁有自己的 memory (含指令、data、stack)</li>
 <li>instruction: 指令，實現 program 的運算</li>
@@ -47,13 +56,7 @@
 <li>stack: 棧，function call.</li>
 <li>system call: shell invokes kernel service.<br>
 <img src="https://i.imgur.com/FMv62q7.png" alt=""></li>
-</ul><h4 id="重點0"><a class="anchor hidden-xs" href="#重點0" title="重點0"><span class="octicon octicon-link"></span></a>重點</h4><ul>
-<li>kernel 使用CPU的硬體保護機制，確保 user process 只能用自己的memory。</li>
-<li>只有kernel擁有這些硬體操作權限。</li>
-<li>當 user process 調用 kernel 時， kernel 會提升這些權限並執行預定義功能。</li>
-<li>xv6中所有system call:<br>
-<img src="https://i.imgur.com/3vaWIPu.png" alt=""></li>
-</ul><h3 id="Process-and-Memory"><a class="anchor hidden-xs" href="#Process-and-Memory" title="Process-and-Memory"><span class="octicon octicon-link"></span></a>Process and Memory</h3><h4 id="重點0"><a class="anchor hidden-xs" href="#重點0" title="重點0"><span class="octicon octicon-link"></span></a>重點</h4><ul>
+</ul><h3 id="02-Process-and-Memory"><a class="anchor hidden-xs" href="#02-Process-and-Memory" title="02-Process-and-Memory"><span class="octicon octicon-link"></span></a>0.2 Process and Memory</h3><h4 id="021-重點"><a class="anchor hidden-xs" href="#021-重點" title="021-重點"><span class="octicon octicon-link"></span></a>0.2.1 重點</h4><ul>
 <li>process contains 2 parts:
 <ul>
 <li>user-space memory (指令、數據、棧).</li>
@@ -70,7 +73,7 @@
 </ul>
 </li>
 <li>xv6 沒有用戶概念，以 unix 角度就是都用 root 執行。</li>
-</ul><h4 id="System-call-說明0"><a class="anchor hidden-xs" href="#System-call-說明0" title="System-call-說明0"><span class="octicon octicon-link"></span></a>System call 說明</h4><ul>
+</ul><h4 id="022-System-call-說明"><a class="anchor hidden-xs" href="#022-System-call-說明" title="022-System-call-說明"><span class="octicon octicon-link"></span></a>0.2.2 System call 說明</h4><ul>
 <li>fork: 一次調用兩次返回(parent: return child pid, child: return 0)</li>
 <li>exit: 停止當前process運行，並關閉資源(ex. memory and open files)</li>
 <li>wait: return (當前process)已退出的child process pid，若沒有會一直等到有一個child退出為止。</li>
@@ -81,7 +84,7 @@
 <li>xv6 use ELF format.</li>
 </ul>
 </li>
-</ul><h4 id="Shell’s-structure"><a class="anchor hidden-xs" href="#Shell’s-structure" title="Shell’s-structure"><span class="octicon octicon-link"></span></a>Shell’s structure</h4><p><img src="https://i.imgur.com/0k952m8.png" alt=""></p><h3 id="IO-and-File-descriptors"><a class="anchor hidden-xs" href="#IO-and-File-descriptors" title="IO-and-File-descriptors"><span class="octicon octicon-link"></span></a>I/O and File descriptors</h3><h4 id="重點"><a class="anchor hidden-xs" href="#重點" title="重點"><span class="octicon octicon-link"></span></a>重點</h4><ul>
+</ul><h4 id="023-Shell’s-structure"><a class="anchor hidden-xs" href="#023-Shell’s-structure" title="023-Shell’s-structure"><span class="octicon octicon-link"></span></a>0.2.3 Shell’s structure</h4><p><img src="https://i.imgur.com/0k952m8.png" alt=""></p><h3 id="03-IO-and-File-descriptors"><a class="anchor hidden-xs" href="#03-IO-and-File-descriptors" title="03-IO-and-File-descriptors"><span class="octicon octicon-link"></span></a>0.3 I/O and File descriptors</h3><h4 id="031-重點"><a class="anchor hidden-xs" href="#031-重點" title="031-重點"><span class="octicon octicon-link"></span></a>0.3.1 重點</h4><ul>
 <li>file descriptor(fd):
 <ul>
 <li>a fd &lt;-&gt; a “file”
@@ -101,23 +104,131 @@
 <li>透過 fd 做 I/O 重定向.</li>
 </ul>
 </li>
-</ul><h4 id="System-call-說明"><a class="anchor hidden-xs" href="#System-call-說明" title="System-call-說明"><span class="octicon octicon-link"></span></a>System call 說明</h4><ul>
+<li>ls file1 file2 &gt; tmp.txt 2&gt;&amp;1
+<ul>
+<li>file1 file2 的錯誤輸出都會出現在 tmp.txt</li>
+<li>2&gt;&amp;1 : fd2 is dup of fd1.</li>
+</ul>
+</li>
+</ul><h4 id="032-System-call-說明0"><a class="anchor hidden-xs" href="#032-System-call-說明0" title="032-System-call-說明0"><span class="octicon octicon-link"></span></a>0.3.2 System call 說明</h4><ul>
 <li>read(fd, buf, n): return 讀取的字節數(最多為n), n=0讀取結束.</li>
 <li>write(fd, buf, n): return 寫入的字節數(不為n是發生錯誤).</li>
 <li>close(fd): free the fd, so that open, pipe, dup can reuse.</li>
-</ul><h5 id="example-of-“cat”"><a class="anchor hidden-xs" href="#example-of-“cat”" title="example-of-“cat”"><span class="octicon octicon-link"></span></a>example of “cat”:</h5><p><img src="https://i.imgur.com/Ymi2W1U.png" alt=""></p></div>
+</ul><h4 id="033-example-of-“cat”"><a class="anchor hidden-xs" href="#033-example-of-“cat”" title="033-example-of-“cat”"><span class="octicon octicon-link"></span></a>0.3.3 example of “cat”:</h4><p><img src="https://i.imgur.com/Ymi2W1U.png" alt=""></p><h4 id="034-example"><a class="anchor hidden-xs" href="#034-example" title="034-example"><span class="octicon octicon-link"></span></a>0.3.4 example</h4><ul>
+<li>fork 雖然 copy fd, 但文件當前偏移仍然是共享:(用 wait 確保順序進行，印出 hello world )<br>
+<img src="https://i.imgur.com/1JcLXkn.png" alt=""></li>
+<li>另一種印出 hello world (dup):<br>
+<img src="https://i.imgur.com/JX3yXGd.png" alt=""></li>
+</ul><h3 id="04-Pipes"><a class="anchor hidden-xs" href="#04-Pipes" title="04-Pipes"><span class="octicon octicon-link"></span></a>0.4 Pipes</h3><h4 id="041-重點"><a class="anchor hidden-xs" href="#041-重點" title="041-重點"><span class="octicon octicon-link"></span></a>0.4.1 重點</h4><ul>
+<li>pipe
+<ul>
+<li>a kernel buffer</li>
+<li>a pair of fd, one for write, one for read.</li>
+<li>create process tree, leaves are command, process waits for left and right both complete.</li>
+</ul>
+</li>
+<li>pipe 比 no pipe 更好:
+<ol>
+<li>clean tmp file auto.</li>
+<li>pass arbitrarily long streams of data.</li>
+<li>allow for parallel execution of pipeline stages.</li>
+<li>in inter-process communication, pipes’ blocking reads and writes are more efficient than the non-blocking semantics of files.</li>
+</ol>
+</li>
+</ul><h4 id="042-example-of-“wc”在執行-wc-之前要先關閉-write-以免沒有-EOF-nerver-close"><a class="anchor hidden-xs" href="#042-example-of-“wc”在執行-wc-之前要先關閉-write-以免沒有-EOF-nerver-close" title="042-example-of-“wc”在執行-wc-之前要先關閉-write-以免沒有-EOF-nerver-close"><span class="octicon octicon-link"></span></a>0.4.2 example of “wc”:(在執行 wc 之前要先關閉 write, 以免沒有 EOF (nerver close))</h4><p><img src="https://i.imgur.com/89w7uLw.png" alt=""></p><ul>
+<li>use pipe<br>
+<img src="https://i.imgur.com/uZEbWvg.png" alt=""></li>
+<li>no pipe<br>
+<img src="https://i.imgur.com/Z713DO1.png" alt=""></li>
+</ul><h3 id="05-File-System"><a class="anchor hidden-xs" href="#05-File-System" title="05-File-System"><span class="octicon octicon-link"></span></a>0.5 File System</h3><h4 id="051-重點0"><a class="anchor hidden-xs" href="#051-重點0" title="051-重點0"><span class="octicon octicon-link"></span></a>0.5.1 重點</h4><ul>
+<li>data file(file): uninterpreted byte arrays</li>
+<li>directory(dir): named referance to file or dir.</li>
+<li>root(/): 根目錄, form a tree.</li>
+<li>current directory(.): 當前目錄.</li>
+<li>xv6 所有對 file system 的操作都是實作成 user-level program，使得 shell 容易被擴充，但 UNIX 時代是將這些command建在 shell 裡 (並且將 shell 建在 kernel).</li>
+<li>cd 是例外，它必須建在 shell 裡. 若是做為一般 command 會變成 fork child process，改變 child process 的當前目錄並不會影響到 parent process 的當前目錄.</li>
+</ul><h4 id="052-System-call-說明"><a class="anchor hidden-xs" href="#052-System-call-說明" title="052-System-call-說明"><span class="octicon octicon-link"></span></a>0.5.2 System call 說明</h4><ul>
+<li>chdir(dirname): 改變當前目錄.</li>
+<li>mkdir(dirname): 當前目錄下建新目錄.</li>
+<li>open(filename, O_CREATE): 開新文件.</li>
+<li>mknod(name, major, minor): 建新 device 文件.
+<ul>
+<li>device 文件
+<ul>
+<li>沒有文件內容</li>
+<li>透過 metadata as a device file, and major and minor device numbers define a kernal device.</li>
+<li>open device file 是將讀寫直接指向 kernal device 實現，而非指向 file system.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fstat(fd): return inode.
+<ul>
+<li>實際文件 data structure<br>
+<img src="https://i.imgur.com/Z9trvBZ.png" alt="">
+<ul>
+<li>uniqe inode number</li>
+<li>可以有多個名字</li>
+<li>inode and 磁碟空間是當 nlink=0 時才會清空。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>link(f1, f2): 對 f1 指向的文件新建另一個新名稱 f2.
+<ul>
+<li>link(‘a’,‘b’): 如果後續對a讀寫, 由於b也是指向同一文件所以也同樣是對b讀寫</li>
+</ul>
+</li>
+<li>unlink(f1): 移除 f1 對文件的指向.</li>
+</ul><h3 id="06-Real-World0"><a class="anchor hidden-xs" href="#06-Real-World0" title="06-Real-World0"><span class="octicon octicon-link"></span></a>0.6 Real World</h3><h4 id="061-重點"><a class="anchor hidden-xs" href="#061-重點" title="061-重點"><span class="octicon octicon-link"></span></a>0.6.1 重點</h4><ul>
+<li>UNIX 整合"標準的" fd、pipe、shell command 在一起，這種通用與可重用想法促使發展強大的"軟體工具"文化。</li>
+<li>Portable Operating System Interface (POSIX) standard 是 UNIX system call 的標準. xv6 並沒有服從POSIX標準，只實作了部分 (ex. 沒有 lseek ).</li>
+<li>morden kernals 發展快速，usually are beyond POSIX standard，提供更多的服務。</li>
+<li>文件系統抽象的概念被應用在 WWW 網路資源.</li>
+<li>Multics 複雜的設計讓 UNIX 的設計者想把文件系統寫的更簡單.</li>
+</ul><h2 id="Chapter-1-Operating-system-organization"><a class="anchor hidden-xs" href="#Chapter-1-Operating-system-organization" title="Chapter-1-Operating-system-organization"><span class="octicon octicon-link"></span></a>Chapter 1 Operating system organization</h2><h3 id="11-前言"><a class="anchor hidden-xs" href="#11-前言" title="11-前言"><span class="octicon octicon-link"></span></a>1.1 前言</h3><h4 id="111-重點0"><a class="anchor hidden-xs" href="#111-重點0" title="111-重點0"><span class="octicon octicon-link"></span></a>1.1.1 重點</h4><ul>
+<li>os start new process with fork.</li>
+<li>os must time-share amnog processes.</li>
+<li>os 必須確保 process 的 isolation.</li>
+<li>xv6 適用 intel 80386 及其後的 x86 架構.</li>
+</ul><h3 id="12-Abstracting-physical-resources"><a class="anchor hidden-xs" href="#12-Abstracting-physical-resources" title="12-Abstracting-physical-resources"><span class="octicon octicon-link"></span></a>1.2 Abstracting physical resources</h3><h4 id="121-重點"><a class="anchor hidden-xs" href="#121-重點" title="121-重點"><span class="octicon octicon-link"></span></a>1.2.1 重點</h4><ul>
+<li></li>
+</ul><h3 id="13-User-mode-kernel-mode-and-system-calls"><a class="anchor hidden-xs" href="#13-User-mode-kernel-mode-and-system-calls" title="13-User-mode-kernel-mode-and-system-calls"><span class="octicon octicon-link"></span></a>1.3 User mode, kernel mode, and system calls</h3><h4 id="131-重點"><a class="anchor hidden-xs" href="#131-重點" title="131-重點"><span class="octicon octicon-link"></span></a>1.3.1 重點</h4><ul>
+<li></li>
+</ul><h3 id="14-Kernel-organization"><a class="anchor hidden-xs" href="#14-Kernel-organization" title="14-Kernel-organization"><span class="octicon octicon-link"></span></a>1.4 Kernel organization</h3><h4 id="141-重點0"><a class="anchor hidden-xs" href="#141-重點0" title="141-重點0"><span class="octicon octicon-link"></span></a>1.4.1 重點</h4><ul>
+<li></li>
+</ul><h3 id="15-Process-overview"><a class="anchor hidden-xs" href="#15-Process-overview" title="15-Process-overview"><span class="octicon octicon-link"></span></a>1.5 Process overview</h3><h4 id="151-重點0"><a class="anchor hidden-xs" href="#151-重點0" title="151-重點0"><span class="octicon octicon-link"></span></a>1.5.1 重點</h4><ul>
+<li>page table: 由硬體實作，將虛擬地址對應至物理地址.</li>
+<li>xv6 使用頁表來提供 process 各自的虛擬地址.</li>
+<li>xv6 從 0x80100000 開始，0-0x80000000 是給 user-level 使用.<br>
+<img src="https://i.imgur.com/Y4T4Aw0.png" alt=""></li>
+</ul><h4 id="152-資料結構"><a class="anchor hidden-xs" href="#152-資料結構" title="152-資料結構"><span class="octicon octicon-link"></span></a>1.5.2 資料結構</h4><ul>
+<li>proc ( p )<br>
+<img src="https://i.imgur.com/ANQoG64.png" alt=""><br>
+<img src="https://i.imgur.com/MJginW8.png" alt=""></li>
+</ul><h3 id="16-Code-the-first-address-space"><a class="anchor hidden-xs" href="#16-Code-the-first-address-space" title="16-Code-the-first-address-space"><span class="octicon octicon-link"></span></a>1.6 Code: the first address space</h3><h4 id="161-重點"><a class="anchor hidden-xs" href="#161-重點" title="161-重點"><span class="octicon octicon-link"></span></a>1.6.1 重點</h4><ul>
+<li></li>
+</ul><h3 id="17-Code-creating-the-first-process"><a class="anchor hidden-xs" href="#17-Code-creating-the-first-process" title="17-Code-creating-the-first-process"><span class="octicon octicon-link"></span></a>1.7 Code: creating the first process</h3><h4 id="171-重點"><a class="anchor hidden-xs" href="#171-重點" title="171-重點"><span class="octicon octicon-link"></span></a>1.7.1 重點</h4><ul>
+<li></li>
+</ul><h3 id="18-Code-Running-the-first-process"><a class="anchor hidden-xs" href="#18-Code-Running-the-first-process" title="18-Code-Running-the-first-process"><span class="octicon octicon-link"></span></a>1.8 Code: Running the first process</h3><h4 id="181-重點"><a class="anchor hidden-xs" href="#181-重點" title="181-重點"><span class="octicon octicon-link"></span></a>1.8.1 重點</h4><ul>
+<li></li>
+</ul><h3 id="14-The-first-system-call-exec"><a class="anchor hidden-xs" href="#14-The-first-system-call-exec" title="14-The-first-system-call-exec"><span class="octicon octicon-link"></span></a>1.4 The first system call: exec</h3><h4 id="191-重點"><a class="anchor hidden-xs" href="#191-重點" title="191-重點"><span class="octicon octicon-link"></span></a>1.9.1 重點</h4><ul>
+<li></li>
+</ul><h3 id="110-Real-world"><a class="anchor hidden-xs" href="#110-Real-world" title="110-Real-world"><span class="octicon octicon-link"></span></a>1.10 Real world</h3><h4 id="1101-重點"><a class="anchor hidden-xs" href="#1101-重點" title="1101-重點"><span class="octicon octicon-link"></span></a>1.10.1 重點</h4><ul>
+<li></li>
+</ul></div>
     <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
         <div class="pull-right dropdown">
             <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
                 <i class="fa fa-bars"></i>
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
-                <div class="toc"><ul class="nav"><li class=""><a href="#Chapter-0" title="Chapter 0">Chapter 0</a><ul class="nav"><li><a href="#OS-Interface" title="OS Interface">OS Interface</a><ul class="nav"><li><a href="#OS-Main-Job" title="OS Main Job">OS Main Job</a></li><li><a href="#名詞解釋" title="名詞解釋">名詞解釋</a></li><li><a href="#重點0" title="重點">重點</a></li></ul></li><li class=""><a href="#Process-and-Memory" title="Process and Memory">Process and Memory</a><ul class="nav"><li><a href="#重點0" title="重點">重點</a></li><li><a href="#System-call-說明0" title="System call 說明">System call 說明</a></li><li><a href="#Shell’s-structure" title="Shell’s structure">Shell’s structure</a></li></ul></li><li><a href="#IO-and-File-descriptors" title="I/O and File descriptors">I/O and File descriptors</a><ul class="nav"><li><a href="#重點" title="重點">重點</a></li><li><a href="#System-call-說明" title="System call 說明">System call 說明</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+                <div class="toc"><ul class="nav"><li><a href="#Chapter-0-Operating-system-interfaces" title="Chapter 0 Operating system interfaces">Chapter 0 Operating system interfaces</a><ul class="nav"><li><a href="#01-前言" title="0.1 前言">0.1 前言</a><ul class="nav"><li><a href="#011-重點0" title="0.1.1 重點">0.1.1 重點</a></li><li><a href="#012-名詞解釋" title="0.1.2 名詞解釋">0.1.2 名詞解釋</a></li></ul></li><li><a href="#02-Process-and-Memory" title="0.2 Process and Memory">0.2 Process and Memory</a><ul class="nav"><li><a href="#021-重點" title="0.2.1 重點">0.2.1 重點</a></li><li><a href="#022-System-call-說明" title="0.2.2 System call 說明">0.2.2 System call 說明</a></li><li><a href="#023-Shell’s-structure" title="0.2.3 Shell’s structure">0.2.3 Shell’s structure</a></li></ul></li><li><a href="#03-IO-and-File-descriptors" title="0.3 I/O and File descriptors">0.3 I/O and File descriptors</a><ul class="nav"><li><a href="#031-重點" title="0.3.1 重點">0.3.1 重點</a></li><li><a href="#032-System-call-說明0" title="0.3.2 System call 說明">0.3.2 System call 說明</a></li><li><a href="#033-example-of-“cat”" title="0.3.3 example of “cat”:">0.3.3 example of “cat”:</a></li><li><a href="#034-example" title="0.3.4 example">0.3.4 example</a></li></ul></li><li><a href="#04-Pipes" title="0.4 Pipes">0.4 Pipes</a><ul class="nav"><li><a href="#041-重點" title="0.4.1 重點">0.4.1 重點</a></li><li><a href="#042-example-of-“wc”在執行-wc-之前要先關閉-write-以免沒有-EOF-nerver-close" title="0.4.2 example of “wc”:(在執行 wc 之前要先關閉 write, 以免沒有 EOF (nerver close))">0.4.2 example of “wc”:(在執行 wc 之前要先關閉 write, 以免沒有 EOF (nerver close))</a></li></ul></li><li><a href="#05-File-System" title="0.5 File System">0.5 File System</a><ul class="nav"><li><a href="#051-重點0" title="0.5.1 重點">0.5.1 重點</a></li><li><a href="#052-System-call-說明" title="0.5.2 System call 說明">0.5.2 System call 說明</a></li></ul></li><li><a href="#06-Real-World0" title="0.6 Real World">0.6 Real World</a><ul class="nav"><li><a href="#061-重點" title="0.6.1 重點">0.6.1 重點</a></li></ul></li></ul></li><li class=""><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#11-前言" title="1.1 前言">1.1 前言</a><ul class="nav"><li><a href="#111-重點0" title="1.1.1 重點">1.1.1 重點</a></li></ul></li><li><a href="#12-Abstracting-physical-resources" title="1.2 Abstracting physical resources">1.2 Abstracting physical resources</a><ul class="nav"><li><a href="#121-重點" title="1.2.1 重點">1.2.1 重點</a></li></ul></li><li><a href="#13-User-mode-kernel-mode-and-system-calls" title="1.3 User mode, kernel mode, and system calls">1.3 User mode, kernel mode, and system calls</a><ul class="nav"><li><a href="#131-重點" title="1.3.1 重點">1.3.1 重點</a></li></ul></li><li><a href="#14-Kernel-organization" title="1.4 Kernel organization">1.4 Kernel organization</a><ul class="nav"><li><a href="#141-重點0" title="1.4.1 重點">1.4.1 重點</a></li></ul></li><li class=""><a href="#15-Process-overview" title="1.5 Process overview">1.5 Process overview</a><ul class="nav"><li><a href="#151-重點0" title="1.5.1 重點">1.5.1 重點</a></li><li><a href="#152-資料結構" title="1.5.2 資料結構">1.5.2 資料結構</a></li></ul></li><li><a href="#16-Code-the-first-address-space" title="1.6 Code: the first address space">1.6 Code: the first address space</a><ul class="nav"><li><a href="#161-重點" title="1.6.1 重點">1.6.1 重點</a></li></ul></li><li><a href="#17-Code-creating-the-first-process" title="1.7 Code: creating the first process">1.7 Code: creating the first process</a><ul class="nav"><li><a href="#171-重點" title="1.7.1 重點">1.7.1 重點</a></li></ul></li><li><a href="#18-Code-Running-the-first-process" title="1.8 Code: Running the first process">1.8 Code: Running the first process</a><ul class="nav"><li><a href="#181-重點" title="1.8.1 重點">1.8.1 重點</a></li></ul></li><li><a href="#14-The-first-system-call-exec" title="1.4 The first system call: exec">1.4 The first system call: exec</a><ul class="nav"><li><a href="#191-重點" title="1.9.1 重點">1.9.1 重點</a></li></ul></li><li><a href="#110-Real-world" title="1.10 Real world">1.10 Real world</a><ul class="nav"><li><a href="#1101-重點" title="1.10.1 重點">1.10.1 重點</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
             </ul>
         </div>
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
-        <div class="toc"><ul class="nav"><li class=""><a href="#Chapter-0" title="Chapter 0">Chapter 0</a><ul class="nav"><li><a href="#OS-Interface" title="OS Interface">OS Interface</a><ul class="nav"><li><a href="#OS-Main-Job" title="OS Main Job">OS Main Job</a></li><li><a href="#名詞解釋" title="名詞解釋">名詞解釋</a></li><li><a href="#重點0" title="重點">重點</a></li></ul></li><li class=""><a href="#Process-and-Memory" title="Process and Memory">Process and Memory</a><ul class="nav"><li><a href="#重點0" title="重點">重點</a></li><li><a href="#System-call-說明0" title="System call 說明">System call 說明</a></li><li><a href="#Shell’s-structure" title="Shell’s structure">Shell’s structure</a></li></ul></li><li><a href="#IO-and-File-descriptors" title="I/O and File descriptors">I/O and File descriptors</a><ul class="nav"><li><a href="#重點" title="重點">重點</a></li><li><a href="#System-call-說明" title="System call 說明">System call 說明</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+        <div class="toc"><ul class="nav"><li><a href="#Chapter-0-Operating-system-interfaces" title="Chapter 0 Operating system interfaces">Chapter 0 Operating system interfaces</a><ul class="nav"><li><a href="#01-前言" title="0.1 前言">0.1 前言</a><ul class="nav"><li><a href="#011-重點0" title="0.1.1 重點">0.1.1 重點</a></li><li><a href="#012-名詞解釋" title="0.1.2 名詞解釋">0.1.2 名詞解釋</a></li></ul></li><li><a href="#02-Process-and-Memory" title="0.2 Process and Memory">0.2 Process and Memory</a><ul class="nav"><li><a href="#021-重點" title="0.2.1 重點">0.2.1 重點</a></li><li><a href="#022-System-call-說明" title="0.2.2 System call 說明">0.2.2 System call 說明</a></li><li><a href="#023-Shell’s-structure" title="0.2.3 Shell’s structure">0.2.3 Shell’s structure</a></li></ul></li><li><a href="#03-IO-and-File-descriptors" title="0.3 I/O and File descriptors">0.3 I/O and File descriptors</a><ul class="nav"><li><a href="#031-重點" title="0.3.1 重點">0.3.1 重點</a></li><li><a href="#032-System-call-說明0" title="0.3.2 System call 說明">0.3.2 System call 說明</a></li><li><a href="#033-example-of-“cat”" title="0.3.3 example of “cat”:">0.3.3 example of “cat”:</a></li><li><a href="#034-example" title="0.3.4 example">0.3.4 example</a></li></ul></li><li><a href="#04-Pipes" title="0.4 Pipes">0.4 Pipes</a><ul class="nav"><li><a href="#041-重點" title="0.4.1 重點">0.4.1 重點</a></li><li><a href="#042-example-of-“wc”在執行-wc-之前要先關閉-write-以免沒有-EOF-nerver-close" title="0.4.2 example of “wc”:(在執行 wc 之前要先關閉 write, 以免沒有 EOF (nerver close))">0.4.2 example of “wc”:(在執行 wc 之前要先關閉 write, 以免沒有 EOF (nerver close))</a></li></ul></li><li><a href="#05-File-System" title="0.5 File System">0.5 File System</a><ul class="nav"><li><a href="#051-重點0" title="0.5.1 重點">0.5.1 重點</a></li><li><a href="#052-System-call-說明" title="0.5.2 System call 說明">0.5.2 System call 說明</a></li></ul></li><li><a href="#06-Real-World0" title="0.6 Real World">0.6 Real World</a><ul class="nav"><li><a href="#061-重點" title="0.6.1 重點">0.6.1 重點</a></li></ul></li></ul></li><li class=""><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#11-前言" title="1.1 前言">1.1 前言</a><ul class="nav"><li><a href="#111-重點0" title="1.1.1 重點">1.1.1 重點</a></li></ul></li><li><a href="#12-Abstracting-physical-resources" title="1.2 Abstracting physical resources">1.2 Abstracting physical resources</a><ul class="nav"><li><a href="#121-重點" title="1.2.1 重點">1.2.1 重點</a></li></ul></li><li><a href="#13-User-mode-kernel-mode-and-system-calls" title="1.3 User mode, kernel mode, and system calls">1.3 User mode, kernel mode, and system calls</a><ul class="nav"><li><a href="#131-重點" title="1.3.1 重點">1.3.1 重點</a></li></ul></li><li><a href="#14-Kernel-organization" title="1.4 Kernel organization">1.4 Kernel organization</a><ul class="nav"><li><a href="#141-重點0" title="1.4.1 重點">1.4.1 重點</a></li></ul></li><li class=""><a href="#15-Process-overview" title="1.5 Process overview">1.5 Process overview</a><ul class="nav"><li><a href="#151-重點0" title="1.5.1 重點">1.5.1 重點</a></li><li><a href="#152-資料結構" title="1.5.2 資料結構">1.5.2 資料結構</a></li></ul></li><li><a href="#16-Code-the-first-address-space" title="1.6 Code: the first address space">1.6 Code: the first address space</a><ul class="nav"><li><a href="#161-重點" title="1.6.1 重點">1.6.1 重點</a></li></ul></li><li><a href="#17-Code-creating-the-first-process" title="1.7 Code: creating the first process">1.7 Code: creating the first process</a><ul class="nav"><li><a href="#171-重點" title="1.7.1 重點">1.7.1 重點</a></li></ul></li><li><a href="#18-Code-Running-the-first-process" title="1.8 Code: Running the first process">1.8 Code: Running the first process</a><ul class="nav"><li><a href="#181-重點" title="1.8.1 重點">1.8.1 重點</a></li></ul></li><li><a href="#14-The-first-system-call-exec" title="1.4 The first system call: exec">1.4 The first system call: exec</a><ul class="nav"><li><a href="#191-重點" title="1.9.1 重點">1.9.1 重點</a></li></ul></li><li><a href="#110-Real-world" title="1.10 Real world">1.10 Real world</a><ul class="nav"><li><a href="#1101-重點" title="1.10.1 重點">1.10.1 重點</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
