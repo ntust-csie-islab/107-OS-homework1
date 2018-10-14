@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Xv6報告 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="Xv6報告"><a class="anchor hidden-xs" href="#Xv6報告" title="Xv6報告"><span class="octicon octicon-link"></span></a><strong>Xv6報告</strong></h1><h2 id="Part1"><a class="anchor hidden-xs" href="#Part1" title="Part1"><span class="octicon octicon-link"></span></a>Part.1</h2><p><img src="https://imgur.com/ruWwghO.png" alt=""></p><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eax</td>
+<td>0xaa55</td>
+<td>43605</td>
+</tr>
+<tr>
+<td>ecx</td>
+<td>0x0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>edx</td>
+<td>0x80</td>
+<td>128</td>
+</tr>
+<tr>
+<td>ebx</td>
+<td>0x0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>esp</td>
+<td>0x6f2c</td>
+<td>0x6f2c</td>
+</tr>
+</tbody>
+</table><hr><h2 id="Part2-Ch0-System-Interface"><a class="anchor hidden-xs" href="#Part2-Ch0-System-Interface" title="Part2-Ch0-System-Interface"><span class="octicon octicon-link"></span></a>Part.2-Ch0. System Interface</h2><h3 id="0-前言"><a class="anchor hidden-xs" href="#0-前言" title="0-前言"><span class="octicon octicon-link"></span></a>0. 前言</h3><p>OS的工作主要是協調process與process、user與hardware之間的協調、分配資源<br>
+同時，OS也是一個做為process跟hardware之間的溝通介面<br>
+當process要求kerenl service時，便向OS介面發system call</p><p><img src="https://imgur.com/OgYa5Ux.png" alt=""></p><p>在OS裡，kernel用CPU內的hardware protection確保每個process都只用自己的memory</p><p>OS中還有另一個部分為Shell，它也是system call的介面之一，但它不是kernel的一環，它會讀取user的command並執行之。</p><p>本次使用的作業系統為Xv6，它模擬了Unix的內部環境，而Unix整合性強，使得後來許多OS都沿用之，例如BSD、Lunix、MacOS…等</p><p>接下來將開始介紹process之間的溝通方式</p><h3 id="1-Outline"><a class="anchor hidden-xs" href="#1-Outline" title="1-Outline"><span class="octicon octicon-link"></span></a>1. Outline</h3><ol>
+<li>Process</li>
+<li>I/O &amp; File Descriptor</li>
+<li>Pipes</li>
+<li>File System</li>
+</ol><h3 id="2-正文"><a class="anchor hidden-xs" href="#2-正文" title="2-正文"><span class="octicon octicon-link"></span></a>2. 正文</h3><p>先簡單介紹一下甚麼是process：<br>
+process指的是每一個正在執行中的program<br>
+process分成user space 與 kernel space 兩個分區，其中：</p><table>
+<thead>
+<tr>
+<th>User Space</th>
+<th>Kernel Space</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>包含使用者的指令、<br>存的變數及堆疊、<br>分配記憶體(malloc)的heap<br>會在這裡</td>
+<td>kernel 運作的地方，<br>在這裡提供一些硬體相關的服務給user</td>
+</tr>
+</tbody>
+</table><p>每個process都有各自的kernel 這是為了防止process各自獨立，避免無意間侵犯到其他process運作</p><h4 id="2-1-Process-amp-Memory"><a class="anchor hidden-xs" href="#2-1-Process-amp-Memory" title="2-1-Process-amp-Memory"><span class="octicon octicon-link"></span></a>2-1. Process &amp; Memory</h4><p>在Xv6中，CPU空閒時，會往返於待執行的process檢查，<br>
+若該process未執行下，Xv6會執行該process的位於CPU中的register中的位置，直到下次他們運行，這種方式稱為time-sharing。</p><p>每個process都有各自的process identifier (以下稱為pid)，pid 是用來讓OS辨別不同process的。</p><p>Process 中有一個很重要的指令fork()，它能夠讓當下的process再產生出chile process—而產生child process的原process稱為parent process，透過parent產生child的方式，使得process成為樹狀的結構。</p><p>fork()所產生的child process會與parent process相同，<br>
+但child process傳回的pid會是0。<br>
+如果要修改child process 所執行的內容，那就要透過exec()這個system call</p><p><img src="https://imgur.com/X9IVhHt.png" alt=""></p><p>exec()會從透過file system從指定路徑中取出file、覆蓋原本執行中的process並執行之，跟fork()結合使用時，便可透過pid不同這個條件，讓child跟parent執行不同的process</p><p><img src="https://imgur.com/OGfWdnB.png" alt=""></p><h4 id="2-2-IO-amp-File-Descriptor"><a class="anchor hidden-xs" href="#2-2-IO-amp-File-Descriptor" title="2-2-IO-amp-File-Descriptor"><span class="octicon octicon-link"></span></a>2-2. I/O &amp; File Descriptor</h4><p>File Descriptor是一個整數變數，它負責記錄每個process寫入、讀取的檔案紀錄。</p><p>在打開檔案、輸入輸出、或處理process之間的資料傳遞時，都會需要知道檔案路徑，而file descriptor便將這個概念抽象化，把路徑改以一個整數代替，這樣就不需要知道它的細節了</p><p>kernel 中會有一個 per-process table 作為 fd 的 index。</p><p>在每次啟動process時，一定會有3個附帶的file descriptor(簡稱fd)</p><ul>
+<li>stdin-&gt;通常對應的是0</li>
+<li>stdout-&gt;通常對應的是1</li>
+<li>stderr-&gt;通常對應的是2</li>
+</ul><p>相關的call function 是read() 和 write()：</p><ol>
+<li>read (fd , buf , n) 指從fd 對應的檔案中，讀取最多n個byte 存入buf中，之後跟fd相關的offset會向後移動讀取的byte量。</li>
+<li>相對的write(fd , buf , f) 指從buf 將讀取最多n byte寫入fd，當然這時fd的offset也會後移n位。</li>
+</ol><p><img src="https://imgur.com/o71rooo.png" alt=""><br>
+此外也有一些相關的函式也稍微提一下：</p><ol>
+<li>close()：會把指定的fd釋放掉，讓接下來open,pipe,dup等system call 可以使用該fd</li>
+<li>fork()：parent process會把file descriptor複製給child process好讓他能在同一個檔案底下運行。<br>值得一提的是，雖然fork()會生成兩個process，但他們offset仍是共享的，也就是說，就算他們write到同一個fd，後寫的內容將會接在先寫的process的內容後面。下圖是範例：</li>
+</ol><p><img src="https://imgur.com/lafMTCv.png" alt=""></p><ol start="3">
+<li>exec()：雖然exec()把原本的process替換了，但原process的pid仍會保留在table上，如此一來，shell可以藉fork再打開原本的檔案</li>
+<li>dup(fd)會把file descriptor複製到某變數，而且這情形下offset也是共用的。</li>
+</ol><h4 id="2-3-Pipes"><a class="anchor hidden-xs" href="#2-3-Pipes" title="2-3-Pipes"><span class="octicon octicon-link"></span></a>2-3. Pipes</h4><p>pipes是在kernel內中的buffer，有一對file descriptor，一個用來讀、一個用來寫<br>
+而process之間可以透過pipes溝通</p><p>例如將pipes的write端設為stdout、read端設為stdin<br>
+那就可以把前一個process寫至stdout的資料，透過pipes讓下一個process讀至stdin<br>
+<img src="https://imgur.com/ORR38B1.png" alt=""></p><h4 id="2-4-File-System"><a class="anchor hidden-xs" href="#2-4-File-System" title="2-4-File-System"><span class="octicon octicon-link"></span></a>2-4. File System</h4><p>File System 顧名思義，就是提供檔案資料、以及路徑的系統。</p><p>xv6下的路徑類似樹狀結構：從根目錄(root)出發<br>
+例如：/a/b/c 中  第一個 " / " 就是根目錄<br>
+也就是打開「根目錄中的a，a中的b，b中的檔案c」</p><p><img src="https://imgur.com/YVDda65.png" alt=""></p><p>以下是File system相關的指令:</p><ol>
+<li>chdir:更改當前路徑</li>
+<li>mkdir:make directory，做新路徑</li>
+<li>mknod:建立裝置文件(這與驅動裝置有關)</li>
+<li>open:打開檔案，其中又有分方式:</li>
+</ol><ul>
+<li>O_CREATE:若沒有檔案就新建</li>
+<li>O_RDONLY: Read Only</li>
+<li>O_WRONLY: Write Only</li>
+<li>O_RDWR: Read &amp; Write</li>
+</ul><ol start="5">
+<li>fstat()：取得file descriptor對應的檔案的資訊。包含：</li>
+</ol><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code"><span class="token keyword">struct</span> stat <span class="token punctuation">{</span>
+<span class="token keyword">short</span> type<span class="token punctuation">;</span> <span class="token comment">// Type of file</span>
+<span class="token keyword">int</span> dev<span class="token punctuation">;</span> <span class="token comment">// File system’s disk device</span>
+uint ino<span class="token punctuation">;</span> <span class="token comment">// Inode number</span>
+<span class="token keyword">short</span> nlink<span class="token punctuation">;</span> <span class="token comment">// Number of links to file</span>
+uint size<span class="token punctuation">;</span> <span class="token comment">// Size of file in bytes</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</div></div></code></pre><p>值得一提的是其中的inode number，對於兩個不同名稱的file，若其底層的inode number相同，那就是相同的file。<br>
+我們可以透過link(檔案名,檔案名)來達到這件事，例如</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span></div><div class="code"><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">,</span> O_CREATE<span class="token operator">|</span>O_WRONLY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">link</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">,</span> <span class="token string">"b"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">fstat</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span>
+<span class="token function">fstat</span><span class="token punctuation">(</span><span class="token string">"b"</span><span class="token punctuation">)</span> <span class="token comment">// 會發現a和b的inode數相同</span>
+</div></div></code></pre><p>這時候修改a便是在修改b，而該inode number對應檔案的link數也會變成2</p><ol start="6">
+<li>ulink()：把該名字移除，但只要inode number對應檔案的link數不是0，內容就會一直保存</li>
+</ol><hr><h2 id="Part2-Ch1-System-Organization"><a class="anchor hidden-xs" href="#Part2-Ch1-System-Organization" title="Part2-Ch1-System-Organization"><span class="octicon octicon-link"></span></a>Part.2-Ch1. System Organization</h2><h3 id="前言"><a class="anchor hidden-xs" href="#前言" title="前言"><span class="octicon octicon-link"></span></a>前言</h3><p>作為一個好的OS，應該要</p><ol>
+<li>可以同時多工；這點透過fork及CPU的time-sharing 達成了</li>
+<li>非相關的process互相獨立：避免在process出現bug甚至是failed時，會使非相關的process一起failed，造成系統崩潰</li>
+<li>process之間要能夠溝通：顧及isolation之餘，還是要讓相關process能互相溝通</li>
+</ol><h3 id="正文"><a class="anchor hidden-xs" href="#正文" title="正文"><span class="octicon octicon-link"></span></a>正文</h3><h4 id="Abstrating-Physical-Resource"><a class="anchor hidden-xs" href="#Abstrating-Physical-Resource" title="Abstrating-Physical-Resource"><span class="octicon octicon-link"></span></a>Abstrating Physical Resource</h4><p>每個Application用自己定義的library及本機的library來執行system call，進而跟硬體資源溝通。<br>
+但是每個application都要搶processor，且都想要獨立運作，就像搶健身器材一樣，想要能自己一個人用，且獨佔時間越長越好。</p><p>所以OS就設計「禁止application直接access 硬體」<br>
+例如：Application要從硬體拿檔案，就要對kernel下open、read、write、close等system call，file system再對硬體進行操作。<br>
+這還有一個好處就是，讓操作application者只要輸入指令及檔案路徑即可，而不需要去了解其中取用的流程，讓OS去決定便可。</p><p>許多互動也透過file descriptor去達成，因為fd把路徑位置抽象化，讓互動方式更加簡化。</p><h4 id="User-ModeKernel-Mode-amp-System-Call"><a class="anchor hidden-xs" href="#User-ModeKernel-Mode-amp-System-Call" title="User-ModeKernel-Mode-amp-System-Call"><span class="octicon octicon-link"></span></a>User Mode,Kernel Mode &amp; System Call</h4><p>為了加強獨立性，Application必須OS分清界線，才不會在application failed時牽連到OS，此時OS也必須把failed application清空接著執行其它application。</p><p>Processor分成2種方式來執行命令：</p><ul>
+<li>User Mode:若需要access硬體的特權，一定要先切換成kernel mode，否則會使processor切換成kernel mode並清除之<br>舉凡運算、修改變數都是user mode下的指令</li>
+<li>Kernel Mode:有特權，例如操作I/O、硬碟的指令</li>
+</ul><p>Processor 在切換成 kernel mode時，會從kernel定義的entry point進入kernel，同時kernel會開始檢查system call的參數是否合法並決定是否執行之，以此防止惡意程式執行。</p><h4 id="Kernel-Organization"><a class="anchor hidden-xs" href="#Kernel-Organization" title="Kernel-Organization"><span class="octicon octicon-link"></span></a>Kernel Organization</h4><p>這邊說的主要是OS的那些程式應該在kernel mode 下運行?<br>
+以下提及2種OS設計</p><ol>
+<li>Monolithic Kernel:整個OS都在kernel，<br>這樣一來，所有system call都在kernel mode 下運行。<br>這樣的好處是，user 不須去分辨哪個部份需要特權、kernel 中的資源也可以兼用、OS 中每個部份也容易合作。<br>缺點就是分界不明顯，只要OS 裡有任一部分掛掉，整個OS 都會掛掉。</li>
+<li>Micro kernel:盡量把kernel mode的code減少、簡化—只剩下啟動程式、傳送訊息、操作hardware等基本功能，把大多功能設在user mode 上，每個OS的成員要其他成員的服務時，就透過傳送message 給micro kernel，由kernel 去協調。</li>
+</ol><h4 id="Process"><a class="anchor hidden-xs" href="#Process" title="Process"><span class="octicon octicon-link"></span></a>Process</h4><p>xv6中每個獨立運作的單元皆稱為process。<br><br>
+OS中 把process 抽象化可以避免process妨礙或駭入其他非相關的process。<br>此外process抽象化也可以讓program認為它自己在屬於自己的機器上工作，有屬於自己的memory space 及 CPU 來執行program的指令。</p><p>xv6用page table把physical address(process實際操作的位置)轉換成virtual address(program認為它可操作的位置)<br>
+<img src="https://imgur.com/yEd6ojf.png" alt=""><br>
+如上圖，連kernel也會一同map到virtual address，這樣的好處是執行system call時，可以直接參照process在user 端存的變數。</p><p>process通常都有兩個stack：user stack及kernel stack</p><ul>
+<li>user mode 下用的是user stack，kernel stack是空的</li>
+<li>當因為system call , interrupt等原因切換成kernel mode時，會使用kernel stack，此時user stack的資料會留存。</li>
+</ul><p>Process中有thread來執行process 的instruction。<br>
+例如一個email程式，送信與收信都是不同的thread。<br>
+thread可隨時暫停，並切換至其它thread執行，在被暫停時，會把當前資料(如local variable、return address)存入thread stack。</p><h4 id="開機之後"><a class="anchor hidden-xs" href="#開機之後" title="開機之後"><span class="octicon octicon-link"></span></a>開機之後</h4><p>在電腦開機之後，boot loader會從disk把kernel存入實體記憶體0x100000，之所以不像上面process那樣存在0x80000000(kernel通常定義的entry point)是因為考量到裝置的記憶體大小可能沒那麼大。<br>不是從0開始存入是因為0xa0000~0x100000存的是I/O</p><p>開機的同時，硬體便會設置好page table作為virtual address及physical address間的轉換。</p><p>kernel的轉換便是將0:0x40000map至0x80000000:0x80000000+0x40000</p><p>再來entry便會轉移至kernel的C code部分，開始建立kernel stack及stack pointer %esp等指標</p><p><img src="https://imgur.com/jthI4B2.png" alt=""></p><h4 id="創造process"><a class="anchor hidden-xs" href="#創造process" title="創造process"><span class="octicon octicon-link"></span></a>創造process</h4><p>xv6的amin function會在初始化之後，call userinit()function製作第一個process，userinit()會call allocproc尋找process table上有無空間：</p><p>若有：則將該空間從UNUSED改成EMBRYO，並給process自己的pid<br>
+接著allocproc會把kernel stack 分配至 process的kernel thread，如果失敗了，會再將空間改回UNUSED</p><p>kernel stack 建完後，allocproc也寫入process中方便往後的fork()</p><h2 id="Part3--File-System"><a class="anchor hidden-xs" href="#Part3--File-System" title="Part3--File-System"><span class="octicon octicon-link"></span></a>Part3- File System</h2><p>xv6的file system時做成一共有7個layer的結構，<br>
+<img src="https://imgur.com/eqoafrE.png" alt=""><br>
+接下來會從底層一一開始介紹：</p><h3 id="1-Disk"><a class="anchor hidden-xs" href="#1-Disk" title="1-Disk"><span class="octicon octicon-link"></span></a>1. Disk:</h3><p>這層會讀寫IDE硬碟上的blocks</p><h3 id="2-buffer-cache-layer：負責兩個工作："><a class="anchor hidden-xs" href="#2-buffer-cache-layer：負責兩個工作：" title="2-buffer-cache-layer：負責兩個工作："><span class="octicon octicon-link"></span></a>2. buffer cache layer：負責兩個工作：</h3><p><br>2-1. 同步化對disk的access block確保一次只有一個block複製到memory且只有一個kernel thread使用之。<br>2-2. 常用的block會存在cache，才不用每次都到disk拿導致浪費時間。<br><br>buffer cache的資料結構是一個雙向的linked list，以一個buf型態的bcache的head串聯一個固定大小的陣列buf[NBUF]，所有access便只會透過bcache的head而非裡面的buf陣列。</p><pre><code class="cpp hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code"><span class="token keyword">struct</span> buf <span class="token punctuation">{</span>
+ <span class="token keyword">int</span> flags<span class="token punctuation">;</span>
+ uint dev<span class="token punctuation">;</span>
+ uint blockno<span class="token punctuation">;</span>
+ <span class="token keyword">struct</span> sleeplock lock<span class="token punctuation">;</span>
+ uint refcnt<span class="token punctuation">;</span>
+ <span class="token keyword">struct</span> buf <span class="token operator">*</span>prev<span class="token punctuation">;</span> <span class="token comment">// linked list</span>
+ <span class="token keyword">struct</span> buf <span class="token operator">*</span>next<span class="token punctuation">;</span>
+ <span class="token keyword">struct</span> buf <span class="token operator">*</span>qnext<span class="token punctuation">;</span> <span class="token comment">// disk queue</span>
+ uchar data<span class="token punctuation">[</span>BSIZE<span class="token punctuation">]</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</div></div></code></pre><p><img src="https://imgur.com/Eavmnhk.png" alt=""></p><p>每個buffer都有兩種狀態：<br>
+1. B_VALID:代表它從硬碟中讀取出來，未經過修改<br>
+2. B_DIRTY:代表它修改過了，需要被寫入硬碟中</p><p>每個buffer都有一個sleeping lock對應之，確保只有1個thread  使用之</p><p>以下是buffer cache的一些code：<br>
+bread()會先由bget()去檢查buffer是否有指定的block number了，若沒有將會用iderw()去讀寫指定的block。<br>
+bget()會在device下去找是否有紀錄指定的blockno.的buf，若是找到了，bget會索要該buffer的sleeping lock之後回傳buffer值；若沒有找到，就會找沒有使用且狀態不是B_DIRTY的buffer取代之，若這樣還是沒有找到，那就會傳錯誤訊息了<br>
+write()會將buffer調為B_DIRTY告知iderw這時應該是寫入IDE中<br>
+當buffer已使用完畢時，便會使用brelse()釋放之，它會把sleeping lock也釋放掉，並把該buffer移動到linked list的最前面(代表它是多久之前被released的) ，這樣一來bget()在從disk取資料時，也會從最前面的buffer存入</p><h3 id="3Logging-Layer"><a class="anchor hidden-xs" href="#3Logging-Layer" title="3Logging-Layer"><span class="octicon octicon-link"></span></a>3.Logging Layer</h3><p>要解決的是crash recovery的問題，避免寫disk到一半crash掉導致資料在不穩定的狀態。<br>
+原先的解決方法是在crash就留下一個inode或一個分配好的block，但是在重建時，可能會導致kerenl將其分配至另一個file，如此一來，會有兩個file指向同一個block，造成更動不同文件卻導致讀寫相同的block。</p><p>xv6透過logging解決這問題，它在disk安排一個log把想要對硬碟執行的敘述都記錄下來，等記完之後，在用commit 這個指令來執行內容，修改硬碟的資料，然後清除disk。</p><p>如此一來，只要在reboot時看log是否完整，若是便執行，反之則清除之。<br>
+因為log的關係，就算在更新期間遇到crash，要嘛是完全更新，要麼是完全不更新。</p><p>為了讓多個process同時執行file system，logging system會把多個process的system call包成一個transaction。而且一次只會發一個transaction，transaction之間不會有system call進行避免有遺漏。</p><p>常見的code如下:</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code"><span class="token function">begin_op</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 占用使用權，如果正在寫入log就wait，寫完就會把使用權釋出，</span>
+
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+bp <span class="token operator">=</span> <span class="token function">bread</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+bp<span class="token operator">-&gt;</span>data<span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+<span class="token function">log_write</span><span class="token punctuation">(</span>bp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token function">end_op</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</div></div></code></pre><p>其它的code:</p><p>log_write()：類似bwrite()<br>
+commit_trans():<br>
+remove_from_logs():</p><h3 id="Inode-Layer"><a class="anchor hidden-xs" href="#Inode-Layer" title="Inode-Layer"><span class="octicon octicon-link"></span></a>Inode Layer</h3><p>Inode可以指在disk上的資料結構—包含檔案大小及block numbers<br>
+也可以指記憶體中，對disk裡inode的複本，再加上一些kernel信息</p><p>disk 上的inode由struct dinode定義</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code"> <span class="token keyword">struct</span> dinode <span class="token punctuation">{</span>
+ <span class="token keyword">short</span> type<span class="token punctuation">;</span> <span class="token comment">// File type</span>
+ <span class="token keyword">short</span> major<span class="token punctuation">;</span> <span class="token comment">// Major device number (T_DEV only)</span>
+ <span class="token keyword">short</span> minor<span class="token punctuation">;</span> <span class="token comment">// Minor device number (T_DEV only)</span>
+ <span class="token keyword">short</span> nlink<span class="token punctuation">;</span> <span class="token comment">// Number of links to inode in file system</span>
+ uint size<span class="token punctuation">;</span> <span class="token comment">// Size of file (bytes)</span>
+ uint addrs<span class="token punctuation">[</span>NDIRECT<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// Data block addresses</span>
+ <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</div></div></code></pre><h3 id="Directory-Layeramppath"><a class="anchor hidden-xs" href="#Directory-Layeramppath" title="Directory-Layeramppath"><span class="octicon octicon-link"></span></a>Directory Layer&amp;path</h3><p>Directory 也類似於file—只是它的inode型態是T_DIR，而其資料是一連串的路徑</p><h3 id="File-Descriptor"><a class="anchor hidden-xs" href="#File-Descriptor" title="File-Descriptor"><span class="octicon octicon-link"></span></a>File Descriptor</h3><h3 id="回到file-system"><a class="anchor hidden-xs" href="#回到file-system" title="回到file-system"><span class="octicon octicon-link"></span></a>回到file system</h3><p>file system 一定要先把整個block的分配先決定好：<br>
+<img src="https://imgur.com/0COKUvl.png" alt=""></p><p>其中0不會用(因為那是boot)、<br>
+block 1稱為superblock，是用來存file system的資料、<br>
+block 2開始用來存log，接著是inodes、bit map、然後是data</p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li class=""><a href="#Xv6報告" title="Xv6報告">Xv6報告</a><ul class="nav"><li><a href="#Part1" title="Part.1">Part.1</a></li><li><a href="#Part2-Ch0-System-Interface" title="Part.2-Ch0. System Interface">Part.2-Ch0. System Interface</a><ul class="nav"><li><a href="#0-前言" title="0. 前言">0. 前言</a></li><li><a href="#1-Outline" title="1. Outline">1. Outline</a></li><li><a href="#2-正文" title="2. 正文">2. 正文</a></li></ul></li><li><a href="#Part2-Ch1-System-Organization" title="Part.2-Ch1. System Organization">Part.2-Ch1. System Organization</a><ul class="nav"><li><a href="#前言" title="前言">前言</a></li><li><a href="#正文" title="正文">正文</a></li></ul></li><li><a href="#Part3--File-System" title="Part3- File System">Part3- File System</a><ul class="nav"><li><a href="#1-Disk" title="1. Disk:">1. Disk:</a></li><li><a href="#2-buffer-cache-layer：負責兩個工作：" title="2. buffer cache layer：負責兩個工作：">2. buffer cache layer：負責兩個工作：</a></li><li><a href="#3Logging-Layer" title="3.Logging Layer">3.Logging Layer</a></li><li><a href="#Inode-Layer" title="Inode Layer">Inode Layer</a></li><li><a href="#Directory-Layeramppath" title="Directory Layer&amp;path">Directory Layer&amp;path</a></li><li><a href="#File-Descriptor" title="File Descriptor">File Descriptor</a></li><li><a href="#回到file-system" title="回到file system">回到file system</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li class=""><a href="#Xv6報告" title="Xv6報告">Xv6報告</a><ul class="nav"><li><a href="#Part1" title="Part.1">Part.1</a></li><li><a href="#Part2-Ch0-System-Interface" title="Part.2-Ch0. System Interface">Part.2-Ch0. System Interface</a><ul class="nav"><li><a href="#0-前言" title="0. 前言">0. 前言</a></li><li><a href="#1-Outline" title="1. Outline">1. Outline</a></li><li><a href="#2-正文" title="2. 正文">2. 正文</a></li></ul></li><li><a href="#Part2-Ch1-System-Organization" title="Part.2-Ch1. System Organization">Part.2-Ch1. System Organization</a><ul class="nav"><li><a href="#前言" title="前言">前言</a></li><li><a href="#正文" title="正文">正文</a></li></ul></li><li><a href="#Part3--File-System" title="Part3- File System">Part3- File System</a><ul class="nav"><li><a href="#1-Disk" title="1. Disk:">1. Disk:</a></li><li><a href="#2-buffer-cache-layer：負責兩個工作：" title="2. buffer cache layer：負責兩個工作：">2. buffer cache layer：負責兩個工作：</a></li><li><a href="#3Logging-Layer" title="3.Logging Layer">3.Logging Layer</a></li><li><a href="#Inode-Layer" title="Inode Layer">Inode Layer</a></li><li><a href="#Directory-Layeramppath" title="Directory Layer&amp;path">Directory Layer&amp;path</a></li><li><a href="#File-Descriptor" title="File Descriptor">File Descriptor</a></li><li><a href="#回到file-system" title="回到file system">回到file system</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
