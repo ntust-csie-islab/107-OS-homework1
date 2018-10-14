@@ -1,1 +1,677 @@
-homework not found!!
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        106 NTUST OS - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="106-NTUST-OS"><a class="anchor hidden-xs" href="#106-NTUST-OS" title="106-NTUST-OS"><span class="octicon octicon-link"></span></a>106 NTUST OS</h1><p>B10532016 四電資三 楊泓彬</p><h1 id="項目一"><a class="anchor hidden-xs" href="#項目一" title="項目一"><span class="octicon octicon-link"></span></a>項目一</h1><p><img src="https://i.imgur.com/XvB9GS2.png" alt=""></p><p>eax 為 0xaa55，edx 為 0x80，esp 為 0x6f2c，eip 為 0x7c00，eflags 為 0x202，其餘為 0。</p><h1 id="項目二"><a class="anchor hidden-xs" href="#項目二" title="項目二"><span class="octicon octicon-link"></span></a>項目二</h1><h2 id="Chapter-0"><a class="anchor hidden-xs" href="#Chapter-0" title="Chapter-0"><span class="octicon octicon-link"></span></a>Chapter 0</h2><h3 id="作業系統的主要工作："><a class="anchor hidden-xs" href="#作業系統的主要工作：" title="作業系統的主要工作："><span class="octicon octicon-link"></span></a>作業系統的主要工作：</h3><ol>
+<li>讓不同的程式可以共用一台電腦，彼此互動、共享檔案</li>
+<li>將硬體抽象化（例如 word 儲存檔案時不用考慮硬碟的類型）</li>
+<li>讓不同程式可以（看起來像）同時運行</li>
+</ol><hr><h3 id="kernel"><a class="anchor hidden-xs" href="#kernel" title="kernel"><span class="octicon octicon-link"></span></a>kernel</h3><p>kernel 是一個特殊的程式，擁有硬體特權，為 process 提供服務，作為一般的程式和作業系統的溝通介面。</p><p>受限於 kernel 的保護機制，process 只能存取自己的記憶體，當其需要調用核心服務（kernel service）時，它會在作業系統的介面發起一個 <strong>system call</strong>，硬體會提高它的權限、執行 kernel 定義的功能並將結果回傳。</p><h3 id="Process-和-Memory"><a class="anchor hidden-xs" href="#Process-和-Memory" title="Process-和-Memory"><span class="octicon octicon-link"></span></a>Process 和 Memory</h3><p>一個 xv6 程序包含了兩個部分，分別是 user-space memory （指令、資料，和 stack ）和僅有 kernel 可見的程序狀態。xv6 支援 <strong>time-share</strong>，它會讓等待中的程序在閒置的 CPU 上切換執行。當一個程序沒有在執行時，xv6 會儲存它的 CPU 暫存器，並在下次執行時恢復。kernel 會將每個程序和一個 <strong>pid</strong>（process identifier）建立關聯。</p><p>程序可以透過 <code>fork</code> 建立 <strong>child process</strong>（子程序）。child process 和創建它的程序 <strong>parent process</strong>（父程序） 有著同樣的記憶體內容，在父程序中，<code>fork</code> 會回傳子程序的 pid；在子程序中則會回傳 0。用下面的程式碼舉例：</p><pre><code class="c hljs">  <span class="token keyword">int</span> pid <span class="token operator">=</span> <span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>pid <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"parent: child=%d\n"</span><span class="token punctuation">,</span> pid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      pid <span class="token operator">=</span> <span class="token function">wait</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"child %d is done\n"</span><span class="token punctuation">,</span> pid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>pid <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"child: exiting\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"fork error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre><p><code>exit</code> 會讓調用它的程序停止執行並釋放資源（例如記憶體、開啟的檔案），<code>wait</code> 會回傳當前程序退出的子程序 pid；如果沒有子程序退出，<code>wait</code> 會一直等候。在這個例子中，兩行輸出</p><pre><code>parent: child=1234
+child: exiting
+</code></pre><p>的順序是不固定的，端看父、子程序中，哪個先呼叫 printf。當子程序結束、父程序的 <code>wait</code> 回傳以後，父程序會印出</p><pre><code>parent: child 1234 is done
+</code></pre><p>雖然子程序和父程序的記憶體內容在一開始是一樣的，<strong>但它們其實運行在不同的記憶體、不同的暫存器，所以改變其中一邊的變數值並不會影響另一邊</strong>。舉例來說，把 <code>wait</code> 的回傳值存進父程序 pid，並不會改變子程序的 pid，子程序的 pid 仍然為 0。</p><p><code>exec</code> 會從檔案系統中讀取一個存放記憶體映像（memory image）的檔案，並置換掉當前程序的記憶體。這個檔案必須有著特定的格式（例如 EFL，其指定了哪部分存 instructions、哪部分存 data、要從哪個 instruction 開始執行等等）。當 <code>exec</code> 執行成功後，它並不會回到呼叫他的程式；它會從 ELF 標頭中宣告的進入點（entry point）開始執行。<br>
+<code>exec</code> 有兩個參數：</p><ol>
+<li>可執行檔名</li>
+<li>一個字串參數陣列</li>
+</ol><p>舉例來說：</p><pre><code class="c hljs">  <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  argv<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"echo"</span><span class="token punctuation">;</span>
+  argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"hello"</span><span class="token punctuation">;</span>
+  argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">"/bin/echo"</span><span class="token punctuation">,</span> argv<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"exec error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>這段程式會把調用程式替換成 <code>/bin/echo</code> 並執行，<code>echo hello</code> 則是傳入 <code>/bin/echo</code> 的參數。大多數的程式會忽略第一個參數（照慣例來說會是程式名稱）。</p><p>xv6 shell 使用上述的呼叫為用戶執行程式。shell 的主要架構很簡單，主迴圈會用 <code>getcmd</code> 讀取一行指令，然後呼叫 <code>fork</code>，創建一個 shell 程式的副本。父程序呼叫 <code>wait</code>，同時子程序執行命令。舉例來說，如果使用者輸入 <code>"echo hello"</code>，<code>getcmd</code>會以 <code>echo hello</code> 為參數呼叫 <code>runcmd</code>；並由<code>runcmd</code>（8086）執行實際命令。對於 <code>echo hello</code>，<code>runcmd</code> 會呼叫 <code>exec</code>。如果 <code>exec</code> 成功執行，子程序就會開始執行 <code>echo</code> 裡的指令，而非繼續執行 runcmd。在某個時間點，<code>echo</code> 會呼叫 <code>exit</code>，讓父程序從 <code>wait</code> 返回 <code>main</code>。</p><p>xv6 隱藏式的分配（allocate）大多數的 user-space memory：fork 分配子程序拷貝父程序所需的記憶體空間，exec 則分配足以儲存執行檔的空間。程序在運行時如果需要更多記憶體（可能是呼叫 malloc）可以呼叫 <code>sbrk(n)</code> 來增加 n (bytes) 的空間；sbrk 會回傳新記憶體的位置。</p><p>xv6 並沒有「使用者」的概念，當然也不會有所謂的隔離保護機制；用 Unix 的術語來說，所有的 xv6 指令都是以 root 執行。</p><h2 id="IO-and-File-descriptors"><a class="anchor hidden-xs" href="#IO-and-File-descriptors" title="IO-and-File-descriptors"><span class="octicon octicon-link"></span></a>I/O and File descriptors</h2><p><strong>檔案描述符（file descriptor）</strong> 是一個小整數，用來表示一個被 kernel 管理、程序可以讀/寫的物件（object），檔案描述符的介面（interface）將檔案、pipe、和裝置<strong>抽象化</strong>，讓他們看起來都像一串 byte 流（stream）。</p><ul>
+<li>程序可以透過 <code>read(fd, buf, n)</code> 和 <code>write(fd, buf, n)</code> 存取檔案描述符，下面的程式碼是 cat 程序的實現，會從標準輸入複製資料到標準輸出中，如果發生錯誤，則將錯誤訊息寫入標準錯誤：</li>
+</ul><pre><code class="c hljs">  <span class="token keyword">char</span> buf<span class="token punctuation">[</span><span class="token number">512</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> n<span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">/* 從檔案描述符 0 (standard input) 讀 sizeof(buf) 個 byte 到 buf 中 */</span>
+      <span class="token comment">/* n = 實際讀入的 byte 數*/</span>
+      n <span class="token operator">=</span> <span class="token function">read</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> buf<span class="token punctuation">,</span> <span class="token keyword">sizeof</span> buf<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">/* 把 "read error" 寫進檔案描述符 2 (standard error) */</span>
+          <span class="token function">fprintf</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"read error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">/* 把 buf 中 n byte 寫進檔案描述符 1 (standard output) */</span>
+      <span class="token comment">/* if(實際寫入的 byte 數) != n */</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> buf<span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token operator">!=</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">/* 把 "write error" 寫進檔案描述符 2 (standard error) */</span>
+          <span class="token function">fprintf</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"write error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre><ul>
+<li>檔案描述符和 <code>fork</code> 搭配，實現 I/O 重新導向：</li>
+</ul><pre><code class="c hljs"><span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+argv<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"cat"</span><span class="token punctuation">;</span>
+crgv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">/* 關閉標準輸入 */</span>
+    <span class="token function">close</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">/* 開啟 input.txt */</span>
+    <span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"input.txt"</span><span class="token punctuation">,</span> O_RDONLY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">"cat"</span><span class="token punctuation">,</span> argv<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li>父、子程序會共享檔案描述符的 byte offset</li>
+</ul><pre><code class="c hljs"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"hello "</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">wait</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"world\n"</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>執行完成後檔案描述符 1 的輸出會是：</p><pre><code>hello world
+</code></pre><h3 id="Pipe"><a class="anchor hidden-xs" href="#Pipe" title="Pipe"><span class="octicon octicon-link"></span></a>Pipe</h3><p>Pipe 是一個開放給 process 的小型 kernel 緩衝區，有一對檔案描述符，一個讀一個寫，從一端寫入的資料可以從另一端被讀取，因此不同的 process 可以透過 pipe 溝通。</p><p>Pipe 跟使用暫存檔相比，並沒有更強大的能力（可以被取代）：</p><pre><code class="c hljs">echo hello world <span class="token operator">|</span> wc
+</code></pre><pre><code class="c hljs">echo hello world <span class="token operator">&gt;</span><span class="token operator">/</span>tmp<span class="token operator">/</span>xyz<span class="token punctuation">;</span> wc <span class="token operator">&lt;</span><span class="token operator">/</span>tmp<span class="token operator">/</span>xyz
+</code></pre><p>不過 pipe 有幾項優點：</p><ol>
+<li>會自動清理</li>
+<li>能傳遞任意長度的資料，使用暫存檔需要有足夠的硬碟空間</li>
+<li>可以平行處理，使用暫存檔須等前面的程序執行完成，後面的才能開始</li>
+<li>在實作程序間溝通時，跟非 blocking semantics 的檔案相比，有較高效率的 blocking read &amp; write</li>
+</ol><h3 id="File-system"><a class="anchor hidden-xs" href="#File-system" title="File-system"><span class="octicon octicon-link"></span></a>File system</h3><p>檔案系統包含檔案和資料夾，檔案是未解析過的 byte 陣列；資料夾則包含檔案和其他資料夾。檔案系統採用樹狀結構，從一個特殊的資料夾 <code>root</code> 開始；<code>path</code> 則呈現 <code>/a/b/c</code> 這樣的形式，代表 root 目錄下 a 資料夾中的 b 資料夾裡的 c 檔案。</p><hr><h2 id="Chapter-1"><a class="anchor hidden-xs" href="#Chapter-1" title="Chapter-1"><span class="octicon octicon-link"></span></a>Chapter 1</h2><h3 id="作業系統組織"><a class="anchor hidden-xs" href="#作業系統組織" title="作業系統組織"><span class="octicon octicon-link"></span></a>作業系統組織</h3><p>作業系統的關鍵在於讓多個程式可以同時運作，程式間也可以溝通、共享資源；如果某個程式發生錯誤，也不能影響其他正常運作的程式。因此，作業系統必須滿足三個要求：<strong>多工、隔離、互動（multiplexing, isolation, and interaction）</strong>。</p><h3 id="抽象物理資源"><a class="anchor hidden-xs" href="#抽象物理資源" title="抽象物理資源"><span class="octicon octicon-link"></span></a>抽象物理資源</h3><p>雖然使用函式庫也可以完成系統調用的功能，如此也能有更高的效能與效率（某些嵌入式系統便是如此）；但為了達到上述的三個需求，並確保系統的穩定性，將敏感的資源抽象化、並由作業系統統一管理，似乎是比較妥當的選擇。Unix 也用時間證明了這是最佳的方式。</p><h3 id="User-mode、kernel-mode、和-system-call"><a class="anchor hidden-xs" href="#User-mode、kernel-mode、和-system-call" title="User-mode、kernel-mode、和-system-call"><span class="octicon octicon-link"></span></a>User mode、kernel mode、和 system call</h3><p>如果應用程式發生錯誤，我們不能讓作業系統一起當掉；作業系統也應該有能力清除執行錯誤的應用程式，並確保其他應用程式仍可繼續運行。為此，我們需要有效的隔離應用程式和作業系統。</p><p>CPU 為這樣的隔離提供硬體層面的支持，以 x86 來說，它有兩種指令執行模式，分別是 user mode 和 kernel mode。在 kernel mode 下才能夠執行特殊指令（例如硬碟、I/O 設備的讀寫）。舉例來說，一般的程式若要讀寫硬碟，必須先呼叫特殊指令切換到 kernel mode，進入 kernel mode 後，kernel 會先驗證 system call 的參數，並決定是否接受請求，隨後才會跳到 kenel 指定的地方開始執行。</p><p>kernel mode 的入口與其參數驗證非常重要，如果應用程式能夠輕易進入 kernel mode，將面臨惡意程式的攻擊。</p><h3 id="Process-總覽"><a class="anchor hidden-xs" href="#Process-總覽" title="Process-總覽"><span class="octicon octicon-link"></span></a>Process 總覽</h3><p>Process 是 Unix 系統中的隔離基本單位，它為程式提供各自獨立、不可侵犯的 address space，同時利用 page table 將 virtual address 對應到 physical address。</p><p>如圖所示，一個 address space 包含從虛擬位置 0 開始的 user memory，前面放置程序的指令、全域變數，後面則有 stack 區、heap 區（malloc 用）。</p><p>xv6 使用 struct proc 來維護一個程序的狀態，包含 page table、kernel stack、當前運行狀態。<br>
+<img src="https://i.imgur.com/c376iis.png" alt=""></p><p>每個 process 都有一個 thread 來執行指令。當要切換 process 時，kernel 會把正在運行的 thread 暫停，並把其狀態存進 thread 的 stack，然後開始運行另一個。</p><h3 id="第一個地址空間"><a class="anchor hidden-xs" href="#第一個地址空間" title="第一個地址空間"><span class="octicon octicon-link"></span></a>第一個地址空間</h3><p>當電腦開機時，它會初始化自己，並從硬碟中載入 boot loader 到記憶體並運行；然後 boot loader 把 xv6 kernel 從硬碟中載入物理地址 0x100000（因為 0xa0000 到 0x100000 屬於 I/O 設備），並從 <code>entry</code> 開始運行。</p><p>entry page table 被定義在 main.c 裡面，由虛擬記憶體 0:0x400000 對應到實體位置 0x400000；只要 <code>entry</code> 還在執行，這個 map 就會存在，但終究會被移除。</p><p><code>entry 512</code> 會將虛擬地址 <code>KERNBASE:KERNBASE+400000</code> 映射到實體位置 <code>0:0x400000</code>，這個入口會在 <code>entry</code> 終止執行後被 kernel 所用；這個 mapping 會把 kernel 的指令和資料限制在 4MB 內。</p><p><img src="https://i.imgur.com/QqprJcQ.png" alt=""></p><h3 id="創建第一個-process"><a class="anchor hidden-xs" href="#創建第一個-process" title="創建第一個-process"><span class="octicon octicon-link"></span></a>創建第一個 process</h3><p><code>main</code> 在初始化設備和系統被後，會呼叫 <code>userinit</code> 建立第一個 process；<code>user init</code> 會呼叫 <code>allocproc</code>。<code>allocproc</code> 的工作是在 process table 中分配一個 slot（即 <code>struct proc</code>），並初始化 process 的狀態。<code>allocproc</code> 會在 <code>proc</code> 的表中尋找標記為 <code>UNUSED</code> 的 slot，找到後會將其狀態設置為 <code>EMBRY0</code>，標記為「被使用」，並分配一個唯一的 <code>pid</code> 給該程序。</p><p>在 <code>main</code> 呼要 <code>userinit</code> 後 <code>mpmain</code> 會呼叫 <code>scheduler</code> 開始運行程序。<code>scheduler</code> 會搜尋狀態為 <code>RUNNABLE</code> 的程序，此時只會有一個——<code>initproc</code>。隨後 <code>proc</code> 會被設定為該程序，<code>switchuvm</code> 也會通知硬體使用目標程序的 page table。</p><h1 id="項目-3"><a class="anchor hidden-xs" href="#項目-3" title="項目-3"><span class="octicon octicon-link"></span></a>項目 3</h1><h2 id="Chapter-3"><a class="anchor hidden-xs" href="#Chapter-3" title="Chapter-3"><span class="octicon octicon-link"></span></a>Chapter 3</h2><h3 id="Traps-interrupts-drivers"><a class="anchor hidden-xs" href="#Traps-interrupts-drivers" title="Traps-interrupts-drivers"><span class="octicon octicon-link"></span></a>Traps, interrupts, drivers</h3><p>當執行程序時，會不斷循環：讀取指令、更新程式計數器、執行，再讀取指令。但有時候會需要進入 kernel 而不是執行下一條指令；包括</p><ol>
+<li>interrupt：設備信號的發出，例如
+<ul>
+<li>clock chip 每 100 ms 會產生一個中斷以實現分時</li>
+<li>硬盤讀完一個 block 後會發出一個中斷，告訴作業系統該 block 已經準備好了</li>
+</ul>
+</li>
+<li>exception：非法操作，例如
+<ul>
+<li>存取不存在 page table 的記憶體位置</li>
+<li>除零</li>
+</ul>
+</li>
+<li>利用 system call 向 kernel 請求服務</li>
+</ol><p>中斷發生時，作業系統會中斷循環、將程序的暫存器內容保存起來，並執行中斷處理程序中的指令。</p><h3 id="x86-的保護機制"><a class="anchor hidden-xs" href="#x86-的保護機制" title="x86-的保護機制"><span class="octicon octicon-link"></span></a>x86 的保護機制</h3><p>x86 將權限分成四種保護等級，從 0（最高）到 3（最低）；大部分的作業系統只使用 0 和 3，分別為 kernel mode 和 user mode。當前執行指令的權限等級會存在 %cs 暫存器中的 CPL 區。</p><p>interrupt descriptor table（IDT）定義了 interrupt handler；包含 256 個進入點，每個都提供了處理對應情況時所需要的 %cs 和 %eip。</p><p>需要進行系統調用時，程式會調用指令 <code>int n</code>，其中 n 為 IDT 的索引，其執行流程如下：</p><ol>
+<li>從 IDT 取得第 n 個 descriptor</li>
+<li>檢查 %cs 中 CPL 是否 ≦ DPL（DPL 為 descriptor 的權限等級）</li>
+<li>如果目標的 PL &lt; CPL，就將 %esp 和 %ess 的值存進 CPU 內部的暫存器中</li>
+<li>從工作片段中讀取 %ss 和 %esp</li>
+<li>push %ss</li>
+<li>push %esp</li>
+<li>push %eflags</li>
+<li>push %cs</li>
+<li>push %eip</li>
+<li>如果是 interrupt 的話，清除 %eflags 中的 IF 位元。</li>
+<li>將 %cs 和 %eip 設為 descriptor 中的值</li>
+</ol><p><img src="https://i.imgur.com/E8NHtvg.png" alt=""></p><p>上圖為一個 <code>int</code> 指令執行後，stack 的情況。作業系統可以使用 <code>iret</code> 指令來從一個 <code>int</code> 指令中回傳；其會從 stack 中 pop 出 <code>int</code> 存進去的值並恢復 %eip 讓原本的程序繼續執行。</p><h3 id="Code-Assembly-trap-handlers"><a class="anchor hidden-xs" href="#Code-Assembly-trap-handlers" title="Code-Assembly-trap-handlers"><span class="octicon octicon-link"></span></a>Code: Assembly trap handlers</h3><p>x86 允許 256 個不同的中斷；中斷 0~31 被定義為軟體異常、32~63 為硬體中斷、64 為 system call 的中斷代號。</p><p><code>tvinit</code> (3367) 設置了 IDT 表中的 256 個項，中斷 i 被位於 <code>vectors[i]</code> 的 code 處理。</p><pre><code class="c hljs"><span class="token number">3366</span> <span class="token keyword">void</span>
+<span class="token number">3367</span> <span class="token function">tvinit</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">3368</span> <span class="token punctuation">{</span>
+<span class="token number">3369</span>   <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+<span class="token number">3370</span>  
+<span class="token number">3371</span>   <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">256</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+<span class="token number">3372</span>     <span class="token function">SETGATE</span><span class="token punctuation">(</span>idt<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> SEG_KCODE<span class="token operator">&lt;&lt;</span><span class="token number">3</span><span class="token punctuation">,</span> vectors<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3373</span>   <span class="token function">SETGATE</span><span class="token punctuation">(</span>idt<span class="token punctuation">[</span>T_SYSCALL<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> SEG_KCODE<span class="token operator">&lt;&lt;</span><span class="token number">3</span><span class="token punctuation">,</span> vectors<span class="token punctuation">[</span>T_SYSCALL<span class="token punctuation">]</span><span class="token punctuation">,</span> DPL_USER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3374</span>
+<span class="token number">3375</span>   <span class="token function">initlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>tickslock<span class="token punctuation">,</span> <span class="token string">"time"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3376</span> <span class="token punctuation">}</span>
+</code></pre><p>當權限從 user mode 轉向 kernel mode 時，<code>switchuvm</code> (1860) 會把用戶程序的 kernel stack 頂端的地址存入任務階段描述符。</p><p><img src="https://i.imgur.com/CPTT3t2.png" alt=""></p><pre><code class="c hljs"><span class="token number">1860</span> <span class="token function">switchuvm</span><span class="token punctuation">(</span><span class="token keyword">struct</span> proc <span class="token operator">*</span>p<span class="token punctuation">)</span>
+<span class="token number">1861</span> <span class="token punctuation">{</span>
+<span class="token number">1862</span>   <span class="token keyword">if</span><span class="token punctuation">(</span>p <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token number">1863</span>     <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"switchuvm: no process"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">1864</span>   <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>kstack <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token number">1865</span>     <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"switchuvm: no kstack"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">1866</span>   <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>pgdir <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token number">1867</span>     <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"switchuvm: no pgdir"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">1868</span>  
+<span class="token number">1869</span>   <span class="token function">pushcli</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">1870</span>   <span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>gdt<span class="token punctuation">[</span>SEG_TSS<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">SEG16</span><span class="token punctuation">(</span>STS_T32A<span class="token punctuation">,</span> <span class="token operator">&amp;</span><span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>ts<span class="token punctuation">,</span>
+<span class="token number">1871</span>   <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>ts<span class="token punctuation">)</span>−<span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">1872</span>   <span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>gdt<span class="token punctuation">[</span>SEG_TSS<span class="token punctuation">]</span><span class="token punctuation">.</span>s <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">1873</span>   <span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>ts<span class="token punctuation">.</span>ss0 <span class="token operator">=</span> SEG_KDATA <span class="token operator">&lt;&lt;</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token number">1874</span>   <span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>ts<span class="token punctuation">.</span>esp0 <span class="token operator">=</span> <span class="token punctuation">(</span>uint<span class="token punctuation">)</span>p−<span class="token operator">&gt;</span>kstack <span class="token operator">+</span> KSTACKSIZE<span class="token punctuation">;</span>
+<span class="token number">1875</span>   <span class="token comment">// setting IOPL=0 in eflags *and* iomb beyond the tss segment limit</span>
+<span class="token number">1876</span>   <span class="token comment">// forbids I/O instructions (e.g., inb and outb) from user   space</span>
+<span class="token number">1877</span>   <span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>ts<span class="token punctuation">.</span>iomb <span class="token operator">=</span> <span class="token punctuation">(</span>ushort<span class="token punctuation">)</span> <span class="token number">0xFFFF</span><span class="token punctuation">;</span>
+<span class="token number">1878</span>   <span class="token function">ltr</span><span class="token punctuation">(</span>SEG_TSS <span class="token operator">&lt;&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">1879</span>   <span class="token function">lcr3</span><span class="token punctuation">(</span><span class="token function">V2P</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>pgdir<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// switch to process’s address space  </span>
+<span class="token number">1880</span>   <span class="token function">popcli</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">1881</span> <span class="token punctuation">}</span>
+</code></pre><p>當 interrupt 發生時，如果程序在 user mode 下運行，它會從任務階段描述符中載入 %esp 和 %ss，把舊的 %ss 和 %esp push 進新的 stack；如果程序在 kernel mode 下運行則不動作。<br>
+接下來程序會 push %eflags, %cs, %eip；某些時候會連 error word 也 push 進去。最後從 IDT 表中讀取對應的 %eip 和 % cs。</p><p>xv6 使用一個 Perl 腳本 (3250) 來產生 IDT 表對應的中斷處理進入點，然後跳到 <code>apptraps</code>。</p><pre><code class="Perl hljs"><span class="hljs-number">3250</span> <span class="hljs-comment">#!/usr/bin/perl −w</span>
+<span class="hljs-number">3251</span>
+<span class="hljs-number">3252</span> <span class="hljs-comment"># Generate vectors.S, the trap/interrupt entry points.</span>
+<span class="hljs-number">3253</span> <span class="hljs-comment"># There has to be one entry point per interrupt number</span>
+<span class="hljs-number">3254</span> <span class="hljs-comment"># since otherwise there’s no way for trap() to discover</span>
+<span class="hljs-number">3255</span> <span class="hljs-comment"># the interrupt number.</span>
+<span class="hljs-number">3256</span>
+<span class="hljs-number">3257</span> <span class="hljs-keyword">print</span> <span class="hljs-string">"# generated by vectors.pl − do not edit\n"</span>;
+<span class="hljs-number">3258</span> <span class="hljs-keyword">print</span> <span class="hljs-string">"# handlers\n"</span>;
+<span class="hljs-number">3259</span> <span class="hljs-keyword">print</span> <span class="hljs-string">".globl alltraps\n"</span>;
+<span class="hljs-number">3260</span> <span class="hljs-keyword">for</span>(<span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>; $i &lt; <span class="hljs-number">256</span>; $i++){
+<span class="hljs-number">3261</span>   <span class="hljs-keyword">print</span> <span class="hljs-string">".globl vector$i\n"</span>;
+<span class="hljs-number">3262</span>   <span class="hljs-keyword">print</span> <span class="hljs-string">"vector$i:\n"</span>;
+<span class="hljs-number">3263</span>     <span class="hljs-keyword">if</span>(!($i == <span class="hljs-number">8</span> || ($i &gt;= <span class="hljs-number">10</span> &amp;&amp; $i &lt;= <span class="hljs-number">14</span>) || $i == <span class="hljs-number">17</span>)){
+<span class="hljs-number">3264</span>       <span class="hljs-keyword">print</span> <span class="hljs-string">" pushl \$0\n"</span>;
+<span class="hljs-number">3265</span>     }
+<span class="hljs-number">3266</span>   <span class="hljs-keyword">print</span> <span class="hljs-string">" pushl \$$i\n"</span>;
+<span class="hljs-number">3267</span>   <span class="hljs-keyword">print</span> <span class="hljs-string">" jmp alltraps\n"</span>;
+<span class="hljs-number">3268</span> }
+<span class="hljs-number">3269</span>
+<span class="hljs-number">3270</span> <span class="hljs-keyword">print</span> <span class="hljs-string">"\n# vector table\n"</span>;
+<span class="hljs-number">3271</span> <span class="hljs-keyword">print</span> <span class="hljs-string">".data\n"</span>;
+<span class="hljs-number">3272</span> <span class="hljs-keyword">print</span> <span class="hljs-string">".globl vectors\n"</span>;
+<span class="hljs-number">3273</span> <span class="hljs-keyword">print</span> <span class="hljs-string">"vectors:\n"</span>;
+<span class="hljs-number">3274</span> <span class="hljs-keyword">for</span>(<span class="hljs-keyword">my</span> $i = <span class="hljs-number">0</span>; $i &lt; <span class="hljs-number">256</span>; $i++){
+<span class="hljs-number">3275</span>   <span class="hljs-keyword">print</span> <span class="hljs-string">" .long vector$i\n"</span>;
+<span class="hljs-number">3276</span> }
+</code></pre><p><code>alltraps</code> (3304) 會 push %ds、%es、%fs、%gs、通用暫存器，此時 kernel stack 就有一個完整的 <code>struct trapframe</code> （0602），包含從 kernel 回到原始程序所需要的資訊。<br>
+<img src="https://i.imgur.com/1d5dPgw.png" alt=""></p><pre><code class="Perl hljs"><span class="hljs-number">3304</span> alltraps:
+<span class="hljs-number">3305</span> <span class="hljs-comment"># Build trap frame.</span>
+<span class="hljs-number">3306</span> pushl %ds
+<span class="hljs-number">3307</span> pushl %es
+<span class="hljs-number">3308</span> pushl %fs
+<span class="hljs-number">3309</span> pushl %gs
+<span class="hljs-number">3310</span> pushal
+<span class="hljs-number">3311</span>
+<span class="hljs-number">3312</span> <span class="hljs-comment"># Set up data segments.</span>
+<span class="hljs-number">3313</span> movw $(SEG_KDATA&lt;&lt;<span class="hljs-number">3</span>), %ax
+<span class="hljs-number">3314</span> movw %ax, %ds
+<span class="hljs-number">3315</span> movw %ax, %es
+<span class="hljs-number">3316</span>
+<span class="hljs-number">3317</span> <span class="hljs-comment"># Call trap(tf), where tf=%esp</span>
+<span class="hljs-number">3318</span> pushl %esp
+<span class="hljs-number">3319</span> call trap
+<span class="hljs-number">3320</span> addl $4, %esp
+<span class="hljs-number">3321</span>
+<span class="hljs-number">3322</span> <span class="hljs-comment"># Return falls through to trapret...</span>
+<span class="hljs-number">3323</span> .globl trapret
+<span class="hljs-number">3324</span> trapret:
+<span class="hljs-number">3325</span> popal
+<span class="hljs-number">3326</span> popl %gs
+<span class="hljs-number">3327</span> popl %fs
+<span class="hljs-number">3328</span> popl %es
+<span class="hljs-number">3329</span> popl %ds
+<span class="hljs-number">3330</span> addl $0x8, %esp <span class="hljs-comment"># trapno and errcode</span>
+<span class="hljs-number">3331</span> iret
+</code></pre><p>trapfram 的資料結構：</p><pre><code class="c hljs"><span class="token number">0602</span> <span class="token keyword">struct</span> trapframe <span class="token punctuation">{</span>
+<span class="token number">0603</span> <span class="token comment">// registers as pushed by pusha</span>
+<span class="token number">0604</span>   uint edi<span class="token punctuation">;</span>
+<span class="token number">0605</span>   uint esi<span class="token punctuation">;</span>
+<span class="token number">0606</span>   uint ebp<span class="token punctuation">;</span>
+<span class="token number">0607</span>   uint oesp<span class="token punctuation">;</span> <span class="token comment">// useless &amp; ignored</span>
+<span class="token number">0608</span>   uint ebx<span class="token punctuation">;</span>
+<span class="token number">0609</span>   uint edx<span class="token punctuation">;</span>
+<span class="token number">0610</span>   uint ecx<span class="token punctuation">;</span>
+<span class="token number">0611</span>   uint eax<span class="token punctuation">;</span>
+<span class="token number">0612</span>  
+<span class="token number">0613</span>   <span class="token comment">// rest of trap frame</span>
+<span class="token number">0614</span>   ushort gs<span class="token punctuation">;</span>
+<span class="token number">0615</span>   ushort padding1<span class="token punctuation">;</span>
+<span class="token number">0616</span>   ushort fs<span class="token punctuation">;</span>
+<span class="token number">0617</span>   ushort padding2<span class="token punctuation">;</span>
+<span class="token number">0618</span>   ushort es<span class="token punctuation">;</span>
+<span class="token number">0619</span>   ushort padding3<span class="token punctuation">;</span>
+<span class="token number">0620</span>   ushort ds<span class="token punctuation">;</span>
+<span class="token number">0621</span>   ushort padding4<span class="token punctuation">;</span>
+<span class="token number">0622</span>   uint trapno<span class="token punctuation">;</span>
+<span class="token number">0623</span>  
+<span class="token number">0624</span>   <span class="token comment">// below here defined by x86 hardware</span>
+<span class="token number">0625</span>   uint err<span class="token punctuation">;</span>
+<span class="token number">0626</span>   uint eip<span class="token punctuation">;</span>
+<span class="token number">0627</span>   ushort cs<span class="token punctuation">;</span>
+<span class="token number">0628</span>   ushort padding5<span class="token punctuation">;</span>
+<span class="token number">0629</span>   uint eflags<span class="token punctuation">;</span>
+<span class="token number">0630</span>  
+<span class="token number">0631</span>   <span class="token comment">// below here only when crossing rings, such as from user to kernel</span>
+<span class="token number">0632</span>   uint esp<span class="token punctuation">;</span>
+<span class="token number">0633</span>   ushort ss<span class="token punctuation">;</span>
+<span class="token number">0634</span>   ushort padding6<span class="token punctuation">;</span>
+<span class="token number">0635</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><p>設置完成後，<code>alltraps</code> 就能呼叫 C 中斷處理程序 <code>trap</code>（3401），根據不同情況作出對應的動作。</p><pre><code class="c hljs"><span class="token number">3401</span> <span class="token function">trap</span><span class="token punctuation">(</span><span class="token keyword">struct</span> trapframe <span class="token operator">*</span>tf<span class="token punctuation">)</span>
+<span class="token number">3402</span> <span class="token punctuation">{</span>
+<span class="token number">3403</span>   <span class="token keyword">if</span><span class="token punctuation">(</span>tf−<span class="token operator">&gt;</span>trapno <span class="token operator">==</span> T_SYSCALL<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">3404</span>     <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>killed<span class="token punctuation">)</span>
+<span class="token number">3405</span>       <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3406</span>     <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>tf <span class="token operator">=</span> tf<span class="token punctuation">;</span>
+<span class="token number">3407</span>     <span class="token function">syscall</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3408</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>killed<span class="token punctuation">)</span>
+<span class="token number">3409</span>     <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3410</span>   <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token number">3411</span>   <span class="token punctuation">}</span>
+<span class="token number">3412</span>
+<span class="token number">3413</span>   <span class="token keyword">switch</span><span class="token punctuation">(</span>tf−<span class="token operator">&gt;</span>trapno<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">3414</span>   <span class="token keyword">case</span> T_IRQ0 <span class="token operator">+</span> IRQ_TIMER<span class="token punctuation">:</span>
+<span class="token number">3415</span>     <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">cpuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">3416</span>       <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>tickslock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3417</span>       ticks<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token number">3418</span>       <span class="token function">wakeup</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ticks<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3419</span>       <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>tickslock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3420</span>     <span class="token punctuation">}</span>
+<span class="token number">3421</span>     <span class="token function">lapiceoi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3422</span>     <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token number">3423</span>   <span class="token keyword">case</span> T_IRQ0 <span class="token operator">+</span> IRQ_IDE<span class="token punctuation">:</span>
+<span class="token number">3424</span>     <span class="token function">ideintr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3425</span>     <span class="token function">lapiceoi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3426</span>     <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token number">3427</span>   <span class="token keyword">case</span> T_IRQ0 <span class="token operator">+</span> IRQ_IDE<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">:</span>
+<span class="token number">3428</span>     <span class="token comment">// Bochs generates spurious IDE1 interrupts.</span>
+<span class="token number">3429</span>     <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token number">3430</span>   <span class="token keyword">case</span> T_IRQ0 <span class="token operator">+</span> IRQ_KBD<span class="token punctuation">:</span>
+<span class="token number">3431</span>     <span class="token function">kbdintr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3432</span>     <span class="token function">lapiceoi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3433</span>     <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token number">3434</span>   <span class="token keyword">case</span> T_IRQ0 <span class="token operator">+</span> IRQ_COM1<span class="token punctuation">:</span>
+<span class="token number">3435</span>     <span class="token function">uartintr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3436</span>     <span class="token function">lapiceoi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3437</span>     <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token number">3438</span>   <span class="token keyword">case</span> T_IRQ0 <span class="token operator">+</span> <span class="token number">7</span><span class="token punctuation">:</span>
+<span class="token number">3439</span>   <span class="token keyword">case</span> T_IRQ0 <span class="token operator">+</span> IRQ_SPURIOUS<span class="token punctuation">:</span>
+<span class="token number">3440</span>     <span class="token function">cprintf</span><span class="token punctuation">(</span><span class="token string">"cpu%d: spurious interrupt at %x:%x\n"</span><span class="token punctuation">,</span>
+<span class="token number">3441</span>     <span class="token function">cpuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> tf−<span class="token operator">&gt;</span>cs<span class="token punctuation">,</span> tf−<span class="token operator">&gt;</span>eip<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3442</span>     <span class="token function">lapiceoi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3443</span>     <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token number">3444</span> 
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token number">3450</span>   <span class="token keyword">default</span><span class="token punctuation">:</span>
+<span class="token number">3451</span>     <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> <span class="token punctuation">(</span>tf−<span class="token operator">&gt;</span>cs<span class="token operator">&amp;</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">3452</span>       <span class="token comment">// In kernel, it must be our mistake.</span>
+<span class="token number">3453</span>       <span class="token function">cprintf</span><span class="token punctuation">(</span><span class="token string">"unexpected trap %d from cpu %d eip %x (cr2=  0x%x)\n"</span><span class="token punctuation">,</span>
+<span class="token number">3454</span>       tf−<span class="token operator">&gt;</span>trapno<span class="token punctuation">,</span> <span class="token function">cpuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> tf−<span class="token operator">&gt;</span>eip<span class="token punctuation">,</span> <span class="token function">rcr2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3455</span>       <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"trap"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3456</span>     <span class="token punctuation">}</span>
+<span class="token number">3457</span>     <span class="token comment">// In user space, assume process misbehaved.</span>
+<span class="token number">3458</span>     <span class="token function">cprintf</span><span class="token punctuation">(</span><span class="token string">"pid %d %s: trap %d err %d on cpu %d "</span>
+<span class="token number">3459</span>             <span class="token string">"eip 0x%x addr 0x%x−−kill proc\n"</span><span class="token punctuation">,</span>
+<span class="token number">3460</span>             <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>pid<span class="token punctuation">,</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>name<span class="token punctuation">,</span> tf−<span class="token operator">&gt;</span>trapno<span class="token punctuation">,</span>
+<span class="token number">3461</span>             tf−<span class="token operator">&gt;</span>err<span class="token punctuation">,</span> <span class="token function">cpuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> tf−<span class="token operator">&gt;</span>eip<span class="token punctuation">,</span> <span class="token function">rcr2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3462</span>     <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>killed <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">3463</span>   <span class="token punctuation">}</span>
+<span class="token number">3464</span>    
+<span class="token number">3465</span>   <span class="token comment">// Force process exit if it has been killed and is in user   space.</span>
+<span class="token number">3466</span>   <span class="token comment">// (If it is still executing in the kernel, let it keep runni  ng</span>
+<span class="token number">3467</span>   <span class="token comment">// until it gets to the regular system call return.)</span>
+<span class="token number">3468</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>killed <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>tf−<span class="token operator">&gt;</span>cs<span class="token operator">&amp;</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">==</span> DPL_U  SER<span class="token punctuation">)</span>
+<span class="token number">3469</span>     <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3470</span>  
+<span class="token number">3471</span>   <span class="token comment">// Force process to give up CPU on clock tick.</span>
+<span class="token number">3472</span>   <span class="token comment">// If interrupts were on while locks held, would need to ch  eck nlock.</span>
+<span class="token number">3473</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>state <span class="token operator">==</span> RUNNING <span class="token operator">&amp;&amp;</span>
+<span class="token number">3474</span>      tf−<span class="token operator">&gt;</span>trapno <span class="token operator">==</span> T_IRQ0<span class="token operator">+</span>IRQ_TIMER<span class="token punctuation">)</span>
+<span class="token number">3475</span>     <span class="token function">yield</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3476</span>  
+<span class="token number">3477</span>   <span class="token comment">// Check if the process has been killed since we yielded</span>
+<span class="token number">3478</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>killed <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>tf−<span class="token operator">&gt;</span>cs<span class="token operator">&amp;</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">==</span> DPL_U  SER<span class="token punctuation">)</span>
+<span class="token number">3479</span>     <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3480</span> <span class="token punctuation">}</span>
+</code></pre><h3 id="Code-system-call"><a class="anchor hidden-xs" href="#Code-system-call" title="Code-system-call"><span class="octicon octicon-link"></span></a>Code: system call</h3><p>對於 system call，<code>trap</code> 會呼叫 <code>syscall</code>（3701）；<br>
+<code>syscall</code> 會在 %eax 保存 system call 的回傳值；如果是非法的，他會顯示錯誤並回傳 -1。</p><p>函示 <code>argint</code>、<code>argptr</code> 和 <code>argstr</code> 獲得第 n 個 system call 參數，分別用來獲取整數、指標、字串，和檔案描述符。</p><p><img src="https://i.imgur.com/7aEsbkC.png" alt=""></p><pre><code class="c hljs"><span class="token number">3700</span> <span class="token keyword">void</span>
+<span class="token number">3701</span> <span class="token function">syscall</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">3702</span> <span class="token punctuation">{</span>
+<span class="token number">3703</span>   <span class="token keyword">int</span> num<span class="token punctuation">;</span>
+<span class="token number">3704</span>   <span class="token keyword">struct</span> proc <span class="token operator">*</span>curproc <span class="token operator">=</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3705</span>
+<span class="token number">3706</span>   num <span class="token operator">=</span> curproc−<span class="token operator">&gt;</span>tf−<span class="token operator">&gt;</span>eax<span class="token punctuation">;</span>
+<span class="token number">3707</span>   <span class="token keyword">if</span><span class="token punctuation">(</span>num <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> num <span class="token operator">&lt;</span> <span class="token function">NELEM</span><span class="token punctuation">(</span>syscalls<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> syscalls<span class="token punctuation">[</span>num<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token number">3708</span>     curproc−<span class="token operator">&gt;</span>tf−<span class="token operator">&gt;</span>eax <span class="token operator">=</span> syscalls<span class="token punctuation">[</span>num<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3709</span>   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+<span class="token number">3710</span>     <span class="token function">cprintf</span><span class="token punctuation">(</span><span class="token string">"%d %s: unknown sys call %d\n"</span><span class="token punctuation">,</span>
+<span class="token number">3711</span>     curproc−<span class="token operator">&gt;</span>pid<span class="token punctuation">,</span> curproc−<span class="token operator">&gt;</span>name<span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">3712</span>     curproc−<span class="token operator">&gt;</span>tf−<span class="token operator">&gt;</span>eax <span class="token operator">=</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">3713</span>   <span class="token punctuation">}</span>
+<span class="token number">3714</span> <span class="token punctuation">}</span>
+</code></pre><h3 id="Code-Interrupts"><a class="anchor hidden-xs" href="#Code-Interrupts" title="Code-Interrupts"><span class="octicon octicon-link"></span></a>Code: Interrupts</h3><p>主機板上的設備可以產生  interrupt，作業系統必須配置硬體來處理。interrupt 和 system call 相似，但前者可能在任何時候產生。</p><p>早期的主機板有一個簡單的可程式化中斷控制器（programmable interrupt controler，PIC）來實現中斷，但到了多核心的時代，需要兩個部分來完成，一部分在 I/O system 中（IO APIC, ioapic.c），另一部分依附在各處理器上（local APIC, lapic.c）。</p><p>IO APIC 有一張表，處理器可以透過 memory-mapped I/O 來設置入口，不同的裝置會對應到不同的 interrupt，同時也會標明應該交由哪一個處理器處理。舉例來說，xv6 將鍵盤的 interrupt 路由到 0 號處理器（8274）、將硬碟的 interrupt 路由到編號最大的處理器。</p><pre><code class="c hljs"><span class="token number">8273</span> <span class="token keyword">void</span>
+<span class="token number">8274</span> <span class="token function">consoleinit</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">8275</span> <span class="token punctuation">{</span>
+<span class="token number">8276</span>   <span class="token function">initlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>cons<span class="token punctuation">.</span>lock<span class="token punctuation">,</span> <span class="token string">"console"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">8277</span>
+<span class="token number">8278</span>   devsw<span class="token punctuation">[</span>CONSOLE<span class="token punctuation">]</span><span class="token punctuation">.</span>write <span class="token operator">=</span> consolewrite<span class="token punctuation">;</span>
+<span class="token number">8279</span>   devsw<span class="token punctuation">[</span>CONSOLE<span class="token punctuation">]</span><span class="token punctuation">.</span>read <span class="token operator">=</span> consoleread<span class="token punctuation">;</span>
+<span class="token number">8280</span>   cons<span class="token punctuation">.</span>locking <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">8281</span>  
+<span class="token number">8282</span>   <span class="token function">ioapicenable</span><span class="token punctuation">(</span>IRQ_KBD<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">8283</span> <span class="token punctuation">}</span>
+</code></pre><p>Timer chip 在 LAPIC 中，以便讓各處理器可以獨立接收 timer interrupt。xv6 在 <code>lapicinit</code>（7408）中設置；關鍵在 <code>timer</code>（7421）這行，它會告訴 LAPIC 以 <code>IRQ_TIMER</code>（也就是 IRQ 0）為週期產生中斷。</p><pre><code class="c hljs"><span class="token number">7407</span> <span class="token keyword">void</span>
+<span class="token number">7408</span> <span class="token function">lapicinit</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">7409</span> <span class="token punctuation">{</span>
+<span class="token number">7410</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>lapic<span class="token punctuation">)</span>
+<span class="token number">7411</span>     <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token number">7412</span>  
+<span class="token number">7413</span>   <span class="token comment">// Enable local APIC; set spurious interrupt vector.</span>
+<span class="token number">7414</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>SVR<span class="token punctuation">,</span> ENABLE <span class="token operator">|</span> <span class="token punctuation">(</span>T_IRQ0 <span class="token operator">+</span> IRQ_SPURIOUS<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7415</span>  
+<span class="token number">7416</span>   <span class="token comment">// The timer repeatedly counts down at bus frequency</span>
+<span class="token number">7417</span>   <span class="token comment">// from lapic[TICR] and then issues an interrupt.</span>
+<span class="token number">7418</span>   <span class="token comment">// If xv6 cared more about precise timekeeping,</span>
+<span class="token number">7419</span>   <span class="token comment">// TICR would be calibrated using an external time sourc  e.</span>
+<span class="token number">7420</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>TDCR<span class="token punctuation">,</span> X1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7421</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>TIMER<span class="token punctuation">,</span> PERIODIC <span class="token operator">|</span> <span class="token punctuation">(</span>T_IRQ0 <span class="token operator">+</span> IRQ_TIMER<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7422</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>TICR<span class="token punctuation">,</span> <span class="token number">10000000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7423</span>  
+<span class="token number">7424</span>   <span class="token comment">// Disable logical interrupt lines.</span>
+<span class="token number">7425</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>LINT0<span class="token punctuation">,</span> MASKED<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7426</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>LINT1<span class="token punctuation">,</span> MASKED<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7427</span>  
+<span class="token number">7428</span>   <span class="token comment">// Disable performance counter overflow interrupts</span>
+<span class="token number">7429</span>   <span class="token comment">// on machines that provide that interrupt entry.</span>
+<span class="token number">7430</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>lapic<span class="token punctuation">[</span>VER<span class="token punctuation">]</span><span class="token operator">&gt;&gt;</span><span class="token number">16</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token number">0xFF</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token number">7431</span>     <span class="token function">lapicw</span><span class="token punctuation">(</span>PCINT<span class="token punctuation">,</span> MASKED<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7432</span>  
+<span class="token number">7433</span>   <span class="token comment">// Map error interrupt to IRQ_ERROR.</span>
+<span class="token number">7434</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>ERROR<span class="token punctuation">,</span> T_IRQ0 <span class="token operator">+</span> IRQ_ERROR<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7435</span>  
+<span class="token number">7436</span>   <span class="token comment">// Clear error status register (requires back−to−back write  s).</span>
+<span class="token number">7437</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>ESR<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7438</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>ESR<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7439</span>  
+<span class="token number">7440</span>   <span class="token comment">// Ack any outstanding interrupts.</span>
+<span class="token number">7441</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>EOI<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7442</span>  
+<span class="token number">7443</span>   <span class="token comment">// Send an Init Level De−Assert to synchronise arbit  ration ID’s.</span>
+<span class="token number">7444</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>ICRHI<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7445</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>ICRLO<span class="token punctuation">,</span> BCAST <span class="token operator">|</span> INIT <span class="token operator">|</span> LEVEL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7446</span>   <span class="token keyword">while</span><span class="token punctuation">(</span>lapic<span class="token punctuation">[</span>ICRLO<span class="token punctuation">]</span> <span class="token operator">&amp;</span> DELIVS<span class="token punctuation">)</span>
+<span class="token number">7447</span>   <span class="token punctuation">;</span>
+<span class="token number">7448</span>  
+<span class="token number">7449</span>   
+<span class="token number">7450</span>   <span class="token comment">// Enable interrupts on the APIC (but not on the proce  ssor).</span>
+<span class="token number">7451</span>   <span class="token function">lapicw</span><span class="token punctuation">(</span>TPR<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">7452</span> <span class="token punctuation">}</span>
+</code></pre><p>處理器可以透過 %eflags 中的 IF flag 控制是否要收到中斷訊號；指令 <code>cli</code> 透過清除 IF 來屏蔽中斷，<code>sti</code> 則可開啟。</p><h3 id="Driver"><a class="anchor hidden-xs" href="#Driver" title="Driver"><span class="octicon octicon-link"></span></a>Driver</h3><p>Driver 是作業系統中用來管理特定設備的程式。</p><h3 id="Code-Disk-driver"><a class="anchor hidden-xs" href="#Code-Disk-driver" title="Code-Disk-driver"><span class="octicon octicon-link"></span></a>Code: Disk driver</h3><p>xv6 用 <code>struct buf</code>（3850）來表示一個 block：</p><pre><code class="c hljs"><span class="token number">3850</span> <span class="token keyword">struct</span> buf <span class="token punctuation">{</span>
+<span class="token number">3851</span>   <span class="token keyword">int</span> flags<span class="token punctuation">;</span>
+<span class="token number">3852</span>   uint dev<span class="token punctuation">;</span>
+<span class="token number">3853</span>   uint blockno<span class="token punctuation">;</span>
+<span class="token number">3854</span>   <span class="token keyword">struct</span> sleeplock lock<span class="token punctuation">;</span>
+<span class="token number">3855</span>   uint refcnt<span class="token punctuation">;</span>
+<span class="token number">3856</span>   <span class="token keyword">struct</span> buf <span class="token operator">*</span>prev<span class="token punctuation">;</span> <span class="token comment">// LRU cache list</span>
+<span class="token number">3857</span>   <span class="token keyword">struct</span> buf <span class="token operator">*</span>next<span class="token punctuation">;</span>
+<span class="token number">3858</span>   <span class="token keyword">struct</span> buf <span class="token operator">*</span>qnext<span class="token punctuation">;</span> <span class="token comment">// disk queue</span>
+<span class="token number">3859</span>   uchar data<span class="token punctuation">[</span>BSIZE<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token number">3860</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><p>kernel 在啟動時通過呼叫 main 中的 <code>ideinit</code>（4251）初始化硬碟驅動程式。<code>ideinit</code> 會呼叫 <code>ioapicenable</code> 來開啟 <code>IDE_IRQ</code> interrupt（4256）。</p><p>接下來 <code>ideinit</code> 開始檢查硬碟，它會呼叫 idewait（4257）等待硬碟接受指令。主機板藉由 I/O 阜 0x1f7 來表示硬碟狀態，idewait 會一直等到 IDE_BSY 被清除並設置為 IDE_DRDY。</p><p><img src="https://i.imgur.com/30NehZl.png" alt=""></p><pre><code class="c hljs"><span class="token number">4251</span> <span class="token function">ideinit</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">4252</span> <span class="token punctuation">{</span>
+<span class="token number">4253</span>   <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+<span class="token number">4254</span>  
+<span class="token number">4255</span>   <span class="token function">initlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>idelock<span class="token punctuation">,</span> <span class="token string">"ide"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4256</span>   <span class="token function">ioapicenable</span><span class="token punctuation">(</span>IRQ_IDE<span class="token punctuation">,</span> ncpu − <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4257</span>   <span class="token function">idewait</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4258</span>  
+<span class="token number">4259</span>   <span class="token comment">// Check if disk 1 is present</span>
+<span class="token number">4260</span>   <span class="token function">outb</span><span class="token punctuation">(</span><span class="token number">0x1f6</span><span class="token punctuation">,</span> <span class="token number">0xe0</span> <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">&lt;&lt;</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4261</span>   <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">1000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">4262</span>     <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">inb</span><span class="token punctuation">(</span><span class="token number">0x1f7</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">4263</span>       havedisk1 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">4264</span>       <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token number">4265</span>     <span class="token punctuation">}</span>
+<span class="token number">4266</span>   <span class="token punctuation">}</span>
+<span class="token number">4267</span>  
+<span class="token number">4268</span>   <span class="token comment">// Switch back to disk 0.</span>
+<span class="token number">4269</span>   <span class="token function">outb</span><span class="token punctuation">(</span><span class="token number">0x1f6</span><span class="token punctuation">,</span> <span class="token number">0xe0</span> <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token operator">&lt;&lt;</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4270</span> <span class="token punctuation">}</span>
+</code></pre><p>此時硬碟控制器便已就緒。</p><p>硬碟的存取時間對處理器而言非常久，為了有效利用 CPU，等待的時間可以執行其他程序，等到硬碟操作完成後再接收 interrupt。</p><p><code>iderw</code>（4354） 維護了一個存放請求的 queue，他會將 buffer <code>b</code> push 進 queue（4367~4371），如果這個 buffer 在 queue 的頭，他會呼叫 <code>idestart</code> 將其送到硬碟。</p><p><img src="https://i.imgur.com/CYEHS2m.png" alt=""></p><pre><code class="c hljs"><span class="token number">4350</span> <span class="token comment">// Sync buf with disk.</span>
+<span class="token number">4351</span> <span class="token comment">// If B_DIRTY is set, write buf to disk, clear B_DIRTY, set B_VALID.</span>
+<span class="token number">4352</span> <span class="token comment">// Else if B_VALID is not set, read buf from disk, set B_VALID.</span>
+<span class="token number">4353</span> <span class="token keyword">void</span>
+<span class="token number">4354</span> <span class="token function">iderw</span><span class="token punctuation">(</span><span class="token keyword">struct</span> buf <span class="token operator">*</span>b<span class="token punctuation">)</span>
+<span class="token number">4355</span> <span class="token punctuation">{</span>
+<span class="token number">4356</span>   <span class="token keyword">struct</span> buf <span class="token operator">*</span><span class="token operator">*</span>pp<span class="token punctuation">;</span>
+<span class="token number">4357</span>  
+<span class="token number">4358</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">holdingsleep</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>b−<span class="token operator">&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token number">4359</span>     <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"iderw: buf not locked"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4360</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>b−<span class="token operator">&gt;</span>flags <span class="token operator">&amp;</span> <span class="token punctuation">(</span>B_VALID<span class="token operator">|</span>B_DIRTY<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> B_VALID<span class="token punctuation">)</span>
+<span class="token number">4361</span>     <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"iderw: nothing to do"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4362</span>   <span class="token keyword">if</span><span class="token punctuation">(</span>b−<span class="token operator">&gt;</span>dev <span class="token operator">!=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>havedisk1<span class="token punctuation">)</span>
+<span class="token number">4363</span>     <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"iderw: ide disk 1 not present"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4364</span>  
+<span class="token number">4365</span>   <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>idelock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4366</span>  
+<span class="token number">4367</span>   <span class="token comment">// Append b to idequeue.</span>
+<span class="token number">4368</span>   b−<span class="token operator">&gt;</span>qnext <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">4369</span>   <span class="token keyword">for</span><span class="token punctuation">(</span>pp<span class="token operator">=</span><span class="token operator">&amp;</span>idequeue<span class="token punctuation">;</span> <span class="token operator">*</span>pp<span class="token punctuation">;</span> pp<span class="token operator">=</span><span class="token operator">&amp;</span><span class="token punctuation">(</span><span class="token operator">*</span>pp<span class="token punctuation">)</span>−<span class="token operator">&gt;</span>qnext<span class="token punctuation">)</span>
+<span class="token number">4370</span>   <span class="token punctuation">;</span>
+<span class="token number">4371</span>   <span class="token operator">*</span>pp <span class="token operator">=</span> b<span class="token punctuation">;</span>
+<span class="token number">4372</span>  
+<span class="token number">4373</span>   <span class="token comment">// Start disk if necessary.</span>
+<span class="token number">4374</span>   <span class="token keyword">if</span><span class="token punctuation">(</span>idequeue <span class="token operator">==</span> b<span class="token punctuation">)</span>
+<span class="token number">4375</span>     <span class="token function">idestart</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4376</span>  
+<span class="token number">4377</span>   <span class="token comment">// Wait for request to finish.</span>
+<span class="token number">4378</span>   <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>b−<span class="token operator">&gt;</span>flags <span class="token operator">&amp;</span> <span class="token punctuation">(</span>B_VALID<span class="token operator">|</span>B_DIRTY<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> B_VALID<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">4379</span>     <span class="token function">sleep</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> <span class="token operator">&amp;</span>idelock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4380</span>   <span class="token punctuation">}</span>
+<span class="token number">4381</span>  
+<span class="token number">4382</span>  
+<span class="token number">4383</span>   <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>idelock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4384</span> <span class="token punctuation">}</span>
+</code></pre><p>idestart 會根據 flag 來決定要讀取或是寫入（若設置 B_DIRTY 則寫入；若 未設置 B_VALID 則為讀取），在操作結束後也會產生不同的 interrupt；<code>trap</code> 會呼叫 <code>ideintr</code>（4304）來處理，它會查看 queue 上的第一個 buffer 來確定發生了什麼操作；如果是讀取，它會呼叫 <code>insl</code> 把資料寫進 buffer，此時 buffer 便已就緒。接著他會設置 B_VALID、清除 B_DIRTY，然後喚醒程序；最後將下一個等待中的 buffer 送進硬碟。</p><p><img src="https://i.imgur.com/b9viPbF.png" alt=""></p><pre><code class="c hljs"><span class="token number">4304</span> <span class="token function">ideintr</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">4305</span> <span class="token punctuation">{</span>
+<span class="token number">4306</span>   <span class="token keyword">struct</span> buf <span class="token operator">*</span>b<span class="token punctuation">;</span>
+<span class="token number">4307</span>  
+<span class="token number">4308</span>   <span class="token comment">// First queued buffer is the active request.</span>
+<span class="token number">4309</span>   <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>idelock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4310</span>  
+<span class="token number">4311</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>b <span class="token operator">=</span> idequeue<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">4312</span>     <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>idelock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4313</span>     <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token number">4314</span>   <span class="token punctuation">}</span>
+<span class="token number">4315</span>   idequeue <span class="token operator">=</span> b−<span class="token operator">&gt;</span>qnext<span class="token punctuation">;</span>
+<span class="token number">4316</span>  
+<span class="token number">4317</span>   <span class="token comment">// Read data if needed.</span>
+<span class="token number">4318</span>   <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>b−<span class="token operator">&gt;</span>flags <span class="token operator">&amp;</span> B_DIRTY<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">idewait</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token number">4319</span>     <span class="token function">insl</span><span class="token punctuation">(</span><span class="token number">0x1f0</span><span class="token punctuation">,</span> b−<span class="token operator">&gt;</span>data<span class="token punctuation">,</span> BSIZE<span class="token operator">/</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4320</span>  
+<span class="token number">4321</span>   <span class="token comment">// Wake process waiting for this buf.</span>
+<span class="token number">4322</span>   b−<span class="token operator">&gt;</span>flags <span class="token operator">|</span><span class="token operator">=</span> B_VALID<span class="token punctuation">;</span>
+<span class="token number">4323</span>   b−<span class="token operator">&gt;</span>flags <span class="token operator">&amp;</span><span class="token operator">=</span> <span class="token operator">~</span>B_DIRTY<span class="token punctuation">;</span>
+<span class="token number">4324</span>   <span class="token function">wakeup</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4325</span>  
+<span class="token number">4326</span>   <span class="token comment">// Start disk on next buf in queue.</span>
+<span class="token number">4327</span>   <span class="token keyword">if</span><span class="token punctuation">(</span>idequeue <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token number">4328</span>     <span class="token function">idestart</span><span class="token punctuation">(</span>idequeue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4329</span>  
+<span class="token number">4330</span>   <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>idelock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4331</span> <span class="token punctuation">}</span>
+</code></pre><div dir="ltr" class="resize-sensor" style="position: absolute; left: -10px; top: -10px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li class=""><a href="#106-NTUST-OS" title="106 NTUST OS">106 NTUST OS</a></li><li class=""><a href="#項目一" title="項目一">項目一</a></li><li><a href="#項目二" title="項目二">項目二</a><ul class="nav"><li><a href="#Chapter-0" title="Chapter 0">Chapter 0</a><ul class="nav"><li><a href="#作業系統的主要工作：" title="作業系統的主要工作：">作業系統的主要工作：</a></li><li><a href="#kernel" title="kernel">kernel</a></li><li><a href="#Process-和-Memory" title="Process 和 Memory">Process 和 Memory</a></li></ul></li><li><a href="#IO-and-File-descriptors" title="I/O and File descriptors">I/O and File descriptors</a><ul class="nav"><li><a href="#Pipe" title="Pipe">Pipe</a></li><li><a href="#File-system" title="File system">File system</a></li></ul></li><li><a href="#Chapter-1" title="Chapter 1">Chapter 1</a><ul class="nav"><li><a href="#作業系統組織" title="作業系統組織">作業系統組織</a></li><li><a href="#抽象物理資源" title="抽象物理資源">抽象物理資源</a></li><li><a href="#User-mode、kernel-mode、和-system-call" title="User mode、kernel mode、和 system call">User mode、kernel mode、和 system call</a></li><li><a href="#Process-總覽" title="Process 總覽">Process 總覽</a></li><li><a href="#第一個地址空間" title="第一個地址空間">第一個地址空間</a></li><li><a href="#創建第一個-process" title="創建第一個 process">創建第一個 process</a></li></ul></li></ul></li><li><a href="#項目-3" title="項目 3">項目 3</a><ul class="nav"><li><a href="#Chapter-3" title="Chapter 3">Chapter 3</a><ul class="nav"><li><a href="#Traps-interrupts-drivers" title="Traps, interrupts, drivers">Traps, interrupts, drivers</a></li><li><a href="#x86-的保護機制" title="x86 的保護機制">x86 的保護機制</a></li><li><a href="#Code-Assembly-trap-handlers" title="Code: Assembly trap handlers">Code: Assembly trap handlers</a></li><li><a href="#Code-system-call" title="Code: system call">Code: system call</a></li><li><a href="#Code-Interrupts" title="Code: Interrupts">Code: Interrupts</a></li><li><a href="#Driver" title="Driver">Driver</a></li><li><a href="#Code-Disk-driver" title="Code: Disk driver">Code: Disk driver</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li class=""><a href="#106-NTUST-OS" title="106 NTUST OS">106 NTUST OS</a></li><li class=""><a href="#項目一" title="項目一">項目一</a></li><li><a href="#項目二" title="項目二">項目二</a><ul class="nav"><li><a href="#Chapter-0" title="Chapter 0">Chapter 0</a><ul class="nav"><li><a href="#作業系統的主要工作：" title="作業系統的主要工作：">作業系統的主要工作：</a></li><li><a href="#kernel" title="kernel">kernel</a></li><li><a href="#Process-和-Memory" title="Process 和 Memory">Process 和 Memory</a></li></ul></li><li><a href="#IO-and-File-descriptors" title="I/O and File descriptors">I/O and File descriptors</a><ul class="nav"><li><a href="#Pipe" title="Pipe">Pipe</a></li><li><a href="#File-system" title="File system">File system</a></li></ul></li><li><a href="#Chapter-1" title="Chapter 1">Chapter 1</a><ul class="nav"><li><a href="#作業系統組織" title="作業系統組織">作業系統組織</a></li><li><a href="#抽象物理資源" title="抽象物理資源">抽象物理資源</a></li><li><a href="#User-mode、kernel-mode、和-system-call" title="User mode、kernel mode、和 system call">User mode、kernel mode、和 system call</a></li><li><a href="#Process-總覽" title="Process 總覽">Process 總覽</a></li><li><a href="#第一個地址空間" title="第一個地址空間">第一個地址空間</a></li><li><a href="#創建第一個-process" title="創建第一個 process">創建第一個 process</a></li></ul></li></ul></li><li><a href="#項目-3" title="項目 3">項目 3</a><ul class="nav"><li><a href="#Chapter-3" title="Chapter 3">Chapter 3</a><ul class="nav"><li><a href="#Traps-interrupts-drivers" title="Traps, interrupts, drivers">Traps, interrupts, drivers</a></li><li><a href="#x86-的保護機制" title="x86 的保護機制">x86 的保護機制</a></li><li><a href="#Code-Assembly-trap-handlers" title="Code: Assembly trap handlers">Code: Assembly trap handlers</a></li><li><a href="#Code-system-call" title="Code: system call">Code: system call</a></li><li><a href="#Code-Interrupts" title="Code: Interrupts">Code: Interrupts</a></li><li><a href="#Driver" title="Driver">Driver</a></li><li><a href="#Code-Disk-driver" title="Code: Disk driver">Code: Disk driver</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
