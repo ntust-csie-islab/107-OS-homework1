@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><p>xv6 作業筆記 沈孟虹</p><h1 id="項目一0"><a class="anchor hidden-xs" href="#項目一0" title="項目一0"><span class="octicon octicon-link"></span></a>項目一</h1><p><img src="https://i.imgur.com/WNKcLBU.png" alt=""><br>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><p>xv6 作業筆記</p><h1 id="項目一0"><a class="anchor hidden-xs" href="#項目一0" title="項目一0"><span class="octicon octicon-link"></span></a>項目一</h1><p><img src="https://i.imgur.com/WNKcLBU.png" alt=""><br>
 <img src="https://i.imgur.com/2Ytbd6B.png" alt=""><br>
 <img src="https://i.imgur.com/P8j7Vhq.png" alt=""></p><h1 id="項目二0"><a class="anchor hidden-xs" href="#項目二0" title="項目二0"><span class="octicon octicon-link"></span></a>項目二</h1><h2 id="Chapter-0-Operating-system-interfaces"><a class="anchor hidden-xs" href="#Chapter-0-Operating-system-interfaces" title="Chapter-0-Operating-system-interfaces"><span class="octicon octicon-link"></span></a>Chapter 0 Operating system interfaces</h2><h3 id="01-前言"><a class="anchor hidden-xs" href="#01-前言" title="01-前言"><span class="octicon octicon-link"></span></a>0.1 前言</h3><h4 id="011-重點"><a class="anchor hidden-xs" href="#011-重點" title="011-重點"><span class="octicon octicon-link"></span></a>0.1.1 重點</h4><ul>
 <li>OS Main Job
@@ -98,9 +98,9 @@
 <li>every process has a private space of fd starting at zero.</li>
 <li>console default’s fd (always open):
 <ul>
-<li>standard input: 0</li>
+<li>standard input : 0</li>
 <li>standard output: 1</li>
-<li>standard error: 2</li>
+<li>standard error : 2</li>
 </ul>
 </li>
 <li>透過 fd 做 I/O 重定向.</li>
@@ -268,7 +268,7 @@
 <li>allocproc 每次新建 proc 都會被呼叫到.</li>
 <li>allocproc 會去查 proc table 找到 state 為 UNUSED 的 proc, 然後將 UNUSED 改成 EMBRYO 並給它 pid; 然後嘗試分配 kernal stack, 如果分配失敗, allocproc 會改回 UNUSED 並 return 0 表示失敗.<br>
 <img src="https://i.imgur.com/oX0GTtk.png" alt=""></li>
-</ul><h4 id="172-資料結構"><a class="anchor hidden-xs" href="#172-資料結構" title="172-資料結構"><span class="octicon octicon-link"></span></a>1.7.2 資料結構</h4><ul>
+</ul><h4 id="172-資料結構0"><a class="anchor hidden-xs" href="#172-資料結構0" title="172-資料結構0"><span class="octicon octicon-link"></span></a>1.7.2 資料結構</h4><ul>
 <li>userinit<br>
 <img src="https://i.imgur.com/OCDWYhx.png" alt=""><br>
 <img src="https://i.imgur.com/31spPNt.png" alt=""></li>
@@ -315,22 +315,136 @@
 </ul><h1 id="項目三"><a class="anchor hidden-xs" href="#項目三" title="項目三"><span class="octicon octicon-link"></span></a>項目三</h1><h2 id="Chapter-5-Scheduling"><a class="anchor hidden-xs" href="#Chapter-5-Scheduling" title="Chapter-5-Scheduling"><span class="octicon octicon-link"></span></a>Chapter 5 Scheduling</h2><h3 id="51-前言"><a class="anchor hidden-xs" href="#51-前言" title="51-前言"><span class="octicon octicon-link"></span></a>5.1 前言</h3><h4 id="511-重點"><a class="anchor hidden-xs" href="#511-重點" title="511-重點"><span class="octicon octicon-link"></span></a>5.1.1 重點</h4><ul>
 <li>本章節說明 xv6 如何實現 multiplexing.</li>
 <li>multiplex: 將單一 process 模擬為多個 process.</li>
-</ul><h3 id="52-Multiplexing0"><a class="anchor hidden-xs" href="#52-Multiplexing0" title="52-Multiplexing0"><span class="octicon octicon-link"></span></a>5.2 Multiplexing</h3><ul>
+</ul><h3 id="52-Multiplexing0"><a class="anchor hidden-xs" href="#52-Multiplexing0" title="52-Multiplexing0"><span class="octicon octicon-link"></span></a>5.2 Multiplexing</h3><h4 id="521-重點"><a class="anchor hidden-xs" href="#521-重點" title="521-重點"><span class="octicon octicon-link"></span></a>5.2.1 重點</h4><ul>
 <li>xv6 Multiplexing (forces a switch) 兩種情況:
 <ol>
 <li>sleep/wakeup 機制</li>
 <li>當 process 執行 user instructions</li>
 </ol>
 </li>
-</ul><h3 id="53-Code-Context-switching"><a class="anchor hidden-xs" href="#53-Code-Context-switching" title="53-Code-Context-switching"><span class="octicon octicon-link"></span></a>5.3 Code: Context switching</h3><p><img src="https://i.imgur.com/HSzm9rC.png" alt=""><br>
-<img src="https://i.imgur.com/LzmnyaE.png" alt=""><br>
-<img src="https://i.imgur.com/BkPb0Wv.png" alt=""><br>
-<img src="https://i.imgur.com/nBQpOtO.png" alt=""></p><h3 id="54-Code-Scheduling"><a class="anchor hidden-xs" href="#54-Code-Scheduling" title="54-Code-Scheduling"><span class="octicon octicon-link"></span></a>5.4 Code: Scheduling</h3><p><img src="https://i.imgur.com/sA2Bps1.png" alt=""></p><ul>
+</ul><h3 id="53-Code-Context-switching"><a class="anchor hidden-xs" href="#53-Code-Context-switching" title="53-Code-Context-switching"><span class="octicon octicon-link"></span></a>5.3 Code: Context switching</h3><h4 id="531-重點"><a class="anchor hidden-xs" href="#531-重點" title="531-重點"><span class="octicon octicon-link"></span></a>5.3.1 重點</h4><p><img src="https://i.imgur.com/HSzm9rC.png" alt=""></p><h3 id="54-Code-Scheduling"><a class="anchor hidden-xs" href="#54-Code-Scheduling" title="54-Code-Scheduling"><span class="octicon octicon-link"></span></a>5.4 Code: Scheduling</h3><h4 id="541-重點0"><a class="anchor hidden-xs" href="#541-重點0" title="541-重點0"><span class="octicon octicon-link"></span></a>5.4.1 重點</h4><ul>
+<li>scheduler 和 sched 彼此是協同程式(coroutines):
+<ul>
+<li>切換 pattern: scheduler(2781) -&gt; sched(2822) -&gt; scheduler(2781) -&gt; sched(2822)</li>
+</ul>
+</li>
+<li>sched: 檢查兩次狀態，確定持有鎖(CPU不能進行中斷)，最後 call swtch 將當前 context 存在 proc-&gt;context，並在 cpu-&gt;scheduler 轉換到 scheduler context. scheduler 繼續執行 and for loop.</li>
+<li>在一種特殊情況下 scheduler’s call to swtch, 不會在sched結束: 當 proc 第一次被 scheduler 時，從 forkret 開始(為了釋放 ptable.lock);否則直接從 trapret 開始.</li>
+<li>scheduler: 找到一個狀態為 RUNNABLE 的 proc，執行它直到它結束，重複上述動作。scheduler 在迴圈外層開始取得 ptable.lock，在結束時釋放(允許顯式中斷)。</li>
+</ul><h4 id="542-資料結構-與-function0"><a class="anchor hidden-xs" href="#542-資料結構-與-function0" title="542-資料結構-與-function0"><span class="octicon octicon-link"></span></a>5.4.2 資料結構 與 function</h4><ul>
+<li>scheduler<br>
+<img src="https://i.imgur.com/nBQpOtO.png" alt=""></li>
+<li>sched<br>
+<img src="https://i.imgur.com/LzmnyaE.png" alt=""></li>
+<li>swtch<br>
+<img src="https://i.imgur.com/BkPb0Wv.png" alt=""></li>
+<li>yield<br>
+<img src="https://i.imgur.com/sA2Bps1.png" alt=""></li>
+<li>forkret<br>
+<img src="https://i.imgur.com/buNJZNG.png" alt=""></li>
+</ul><h3 id="55-Code-mycpu-and-myproc"><a class="anchor hidden-xs" href="#55-Code-mycpu-and-myproc" title="55-Code-mycpu-and-myproc"><span class="octicon octicon-link"></span></a>5.5 Code: mycpu and myproc</h3><h4 id="551-重點0"><a class="anchor hidden-xs" href="#551-重點0" title="551-重點0"><span class="octicon octicon-link"></span></a>5.5.1 重點</h4><ul>
+<li></li>
+</ul><h4 id="552-資料結構-與-function"><a class="anchor hidden-xs" href="#552-資料結構-與-function" title="552-資料結構-與-function"><span class="octicon octicon-link"></span></a>5.5.2 資料結構 與 function</h4><ul>
+<li>cpu<br>
+<img src="https://i.imgur.com/Vb1EAOM.png" alt=""></li>
+<li>mycpu<br>
+<img src="https://i.imgur.com/mOmC2YK.png" alt=""><br>
+<img src="https://i.imgur.com/FLywReq.png" alt=""></li>
+<li>proc<br>
+<img src="https://i.imgur.com/gyzwHrr.png" alt=""><br>
+<img src="https://i.imgur.com/UqRbw9O.png" alt=""></li>
+<li>myproc<br>
+<img src="https://i.imgur.com/AqMsNWR.png" alt=""></li>
+<li>lapicid<br>
+<img src="https://i.imgur.com/VZGdC3E.png" alt=""></li>
+</ul><h3 id="56-Sleep-and-wakeup"><a class="anchor hidden-xs" href="#56-Sleep-and-wakeup" title="56-Sleep-and-wakeup"><span class="octicon octicon-link"></span></a>5.6 Sleep and wakeup</h3><h4 id="561-重點"><a class="anchor hidden-xs" href="#561-重點" title="561-重點"><span class="octicon octicon-link"></span></a>5.6.1 重點</h4><ul>
 <li>Scheduling 使得 processes 可以共享 CPU.</li>
-<li></li>
-</ul><h3 id="55-Code-mycpu-and-myproc"><a class="anchor hidden-xs" href="#55-Code-mycpu-and-myproc" title="55-Code-mycpu-and-myproc"><span class="octicon octicon-link"></span></a>5.5 Code: mycpu and myproc</h3><h3 id="56-Sleep-and-wakeup"><a class="anchor hidden-xs" href="#56-Sleep-and-wakeup" title="56-Sleep-and-wakeup"><span class="octicon octicon-link"></span></a>5.6 Sleep and wakeup</h3><ul>
-<li></li>
-</ul><h3 id="57-Code-Sleep-and-wakeup"><a class="anchor hidden-xs" href="#57-Code-Sleep-and-wakeup" title="57-Code-Sleep-and-wakeup"><span class="octicon octicon-link"></span></a>5.7 Code: Sleep and wakeup</h3><h3 id="58-Code-Pipes"><a class="anchor hidden-xs" href="#58-Code-Pipes" title="58-Code-Pipes"><span class="octicon octicon-link"></span></a>5.8 Code: Pipes</h3><h3 id="59-Code-Wait-exit-and-kill"><a class="anchor hidden-xs" href="#59-Code-Wait-exit-and-kill" title="59-Code-Wait-exit-and-kill"><span class="octicon octicon-link"></span></a>5.9 Code: Wait, exit, and kill</h3><h3 id="510-Real-world"><a class="anchor hidden-xs" href="#510-Real-world" title="510-Real-world"><span class="octicon octicon-link"></span></a>5.10 Real world</h3><ul>
+<li>Sleep and wakeup 經常被稱作 sequence coordination or conditional synchronization mechanisms.</li>
+<li>recv holds q-&gt;lock prevents send from trying to wake it up between recv’s check of q-&gt;ptr and its call to sleep. We need sleep to atomically release q-&gt;lock and put the receiving process to sleep. A complete sender/receiver implementation would also sleep in send when waiting for a receiver to consume the value from a previous send.<br>
+<img src="https://i.imgur.com/CVPwWg0.png" alt=""></li>
+</ul><h3 id="57-Code-Sleep-and-wakeup"><a class="anchor hidden-xs" href="#57-Code-Sleep-and-wakeup" title="57-Code-Sleep-and-wakeup"><span class="octicon octicon-link"></span></a>5.7 Code: Sleep and wakeup</h3><h4 id="571-重點"><a class="anchor hidden-xs" href="#571-重點" title="571-重點"><span class="octicon octicon-link"></span></a>5.7.1 重點</h4><ul>
+<li>sleep 將 proc state 改為 SLEEPING 並調用 sched 釋放 CPU；wakeup 將找一個 SLEEPING proc 並標記為 RUNNABLE.</li>
+<li>sleep :
+<ol>
+<li>會檢查存在當前 proc(2878) 和 sleep 持有鎖 lk (2881-2882).</li>
+<li>當 lk != &amp;ptable.lock， sleep 獲取 ptable.lock (2891)，釋放鎖 lk (2892).</li>
+<li>調用 sched (2895-2898).</li>
+<li>當 lk != &amp;ptable.lock，sleep 釋放 ptable.lock (2905), 獲取鎖 lk(2906)</li>
+</ol>
+</li>
+<li>wait (2671): 當 wait 獲得 ptable.lock 會使 proc sleep.</li>
+<li>必須跳過 lk == &amp;ptable.lock 的情況 (2890-2892)，否則會出現死鎖。</li>
+<li>wakeup:
+<ol>
+<li>獲得 ptable.lock (2966) 並調用 wakeup1，實際工作由 wakeup1 完成。</li>
+<li>wakeup 必須在持有 ptable.lock 的情況下才能執行.</li>
+<li>找到chan對應的p−&gt;state == SLEEPING(2958)，state 修改為 RUNNABLE.</li>
+</ol>
+</li>
+<li>sleep/wakeup 機制優點:
+<ul>
+<li>lightweight: 不需要額外的資料結構作為 sleep channel.</li>
+<li>抽象化: caller 不需要知道哪個 process 在運作.</li>
+</ul>
+</li>
+</ul><h4 id="572-資料結構-與-function0"><a class="anchor hidden-xs" href="#572-資料結構-與-function0" title="572-資料結構-與-function0"><span class="octicon octicon-link"></span></a>5.7.2 資料結構 與 function</h4><ul>
+<li>sleep<br>
+<img src="https://i.imgur.com/AJU3djp.png" alt=""><br>
+<img src="https://i.imgur.com/3e8E4bY.png" alt=""></li>
+<li>wakeup<br>
+<img src="https://i.imgur.com/iiaUem8.png" alt=""></li>
+</ul><h3 id="58-Code-Pipes"><a class="anchor hidden-xs" href="#58-Code-Pipes" title="58-Code-Pipes"><span class="octicon octicon-link"></span></a>5.8 Code: Pipes</h3><h4 id="581-重點"><a class="anchor hidden-xs" href="#581-重點" title="581-重點"><span class="octicon octicon-link"></span></a>5.8.1 重點</h4><ul>
+<li>pipewrite/piperead:
+<ol>
+<li>先取得 pipe lock，確保 pipe 屬性值不變 (6834).</li>
+<li>pipewrite 先取得 pipe lock，piperead 停在 acquire 等待獲取鎖 (sleep).</li>
+<li>pipewrite for loop write bytes.</li>
+<li>pipewrite 緩衝區填滿 (6836)，wakeup 通知睡眠中 readers 緩衝區有資料可讀. 並釋放 pipe lock and sleep.</li>
+<li>pipe lock 釋放，piperead 嘗試取得 pipe lock.</li>
+<li>piperead 檢查發現 p-&gt;nread != p-&gt;nwrite (因為pipewrite sleep, p-&gt;nwrite == p-&gt;nread+PIPESIZE)</li>
+<li>for loop read  bytes (6863-6867).</li>
+<li>讀完 wakeup 通知睡眠中 writers 緩衝區已空出. 並釋放 pipe lock.</li>
+</ol>
+</li>
+</ul><h4 id="582-資料結構-與-function"><a class="anchor hidden-xs" href="#582-資料結構-與-function" title="582-資料結構-與-function"><span class="octicon octicon-link"></span></a>5.8.2 資料結構 與 function</h4><ul>
+<li>pipe<br>
+<img src="https://i.imgur.com/I5pOfZv.png" alt=""></li>
+<li>pipewrite<br>
+<img src="https://i.imgur.com/g3boxTt.png" alt=""></li>
+<li>piperead<br>
+<img src="https://i.imgur.com/VOjO4sU.png" alt=""></li>
+<li>acquire<br>
+<img src="https://i.imgur.com/OxlBU2o.png" alt=""></li>
+</ul><h3 id="59-Code-Wait-exit-and-kill"><a class="anchor hidden-xs" href="#59-Code-Wait-exit-and-kill" title="59-Code-Wait-exit-and-kill"><span class="octicon octicon-link"></span></a>5.9 Code: Wait, exit, and kill</h3><h4 id="591-重點"><a class="anchor hidden-xs" href="#591-重點" title="591-重點"><span class="octicon octicon-link"></span></a>5.9.1 重點</h4><ul>
+<li>child proc 要退出時，會先將 p-&gt;state 改成 ZOMBIE，等待 parent proc 調用 wait 時才真正釋放 memory (真正退出).</li>
+<li>struct proc 擁有屬性 proc parent，當 parent 比 child 提早退出，init process 會接收這些 child 並等待他們退出.</li>
+<li>wait:
+<ol>
+<li>獲得 ptable.lock</li>
+<li>查看 ptable 是否有 child p-&gt;state = ZOMBIE</li>
+<li>沒有 ZOMBIE，調用</li>
+</ol>
+</li>
+<li>exit:
+<ol>
+<li>獲得 ptable.lock</li>
+</ol>
+</li>
+<li>kill:
+<ol>
+<li>獲得 ptable.lock</li>
+</ol>
+</li>
+</ul><h4 id="592-資料結構-與-function"><a class="anchor hidden-xs" href="#592-資料結構-與-function" title="592-資料結構-與-function"><span class="octicon octicon-link"></span></a>5.9.2 資料結構 與 function</h4><ul>
+<li>wait<br>
+<img src="https://i.imgur.com/bLjWFO6.png" alt=""><br>
+<img src="https://i.imgur.com/4N1GfAf.png" alt=""></li>
+<li>exit<br>
+<img src="https://i.imgur.com/bjk55zG.png" alt=""><br>
+<img src="https://i.imgur.com/xxc2JvQ.png" alt=""></li>
+<li>kill<br>
+<img src="https://i.imgur.com/MAZOOjA.png" alt=""></li>
+</ul><h3 id="510-Real-world"><a class="anchor hidden-xs" href="#510-Real-world" title="510-Real-world"><span class="octicon octicon-link"></span></a>5.10 Real world</h3><h4 id="5101-重點"><a class="anchor hidden-xs" href="#5101-重點" title="5101-重點"><span class="octicon octicon-link"></span></a>5.10.1 重點</h4><ul>
 <li>xv6 使用較簡單的 scheduling policy: round robin, 真實的 OS 是有優先級順序的.</li>
 <li>priority inversion: 優先級低的 process 先取得鎖，則優先級高的 process 無法執行。</li>
 <li>convoys: 指當很多個優先級高的 process 等待一個已經先取得鎖的優先級低的 process.</li>
@@ -354,12 +468,12 @@
                 <i class="fa fa-bars"></i>
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
-                <div class="toc"><ul class="nav"><li><a href="#項目一0" title="項目一">項目一</a></li><li><a href="#項目二0" title="項目二">項目二</a><ul class="nav"><li><a href="#Chapter-0-Operating-system-interfaces" title="Chapter 0 Operating system interfaces">Chapter 0 Operating system interfaces</a><ul class="nav"><li><a href="#01-前言" title="0.1 前言">0.1 前言</a></li><li><a href="#02-Process-and-Memory" title="0.2 Process and Memory">0.2 Process and Memory</a></li><li><a href="#03-IO-and-File-descriptors" title="0.3 I/O and File descriptors">0.3 I/O and File descriptors</a></li><li><a href="#04-Pipes" title="0.4 Pipes">0.4 Pipes</a></li><li><a href="#05-File-System" title="0.5 File System">0.5 File System</a></li><li><a href="#06-Real-World" title="0.6 Real World">0.6 Real World</a></li></ul></li><li><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#11-前言" title="1.1 前言">1.1 前言</a></li><li><a href="#12-Abstracting-physical-resources" title="1.2 Abstracting physical resources">1.2 Abstracting physical resources</a></li><li><a href="#13-User-mode-kernel-mode-and-system-calls" title="1.3 User mode, kernel mode, and system calls">1.3 User mode, kernel mode, and system calls</a></li><li><a href="#14-Kernel-organization" title="1.4 Kernel organization">1.4 Kernel organization</a></li><li><a href="#15-Process-overview" title="1.5 Process overview">1.5 Process overview</a></li><li><a href="#16-Code-the-first-address-space" title="1.6 Code: the first address space">1.6 Code: the first address space</a></li><li><a href="#17-Code-creating-the-first-process0" title="1.7 Code: creating the first process">1.7 Code: creating the first process</a></li><li><a href="#18-Code-Running-the-first-process" title="1.8 Code: Running the first process">1.8 Code: Running the first process</a></li><li><a href="#19-The-first-system-call-exec" title="1.9 The first system call: exec">1.9 The first system call: exec</a></li><li><a href="#110-Real-world" title="1.10 Real world">1.10 Real world</a></li></ul></li></ul></li><li class=""><a href="#項目三" title="項目三">項目三</a><ul class="nav"><li class=""><a href="#Chapter-5-Scheduling" title="Chapter 5 Scheduling">Chapter 5 Scheduling</a><ul class="nav"><li><a href="#51-前言" title="5.1 前言">5.1 前言</a></li><li><a href="#52-Multiplexing0" title="5.2 Multiplexing">5.2 Multiplexing</a></li><li class=""><a href="#53-Code-Context-switching" title="5.3 Code: Context switching">5.3 Code: Context switching</a></li><li><a href="#54-Code-Scheduling" title="5.4 Code: Scheduling">5.4 Code: Scheduling</a></li><li><a href="#55-Code-mycpu-and-myproc" title="5.5 Code: mycpu and myproc">5.5 Code: mycpu and myproc</a></li><li><a href="#56-Sleep-and-wakeup" title="5.6 Sleep and wakeup">5.6 Sleep and wakeup</a></li><li><a href="#57-Code-Sleep-and-wakeup" title="5.7 Code: Sleep and wakeup">5.7 Code: Sleep and wakeup</a></li><li><a href="#58-Code-Pipes" title="5.8 Code: Pipes">5.8 Code: Pipes</a></li><li><a href="#59-Code-Wait-exit-and-kill" title="5.9 Code: Wait, exit, and kill">5.9 Code: Wait, exit, and kill</a></li><li><a href="#510-Real-world" title="5.10 Real world">5.10 Real world</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+                <div class="toc"><ul class="nav"><li><a href="#項目一0" title="項目一">項目一</a></li><li><a href="#項目二0" title="項目二">項目二</a><ul class="nav"><li><a href="#Chapter-0-Operating-system-interfaces" title="Chapter 0 Operating system interfaces">Chapter 0 Operating system interfaces</a><ul class="nav"><li><a href="#01-前言" title="0.1 前言">0.1 前言</a></li><li><a href="#02-Process-and-Memory" title="0.2 Process and Memory">0.2 Process and Memory</a></li><li><a href="#03-IO-and-File-descriptors" title="0.3 I/O and File descriptors">0.3 I/O and File descriptors</a></li><li><a href="#04-Pipes" title="0.4 Pipes">0.4 Pipes</a></li><li><a href="#05-File-System" title="0.5 File System">0.5 File System</a></li><li><a href="#06-Real-World" title="0.6 Real World">0.6 Real World</a></li></ul></li><li><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#11-前言" title="1.1 前言">1.1 前言</a></li><li><a href="#12-Abstracting-physical-resources" title="1.2 Abstracting physical resources">1.2 Abstracting physical resources</a></li><li><a href="#13-User-mode-kernel-mode-and-system-calls" title="1.3 User mode, kernel mode, and system calls">1.3 User mode, kernel mode, and system calls</a></li><li><a href="#14-Kernel-organization" title="1.4 Kernel organization">1.4 Kernel organization</a></li><li><a href="#15-Process-overview" title="1.5 Process overview">1.5 Process overview</a></li><li><a href="#16-Code-the-first-address-space" title="1.6 Code: the first address space">1.6 Code: the first address space</a></li><li><a href="#17-Code-creating-the-first-process0" title="1.7 Code: creating the first process">1.7 Code: creating the first process</a></li><li><a href="#18-Code-Running-the-first-process" title="1.8 Code: Running the first process">1.8 Code: Running the first process</a></li><li><a href="#19-The-first-system-call-exec" title="1.9 The first system call: exec">1.9 The first system call: exec</a></li><li><a href="#110-Real-world" title="1.10 Real world">1.10 Real world</a></li></ul></li></ul></li><li class=""><a href="#項目三" title="項目三">項目三</a><ul class="nav"><li class=""><a href="#Chapter-5-Scheduling" title="Chapter 5 Scheduling">Chapter 5 Scheduling</a><ul class="nav"><li><a href="#51-前言" title="5.1 前言">5.1 前言</a></li><li><a href="#52-Multiplexing0" title="5.2 Multiplexing">5.2 Multiplexing</a></li><li><a href="#53-Code-Context-switching" title="5.3 Code: Context switching">5.3 Code: Context switching</a></li><li><a href="#54-Code-Scheduling" title="5.4 Code: Scheduling">5.4 Code: Scheduling</a></li><li><a href="#55-Code-mycpu-and-myproc" title="5.5 Code: mycpu and myproc">5.5 Code: mycpu and myproc</a></li><li><a href="#56-Sleep-and-wakeup" title="5.6 Sleep and wakeup">5.6 Sleep and wakeup</a></li><li><a href="#57-Code-Sleep-and-wakeup" title="5.7 Code: Sleep and wakeup">5.7 Code: Sleep and wakeup</a></li><li class=""><a href="#58-Code-Pipes" title="5.8 Code: Pipes">5.8 Code: Pipes</a></li><li><a href="#59-Code-Wait-exit-and-kill" title="5.9 Code: Wait, exit, and kill">5.9 Code: Wait, exit, and kill</a></li><li><a href="#510-Real-world" title="5.10 Real world">5.10 Real world</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
             </ul>
         </div>
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
-        <div class="toc"><ul class="nav"><li><a href="#項目一0" title="項目一">項目一</a></li><li><a href="#項目二0" title="項目二">項目二</a><ul class="nav"><li><a href="#Chapter-0-Operating-system-interfaces" title="Chapter 0 Operating system interfaces">Chapter 0 Operating system interfaces</a><ul class="nav"><li><a href="#01-前言" title="0.1 前言">0.1 前言</a></li><li><a href="#02-Process-and-Memory" title="0.2 Process and Memory">0.2 Process and Memory</a></li><li><a href="#03-IO-and-File-descriptors" title="0.3 I/O and File descriptors">0.3 I/O and File descriptors</a></li><li><a href="#04-Pipes" title="0.4 Pipes">0.4 Pipes</a></li><li><a href="#05-File-System" title="0.5 File System">0.5 File System</a></li><li><a href="#06-Real-World" title="0.6 Real World">0.6 Real World</a></li></ul></li><li><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#11-前言" title="1.1 前言">1.1 前言</a></li><li><a href="#12-Abstracting-physical-resources" title="1.2 Abstracting physical resources">1.2 Abstracting physical resources</a></li><li><a href="#13-User-mode-kernel-mode-and-system-calls" title="1.3 User mode, kernel mode, and system calls">1.3 User mode, kernel mode, and system calls</a></li><li><a href="#14-Kernel-organization" title="1.4 Kernel organization">1.4 Kernel organization</a></li><li><a href="#15-Process-overview" title="1.5 Process overview">1.5 Process overview</a></li><li><a href="#16-Code-the-first-address-space" title="1.6 Code: the first address space">1.6 Code: the first address space</a></li><li><a href="#17-Code-creating-the-first-process0" title="1.7 Code: creating the first process">1.7 Code: creating the first process</a></li><li><a href="#18-Code-Running-the-first-process" title="1.8 Code: Running the first process">1.8 Code: Running the first process</a></li><li><a href="#19-The-first-system-call-exec" title="1.9 The first system call: exec">1.9 The first system call: exec</a></li><li><a href="#110-Real-world" title="1.10 Real world">1.10 Real world</a></li></ul></li></ul></li><li class=""><a href="#項目三" title="項目三">項目三</a><ul class="nav"><li class=""><a href="#Chapter-5-Scheduling" title="Chapter 5 Scheduling">Chapter 5 Scheduling</a><ul class="nav"><li><a href="#51-前言" title="5.1 前言">5.1 前言</a></li><li><a href="#52-Multiplexing0" title="5.2 Multiplexing">5.2 Multiplexing</a></li><li class=""><a href="#53-Code-Context-switching" title="5.3 Code: Context switching">5.3 Code: Context switching</a></li><li><a href="#54-Code-Scheduling" title="5.4 Code: Scheduling">5.4 Code: Scheduling</a></li><li><a href="#55-Code-mycpu-and-myproc" title="5.5 Code: mycpu and myproc">5.5 Code: mycpu and myproc</a></li><li><a href="#56-Sleep-and-wakeup" title="5.6 Sleep and wakeup">5.6 Sleep and wakeup</a></li><li><a href="#57-Code-Sleep-and-wakeup" title="5.7 Code: Sleep and wakeup">5.7 Code: Sleep and wakeup</a></li><li><a href="#58-Code-Pipes" title="5.8 Code: Pipes">5.8 Code: Pipes</a></li><li><a href="#59-Code-Wait-exit-and-kill" title="5.9 Code: Wait, exit, and kill">5.9 Code: Wait, exit, and kill</a></li><li><a href="#510-Real-world" title="5.10 Real world">5.10 Real world</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+        <div class="toc"><ul class="nav"><li><a href="#項目一0" title="項目一">項目一</a></li><li><a href="#項目二0" title="項目二">項目二</a><ul class="nav"><li><a href="#Chapter-0-Operating-system-interfaces" title="Chapter 0 Operating system interfaces">Chapter 0 Operating system interfaces</a><ul class="nav"><li><a href="#01-前言" title="0.1 前言">0.1 前言</a></li><li><a href="#02-Process-and-Memory" title="0.2 Process and Memory">0.2 Process and Memory</a></li><li><a href="#03-IO-and-File-descriptors" title="0.3 I/O and File descriptors">0.3 I/O and File descriptors</a></li><li><a href="#04-Pipes" title="0.4 Pipes">0.4 Pipes</a></li><li><a href="#05-File-System" title="0.5 File System">0.5 File System</a></li><li><a href="#06-Real-World" title="0.6 Real World">0.6 Real World</a></li></ul></li><li><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#11-前言" title="1.1 前言">1.1 前言</a></li><li><a href="#12-Abstracting-physical-resources" title="1.2 Abstracting physical resources">1.2 Abstracting physical resources</a></li><li><a href="#13-User-mode-kernel-mode-and-system-calls" title="1.3 User mode, kernel mode, and system calls">1.3 User mode, kernel mode, and system calls</a></li><li><a href="#14-Kernel-organization" title="1.4 Kernel organization">1.4 Kernel organization</a></li><li><a href="#15-Process-overview" title="1.5 Process overview">1.5 Process overview</a></li><li><a href="#16-Code-the-first-address-space" title="1.6 Code: the first address space">1.6 Code: the first address space</a></li><li><a href="#17-Code-creating-the-first-process0" title="1.7 Code: creating the first process">1.7 Code: creating the first process</a></li><li><a href="#18-Code-Running-the-first-process" title="1.8 Code: Running the first process">1.8 Code: Running the first process</a></li><li><a href="#19-The-first-system-call-exec" title="1.9 The first system call: exec">1.9 The first system call: exec</a></li><li><a href="#110-Real-world" title="1.10 Real world">1.10 Real world</a></li></ul></li></ul></li><li class=""><a href="#項目三" title="項目三">項目三</a><ul class="nav"><li class=""><a href="#Chapter-5-Scheduling" title="Chapter 5 Scheduling">Chapter 5 Scheduling</a><ul class="nav"><li><a href="#51-前言" title="5.1 前言">5.1 前言</a></li><li><a href="#52-Multiplexing0" title="5.2 Multiplexing">5.2 Multiplexing</a></li><li><a href="#53-Code-Context-switching" title="5.3 Code: Context switching">5.3 Code: Context switching</a></li><li><a href="#54-Code-Scheduling" title="5.4 Code: Scheduling">5.4 Code: Scheduling</a></li><li><a href="#55-Code-mycpu-and-myproc" title="5.5 Code: mycpu and myproc">5.5 Code: mycpu and myproc</a></li><li><a href="#56-Sleep-and-wakeup" title="5.6 Sleep and wakeup">5.6 Sleep and wakeup</a></li><li><a href="#57-Code-Sleep-and-wakeup" title="5.7 Code: Sleep and wakeup">5.7 Code: Sleep and wakeup</a></li><li class=""><a href="#58-Code-Pipes" title="5.8 Code: Pipes">5.8 Code: Pipes</a></li><li><a href="#59-Code-Wait-exit-and-kill" title="5.9 Code: Wait, exit, and kill">5.9 Code: Wait, exit, and kill</a></li><li><a href="#510-Real-world" title="5.10 Real world">5.10 Real world</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
