@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
     <title>
-        項目一 - HackMD
+        B10515030_林弘翔
     </title>
     <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
     <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="項目一"><a class="anchor hidden-xs" href="#項目一" title="項目一"><span class="octicon octicon-link"></span></a>項目一</h1><p><img src="https://i.imgur.com/E7ldSzO.jpg" alt=""></p><p>藉由br 0x7c00讓程式在運行到0x7c00中斷再利用info reg顯示暫存器的值，如圖顯示，第一行是暫存器的名稱，第二行為16進制的值，第三行為10進制的值，在0x7c00這個中斷點，暫存器ax的值為0xaa55(HEX)=43605(DEC)，cx:0x0(HEX)=0(DEC)，bx:0x0(HEX)=0(DEC)。</p><hr><h1 id="項目二"><a class="anchor hidden-xs" href="#項目二" title="項目二"><span class="octicon octicon-link"></span></a>項目二</h1><h2 id="CH0-Operating-System-Interfaces"><a class="anchor hidden-xs" href="#CH0-Operating-System-Interfaces" title="CH0-Operating-System-Interfaces"><span class="octicon octicon-link"></span></a><strong>CH0 Operating System Interfaces</strong></h2><p><img src="https://i.imgur.com/F1BkS37.jpg" alt=""><br>
+<div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="項目一"><a class="anchor hidden-xs" href="#項目一" title="項目一"><span class="octicon octicon-link"></span></a>項目一</h1><p><img src="https://i.imgur.com/E7ldSzO.jpg" alt=""></p><p>藉由br 0x7c00讓程式在運行到0x7c00中斷再利用info reg顯示暫存器的值，如圖顯示，第一行是暫存器的名稱，第二行為16進制的值，第三行為10進制的值，在0x7c00這個中斷點，暫存器ax的值為0xaa55(HEX)=43605(DEC)，cx:0x0(HEX)=0(DEC)，bx:0x0(HEX)=0(DEC)。</p><hr><h1 id="項目二"><a class="anchor hidden-xs" href="#項目二" title="項目二"><span class="octicon octicon-link"></span></a>項目二</h1><h2 id="CH0-Operating-System-Interfaces"><a class="anchor hidden-xs" href="#CH0-Operating-System-Interfaces" title="CH0-Operating-System-Interfaces"><span class="octicon octicon-link"></span></a><strong>CH0 Operating System Interfaces</strong></h2><p><img src="https://i.imgur.com/F1BkS37.jpg" alt=""><br>
 <img src="https://i.imgur.com/wEOI2cU.jpg" alt=""><br>
 <img src="https://i.imgur.com/wk9dTj1.jpg" alt=""><br>
 <img src="https://i.imgur.com/qYXfSkF.jpg" alt=""><br>
@@ -553,6 +553,202 @@ lk−<span class="token operator">&gt;</span>cpu <span class="token operator">=<
   <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </div></div></code></pre><div dir="ltr" class="resize-sensor" style="position: absolute; left: -10px; top: -10px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><p><strong>107 NTUST OS HW1</strong></p><hr><p>項目一 :<br>
+<img src="https://i.imgur.com/Lpzb1K0.jpg" alt=""></p><p>暫存器<br>
+ax = 43605<br>
+bx = 0<br>
+cx = 0</p><p>stack 上面的值是 0x7c00</p><p>當x86 PC 啟動時，會執行BIOS程序，BIOS做好硬體的準備並將控制權交給OS。<br>
+BIOS會把控制權交給boot sector加載的code。Boot sector包含boot loader : instruction that load kernel into memory。<br>
+BIOS會將boot sector load到memory address 0x7c00處，並jump到該地址。</p><hr><p>項目二 :</p><blockquote>
+<p>Ch0</p>
+</blockquote><p>OS的工作有四個<br>
+1.將資源在多個program間共享，並提供比hardware更有用的服務<br>
+2.管理並抽象底層硬體<br>
+3.在多個program間共享硬體，使program同時運行(至少看起來像)<br>
+4.提供一種受控的交互方式，使program間可以共享數據、共同工作</p><p>OS透過interface提供服務，讓interface的設計依賴於少量的mechanism，通過這些mechanism的組合提供強大、通用的功能。</p><p>xv6使用kernel概念 - 一個向其他運行中program提供服務的特殊program。<br>
+每個運行中的program(稱作process)都擁有包含instrustions、data、stack的記憶體。</p><p>Process透過system call使用kernel服務。System call會進入kernel執行服務然後返回，所以process總是在user space和kernel space間交替運行。</p><p>kernel使用CPU的硬體保護機制來保證user的process只能access自己的記憶體。</p><blockquote>
+<p>Ch1</p>
+</blockquote><p>當PC開機時，會初始化自己並載入boot loader到memory並運行。<br>
+bootloader把xv6 kernel從disk中載入並從entry(1040)開始運行。<br>
+entry的code設置了page table，將0x80000000(KERNBASE)開始的虛擬地址map到物理地址0x0處。<br>
+Entry 512將虛擬地址KERNBASE:KERNBASE+0x400000 map到物理地址0:0x400000。這個mapping限制了kernel的指令+代碼必須再4mb以內。<br>
+entry會將entrypgdir的物理地址載入到暫存器 %cr3中。entrypgdir指向記憶體的高地址處，但我們可以用V2P_WO減掉KERNBASE就可以找到物理地址。<br>
+為了讓paging hardware運作，xv6會將flag CR0_PG設置在控制暫存器 %cr0中。<br>
+然後entry會跳轉到kernel的C code，並在memory的高地址中執行。<br>
+將stack pointer %esp指向被用作stack的一段memory(1054)之後，entry會jump到高地址的main代碼中。必須要使用indirect jump才不會造成PC-relative direct jump，而運行了在memory低地址處的main。</p><p>通過 userinit(1239)建立第一個process。<br>
+userinit先呼叫了 allocproc。allocproc會在page table中分配一個slot並初始化process state。<br>
+當allocproc在proc的表中找到標記為UNUSED的slot時，會將其狀態設置為EMBRYO，使其被標記為被使用的，並給予該process一個獨有的pid。接下來，會為了process的kernel thread分配kernel stack，如果失敗了，allocproc會將該slot的狀態恢復為UNUSED並return 0以標記失敗。<br>
+第一個process會先運行一個program(initcode.S)。<br>
+第一個process 的memory中的初始內容是由initcode.S編譯得到的，在build的過程中會產生兩個符號: _binary_initcode_start 和 _binary_initcode_size。userinit呼叫inituv，分配一頁物理記憶體，將虛擬地址0 map到那一段記憶體，並將code複製到那一頁中。<br>
+一旦process初始化完畢，userinit將 p-&gt;state設置為RUNNABLE。</p><p>在main呼叫userinit後，mpmain會呼叫scheduler進行process。<br>
+scheduler會找到一個 p-&gt;state為RUNNABLE 的process，並用 switchuvm使硬體使用目標process的page taable。<br>
+scheduler會將p-&gt;state改為RUNNING，呼叫swtch，保存當前的暫存器，並把目標thread的暫存器載入到x86的硬體暫存器。</p><p>initcode.S剛開始會將<span class="mathjax"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>a</mi><mi>r</mi><mi>g</mi><mi>v</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#x3001;</mo></mrow></math>" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 3.289em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.804em; height: 0px; font-size: 116%;"><span style="position: absolute; clip: rect(1.404em, 1002.8em, 2.751em, -999.997em); top: -2.368em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: MathJax_Math-italic;">a</span><span class="mi" id="MathJax-Span-4" style="font-family: MathJax_Math-italic;">r</span><span class="mi" id="MathJax-Span-5" style="font-family: MathJax_Math-italic;">g<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mi" id="MathJax-Span-6" style="font-family: MathJax_Math-italic;">v</span><span class="texatom" id="MathJax-Span-7"><span class="mrow" id="MathJax-Span-8"><span class="mo" id="MathJax-Span-9"><span style="font-family: STIXGeneral, &quot;Arial Unicode MS&quot;, serif; font-size: 86%; font-style: normal; font-weight: normal;">、</span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.373em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.309em; border-left: 0px solid; width: 0px; height: 1.316em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mi>r</mi><mi>g</mi><mi>v</mi><mrow class="MJX-TeXAtom-ORD"><mo>、</mo></mrow></math></span></span><script type="math/tex" id="MathJax-Element-1">argv、</script></span>init、$0三個值push進stack中，然後把 %eax設置為SYS_exec並執行int T_SYSCALL。</p><hr><p>項目三 :<br>
+<img src="https://i.imgur.com/r0vAknU.png" alt=""></p><p>Page table用二維陣列儲存。<br>
+Virtual address 的高10位用來找到page directory，接下來的10位用來選出該page table的PTE。<br>
+Physical address 的高20位是對應PTE的PPN。Virtual address的低12位是offset，page table hardware會原樣複製到Physical address的低12位。</p><p>flags in PTE in <strong>mmu.h</strong></p><pre><code>// Page table/directory entry flags.
+#define PTE_P 0x001 // Present
+#define PTE_W 0x002 // Writeable
+#define PTE_U 0x004 // User
+#define PTE_PWT 0x008 // Write−Through
+#define PTE_PCD 0x010 // Cache−Disable
+#define PTE_A 0x020 // Accessed
+#define PTE_D 0x040 // Dirty
+#define PTE_PS 0x080 // Page Size
+#define PTE_MBZ 0x180 // Bits must be zero
+</code></pre><p>Address Space Layout in <strong>memlayout.h</strong></p><pre><code>// Memory layout
+
+#define EXTMEM 0x100000 // Start of extended memory
+#define PHYSTOP 0xE000000 // Top physical memory
+#define DEVSPACE 0xFE000000 // Other devices are at high addresses
+
+// Key addresses for address space layout (see kmap in vm.c for layout)
+#define KERNBASE 0x80000000 // First kernel virtual address
+#define KERNLINK (KERNBASE+EXTMEM) // Address where kernel is linked
+</code></pre><p><img src="https://i.imgur.com/qSFYHQk.png" alt=""></p><p>Process最多只能用2GB，因為超過KERNBASE(0x80000000)的都是kernel space的範圍，0~KERNBASE則是 user space。</p><p>Create an address table<br>
+<img src="https://i.imgur.com/TCRb9cB.jpg" alt=""></p><p>首先<strong>main</strong> call <strong>kvmalloc</strong> 創建一個map到KERNBASE以上的page table</p><pre><code>// Allocate one page table for the machine for the kernel address
+// space for scheduler processes.
+void
+kvmalloc(void)
+{
+ kpgdir = setupkvm();
+ switchkvm();
+}
+</code></pre><p>大多數工作由 <strong>setupkvm</strong>完成，先用 <strong>kalloc</strong> allocate a page來放置page directory，再呼叫 <strong>mappages</strong>來建立kernel所要的mapping，這些mapping可以在 <strong>kmap</strong>找到。</p><pre><code>// This table defines the kernel’s mappings, which are present in
+// every process’s page table.
+static struct kmap {
+ void *virt;
+ uint phys_start;
+ uint phys_end;
+ int perm;
+} kmap[] = {
+ { (void*)KERNBASE, 0, EXTMEM, PTE_W}, // I/O space
+ { (void*)KERNLINK, V2P(KERNLINK), V2P(data), 0}, // kern text+rodata
+ { (void*)data, V2P(data), PHYSTOP, PTE_W}, // kern data+memory
+ { (void*)DEVSPACE, DEVSPACE, 0, PTE_W}, // more devices
+};
+// Set up kernel part of a page table.
+pde_t*
+setupkvm(void)
+{
+ pde_t *pgdir;
+ struct kmap *k;
+ if((pgdir = (pde_t*)kalloc()) == 0)
+ return 0;
+ memset(pgdir, 0, PGSIZE);
+ if (P2V(PHYSTOP) &gt; (void*)DEVSPACE)
+ panic("PHYSTOP too high");
+ for(k = kmap; k &lt; &amp;kmap[NELEM(kmap)]; k++)
+ if(mappages(pgdir, k−&gt;virt, k−&gt;phys_end − k−&gt;phys_start,
+ (uint)k−&gt;phys_start, k−&gt;perm) &lt; 0) {
+ freevm(pgdir);
+ return 0;
+ }
+ return pgdir;
+}
+</code></pre><p>之後 <strong>mappages</strong> 呼叫 <strong>walkpgdir</strong> walk through all PTEs。<br>
+<strong>walkpgdir</strong> 用高10位的bits來找到page directory entry，再用接下來的10位來找到page table中的PTE地址。</p><p>Physical Memory Allocation</p><p><img src="https://i.imgur.com/jiMtso8.jpg" alt=""></p><p><strong>main</strong> 先呼叫了 <strong>kinit1</strong> 和 <strong>kinit2</strong> (in <strong>kalloc.c</strong>)對allocator初始化，<strong>kinit1</strong>在前4MB進行不需要鎖的記憶體分配，<strong>kinit2</strong>允許鎖的使用，使更多內存可用於allocate。</p><pre><code>void
+ kinit1(void *vstart, void *vend)
+ {
+ initlock(&amp;kmem.lock, "kmem");
+ kmem.use_lock = 0;
+ freerange(vstart, vend);
+ }
+
+ void
+ kinit2(void *vstart, void *vend)
+ {
+ freerange(vstart, vend);
+ kmem.use_lock = 1;
+ }
+</code></pre><p><strong>kinit1</strong> 和 <strong>kinit2</strong> 呼叫 <strong>freerange</strong> to spilt memory to pages.</p><pre><code>void
+freerange(void *vstart, void *vend)
+{
+  char *p;
+  p = (char*)PGROUNDUP((uint)vstart);
+  for(; p + PGSIZE &lt;= (char*)vend; p += PGSIZE)
+    kfree(p);
+}
+</code></pre><p><strong>freerange</strong> 最後呼叫了 <strong>kfree</strong>加入空閒的pages到linked list裡。</p><pre><code>// Free the page of physical memory pointed at by v,
+// which normally should have been returned by a
+// call to kalloc().  (The exception is when
+// initializing the allocator; see kinit above.)
+void
+kfree(char *v)
+{
+  struct run *r;
+
+  if((uint)v % PGSIZE || v &lt; end || V2P(v) &gt;= PHYSTOP)
+    panic("kfree");
+
+  // Fill with junk to catch dangling refs.
+  memset(v, 1, PGSIZE);
+
+  if(kmem.use_lock)
+    acquire(&amp;kmem.lock);
+  r = (struct run*)v;
+  r-&gt;next = kmem.freelist;
+  kmem.freelist = r;
+  if(kmem.use_lock)
+    release(&amp;kmem.lock);
+}
+</code></pre><p><strong>kfree</strong>中的struct <strong>run</strong>，裡面只包含了下一個 <strong>run</strong>的pointer。</p><pre><code>struct run {
+  struct run *next;
+};
+</code></pre><p>Code : <strong>exec</strong></p><p><img src="https://i.imgur.com/EOOQO0t.jpg" alt=""></p><p><strong>exec</strong>首先檢查文件是否包含ELF二進制代碼，再通過 <strong>allocuvm</strong>為每個ELF segment分配記憶體。</p><pre><code>// Allocate page tables and physical memory to grow process from oldsz to
+// newsz, which need not be page aligned.  Returns new size or 0 on error.
+int
+allocuvm(pde_t *pgdir, uint oldsz, uint newsz)
+{
+  char *mem;
+  uint a;
+
+  if(newsz &gt;= KERNBASE)
+    return 0;
+  if(newsz &lt; oldsz)
+    return oldsz;
+
+  a = PGROUNDUP(oldsz);
+  for(; a &lt; newsz; a += PGSIZE){
+    mem = kalloc();
+    if(mem == 0){
+      cprintf("allocuvm out of memory\n");
+      deallocuvm(pgdir, newsz, oldsz);
+      return 0;
+    }
+    memset(mem, 0, PGSIZE);
+    if(mappages(pgdir, (char*)a, PGSIZE, V2P(mem), PTE_W|PTE_U) &lt; 0){
+      cprintf("allocuvm out of memory (2)\n");
+      deallocuvm(pgdir, newsz, oldsz);
+      kfree(mem);
+      return 0;
+    }
+  }
+  return newsz;
+}
+</code></pre><p>然後用 <strong>loaduvm</strong>把每個segment載入到記憶體中，並通過 <strong>walkpgdir</strong>來找到physical address。</p><pre><code>// Load a program segment into pgdir.  addr must be page-aligned
+// and the pages from addr to addr+sz must already be mapped.
+int
+loaduvm(pde_t *pgdir, char *addr, struct inode *ip, uint offset, uint sz)
+{
+  uint i, pa, n;
+  pte_t *pte;
+
+  if((uint) addr % PGSIZE != 0)
+    panic("loaduvm: addr must be page aligned");
+  for(i = 0; i &lt; sz; i += PGSIZE){
+    if((pte = walkpgdir(pgdir, addr+i, 0)) == 0)
+      panic("loaduvm: address should exist");
+    pa = PTE_ADDR(*pte);
+    if(sz - i &lt; PGSIZE)
+      n = sz - i;
+    else
+      n = PGSIZE;
+    if(readi(ip, P2V(pa), offset+i, n) != n)
+      return -1;
+  }
+  return 0;
+}
+</code></pre><hr><p>finish</p><div dir="ltr" class="resize-sensor" style="position: absolute; left: -10px; top: -10px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div>
     <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
         <div class="pull-right dropdown">
             <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
@@ -560,11 +756,13 @@ lk−<span class="token operator">&gt;</span>cpu <span class="token operator">=<
             </a>
             <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
                 <div class="toc expand"><ul class="nav"><li class=""><a href="#項目一" title="項目一">項目一</a></li><li class=""><a href="#項目二" title="項目二">項目二</a><ul class="nav"><li class=""><a href="#CH0-Operating-System-Interfaces" title="CH0 Operating System Interfaces">CH0 Operating System Interfaces</a><ul class="nav"><li class=""><a href="#File-system" title="File system">File system</a></li></ul></li><li><a href="#CH1-Operating-System-Organization" title="CH1 Operating System Organization">CH1 Operating System Organization</a></li></ul></li><li class=""><a href="#項目三" title="項目三">項目三</a><ul class="nav"><li class=""><a href="#CH2-Page-Tables" title="CH2 Page Tables">CH2 Page Tables</a><ul class="nav"><li><a href="#結構" title="結構">結構</a></li><li class=""><a href="#Create-an-address-space" title="Create an address space">Create an address space</a></li><li class=""><a href="#Physical-memory-allocator" title="Physical memory allocator">Physical memory allocator</a></li></ul></li><li class=""><a href="#sbrk0" title="sbrk">sbrk</a><ul class="nav"><li class=""><a href="#程式碼0" title="程式碼">程式碼</a></li></ul></li><li class=""><a href="#exec" title="exec">exec</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Collapse all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+                <div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
             </ul>
         </div>
     </div>
     <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
         <div class="toc expand"><ul class="nav"><li class=""><a href="#項目一" title="項目一">項目一</a></li><li class=""><a href="#項目二" title="項目二">項目二</a><ul class="nav"><li class=""><a href="#CH0-Operating-System-Interfaces" title="CH0 Operating System Interfaces">CH0 Operating System Interfaces</a><ul class="nav"><li class=""><a href="#File-system" title="File system">File system</a></li></ul></li><li><a href="#CH1-Operating-System-Organization" title="CH1 Operating System Organization">CH1 Operating System Organization</a></li></ul></li><li class=""><a href="#項目三" title="項目三">項目三</a><ul class="nav"><li class=""><a href="#CH2-Page-Tables" title="CH2 Page Tables">CH2 Page Tables</a><ul class="nav"><li><a href="#結構" title="結構">結構</a></li><li class=""><a href="#Create-an-address-space" title="Create an address space">Create an address space</a></li><li class=""><a href="#Physical-memory-allocator" title="Physical memory allocator">Physical memory allocator</a></li></ul></li><li class=""><a href="#sbrk0" title="sbrk">sbrk</a><ul class="nav"><li class=""><a href="#程式碼0" title="程式碼">程式碼</a></li></ul></li><li class=""><a href="#exec" title="exec">exec</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+        <div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>

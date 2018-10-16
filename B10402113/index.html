@@ -1,1 +1,1384 @@
-homework not found!!
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        作業系統作業一 - 項目一 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="作業系統作業一---項目一"><a class="anchor hidden-xs" href="#作業系統作業一---項目一" title="作業系統作業一---項目一"><span class="octicon octicon-link"></span></a>作業系統作業一 - 項目一</h1><h3 id="B10402113-四電子四乙-鄭和軒"><a class="anchor hidden-xs" href="#B10402113-四電子四乙-鄭和軒" title="B10402113-四電子四乙-鄭和軒"><span class="octicon octicon-link"></span></a><strong>B10402113 四電子四乙 鄭和軒</strong></h3><p>目標：紀錄 kernel 執行到 0x7c00 當下暫存器與Stack 上面的值</p><h2 id="操作流程"><a class="anchor hidden-xs" href="#操作流程" title="操作流程"><span class="octicon octicon-link"></span></a>操作流程</h2><h3 id="一、開啟qemu---gdb"><a class="anchor hidden-xs" href="#一、開啟qemu---gdb" title="一、開啟qemu---gdb"><span class="octicon octicon-link"></span></a>一、開啟qemu - gdb</h3><ul>
+<li>指令： make qemu-gdb<br>
+<img src="https://i.imgur.com/VU2I2S1.png" alt=""></li>
+</ul><h3 id="二、開啟另一個終端remote進去"><a class="anchor hidden-xs" href="#二、開啟另一個終端remote進去" title="二、開啟另一個終端remote進去"><span class="octicon octicon-link"></span></a>二、開啟另一個終端remote進去</h3><ul>
+<li>指令：
+<ul>
+<li>gdb</li>
+<li>target remote localhost:26000</li>
+<li><img src="https://i.imgur.com/O5DuIxl.jpg" alt=""></li>
+</ul>
+</li>
+</ul><h3 id="三、設定斷點位址與執行"><a class="anchor hidden-xs" href="#三、設定斷點位址與執行" title="三、設定斷點位址與執行"><span class="octicon octicon-link"></span></a>三、設定斷點位址與執行</h3><ul>
+<li>指令：
+<ul>
+<li>br *0x7c00   &gt;&gt;設定斷點至0x7c00</li>
+<li>c (continue) &gt;&gt;讓程式開始執行<br>
+<img src="https://i.imgur.com/LJSZPqK.jpg" alt=""></li>
+</ul>
+</li>
+</ul><h3 id="四、紀錄暫存器的值"><a class="anchor hidden-xs" href="#四、紀錄暫存器的值" title="四、紀錄暫存器的值"><span class="octicon octicon-link"></span></a>四、紀錄暫存器的值</h3><ul>
+<li>指令：
+<ul>
+<li>info reg<br>
+<img src="https://i.imgur.com/q63UgS2.jpg" alt=""></li>
+</ul>
+</li>
+</ul><h1 id="作業系統作業一---項目二"><a class="anchor hidden-xs" href="#作業系統作業一---項目二" title="作業系統作業一---項目二"><span class="octicon octicon-link"></span></a>作業系統作業一 - 項目二</h1><p>目標：<br>
+零、一章節 運作原理、基本流程介紹</p><h2 id="Chapter-0"><a class="anchor hidden-xs" href="#Chapter-0" title="Chapter-0"><span class="octicon octicon-link"></span></a>Chapter 0</h2><h3 id="Operating-system-interfaces"><a class="anchor hidden-xs" href="#Operating-system-interfaces" title="Operating-system-interfaces"><span class="octicon octicon-link"></span></a>Operating system interfaces</h3><h4 id="本節重點："><a class="anchor hidden-xs" href="#本節重點：" title="本節重點："><span class="octicon octicon-link"></span></a>本節重點：</h4><ul>
+<li>作業系統提供使用者一個可以運行程式的介面，管理且虛擬化低層的硬體元件。</li>
+<li>xv6是提供Unix作業系统中的基本介面，也模仿了Unix的內部設計。</li>
+<li><strong>kernel</strong> - 核心，用來控制硬體，提供服務來執行程式</li>
+<li><strong>process</strong> -  每個程式執行時的過程，包含著data , stack,instructions 的內存空間。
+<ul>
+<li><strong>instructions</strong> - 執行程式的運算</li>
+<li><strong>data</strong> - 用於運算過程中的變量</li>
+<li><strong>stack</strong> - 管理程式的過程與調用</li>
+</ul>
+</li>
+</ul><p>當一個行程需要調用到系統函數時，它會在作業系統的介面中呼叫系統函數（System call），system call再進入kernal並運行服務再回傳。所以process是在使用者空間和kernal的空間交替運行。<br>
+<img src="https://i.imgur.com/AaePO9X.png" alt=""><br>
+Kernal 使用了保護機制來規定每個process只能訪問自己的內存空間，kernal擁有實現保護機制的硬體權限（hardware privileges）而使用者的程式並沒有此權限。<br>
+以下是xv6中的kernal提供的system call<br>
+<img src="https://i.imgur.com/e5MexMt.png" alt=""></p><ul>
+<li><strong>Shell</strong>  - 主要的使用者介面，接受來自使用者的指令，並與kernal溝通。shell是一般的使用者程式，並不屬於kernal中的一部分，這也代表shell很容易被替換，因此，Unix擁有許多種不同的shell與各自的腳本與屬性。</li>
+</ul><h3 id="Processes-and-memory"><a class="anchor hidden-xs" href="#Processes-and-memory" title="Processes-and-memory"><span class="octicon octicon-link"></span></a>Processes and memory</h3><ul>
+<li><strong>Process(行程)</strong>：<br>
+xv6的process由兩部分組成：
+<ul>
+<li>user-space memory（Stack,data,instructions）</li>
+<li>僅有內核可見的process狀態</li>
+</ul>
+</li>
+</ul><p>xv6能夠time-share 行程，意思就是說，它可在 CPU 之間不斷切換，決定哪一個等待中的行程被执行，當一個行程沒有被執行時，將會被保存到暫存器中，直到他們再被執行時再恢復。kernal將每個process和一個 pid (process identifier) 關聯起来。</p><blockquote>
+<p>Pid: 行程識別元（英語：process identifier，又略稱為行程ID（英語：process ID）、PID）是大多數作業系統的內核用於唯一標識行程的一個數值。這一數值可以作為許多函式呼叫的參數，以使調整行程優先級、殺死行程之類的行程控制行為成為可能。 – 維基百科</p>
+</blockquote><ul>
+<li><strong>Fork</strong>: 是一個system call，讓行程呼叫出子行程，稱為<strong>child process</strong>，它的內存的內容與原行程（parent process）相同。
+<ul>
+<li>fork在父和子都會返回值</li>
+<li>fork函數在父行程return pid，在子行程return 0</li>
+</ul>
+</li>
+</ul><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code"><span class="token keyword">int</span> pid <span class="token operator">=</span> <span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//創建process</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>pid <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"parent: child=%d\n"</span><span class="token punctuation">,</span> pid<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//執行fork函式並返回子行程的pid </span>
+pid <span class="token operator">=</span> <span class="token function">wait</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 返回一個當前行程中已退出的子行程</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"child %d is done\n"</span><span class="token punctuation">,</span> pid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>pid <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"child: exiting\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"fork error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><p>輸出為：<br>
+1234為pid,並執行子行程的fork()</p><blockquote>
+<p>parent: child=1234</p>
+</blockquote><p>此時執行子行程的fork() , pid為0，執行exit()</p><blockquote>
+<p>child: exiting</p>
+</blockquote><p>由於exit()被執行，子行程退出，wait()函式執行完畢並輸出下一行。</p><blockquote>
+<p>parent: child 1234 is done</p>
+</blockquote><p>由上面程式碼可知，改變一個行程的變量並不會影響另一個行程。</p><ul>
+<li>系統調用exec
+<ul>
+<li>需要兩個參數：可執行的文件名、字符串的陣列</li>
+<li>執行成功後並不會返回到原來的程式，而是執行文件中加載的指令。</li>
+</ul>
+</li>
+</ul><p>以下是exec的範例程式，這段程式將調用程式更改為/bin/echo，echo hello 為/bin/echo的參數：</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span></div><div class="code"><span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+argv<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"echo"</span><span class="token punctuation">;</span>
+argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"hello"</span><span class="token punctuation">;</span>
+argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">"/bin/echo"</span><span class="token punctuation">,</span> argv<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"exec error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</div></div></code></pre><p>xv6的shell使用以上的system call來執行程式，以下是shell中的main的運作流程（參考第8700~8728行）<br>
+<img src="https://i.imgur.com/RfFO2IJ.png" alt=""></p><h3 id="IO-and-File-descriptors"><a class="anchor hidden-xs" href="#IO-and-File-descriptors" title="IO-and-File-descriptors"><span class="octicon octicon-link"></span></a>I/O and File descriptors</h3><ul>
+<li>file descriptor（文件描述符）
+<ul>
+<li>是一個整數</li>
+<li>代表被kernal管理且可以被讀寫的物件</li>
+<li>我們常把這個物件叫做文件（file)</li>
+</ul>
+</li>
+</ul><p>xv6 中，每個process都有一張對應的表，kernal會根據file descriptor來當作這張表的索引，0為input，1為輸出2為輸出錯誤，由下列程式碼可知，shell 保證在任何時候都有3個打開的文件描述符</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code"><span class="token number">8706</span> <span class="token comment">// Ensure that three file descriptors are open.</span>
+<span class="token number">8707</span> <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>fd <span class="token operator">=</span> <span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"console"</span><span class="token punctuation">,</span> O_RDWR<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">8708</span> <span class="token keyword">if</span><span class="token punctuation">(</span>fd <span class="token operator">&gt;=</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">8709</span> <span class="token function">close</span><span class="token punctuation">(</span>fd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">8710</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token number">8711</span> <span class="token punctuation">}</span>
+<span class="token number">8712</span> <span class="token punctuation">}</span>
+</div></div></code></pre><ul>
+<li>Read and Write<br>
+read 和 write會從文件描述符所指的文件中讀或者寫 n 個字節。</li>
+</ul><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span></div><div class="code"><span class="token function">read</span><span class="token punctuation">(</span>fd<span class="token punctuation">,</span> buf<span class="token punctuation">,</span> n<span class="token punctuation">)</span>
+<span class="token comment">//從fd中至多讀出n個字節，再拷貝到buf中，返回讀出的字符數量。</span>
+<span class="token comment">//當没有資料可讀時，read 就會返回0，這就表示文件结束了。</span>
+</div></div></code></pre><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span></div><div class="code"><span class="token function">write</span><span class="token punctuation">(</span>fd<span class="token punctuation">,</span> buf<span class="token punctuation">,</span> n<span class="token punctuation">)</span>
+<span class="token comment">//寫入buf中的n個字節到fd中， 並且返回實際寫出的字節數量。</span>
+</div></div></code></pre><p>以下這段程式碼，類似實現<strong>cat</strong>的功能，將資料從輸入複製到輸出，若遇到了錯誤則會在標準輸出中印出錯誤訊息。</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span></div><div class="code"><span class="token keyword">char</span> buf<span class="token punctuation">[</span><span class="token number">512</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> n<span class="token punctuation">;</span>
+
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    n <span class="token operator">=</span> <span class="token function">read</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> buf<span class="token punctuation">,</span> <span class="token keyword">sizeof</span> buf<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//0為標準輸入</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">fprintf</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"read error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> buf<span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token operator">!=</span> n<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//1為標準輸出</span>
+        <span class="token function">fprintf</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"write error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><ul>
+<li>Close<br>
+這個system call釋放了file descripter的空間，讓他可以被open , pipe , dup等調用。</li>
+<li>Cat<br>
+透過fork和file descripter的交互使用，我們就可以重新定址I/O<br>
+下面是一個簡化版的shell執行 cat&lt;input.txt  的代碼</li>
+</ul><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span></div><div class="code"><span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+argv<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"cat"</span><span class="token punctuation">;</span>
+### argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//進入子行程</span>
+    <span class="token function">close</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//關閉fd 0</span>
+    <span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"input.txt"</span><span class="token punctuation">,</span> O_RDONLY<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//使用0作為新打開的文件</span>
+    <span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">"cat"</span><span class="token punctuation">,</span> argv<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//cat在標準輸入中執行</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><ul>
+<li>dup<br>
+dup這個指令是複製出一個已有的描述符，返回一個指向同一個輸入/輸出的新物件描述符，他會共享一個文件的偏移量（offset）</li>
+</ul><h3 id="Pipes"><a class="anchor hidden-xs" href="#Pipes" title="Pipes"><span class="octicon octicon-link"></span></a>Pipes</h3><p>pipes是一個小型的kernal緩衝區，以一對的文件描述符來提供給process使用，一個用於寫操作，一個用於讀取操作，pipes提供了一種process之間交互溝通的方式。</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span></div><div class="code"><span class="token keyword">int</span> p<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//1代表讀端口 2代表寫端口</span>
+<span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+argv<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"wc"</span><span class="token punctuation">;</span>
+argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token function">pipe</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//創造一個pipe</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">fork</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//進入子行程</span>
+<span class="token comment">//fork之後父行程和子行程都有了指向管道的文件描述符。</span>
+<span class="token function">close</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//子行程關閉了0這個描述符</span>
+<span class="token function">dup</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//子行程將管道的讀端口拷貝在描述符0上</span>
+<span class="token comment">//關閉 p 中的描述符</span>
+<span class="token function">close</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">close</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">"/bin/wc"</span><span class="token punctuation">,</span> argv<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//執行wc程式</span>
+<span class="token comment">//當wc從標準輸入讀取時，它實際上是從管道讀取的。</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+<span class="token comment">//父行程向管道的寫端口（１）寫入然後關閉它的兩個文件描述符。</span>
+<span class="token function">close</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">write</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"hello world\n"</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">close</span><span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><ul>
+<li>Pipes的好處：
+<ol>
+<li>管道會進行自我清掃，如果是shell重定向的話，我們必須要在任務完成後刪除/tmp/xyz</li>
+<li>管道可以傳輸任意長度的數據。</li>
+<li>管道允許同步：兩個行程可以使用一對管道來進行二者之間的信息傳遞，每一個讀操作都阻塞調用行程，直到另一個行程用write完成數據的發送。</li>
+</ol>
+</li>
+</ul><h3 id="File-system"><a class="anchor hidden-xs" href="#File-system" title="File-system"><span class="octicon octicon-link"></span></a>File system</h3><p>xv6擁有文件系統，包含文件與目錄，目錄是一種特殊文件root，像是一棵樹，例如:/a/b/c，c是b目錄裡的文件，b又是a目錄裡的文件。</p><ul>
+<li>通過<strong>chdir</strong>這個系統的調用指令，可以改變當前的目錄</li>
+</ul><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span></div><div class="code"><span class="token function">chdir</span><span class="token punctuation">(</span><span class="token string">"/a"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//將當前目錄切換到/a/b</span>
+<span class="token function">chdir</span><span class="token punctuation">(</span><span class="token string">"b"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//對當前目錄不做任何改變</span>
+<span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"c"</span><span class="token punctuation">,</span> O_RDONLY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"/a/b/c"</span><span class="token punctuation">,</span> O_RDONLY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</div></div></code></pre><ul>
+<li><strong>mkdir</strong>這個指令可以創建一個新的目錄</li>
+<li><strong>open</strong>加上O_CREATE標誌打開一個新的文件</li>
+<li><strong>mknod</strong>創建一個新的設備文件</li>
+</ul><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span></div><div class="code"><span class="token function">mkdir</span><span class="token punctuation">(</span><span class="token string">"/dir"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fd <span class="token operator">=</span> <span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"/dir/file"</span><span class="token punctuation">,</span> O_CREATE<span class="token operator">|</span>O_WRONLY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">close</span><span class="token punctuation">(</span>fd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">mknod</span><span class="token punctuation">(</span><span class="token string">"/console"</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</div></div></code></pre><ul>
+<li><strong>fstat</strong></li>
+<li>獲取一個文件描述符指向的文件的信息。</li>
+<li>int fstat(int fildes, struct stat *buf);</li>
+<li>fstat()用來將參數fildes所指的文件狀態,複製到參數buf所指的結構中(struct stat).<br>
+結構：</li>
+</ul><pre><code>#define T_DIR  1
+#define T_FILE 2
+#define T_DEV  3
+// Directory
+// File
+// Device
+     struct stat {
+       short type;  // 文件的型態
+       int dev;     // File system’s disk device
+       uint ino;    // Inode number
+       short nlink; // Number of links to file
+       uint size;   // Size of file in bytes
+};
+</code></pre><p>一個文件inode可能有許多不同的名字，稱為<strong>link</strong>(連結)，link這個指令可以創建另一個文件系統的名稱，指向同一個inode。<br>
+下面的代碼創建了一個既叫做a又叫做b的新文件。</p><pre><code>open("a", O_CREATE|O_WRONGLY);
+link("a", "b");
+</code></pre><p>讀寫a等同於讀寫b。在上面這段代碼中，我們可以通過fstat知道a和b都指向同樣的內容：a和b都會返回同樣的inode號碼（ino），並且nlink數會設置為2。</p><ul>
+<li>unlink<br>
+系統調用unlink從文件系統移除一個文件名。<br>
+一個文件的inode和磁盤空間只有當它的link數變為0的時候才會被清空，也就是沒有一個文件再指向它。因此在上面的代碼最後加上</li>
+</ul><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span></div><div class="code"><span class="token function">unlink</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span>
+</div></div></code></pre><p>我們依然可以用b來訪問它。<br>
+另外，我們可以透過unlink來創造一個臨時的inode，它會在關閉fd或退出時被清空。</p><pre><code class="=c hljs">fd = open(<span class="hljs-string">"/tmp/xyz"</span>, O_CREATE|O_RDWR);
+unlink(<span class="hljs-string">"/tmp/xyz"</span>);
+</code></pre><h2 id="Chapter-1-Operating-system-organization"><a class="anchor hidden-xs" href="#Chapter-1-Operating-system-organization" title="Chapter-1-Operating-system-organization"><span class="octicon octicon-link"></span></a>Chapter 1 Operating system organization</h2><p>作業系統需要支持同時多個程序運行，且每個程序運行時，若一個出現bug或異常，也不影響其他的程序，此稱為isolation，想要滿足isolation需要以下三個條件：multiplexing, isolation, 和interaction。<br>
+本章主要是介紹作業系統如何達到這三個條件。我們必須去trace當xv6開始運行後的第一個程式，我們得以一窺 xv6 提供的各個抽象概念是如何實現和互相運作的。</p><ul>
+<li>isolation</li>
+<li>time-share</li>
+<li>monolithic kernel</li>
+</ul><h3 id="Abstracting-physical-resources"><a class="anchor hidden-xs" href="#Abstracting-physical-resources" title="Abstracting-physical-resources"><span class="octicon octicon-link"></span></a>Abstracting physical resources</h3><p>為什麼我們需要抽象化實際的資源呢？因為如果每個程序都直接跟實際的硬體進行交互，每個程序都必須沒有bug，且知道什麼時候需要釋放佔有的資源，如此一來其他程序才可以運作，但這樣是非常麻煩的，因此我們需要抽象化物理的資源並提供特定服務，讓程序無法直接access硬體資源，而是透過系統提供的指令服務來操作，這樣作業系統也能管理硬碟。</p><h3 id="User-mode-kernel-mode-and-system-calls"><a class="anchor hidden-xs" href="#User-mode-kernel-mode-and-system-calls" title="User-mode-kernel-mode-and-system-calls"><span class="octicon octicon-link"></span></a>User mode, kernel mode, and system calls</h3><p>如果一個程式出錯，我們不希望作業系統因此而掛掉，作業系統應該清理此錯誤程式，並繼續運行，所以應用程式不應該有權限去修改系統的資料結構或指令。</p><p>為了避免一個使用者的程式修改其他使用者的程式甚至是系統核心，並且更進一步，讓作業系統可以壟斷所有的硬體資源，大部分的機器(或者 CPU)至少會有二個執行特權(privilege)：Kernel mode 與 User mode。</p><ul>
+<li>kernel mode
+<ul>
+<li>可以直接操縱所有的硬體</li>
+<li>可以存取所有的實體記憶體位址、處理鍵盤中斷</li>
+</ul>
+</li>
+<li>user mode
+<ul>
+<li>所有存取記憶體的行為都會有邊界檢查</li>
+</ul>
+</li>
+</ul><p>流程：</p><ol>
+<li>當電腦的應用程式要執行特殊指令時（read,write,exec…），是在user mode中運行處理器並不會直接運行此指令</li>
+<li>轉換到kernal mode</li>
+<li>kernal檢視此指令是否可以執行</li>
+<li>執行或拒絕</li>
+</ol><h3 id="Kernel-organization"><a class="anchor hidden-xs" href="#Kernel-organization" title="Kernel-organization"><span class="octicon octicon-link"></span></a>Kernel organization</h3><h4 id="整合式核心-Monolithic-kernel"><a class="anchor hidden-xs" href="#整合式核心-Monolithic-kernel" title="整合式核心-Monolithic-kernel"><span class="octicon octicon-link"></span></a>整合式核心 Monolithic kernel</h4><p>整合式核心、單體式核心，一種作業系統核心架構，此架構的特性是整個核心程式是一個單一二進位執行檔，在核心空間以監管者模式（Supervisor Mode）來執行。</p><h4 id="Microkernel"><a class="anchor hidden-xs" href="#Microkernel" title="Microkernel"><span class="octicon octicon-link"></span></a>Microkernel</h4><p>將OS kernel的眾多模組中，移除一些較非必要的模組，給予system library(software) or user program來製作提供，如此可得到具有較少模組數的kernel。故核心的架構相對簡單。</p><p>從下圖可知，當shell需要執行read或write指令時，它會透過kernal發訊息給file server，大部分的system service是在user mode執行，所以一旦service fail，亦不會對系統造成影響。<br>
+<img src="https://i.imgur.com/z2l18KB.png" alt=""></p><h3 id="Process-overview（行程）"><a class="anchor hidden-xs" href="#Process-overview（行程）" title="Process-overview（行程）"><span class="octicon octicon-link"></span></a>Process overview（行程）</h3><h4 id="process-abstraction"><a class="anchor hidden-xs" href="#process-abstraction" title="process-abstraction"><span class="octicon octicon-link"></span></a>process abstraction</h4><p>防止一個process去存取另一個process的memory，並且向程序提供“看起來”私有的，其他行程無法讀寫的內存系統（或地址空間），以及一顆“看上去”僅執行該程序的CPU。<br>
+Xv6使用page table來為每個process提供其獨有的地址空間。</p><p>頁表將虛擬地址（x86 指令所使用的地址）映射為物理地址。<br>
+<img src="https://i.imgur.com/0XDPs0X.png" alt=""></p><p>一區地址空間包含了從虛擬地址0開始的用戶內存。它的地址最低處放置process的指令，接下來則是全局變量，堆區，以及一個用戶可按需拓展的“堆”區（malloc 用）。<br>
+內核的指令和資料也會被行程映射到每個行程的地址空間中。當行程使用系統調用時，系統調用實際上會在行程地址空間中的<strong>內核區域</strong>執行。這種設計使得內核的系統調用程式可以直接指向用戶內存。為了給用戶留下足夠的內存空間，xv6 將內核映射到了地址空間的高地址處，即從 0x80100000 開始。0~0x80000000是用戶可以使用的地址</p><p>xv6 使用結構 struct proc 來維護一個行程的狀態，其中最為重要的狀態是進程的頁表，內核棧，當前運行狀態。我們接下來會用 p-&gt;xxx 來指代 proc 結構中的元素。</p><h4 id="Thread"><a class="anchor hidden-xs" href="#Thread" title="Thread"><span class="octicon octicon-link"></span></a>Thread</h4><p>執行緒（英語：thread）是作業系統能夠進行運算排程的最小單位。它被包含在行程之中，是行程中的實際運作單位。一條執行緒指的是行程中一個單一順序的控制流，一個行程中可以並行多個執行緒，每條執行緒並列執行不同的任務。</p><p>每個行程都有一個運行執行緒來執行行程的指令。執行緒可以被暫時停止，稍後再恢覆運行。</p><p>系統在行程之間切換實際上就是掛起當前運行的執行緒，恢覆另一個行程的執行緒。執行緒的大多數狀態（局部變量和函數調用的返回地址）都保存在線程的stack上。</p><h4 id="Stack"><a class="anchor hidden-xs" href="#Stack" title="Stack"><span class="octicon octicon-link"></span></a>Stack</h4><p>每個進程都有用戶堆和內核堆（p-&gt;kstack）。當行程運行用戶指令時，只有其用戶堆被使用，其內核堆則是空的。然而當行程（通過系統調用或中斷）進入內核時，內核代碼就在行程的內核堆中執行；<br>
+行程處於內核中時，其用戶堆仍然保存著數據，只是暫時處於不活躍狀態。進程的線程交替地使用著用戶堆和內核堆。要註意內核堆是用戶代碼無法使用的，這樣即使一個進程破壞了自己的用戶堆，內核也能保持運行。</p><p>當行程使用系統調用時，處理器轉入內核堆中，提升硬件的特權級，然後運行系統調用對應的內核代碼。<br>
+當系統調用完成時，又從內核空間回到用戶空間：降低硬件特權級，轉入用戶堆，恢覆執行系統調用指令後面的那條用戶指令。執行緒可以在內核中“阻塞”，等待 I/O, 在 I/O 結束後再恢覆運行。</p><blockquote>
+<p>p-&gt;state 指示了行程的狀態：新建、準備運行、運行、等待 I/O 或退出狀態中。<br>
+p-&gt;pgdir 保存了行程的page table。</p>
+</blockquote><h3 id="Code-the-first-address-space"><a class="anchor hidden-xs" href="#Code-the-first-address-space" title="Code-the-first-address-space"><span class="octicon octicon-link"></span></a>Code: the first address space</h3><p>當 PC 開機時，它會初始化然後從磁盤中載入 boot loader 到內存並運行。boot loader 把 xv6 內核從磁盤中載入並從 entry（1040）開始運行。x86 的分頁硬體在此時還沒有開始工作；所以這時的虛擬地址是直接映射到物理地址上的。</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span></div><div class="code"><span class="token number">1042</span> # Entering xv6 on boot processor<span class="token punctuation">,</span> with paging off<span class="token punctuation">.</span>
+<span class="token number">1043</span> <span class="token punctuation">.</span>globl entry
+<span class="token number">1044</span> entry<span class="token punctuation">:</span>
+<span class="token number">1045</span> # Turn on page size extension <span class="token keyword">for</span> <span class="token number">4</span>Mbyte pages
+<span class="token number">1046</span> movl <span class="token operator">%</span>cr4<span class="token punctuation">,</span> <span class="token operator">%</span>eax
+<span class="token number">1047</span> orl $<span class="token punctuation">(</span>CR4_PSE<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">%</span>eax
+<span class="token number">1048</span> movl <span class="token operator">%</span>eax<span class="token punctuation">,</span> <span class="token operator">%</span>cr4
+<span class="token number">1049</span> # 設置頁表page table<span class="token punctuation">,</span>將 <span class="token number">0x80000000</span>（稱為 KERNBASE（<span class="token number">0207</span>））開始的虛擬地址映射到物理地址 <span class="token number">0x0</span> 處。
+<span class="token number">1050</span> movl $<span class="token punctuation">(</span><span class="token function">V2P_WO</span><span class="token punctuation">(</span>entrypgdir<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">%</span>eax
+將entrypgdir的物理位址載入到寄存器cr3
+<span class="token number">1051</span> movl <span class="token operator">%</span>eax<span class="token punctuation">,</span> <span class="token operator">%</span>cr3
+<span class="token number">1052</span> # Turn on paging<span class="token punctuation">.</span>
+<span class="token number">1053</span> movl <span class="token operator">%</span>cr0<span class="token punctuation">,</span> <span class="token operator">%</span>eax
+<span class="token number">1054</span> orl $<span class="token punctuation">(</span>CR0_PG<span class="token operator">|</span>CR0_WP<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">%</span>eax
+<span class="token number">1055</span> movl <span class="token operator">%</span>eax<span class="token punctuation">,</span> <span class="token operator">%</span>cr0
+<span class="token number">1056</span>
+<span class="token number">1057</span> # Set up the stack pointer<span class="token punctuation">.</span>
+<span class="token number">1058</span> movl $<span class="token punctuation">(</span>stack <span class="token operator">+</span> KSTACKSIZE<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">%</span>esp
+<span class="token number">1059</span>
+<span class="token number">1060</span> # Jump to <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> and <span class="token keyword">switch</span> to executing at
+<span class="token number">1061</span> # high addresses<span class="token punctuation">.</span> The indirect call is needed because
+<span class="token number">1062</span> # the assembler produces a PC−relative instruction
+<span class="token number">1063</span> # <span class="token keyword">for</span> a direct jump<span class="token punctuation">.</span>
+<span class="token number">1064</span> mov $main<span class="token punctuation">,</span> <span class="token operator">%</span>eax
+<span class="token number">1065</span> jmp <span class="token operator">*</span><span class="token operator">%</span>eax
+<span class="token number">1066</span>
+<span class="token number">1067</span> <span class="token punctuation">.</span>comm stack<span class="token punctuation">,</span> KSTACKSIZE
+</div></div></code></pre><p><img src="https://i.imgur.com/6ULYHbF.png" alt=""></p><h3 id="Code-creating-the-first-process"><a class="anchor hidden-xs" href="#Code-creating-the-first-process" title="Code-creating-the-first-process"><span class="octicon octicon-link"></span></a>Code: creating the first process</h3><p>main初始化程式後，透過userinit建立了第一個process</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span></div><div class="code"><span class="token number">1217</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">1218</span> <span class="token punctuation">{</span>
+<span class="token number">1219</span> <span class="token function">kinit1</span><span class="token punctuation">(</span>end<span class="token punctuation">,</span> <span class="token function">P2V</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token operator">*</span><span class="token number">1024</span><span class="token operator">*</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// phys page allocator</span>
+<span class="token number">1220</span> <span class="token function">kvmalloc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// kernel page table</span>
+<span class="token number">1221</span> <span class="token function">mpinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// detect other processors</span>
+<span class="token number">1222</span> <span class="token function">lapicinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// interrupt controller</span>
+<span class="token number">1223</span> <span class="token function">seginit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// segment descriptors</span>
+<span class="token number">1224</span> <span class="token function">picinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// disable pic</span>
+<span class="token number">1225</span> <span class="token function">ioapicinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// another interrupt controller</span>
+<span class="token number">1226</span> <span class="token function">consoleinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// console hardware</span>
+<span class="token number">1227</span> <span class="token function">uartinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// serial port</span>
+<span class="token number">1228</span> <span class="token function">pinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// process table</span>
+<span class="token number">1229</span> <span class="token function">tvinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// trap vectors</span>
+<span class="token number">1230</span> <span class="token function">binit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// buffer cache</span>
+<span class="token number">1231</span> <span class="token function">fileinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// file table</span>
+<span class="token number">1232</span> <span class="token function">ideinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// disk</span>
+<span class="token number">1233</span> <span class="token function">startothers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// start other processors</span>
+<span class="token number">1234</span> <span class="token function">kinit2</span><span class="token punctuation">(</span><span class="token function">P2V</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token operator">*</span><span class="token number">1024</span><span class="token operator">*</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">P2V</span><span class="token punctuation">(</span>PHYSTOP<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// must come after startothers()</span>
+<span class="token number">1235</span> <span class="token function">userinit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 第一個行程</span>
+<span class="token number">1236</span> <span class="token function">mpmain</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// finish this processor’s setup</span>
+<span class="token number">1237</span> <span class="token punctuation">}</span>
+</div></div></code></pre><p>allocproc的工作是在頁表中分配一個槽（即結構體 struct proc），並初始化行程的狀態，為其內核執行緒的運行做準備。</p><pre><code>p = allocproc();
+</code></pre><p>注意：userinit 僅僅在創建第一個行程時被調用，而 allocproc 創建每個行程時都會被調用。</p><p>allocproc 會在 proc 的表中找到一個標記為 <strong>UNUSED</strong>的槽位。當它找到這樣一個未被使用的槽位後，allocproc 將其狀態設置為 <strong>EMBRYO</strong>，使其被標記為被使用的並給這個進程一個獨有的 pid。接下來，它嘗試為行程的kernal的執行緒分配內核堆。如果分配失敗了，allocproc 會把這個槽位的狀態恢覆為 <strong>UNUSED</strong> 並返回0以標記失敗。<br>
+<img src="https://i.imgur.com/nip9shL.png" alt=""><br>
+kernal的執行緒會從 p-&gt;context 中拷貝的內容開始運行。通過將 p-&gt;context-&gt;eip 指向 forkret 從而讓kernal的執行緒從 forkret的開頭開始運行。<br>
+這個函數會返回到那個時刻棧底的地址。context switch的程式把堆指針指向 p-&gt;context 結尾。allocproc 又將 p-&gt;context 放在棧上，並在其上方放一個指向 trapret 的指針；這樣運行完的 forkret 就會返回到 trapret 中了。 trapret 接著從堆的頂部恢覆用戶寄存器然後跳轉到 process的程式。<br>
+一旦進程初始化完畢，userinit 將 p-&gt;state 設置為 RUNNABLE，使行程能夠被調度。</p><h3 id="Code-Running-the-first-process"><a class="anchor hidden-xs" href="#Code-Running-the-first-process" title="Code-Running-the-first-process"><span class="octicon octicon-link"></span></a>Code: Running the first process</h3><p>Scheduler 找到為一個 p-&gt;state 為 RUNNABLE 的行程 initproc，然後將 per-cpu 的變量 proc 為該行程，接著調用 switchuvm 通知硬體開始使用目標進程的頁表。<br>
+scheduler接著把進程的p-&gt;state設置為RUNNING，調用swtch。</p><ul>
+<li>swtch會保存當前的寄存器，並把目標內核線程中保存的寄存器（proc-&gt;context）載入到x86的硬件寄存器中</li>
+</ul><p>allocproc通過把initproc的p-&gt;context-&gt;eip設置為forkret使得ret開始執行forkret的代碼。</p><h3 id="The-first-system-call-exec"><a class="anchor hidden-xs" href="#The-first-system-call-exec" title="The-first-system-call-exec"><span class="octicon octicon-link"></span></a>The first system call: exec</h3><p><mark>initcode.S</mark>觸發exec系統調用，用一個新的程序來代替當前行程的內存和寄存器，但是其文件描述符、行程id和父行程都是不變的。</p><ol>
+<li>initcode.S剛開始會將<span class="mathjax"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>a</mi><mi>r</mi><mi>g</mi><mi>v</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mo>&amp;#xFF0C;</mo></mrow></math>" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 3.281em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.666em; height: 0px; font-size: 122%;"><span style="position: absolute; clip: rect(1.591em, 1002.67em, 2.923em, -999.997em); top: -2.559em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: STIXGeneral-Italic;">a</span><span class="mi" id="MathJax-Span-4" style="font-family: STIXGeneral-Italic;">r<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mi" id="MathJax-Span-5" style="font-family: STIXGeneral-Italic;">g</span><span class="mi" id="MathJax-Span-6" style="font-family: STIXGeneral-Italic;">v</span><span class="texatom" id="MathJax-Span-7"><span class="mrow" id="MathJax-Span-8"><span class="mo" id="MathJax-Span-9"><span style="font-family: STIXGeneral, &quot;Arial Unicode MS&quot;, serif; font-size: 82%; font-style: normal; font-weight: normal;">，</span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.564em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.309em; border-left: 0px solid; width: 0px; height: 1.378em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mi>r</mi><mi>g</mi><mi>v</mi><mrow class="MJX-TeXAtom-ORD"><mo>，</mo></mrow></math></span></span><script type="math/tex" id="MathJax-Element-1">argv，</script></span>init，$0三個值推入堆中</li>
+<li>將%eax設置為SYS_exec</li>
+<li>執行int T_SYSCALL</li>
+<li>如果運行正常的話，exec不會返回：它會運行名為$init的程序</li>
+<li>如果exec失敗並且返回了，initcode會不斷調用一個不會返回的系統調用exit</li>
+</ol><h1 id="作業系統作業一---項目三-Chapter-5-Scheduling"><a class="anchor hidden-xs" href="#作業系統作業一---項目三-Chapter-5-Scheduling" title="作業系統作業一---項目三-Chapter-5-Scheduling"><span class="octicon octicon-link"></span></a>作業系統作業一 - 項目三 Chapter 5 Scheduling</h1><h3 id="Scheduling-排程"><a class="anchor hidden-xs" href="#Scheduling-排程" title="Scheduling-排程"><span class="octicon octicon-link"></span></a>Scheduling 排程</h3><p>由於一個作業系統可能進行的process比電腦本身的processor多很多，所以我們必須time-share 我們的處理器。常見的方法是透過<mark>mutiplexing</mark>（多工）將單獨的一個物理處理器模擬為多個虛擬處理器。</p><h3 id="Multiplexing-多工"><a class="anchor hidden-xs" href="#Multiplexing-多工" title="Multiplexing-多工"><span class="octicon octicon-link"></span></a>Multiplexing 多工</h3><p>Xv6在下列兩種狀況時，會switch從一個process到另一個process。</p><ul>
+<li>
+<h4 id="sleep-and-wakeup-機制轉換"><a class="anchor hidden-xs" href="#sleep-and-wakeup-機制轉換" title="sleep-and-wakeup-機制轉換"><span class="octicon octicon-link"></span></a>sleep and wakeup 機制轉換</h4>
+</li>
+</ul><p>當一個process等待I/O請求或等待子行程exit時，xv6使之進入睡眠狀態，然後調度執行另一個process。</p><ul>
+<li>
+<h4 id="週期性中斷"><a class="anchor hidden-xs" href="#週期性中斷" title="週期性中斷"><span class="octicon octicon-link"></span></a>週期性中斷</h4>
+</li>
+</ul><p>當一個process耗盡了它在處理器上運行的時間片（100毫秒）後，xv6使用週期性中斷強制它停止運行，這樣排程器才能調度運行其他行程。</p><h2 id="Code--Context-switching"><a class="anchor hidden-xs" href="#Code--Context-switching" title="Code--Context-switching"><span class="octicon octicon-link"></span></a>Code : Context switching</h2><h3 id="程式流程"><a class="anchor hidden-xs" href="#程式流程" title="程式流程"><span class="octicon octicon-link"></span></a>程式流程</h3><p><img src="https://i.imgur.com/C6NTb8N.png" alt=""></p><ol>
+<li>swtch一開始從堆中彈出參數，放入寄存器%eax和%edx中；</li>
+<li>swtch壓入寄存器，在當前棧上建立一個新的上下文結構。</li>
+<li>%ebp %ebx %esi %ebp %esp寄存器此時被保存。</li>
+<li>保存了舊寄存器後，swtch準備恢復新的寄存器。它將指向新上下文的指針放入堆指針中。</li>
+<li>新的堆結構和舊的堆相同，因為新的上下文其實是之前某次的切換中的舊上下文。</li>
+<li>最後彈出%edi %esi %ebx %ebp然後返回<br>
+<img src="https://i.imgur.com/nSMZ41n.jpg" alt=""></li>
+</ol><h3 id="代碼解釋"><a class="anchor hidden-xs" href="#代碼解釋" title="代碼解釋"><span class="octicon octicon-link"></span></a>代碼解釋</h3><pre><code>3057 .globl swtch
+3058 swtch:
+//copying its arguments from the stack to the caller-saved registers
+3059 movl 4(%esp), %eax //將%esp的4個bit放入%eax
+3060 movl 8(%esp), %edx //將%esp的8個bit放入%edx
+3061 //pushes the registerstate, creating a context structure on the current stack
+3062 # Save old callee−save registers
+3063 pushl %ebp
+3064 pushl %ebx
+3065 pushl %esi
+3066 pushl %edi
+3067//交換堆的內容
+3068 # Switch stacks
+3069 movl %esp, (%eax)
+3070 movl %edx, %esp
+3071//移出%edi %esi %ebx %ebp
+3072 # Load new callee−save registers
+3073 popl %edi
+3074 popl %esi
+3075 popl %ebx
+3076 popl %ebp
+3077 ret
+</code></pre><h3 id="資料結構"><a class="anchor hidden-xs" href="#資料結構" title="資料結構"><span class="octicon octicon-link"></span></a>資料結構</h3><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code"><span class="token number">2326</span> <span class="token keyword">struct</span> context <span class="token punctuation">{</span>
+<span class="token number">2327</span> uint edi<span class="token punctuation">;</span><span class="token comment">//定義無符號的int</span>
+<span class="token number">2328</span> uint esi<span class="token punctuation">;</span>
+<span class="token number">2329</span> uint ebx<span class="token punctuation">;</span>
+<span class="token number">2330</span> uint ebp<span class="token punctuation">;</span>
+<span class="token number">2331</span> uint eip<span class="token punctuation">;</span>
+<span class="token number">2332</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</div></div></code></pre><h2 id="Code-Scheduling"><a class="anchor hidden-xs" href="#Code-Scheduling" title="Code-Scheduling"><span class="octicon octicon-link"></span></a>Code: Scheduling</h2><h3 id="程式流程1"><a class="anchor hidden-xs" href="#程式流程1" title="程式流程1"><span class="octicon octicon-link"></span></a>程式流程</h3><p><img src="https://i.imgur.com/roamELb.jpg" alt=""></p><h3 id="代碼解析"><a class="anchor hidden-xs" href="#代碼解析" title="代碼解析"><span class="octicon octicon-link"></span></a>代碼解析</h3><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span>
+<span data-linenumber="28"></span>
+<span data-linenumber="29"></span>
+<span data-linenumber="30"></span>
+<span data-linenumber="31"></span>
+<span data-linenumber="32"></span>
+<span data-linenumber="33"></span>
+<span data-linenumber="34"></span>
+<span data-linenumber="35"></span>
+<span data-linenumber="36"></span>
+<span data-linenumber="37"></span>
+<span data-linenumber="38"></span></div><div class="code"> <span class="token function">scheduler</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">2759</span> <span class="token punctuation">{</span>
+<span class="token number">2760</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>p<span class="token punctuation">;</span>
+<span class="token number">2761</span> <span class="token keyword">struct</span> cpu <span class="token operator">*</span>c <span class="token operator">=</span> <span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2762</span> c−<span class="token operator">&gt;</span>proc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2763</span>
+<span class="token number">2764</span> <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2765</span> <span class="token comment">// 開啟中斷</span>
+<span class="token number">2766</span> <span class="token function">sti</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2767</span>
+<span class="token number">2768</span> <span class="token comment">// 循環去尋找可以run的process</span>
+<span class="token number">2769</span> <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2770</span> <span class="token keyword">for</span><span class="token punctuation">(</span>p <span class="token operator">=</span> ptable<span class="token punctuation">.</span>proc<span class="token punctuation">;</span> p <span class="token operator">&lt;</span> <span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>proc<span class="token punctuation">[</span>NPROC<span class="token punctuation">]</span><span class="token punctuation">;</span> p<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2771</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>state <span class="token operator">!=</span> RUNNABLE<span class="token punctuation">)</span><span class="token comment">//在process table找尋p-&gt;state==RUNNABLE的進程</span>
+<span class="token number">2772</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+<span class="token number">2773</span>
+<span class="token number">2774</span> <span class="token comment">// Switch to chosen process. It is the process’s job</span>
+<span class="token number">2775</span> <span class="token comment">// to release ptable.lock and then reacquire it</span>
+<span class="token number">2776</span> <span class="token comment">// before jumping back to us.</span>
+<span class="token comment">//將per-cpu的當前進程變量proc設為該進程</span>
+<span class="token number">2777</span> c−<span class="token operator">&gt;</span>proc <span class="token operator">=</span> p<span class="token punctuation">;</span>
+<span class="token comment">//用switchuvm切換到該進程的頁表，標記該進程為RUNNING，</span>
+<span class="token number">2778</span> <span class="token function">switchuvm</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2779</span> p−<span class="token operator">&gt;</span>state <span class="token operator">=</span> RUNNING<span class="token punctuation">;</span>
+<span class="token number">2780</span>
+<span class="token comment">//調用swtch切換到該進程中運行</span>
+<span class="token number">2781</span> <span class="token function">swtch</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token punctuation">(</span>c−<span class="token operator">&gt;</span>scheduler<span class="token punctuation">)</span><span class="token punctuation">,</span> p−<span class="token operator">&gt;</span>context<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2782</span> <span class="token function">switchkvm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2783</span>
+<span class="token number">2784</span> <span class="token comment">// Process is done running for now.</span>
+<span class="token number">2785</span> <span class="token comment">// It should have changed its p−&gt;state before coming back.</span>
+<span class="token number">2786</span> c−<span class="token operator">&gt;</span>proc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2787</span> <span class="token punctuation">}</span>
+<span class="token comment">//釋放此進程持有的其他鎖</span>
+<span class="token number">2788</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2789</span>
+<span class="token number">2790</span> <span class="token punctuation">}</span>
+<span class="token number">2791</span> <span class="token punctuation">}</span>
+</div></div></code></pre><h3 id="資料結構1"><a class="anchor hidden-xs" href="#資料結構1" title="資料結構1"><span class="octicon octicon-link"></span></a>資料結構</h3><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span></div><div class="code"><span class="token number">2337</span> <span class="token keyword">struct</span> proc <span class="token punctuation">{</span>
+<span class="token number">2338</span> uint sz<span class="token punctuation">;</span> <span class="token comment">// process memory (bytes) 大小</span>
+<span class="token number">2339</span> pde_t<span class="token operator">*</span> pgdir<span class="token punctuation">;</span> <span class="token comment">// Page table</span>
+<span class="token number">2340</span> <span class="token keyword">char</span> <span class="token operator">*</span>kstack<span class="token punctuation">;</span> <span class="token comment">// Bottom of kernel stack for this process</span>
+<span class="token number">2341</span> <span class="token keyword">enum</span> procstate state<span class="token punctuation">;</span> <span class="token comment">// Process state</span>
+<span class="token number">2342</span> <span class="token keyword">int</span> pid<span class="token punctuation">;</span> <span class="token comment">// Process ID</span>
+<span class="token number">2343</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>parent<span class="token punctuation">;</span> <span class="token comment">// connect with Parent process</span>
+<span class="token number">2344</span> <span class="token keyword">struct</span> trapframe <span class="token operator">*</span>tf<span class="token punctuation">;</span> <span class="token comment">// Trap frame for current syscall</span>
+<span class="token number">2345</span> <span class="token keyword">struct</span> context <span class="token operator">*</span>context<span class="token punctuation">;</span> <span class="token comment">// 暫存器</span>
+<span class="token number">2346</span> <span class="token keyword">void</span> <span class="token operator">*</span>chan<span class="token punctuation">;</span> <span class="token comment">// 若為非零，則為sleeping</span>
+<span class="token number">2347</span> <span class="token keyword">int</span> killed<span class="token punctuation">;</span> <span class="token comment">// 若不為零，則為被殺掉了</span>
+<span class="token number">2348</span> <span class="token keyword">struct</span> file <span class="token operator">*</span>ofile<span class="token punctuation">[</span>NOFILE<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// Open files</span>
+<span class="token number">2349</span> <span class="token keyword">struct</span> inode <span class="token operator">*</span>cwd<span class="token punctuation">;</span> <span class="token comment">// Current directory</span>
+<span class="token number">2350</span> <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">16</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// Process name (debugging)</span>
+<span class="token number">2351</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</div></div></code></pre><h2 id="Code-mycpu-and-myproc"><a class="anchor hidden-xs" href="#Code-mycpu-and-myproc" title="Code-mycpu-and-myproc"><span class="octicon octicon-link"></span></a>Code: mycpu and myproc</h2><h3 id="程式流程2"><a class="anchor hidden-xs" href="#程式流程2" title="程式流程2"><span class="octicon octicon-link"></span></a>程式流程</h3><p><img src="https://i.imgur.com/8b0eiSf.jpg" alt=""></p><h3 id="代碼解釋1"><a class="anchor hidden-xs" href="#代碼解釋1" title="代碼解釋1"><span class="octicon octicon-link"></span></a>代碼解釋</h3><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span></div><div class="code"><span class="token number">2437</span> <span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">2438</span> <span class="token punctuation">{</span>
+<span class="token number">2439</span> <span class="token keyword">int</span> apicid<span class="token punctuation">,</span> i<span class="token punctuation">;</span>
+<span class="token number">2440</span>
+<span class="token number">2441</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">readeflags</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>FL_IF<span class="token punctuation">)</span>
+<span class="token number">2442</span> <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"mycpu called with interrupts enabled\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2443</span>
+<span class="token number">2444</span> apicid <span class="token operator">=</span> <span class="token function">lapicid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//lapicid 回傳這個processor的硬體識別碼</span>
+<span class="token number">2445</span> <span class="token comment">// APIC IDs are not guaranteed to be contiguous. Maybe we should have</span>
+<span class="token number">2446</span> <span class="token comment">// a reverse map, or reserve a register to store &amp;cpus[i].</span>
+<span class="token number">2447</span> <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> ncpu<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token number">2448</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>cpus<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>apicid <span class="token operator">==</span> apicid<span class="token punctuation">)</span>
+<span class="token number">2449</span> <span class="token keyword">return</span> <span class="token operator">&amp;</span>cpus<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token number">2450</span> <span class="token punctuation">}</span>
+<span class="token number">2451</span> <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"unknown apicid\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2452</span> <span class="token punctuation">}</span>
+</div></div></code></pre><h3 id="資料結構2"><a class="anchor hidden-xs" href="#資料結構2" title="資料結構2"><span class="octicon octicon-link"></span></a>資料結構</h3><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code"><span class="token number">2456</span> <span class="token keyword">struct</span> proc<span class="token operator">*</span>
+<span class="token number">2457</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token number">2458</span> <span class="token keyword">struct</span> cpu <span class="token operator">*</span>c<span class="token punctuation">;</span>
+<span class="token number">2459</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>p<span class="token punctuation">;</span>
+<span class="token number">2460</span> <span class="token function">pushcli</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2461</span> c <span class="token operator">=</span> <span class="token function">mycpu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//invokes mycpu to find its processor’s state</span>
+<span class="token number">2462</span> p <span class="token operator">=</span> c−<span class="token operator">&gt;</span>proc<span class="token punctuation">;</span><span class="token comment">//When aprocessor switches to a new process in </span>
+<span class="token comment">// scheduler, it sets proc to that process’s struct proc.</span>
+<span class="token number">2463</span> <span class="token function">popcli</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2464</span> <span class="token keyword">return</span> p<span class="token punctuation">;</span>
+<span class="token number">2465</span> <span class="token punctuation">}</span>
+</div></div></code></pre><h2 id="Sleep-amp-Wakeup"><a class="anchor hidden-xs" href="#Sleep-amp-Wakeup" title="Sleep-amp-Wakeup"><span class="octicon octicon-link"></span></a>Sleep &amp; Wakeup</h2><h3 id="運作原理"><a class="anchor hidden-xs" href="#運作原理" title="運作原理"><span class="octicon octicon-link"></span></a>運作原理</h3><p>睡眠和喚醒實際上提供了進程間通信的機制，它們可以讓一個進程暫時休眠，等待某個特定事件的發生，然後當特定事件發生時，另一個進程會喚醒該進程。<br>
+睡眠與喚醒通常被稱為順序合作（sequence coordination）或者有條件同步（conditional synchronization）機制。</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span></div><div class="code"><span class="token keyword">struct</span> q <span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token operator">*</span>ptr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//send會不斷循環，直到隊列為空（ptr == 0），然後將指針p放到隊列中。</span>
+<span class="token keyword">void</span><span class="token operator">*</span>
+<span class="token function">send</span><span class="token punctuation">(</span><span class="token keyword">struct</span> q <span class="token operator">*</span>q<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>p<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>q<span class="token operator">-&gt;</span>ptr <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">;</span>
+    q<span class="token operator">-&gt;</span>ptr <span class="token operator">=</span> p<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//recv會不斷循環，直到隊列非空然後取出指針。</span>
+<span class="token keyword">void</span><span class="token operator">*</span>
+<span class="token function">recv</span><span class="token punctuation">(</span><span class="token keyword">struct</span> q <span class="token operator">*</span> q<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token operator">*</span>p<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">=</span> q<span class="token operator">-&gt;</span>ptr<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">;</span>
+    q<span class="token operator">-&gt;</span>ptr <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</div></div></code></pre><blockquote>
+<p>send和recv會同時修改q-&gt;ptr，不過send只在隊列空時寫入指針，而recv只在隊列非空時拿出指針，這樣他們之間是不會互相干擾的。</p>
+</blockquote><p>上面這種實現方法正確，但是代價是巨大的。如果發送者很少發送，那麼接受者就會消耗大量的時間在while循環中等待一個指針的出現。而實際上如果有一種方法使得send放入指針時，能夠通知接受者。那麼接受者所在的CPU就能在這段時間找到更有意義的事情做。</p><p>調用sleep和wakeup，其工作方式如下。</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code"><span class="token keyword">void</span><span class="token operator">*</span>
+<span class="token function">send</span><span class="token punctuation">(</span><span class="token keyword">struct</span> q <span class="token operator">*</span>q<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>p<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>q<span class="token operator">-&gt;</span>ptr <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">;</span>
+    q<span class="token operator">-&gt;</span>ptr <span class="token operator">=</span> p<span class="token punctuation">;</span>
+    <span class="token function">wakeup</span><span class="token punctuation">(</span>q<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">/*wake recv*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span><span class="token operator">*</span>
+<span class="token function">recv</span><span class="token punctuation">(</span><span class="token keyword">struct</span> q <span class="token operator">*</span>q<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token operator">*</span>p<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">=</span> q<span class="token operator">-&gt;</span>ptr<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token function">sleep</span><span class="token punctuation">(</span>q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    q<span class="token operator">-&gt;</span>ptr <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><ul>
+<li>sleep(chan)讓進程在任意的chan上休眠，稱之為等待隊列（wait channel）。sleep讓調用進程休眠，釋放所佔CPU。</li>
+<li>wakeup(chan)則喚醒在chan上休眠的所有進程，讓他們的sleep調用返回。<br>
+<img src="https://i.imgur.com/yg5M5aJ.png" alt=""><br>
+現在recv能夠讓出CPU而不是空等浪費資源了。但對於圖表5-2中出現的“遺失的喚醒”問題，我們卻很難通過已有的介面下，設計出能夠避免該問題的sleep和wakeup機制。<br>
+假設在第215行recv發現q-&gt;ptr == 0，然後決定調用sleep，但是在recv調用sleep之前，send又在另一個CPU上運行了，它將q-&gt;ptr置為非零，然後調用wakeup，發現沒有進程在休眠，於是什麼也沒有做。<br>
+接著，recv從第216行繼續執行了：它調用sleep進入休眠。這就出現問題了，休眠的recv實際上在等待一個已經到達的指針。而下一個send又在睡眠中等著recv取出隊列中的指針。這種情況就被稱為死鎖（deadlock）。</li>
+</ul><p>想要解決問題，我們必須要改變sleep的interface。sleep必須將鎖作為一個參數，然後在進入睡眠狀態後釋放之。<br>
+這樣就能避免上面提到的“遺失的喚醒”問題。一旦進程被喚醒了，sleep在返回之前還需要重新獲得鎖。於是我們應該使用下面的代碼：</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span>
+<span data-linenumber="28"></span>
+<span data-linenumber="29"></span></div><div class="code"><span class="token keyword">struct</span> q <span class="token punctuation">{</span>
+    <span class="token keyword">struct</span> spinlock lock<span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token operator">*</span>ptr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token operator">*</span>
+<span class="token function">send</span><span class="token punctuation">(</span><span class="token keyword">struct</span> q <span class="token operator">*</span>q<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>p<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>q<span class="token operator">-&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>q<span class="token operator">-&gt;</span>ptr <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">;</span>
+    q<span class="token operator">-&gt;</span>ptr <span class="token operator">=</span> p<span class="token punctuation">;</span>
+    <span class="token function">wakeup</span><span class="token punctuation">(</span>q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>q<span class="token operator">-&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//recv持有q-&gt;lock就能防止send在recv檢查q-&gt;ptr與調用sleep之間調用wakeup。</span>
+<span class="token keyword">void</span><span class="token operator">*</span>
+<span class="token function">recv</span><span class="token punctuation">(</span><span class="token keyword">struct</span> q <span class="token operator">*</span>q<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token operator">*</span>p<span class="token punctuation">;</span>
+    <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>q<span class="token operator">-&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//sleep釋放q-&gt;lock並讓接收進程進入休眠狀態。</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">=</span> q<span class="token operator">-&gt;</span>ptr<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token function">sleep</span><span class="token punctuation">(</span>q<span class="token punctuation">,</span> <span class="token operator">&amp;</span>q<span class="token operator">-&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    q<span class="token operator">-&gt;</span>ptr <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>q<span class="token operator">-&gt;</span>lock<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</div></div></code></pre><h3 id="程式流程3"><a class="anchor hidden-xs" href="#程式流程3" title="程式流程3"><span class="octicon octicon-link"></span></a>程式流程</h3><p><img src="https://i.imgur.com/z2Higql.jpg" alt=""></p><p><img src="https://i.imgur.com/TtcOpF8.jpg" alt=""></p><h3 id="代碼解釋2"><a class="anchor hidden-xs" href="#代碼解釋2" title="代碼解釋2"><span class="octicon octicon-link"></span></a>代碼解釋</h3><h4 id="Sleep"><a class="anchor hidden-xs" href="#Sleep" title="Sleep"><span class="octicon octicon-link"></span></a>Sleep</h4><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span>
+<span data-linenumber="28"></span>
+<span data-linenumber="29"></span>
+<span data-linenumber="30"></span>
+<span data-linenumber="31"></span>
+<span data-linenumber="32"></span>
+<span data-linenumber="33"></span>
+<span data-linenumber="34"></span>
+<span data-linenumber="35"></span>
+<span data-linenumber="36"></span>
+<span data-linenumber="37"></span>
+<span data-linenumber="38"></span>
+<span data-linenumber="39"></span></div><div class="code"><span class="token number">2874</span> <span class="token function">sleep</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span>chan<span class="token punctuation">,</span> <span class="token keyword">struct</span> spinlock <span class="token operator">*</span>lk<span class="token punctuation">)</span>
+<span class="token number">2875</span> <span class="token punctuation">{</span>
+<span class="token number">2876</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2877</span>
+<span class="token comment">//必須存在當前進程</span>
+<span class="token number">2878</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token number">2879</span> <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"sleep"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2880</span>
+<span class="token comment">//sleep必須持有鎖</span>
+<span class="token number">2881</span> <span class="token keyword">if</span><span class="token punctuation">(</span>lk <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token number">2882</span> <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"sleep without lk"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2883</span>
+<span class="token number">2884</span> <span class="token comment">// Must acquire ptable.lock in order to</span>
+<span class="token number">2885</span> <span class="token comment">// change p−&gt;state and then call sched.</span>
+<span class="token number">2886</span> <span class="token comment">// Once we hold ptable.lock, we can be</span>
+<span class="token number">2887</span> <span class="token comment">// guaranteed that we won’t miss any wakeup</span>
+<span class="token number">2888</span> <span class="token comment">// (wakeup runs with ptable.lock locked),</span>
+<span class="token number">2889</span> <span class="token comment">// so it’s okay to release lk.</span>
+<span class="token comment">//sleep要求持有ptable.lock</span>
+<span class="token number">2890</span> <span class="token keyword">if</span><span class="token punctuation">(</span>lk <span class="token operator">!=</span> <span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2891</span> <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2892</span> <span class="token function">release</span><span class="token punctuation">(</span>lk<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2893</span> <span class="token punctuation">}</span>
+<span class="token number">2894</span> <span class="token comment">// Go to sleep.</span>
+<span class="token number">2895</span> p−<span class="token operator">&gt;</span>chan <span class="token operator">=</span> chan<span class="token punctuation">;</span>
+<span class="token number">2896</span> p−<span class="token operator">&gt;</span>state <span class="token operator">=</span> SLEEPING<span class="token punctuation">;</span>
+<span class="token number">2897</span>
+<span class="token number">2898</span> <span class="token function">sched</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2899</span> 
+<span class="token number">2900</span> <span class="token comment">// Tidy up.</span>
+<span class="token number">2901</span> p−<span class="token operator">&gt;</span>chan <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2902</span>
+<span class="token comment">//有了ptable.lock，那麼它現在就能安全地釋放lk了</span>
+<span class="token number">2903</span> <span class="token comment">// Reacquire original lock.</span>
+<span class="token number">2904</span> <span class="token keyword">if</span><span class="token punctuation">(</span>lk <span class="token operator">!=</span> <span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2905</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2906</span> <span class="token function">acquire</span><span class="token punctuation">(</span>lk<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2907</span> <span class="token punctuation">}</span>
+<span class="token number">2908</span> <span class="token punctuation">}</span>
+</div></div></code></pre><h4 id="Wake-up"><a class="anchor hidden-xs" href="#Wake-up" title="Wake-up"><span class="octicon octicon-link"></span></a>Wake up</h4><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span></div><div class="code"><span class="token number">2950</span> <span class="token comment">// Wake up all processes sleeping on chan.</span>
+<span class="token number">2951</span> <span class="token comment">// The ptable lock must be held.</span>
+<span class="token number">2952</span> <span class="token keyword">static</span> <span class="token keyword">void</span>
+<span class="token number">2953</span> <span class="token function">wakeup1</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span>chan<span class="token punctuation">)</span>
+<span class="token number">2954</span> <span class="token punctuation">{</span>
+<span class="token number">2955</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>p<span class="token punctuation">;</span>
+<span class="token number">2956</span>
+<span class="token number">2957</span> <span class="token keyword">for</span><span class="token punctuation">(</span>p <span class="token operator">=</span> ptable<span class="token punctuation">.</span>proc<span class="token punctuation">;</span> p <span class="token operator">&lt;</span> <span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>proc<span class="token punctuation">[</span>NPROC<span class="token punctuation">]</span><span class="token punctuation">;</span> p<span class="token operator">++</span><span class="token punctuation">)</span>
+<span class="token comment">//當wakeup找到了對應chan中處於SLEEPING的進程時，它將進程狀態修改為RUNNABLE</span>
+<span class="token number">2958</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>state <span class="token operator">==</span> SLEEPING <span class="token operator">&amp;&amp;</span> p−<span class="token operator">&gt;</span>chan <span class="token operator">==</span> chan<span class="token punctuation">)</span>
+<span class="token number">2959</span> p−<span class="token operator">&gt;</span>state <span class="token operator">=</span> RUNNABLE<span class="token punctuation">;</span>
+<span class="token number">2960</span> <span class="token punctuation">}</span>
+<span class="token number">2961</span>
+<span class="token number">2962</span> <span class="token comment">// Wake up all processes sleeping on chan.</span>
+<span class="token number">2963</span> <span class="token keyword">void</span>
+<span class="token number">2964</span> <span class="token function">wakeup</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span>chan<span class="token punctuation">)</span>
+<span class="token number">2965</span> <span class="token punctuation">{</span>
+<span class="token comment">//要求獲得ptable.lock並調用wakeup1</span>
+<span class="token number">2966</span> <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2967</span> <span class="token function">wakeup1</span><span class="token punctuation">(</span>chan<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2968</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2969</span> <span class="token punctuation">}</span>
+</div></div></code></pre><h2 id="Code-Pipes"><a class="anchor hidden-xs" href="#Code-Pipes" title="Code-Pipes"><span class="octicon octicon-link"></span></a>Code: Pipes</h2><h3 id="運作原理1"><a class="anchor hidden-xs" href="#運作原理1" title="運作原理1"><span class="octicon octicon-link"></span></a>運作原理</h3><p>管道的一端寫入數據字節，然後數據被拷貝到內核緩衝區中，接著就能從管道的另一端讀取數據。</p><ul>
+<li>每個管道由一個結構體struct pipe表示，</li>
+<li>其中有一個鎖lock和內存緩衝區。</li>
+<li>nread和nwrite表示從緩衝區讀出和寫入的字節數。</li>
+<li>pipe對緩衝區做了包裝，使計數器繼續增長，但實際上在buf[PIPESIZE - 1]之後寫入的字節存放在buf[0]。這樣就讓我們可以區分一個滿的緩衝區（nwrite == nread + PIPESIZE）和一個空的緩衝區（nwrite == nread），但這也意味著我們必須使用buf[nread % PIPESIZE]而不是buf[nread]來讀出/寫入數據。</li>
+</ul><h2 id="程式流程4"><a class="anchor hidden-xs" href="#程式流程4" title="程式流程4"><span class="octicon octicon-link"></span></a>程式流程</h2><p><img src="https://i.imgur.com/E0JErCv.jpg" alt=""></p><h3 id="代碼解釋（Pipewrite和piperead）"><a class="anchor hidden-xs" href="#代碼解釋（Pipewrite和piperead）" title="代碼解釋（Pipewrite和piperead）"><span class="octicon octicon-link"></span></a>代碼解釋（Pipewrite和piperead）</h3><h4 id="Piperead"><a class="anchor hidden-xs" href="#Piperead" title="Piperead"><span class="octicon octicon-link"></span></a>Piperead</h4><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span></div><div class="code"><span class="token number">6851</span> <span class="token function">piperead</span><span class="token punctuation">(</span><span class="token keyword">struct</span> pipe <span class="token operator">*</span>p<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>addr<span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">)</span>
+<span class="token number">6852</span> <span class="token punctuation">{</span>
+<span class="token number">6853</span> <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+<span class="token number">6854</span>
+<span class="token number">6855</span> <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//請求獲得鎖</span>
+<span class="token number">6856</span> <span class="token keyword">while</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>nread <span class="token operator">==</span> p−<span class="token operator">&gt;</span>nwrite <span class="token operator">&amp;&amp;</span> p−<span class="token operator">&gt;</span>writeopen<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">6857</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>killed<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">6858</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6859</span> <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">6860</span> <span class="token punctuation">}</span>
+<span class="token number">6861</span> <span class="token function">sleep</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>nread<span class="token punctuation">,</span> <span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6862</span> <span class="token punctuation">}</span>
+<span class="token number">6863</span> <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">6864</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>nread <span class="token operator">==</span> p−<span class="token operator">&gt;</span>nwrite<span class="token punctuation">)</span>
+<span class="token number">6865</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token comment">//依次寫入addr[0], addr[1], ..., addr[n-1]並添加到管道中</span>
+<span class="token number">6866</span> addr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> p−<span class="token operator">&gt;</span>data<span class="token punctuation">[</span>p−<span class="token operator">&gt;</span>nread<span class="token operator">++</span> <span class="token operator">%</span> PIPESIZE<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token number">6867</span> <span class="token punctuation">}</span>
+<span class="token number">6868</span> <span class="token function">wakeup</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>nwrite<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6869</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6870</span> <span class="token keyword">return</span> i<span class="token punctuation">;</span>
+<span class="token number">6871</span> <span class="token punctuation">}</span>
+
+</div></div></code></pre><h4 id="Pipewrite"><a class="anchor hidden-xs" href="#Pipewrite" title="Pipewrite"><span class="octicon octicon-link"></span></a>Pipewrite</h4><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span></div><div class="code"><span class="token number">6829</span> <span class="token keyword">int</span>
+<span class="token number">6830</span> <span class="token function">pipewrite</span><span class="token punctuation">(</span><span class="token keyword">struct</span> pipe <span class="token operator">*</span>p<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>addr<span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">)</span>
+<span class="token number">6831</span> <span class="token punctuation">{</span>
+<span class="token number">6832</span> <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+<span class="token number">6833</span> <span class="token comment">//請求獲得管道的鎖</span>
+<span class="token number">6834</span> <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6835</span> <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">6836</span> <span class="token keyword">while</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>nwrite <span class="token operator">==</span> p−<span class="token operator">&gt;</span>nread <span class="token operator">+</span> PIPESIZE<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">6837</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>readopen <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span>−<span class="token operator">&gt;</span>killed<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">6838</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6839</span> <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">6840</span> <span class="token punctuation">}</span>
+<span class="token number">6841</span> <span class="token function">wakeup</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>nread<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6842</span> <span class="token function">sleep</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>nwrite<span class="token punctuation">,</span> <span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6843</span> <span class="token punctuation">}</span>
+<span class="token number">6844</span> p−<span class="token operator">&gt;</span>data<span class="token punctuation">[</span>p−<span class="token operator">&gt;</span>nwrite<span class="token operator">++</span> <span class="token operator">%</span> PIPESIZE<span class="token punctuation">]</span> <span class="token operator">=</span> addr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token number">6845</span> <span class="token punctuation">}</span>
+<span class="token number">6846</span> <span class="token function">wakeup</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>nread<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6847</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>p−<span class="token operator">&gt;</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">6848</span> <span class="token keyword">return</span> n<span class="token punctuation">;</span>
+<span class="token number">6849</span> <span class="token punctuation">}</span>
+</div></div></code></pre><h3 id="資料結構3"><a class="anchor hidden-xs" href="#資料結構3" title="資料結構3"><span class="octicon octicon-link"></span></a>資料結構</h3><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span></div><div class="code"><span class="token number">6762</span> <span class="token keyword">struct</span> pipe <span class="token punctuation">{</span>
+<span class="token number">6763</span> <span class="token keyword">struct</span> spinlock lock<span class="token punctuation">;</span><span class="token comment">//鎖</span>
+<span class="token number">6764</span> <span class="token keyword">char</span> data<span class="token punctuation">[</span>PIPESIZE<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//內存緩衝區</span>
+<span class="token comment">//nread&amp;nwrite表示從緩衝區讀出和寫入的字節數。</span>
+<span class="token number">6765</span> uint nread<span class="token punctuation">;</span> <span class="token comment">// number of bytes read</span>
+<span class="token number">6766</span> uint nwrite<span class="token punctuation">;</span> <span class="token comment">// number of bytes written</span>
+<span class="token number">6767</span> <span class="token keyword">int</span> readopen<span class="token punctuation">;</span> <span class="token comment">// read fd is still open</span>
+<span class="token number">6768</span> <span class="token keyword">int</span> writeopen<span class="token punctuation">;</span> <span class="token comment">// write fd is still open</span>
+<span class="token number">6769</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</div></div></code></pre><h2 id="Code-Wait-exit-and-kill"><a class="anchor hidden-xs" href="#Code-Wait-exit-and-kill" title="Code-Wait-exit-and-kill"><span class="octicon octicon-link"></span></a>Code: Wait, exit, and kill</h2><h3 id="代碼解析＆程式流程"><a class="anchor hidden-xs" href="#代碼解析＆程式流程" title="代碼解析＆程式流程"><span class="octicon octicon-link"></span></a>代碼解析＆程式流程</h3><h4 id="Wait"><a class="anchor hidden-xs" href="#Wait" title="Wait"><span class="octicon octicon-link"></span></a>Wait</h4><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span>
+<span data-linenumber="28"></span>
+<span data-linenumber="29"></span>
+<span data-linenumber="30"></span>
+<span data-linenumber="31"></span>
+<span data-linenumber="32"></span>
+<span data-linenumber="33"></span>
+<span data-linenumber="34"></span>
+<span data-linenumber="35"></span>
+<span data-linenumber="36"></span>
+<span data-linenumber="37"></span>
+<span data-linenumber="38"></span>
+<span data-linenumber="39"></span>
+<span data-linenumber="40"></span>
+<span data-linenumber="41"></span></div><div class="code"><span class="token number">2671</span> <span class="token function">wait</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">2672</span> <span class="token punctuation">{</span>
+<span class="token number">2673</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>p<span class="token punctuation">;</span>
+<span class="token number">2674</span> <span class="token keyword">int</span> havekids<span class="token punctuation">,</span> pid<span class="token punctuation">;</span>
+<span class="token number">2675</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>curproc <span class="token operator">=</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2676</span>
+<span class="token number">2677</span> <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2678</span> <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2679</span> <span class="token comment">// 查看進程表中是否有子進程</span>
+<span class="token number">2680</span> havekids <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2681</span> <span class="token keyword">for</span><span class="token punctuation">(</span>p <span class="token operator">=</span> ptable<span class="token punctuation">.</span>proc<span class="token punctuation">;</span> p <span class="token operator">&lt;</span> <span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>proc<span class="token punctuation">[</span>NPROC<span class="token punctuation">]</span><span class="token punctuation">;</span> p<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2682</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>parent <span class="token operator">!=</span> curproc<span class="token punctuation">)</span>
+<span class="token number">2683</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+<span class="token number">2684</span> havekids <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">2685</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>state <span class="token operator">==</span> ZOMBIE<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2686</span> <span class="token comment">// Found one.</span>
+<span class="token number">2687</span> pid <span class="token operator">=</span> p−<span class="token operator">&gt;</span>pid<span class="token punctuation">;</span>
+<span class="token number">2688</span> <span class="token function">kfree</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>kstack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2689</span> p−<span class="token operator">&gt;</span>kstack <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2690</span> <span class="token function">freevm</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>pgdir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2691</span> p−<span class="token operator">&gt;</span>pid <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2692</span> p−<span class="token operator">&gt;</span>parent <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2693</span> p−<span class="token operator">&gt;</span>name<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2694</span> p−<span class="token operator">&gt;</span>killed <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2695</span> p−<span class="token operator">&gt;</span>state <span class="token operator">=</span> UNUSED<span class="token punctuation">;</span>
+<span class="token number">2696</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2697</span> <span class="token keyword">return</span> pid<span class="token punctuation">;</span>
+<span class="token number">2698</span> <span class="token punctuation">}</span>
+<span class="token number">2699</span> <span class="token punctuation">}</span>
+<span class="token number">2700</span> <span class="token comment">// No point waiting if we don’t have any children.</span>
+<span class="token number">2701</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>havekids <span class="token operator">||</span> curproc−<span class="token operator">&gt;</span>killed<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2702</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2703</span> <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">2704</span> <span class="token punctuation">}</span>
+<span class="token number">2705</span>
+<span class="token number">2706</span> <span class="token comment">// Wait for children to exit. (See wakeup1 call in proc_exit.)</span>
+<span class="token comment">//調用sleep等待其中一個子進程退出</span>
+<span class="token comment">//這裡sleep中釋放的鎖是ptable.lock</span>
+<span class="token number">2707</span> <span class="token function">sleep</span><span class="token punctuation">(</span>curproc<span class="token punctuation">,</span> <span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2708</span> <span class="token punctuation">}</span>
+<span class="token number">2709</span> <span class="token punctuation">}</span>
+</div></div></code></pre><h4 id="Exit"><a class="anchor hidden-xs" href="#Exit" title="Exit"><span class="octicon octicon-link"></span></a>Exit</h4><p>exit讓一個應用程序可以自我終結</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span></div><div class="code"><span class="token number">2627</span> <span class="token function">exit</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token number">2628</span> <span class="token punctuation">{</span>
+<span class="token number">2629</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>curproc <span class="token operator">=</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2630</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>p<span class="token punctuation">;</span>
+<span class="token number">2631</span> <span class="token keyword">int</span> fd<span class="token punctuation">;</span>
+<span class="token number">2632</span>
+<span class="token number">2648</span> <span class="token comment">//獲得ptable.lock</span>
+<span class="token number">2649</span> <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2650</span> <span class="token comment">// Parent might be sleeping in wait().</span>
+<span class="token comment">//喚醒當前進程的父進程</span>
+<span class="token number">2651</span> <span class="token function">wakeup1</span><span class="token punctuation">(</span>curproc−<span class="token operator">&gt;</span>parent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2652</span>
+<span class="token number">2653</span> <span class="token comment">// exit把所有子進程交給initproc</span>
+<span class="token number">2654</span> <span class="token keyword">for</span><span class="token punctuation">(</span>p <span class="token operator">=</span> ptable<span class="token punctuation">.</span>proc<span class="token punctuation">;</span> p <span class="token operator">&lt;</span> <span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>proc<span class="token punctuation">[</span>NPROC<span class="token punctuation">]</span><span class="token punctuation">;</span> p<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2655</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>parent <span class="token operator">==</span> curproc<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2656</span> p−<span class="token operator">&gt;</span>parent <span class="token operator">=</span> initproc<span class="token punctuation">;</span>
+<span class="token number">2657</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>state <span class="token operator">==</span> ZOMBIE<span class="token punctuation">)</span>
+<span class="token number">2658</span> <span class="token function">wakeup1</span><span class="token punctuation">(</span>initproc<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2659</span> <span class="token punctuation">}</span>
+<span class="token number">2660</span> <span class="token punctuation">}</span>
+<span class="token number">2661</span>
+<span class="token comment">// exit調用sched來讓出CPU</span>
+<span class="token number">2662</span> <span class="token comment">// Jump into the scheduler, never to return.</span>
+<span class="token number">2663</span> curproc−<span class="token operator">&gt;</span>state <span class="token operator">=</span> ZOMBIE<span class="token punctuation">;</span>
+<span class="token number">2664</span> <span class="token function">sched</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2665</span> <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"zombie exit"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2666</span> <span class="token punctuation">}</span>
+</div></div></code></pre><h4 id="Kill"><a class="anchor hidden-xs" href="#Kill" title="Kill"><span class="octicon octicon-link"></span></a>Kill</h4><p>kill讓一個應用程序可以終結其他進程。<br>
+在實現kill時有兩個困難：<br>
+1）被終結的進程可能正在另一個CPU上運行，所以它必須在被終結之前把CPU讓給調度器；<br>
+2）被終結的進程可能正在sleep中，並持有內核資源。</p><p>kill很輕鬆地解決了這兩個難題：它在進程表中設置被終結的進程的p-&gt;killed，如果這個進程在睡眠中則喚醒之。如果被終結的進程正在另一個處理器上運行，它總會通過系統調用或者中斷（例如時鐘中斷）進入內核。<br>
+當它離開內核時，trap會檢查它的p-&gt;killed，如果被設置了，該進程就會調用exit，終結自己。</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code"><span class="token number">2975</span> <span class="token function">kill</span><span class="token punctuation">(</span><span class="token keyword">int</span> pid<span class="token punctuation">)</span>
+<span class="token number">2976</span> <span class="token punctuation">{</span>
+<span class="token number">2977</span> <span class="token keyword">struct</span> proc <span class="token operator">*</span>p<span class="token punctuation">;</span>
+<span class="token number">2978</span>
+<span class="token number">2979</span> <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2980</span> <span class="token keyword">for</span><span class="token punctuation">(</span>p <span class="token operator">=</span> ptable<span class="token punctuation">.</span>proc<span class="token punctuation">;</span> p <span class="token operator">&lt;</span> <span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>proc<span class="token punctuation">[</span>NPROC<span class="token punctuation">]</span><span class="token punctuation">;</span> p<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2981</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>pid <span class="token operator">==</span> pid<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token number">2982</span> p−<span class="token operator">&gt;</span>killed <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">2983</span> <span class="token comment">// Wake process from sleep if necessary.</span>
+<span class="token number">2984</span> <span class="token keyword">if</span><span class="token punctuation">(</span>p−<span class="token operator">&gt;</span>state <span class="token operator">==</span> SLEEPING<span class="token punctuation">)</span>
+<span class="token number">2985</span> p−<span class="token operator">&gt;</span>state <span class="token operator">=</span> RUNNABLE<span class="token punctuation">;</span>
+<span class="token number">2986</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2987</span> <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token number">2988</span> <span class="token punctuation">}</span>
+<span class="token number">2989</span> <span class="token punctuation">}</span>
+<span class="token number">2990</span> <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>ptable<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">2991</span> <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token number">2992</span> <span class="token punctuation">}</span>
+</div></div></code></pre></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li class=""><a href="#作業系統作業一---項目一" title="作業系統作業一 - 項目一">作業系統作業一 - 項目一</a><ul class="nav"><li><a href="#B10402113-四電子四乙-鄭和軒" title="B10402113 四電子四乙 鄭和軒">B10402113 四電子四乙 鄭和軒</a><ul class="nav"><li><a href="#操作流程" title="操作流程">操作流程</a></li></ul></li><li><a href="#一、開啟qemu---gdb" title="一、開啟qemu - gdb">一、開啟qemu - gdb</a></li><li><a href="#二、開啟另一個終端remote進去" title="二、開啟另一個終端remote進去">二、開啟另一個終端remote進去</a></li><li><a href="#三、設定斷點位址與執行" title="三、設定斷點位址與執行">三、設定斷點位址與執行</a></li><li><a href="#四、紀錄暫存器的值" title="四、紀錄暫存器的值">四、紀錄暫存器的值</a></li></ul></li><li><a href="#作業系統作業一---項目二" title="作業系統作業一 - 項目二">作業系統作業一 - 項目二</a><ul class="nav"><li><a href="#Chapter-0" title="Chapter 0">Chapter 0</a><ul class="nav"><li><a href="#Operating-system-interfaces" title="Operating system interfaces">Operating system interfaces</a></li><li><a href="#Processes-and-memory" title="Processes and memory">Processes and memory</a></li><li><a href="#IO-and-File-descriptors" title="I/O and File descriptors">I/O and File descriptors</a></li><li><a href="#Pipes" title="Pipes">Pipes</a></li><li><a href="#File-system" title="File system">File system</a></li></ul></li><li><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#Abstracting-physical-resources" title="Abstracting physical resources">Abstracting physical resources</a></li><li><a href="#User-mode-kernel-mode-and-system-calls" title="User mode, kernel mode, and system calls">User mode, kernel mode, and system calls</a></li><li><a href="#Kernel-organization" title="Kernel organization">Kernel organization</a></li><li><a href="#Process-overview（行程）" title="Process overview（行程）">Process overview（行程）</a></li><li><a href="#Code-the-first-address-space" title="Code: the first address space">Code: the first address space</a></li><li><a href="#Code-creating-the-first-process" title="Code: creating the first process">Code: creating the first process</a></li><li><a href="#Code-Running-the-first-process" title="Code: Running the first process">Code: Running the first process</a></li><li><a href="#The-first-system-call-exec" title="The first system call: exec">The first system call: exec</a></li></ul></li></ul></li><li><a href="#作業系統作業一---項目三-Chapter-5-Scheduling" title="作業系統作業一 - 項目三 Chapter 5 Scheduling">作業系統作業一 - 項目三 Chapter 5 Scheduling</a><ul class="nav"><li><a href="#Scheduling-排程" title="Scheduling 排程">Scheduling 排程</a></li><li><a href="#Multiplexing-多工" title="Multiplexing 多工">Multiplexing 多工</a><ul class="nav"><li><a href="#Code--Context-switching" title="Code : Context switching">Code : Context switching</a></li></ul></li><li><a href="#程式流程" title="程式流程">程式流程</a></li><li><a href="#代碼解釋" title="代碼解釋">代碼解釋</a></li><li><a href="#資料結構" title="資料結構">資料結構</a><ul class="nav"><li><a href="#Code-Scheduling" title="Code: Scheduling">Code: Scheduling</a></li></ul></li><li><a href="#程式流程1" title="程式流程">程式流程</a></li><li><a href="#代碼解析" title="代碼解析">代碼解析</a></li><li><a href="#資料結構1" title="資料結構">資料結構</a><ul class="nav"><li><a href="#Code-mycpu-and-myproc" title="Code: mycpu and myproc">Code: mycpu and myproc</a></li></ul></li><li><a href="#程式流程2" title="程式流程">程式流程</a></li><li><a href="#代碼解釋1" title="代碼解釋">代碼解釋</a></li><li><a href="#資料結構2" title="資料結構">資料結構</a><ul class="nav"><li><a href="#Sleep-amp-Wakeup" title="Sleep &amp; Wakeup">Sleep &amp; Wakeup</a></li></ul></li><li><a href="#運作原理" title="運作原理">運作原理</a></li><li><a href="#程式流程3" title="程式流程">程式流程</a></li><li><a href="#代碼解釋2" title="代碼解釋">代碼解釋</a><ul class="nav"><li><a href="#Code-Pipes" title="Code: Pipes">Code: Pipes</a></li></ul></li><li><a href="#運作原理1" title="運作原理">運作原理</a><ul class="nav"><li><a href="#程式流程4" title="程式流程">程式流程</a></li></ul></li><li><a href="#代碼解釋（Pipewrite和piperead）" title="代碼解釋（Pipewrite和piperead）">代碼解釋（Pipewrite和piperead）</a></li><li><a href="#資料結構3" title="資料結構">資料結構</a><ul class="nav"><li><a href="#Code-Wait-exit-and-kill" title="Code: Wait, exit, and kill">Code: Wait, exit, and kill</a></li></ul></li><li><a href="#代碼解析＆程式流程" title="代碼解析＆程式流程">代碼解析＆程式流程</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li class=""><a href="#作業系統作業一---項目一" title="作業系統作業一 - 項目一">作業系統作業一 - 項目一</a><ul class="nav"><li><a href="#B10402113-四電子四乙-鄭和軒" title="B10402113 四電子四乙 鄭和軒">B10402113 四電子四乙 鄭和軒</a><ul class="nav"><li><a href="#操作流程" title="操作流程">操作流程</a></li></ul></li><li><a href="#一、開啟qemu---gdb" title="一、開啟qemu - gdb">一、開啟qemu - gdb</a></li><li><a href="#二、開啟另一個終端remote進去" title="二、開啟另一個終端remote進去">二、開啟另一個終端remote進去</a></li><li><a href="#三、設定斷點位址與執行" title="三、設定斷點位址與執行">三、設定斷點位址與執行</a></li><li><a href="#四、紀錄暫存器的值" title="四、紀錄暫存器的值">四、紀錄暫存器的值</a></li></ul></li><li><a href="#作業系統作業一---項目二" title="作業系統作業一 - 項目二">作業系統作業一 - 項目二</a><ul class="nav"><li><a href="#Chapter-0" title="Chapter 0">Chapter 0</a><ul class="nav"><li><a href="#Operating-system-interfaces" title="Operating system interfaces">Operating system interfaces</a></li><li><a href="#Processes-and-memory" title="Processes and memory">Processes and memory</a></li><li><a href="#IO-and-File-descriptors" title="I/O and File descriptors">I/O and File descriptors</a></li><li><a href="#Pipes" title="Pipes">Pipes</a></li><li><a href="#File-system" title="File system">File system</a></li></ul></li><li><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#Abstracting-physical-resources" title="Abstracting physical resources">Abstracting physical resources</a></li><li><a href="#User-mode-kernel-mode-and-system-calls" title="User mode, kernel mode, and system calls">User mode, kernel mode, and system calls</a></li><li><a href="#Kernel-organization" title="Kernel organization">Kernel organization</a></li><li><a href="#Process-overview（行程）" title="Process overview（行程）">Process overview（行程）</a></li><li><a href="#Code-the-first-address-space" title="Code: the first address space">Code: the first address space</a></li><li><a href="#Code-creating-the-first-process" title="Code: creating the first process">Code: creating the first process</a></li><li><a href="#Code-Running-the-first-process" title="Code: Running the first process">Code: Running the first process</a></li><li><a href="#The-first-system-call-exec" title="The first system call: exec">The first system call: exec</a></li></ul></li></ul></li><li><a href="#作業系統作業一---項目三-Chapter-5-Scheduling" title="作業系統作業一 - 項目三 Chapter 5 Scheduling">作業系統作業一 - 項目三 Chapter 5 Scheduling</a><ul class="nav"><li><a href="#Scheduling-排程" title="Scheduling 排程">Scheduling 排程</a></li><li><a href="#Multiplexing-多工" title="Multiplexing 多工">Multiplexing 多工</a><ul class="nav"><li><a href="#Code--Context-switching" title="Code : Context switching">Code : Context switching</a></li></ul></li><li><a href="#程式流程" title="程式流程">程式流程</a></li><li><a href="#代碼解釋" title="代碼解釋">代碼解釋</a></li><li><a href="#資料結構" title="資料結構">資料結構</a><ul class="nav"><li><a href="#Code-Scheduling" title="Code: Scheduling">Code: Scheduling</a></li></ul></li><li><a href="#程式流程1" title="程式流程">程式流程</a></li><li><a href="#代碼解析" title="代碼解析">代碼解析</a></li><li><a href="#資料結構1" title="資料結構">資料結構</a><ul class="nav"><li><a href="#Code-mycpu-and-myproc" title="Code: mycpu and myproc">Code: mycpu and myproc</a></li></ul></li><li><a href="#程式流程2" title="程式流程">程式流程</a></li><li><a href="#代碼解釋1" title="代碼解釋">代碼解釋</a></li><li><a href="#資料結構2" title="資料結構">資料結構</a><ul class="nav"><li><a href="#Sleep-amp-Wakeup" title="Sleep &amp; Wakeup">Sleep &amp; Wakeup</a></li></ul></li><li><a href="#運作原理" title="運作原理">運作原理</a></li><li><a href="#程式流程3" title="程式流程">程式流程</a></li><li><a href="#代碼解釋2" title="代碼解釋">代碼解釋</a><ul class="nav"><li><a href="#Code-Pipes" title="Code: Pipes">Code: Pipes</a></li></ul></li><li><a href="#運作原理1" title="運作原理">運作原理</a><ul class="nav"><li><a href="#程式流程4" title="程式流程">程式流程</a></li></ul></li><li><a href="#代碼解釋（Pipewrite和piperead）" title="代碼解釋（Pipewrite和piperead）">代碼解釋（Pipewrite和piperead）</a></li><li><a href="#資料結構3" title="資料結構">資料結構</a><ul class="nav"><li><a href="#Code-Wait-exit-and-kill" title="Code: Wait, exit, and kill">Code: Wait, exit, and kill</a></li></ul></li><li><a href="#代碼解析＆程式流程" title="代碼解析＆程式流程">代碼解析＆程式流程</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

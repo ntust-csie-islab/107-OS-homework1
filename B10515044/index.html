@@ -1,1 +1,701 @@
-homework not found!!
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        作業系統作業 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="作業系統作業"><a class="anchor hidden-xs" href="#作業系統作業" title="作業系統作業"><span class="octicon octicon-link"></span></a>作業系統作業</h1><h1 id="項目一"><a class="anchor hidden-xs" href="#項目一" title="項目一"><span class="octicon octicon-link"></span></a>項目一</h1><p><img src="https://i.imgur.com/NQcjveJ.jpg" alt=""><br>
+eax            0xaa55	43605<br>
+ecx            0x0	0<br>
+edx            0x80	128<br>
+ebx            0x0	0<br>
+esp            0x6f2c	0x6f2c<br>
+ebp            0x0	0x0<br>
+esi            0x0	0<br>
+edi            0x0	0<br>
+eip            0x7c00	0x7c00<br>
+eflags         0x202	[ IF ]<br>
+cs             0x0	0<br>
+ss             0x0	0<br>
+ds             0x0	0<br>
+es             0x0	0<br>
+fs             0x0	0<br>
+gs             0x0	0</p><p>0x7c00:	0x8ec031fa	0x8ec08ed8	0xa864e4d0	0xb0fa7502<br>
+0x7c10:	0xe464e6d1	0x7502a864	0xe6dfb0fa	0x16010f60<br>
+0x7c20:	0x200f7c78	0xc88366c0	0xc0220f01	0x087c31ea<br>
+0x7c30:	0x10b86600	0x8ed88e00	0x66d08ec0	0x8e0000b8<br>
+0x7c40:	0xbce88ee0	0x00007c00	0x0000eee8	0x00b86600<br>
+0x7c50:	0xc289668a	0xb866ef66	0xef668ae0	0x9066feeb</p><h1 id="項目二"><a class="anchor hidden-xs" href="#項目二" title="項目二"><span class="octicon octicon-link"></span></a>項目二</h1><ul>
+<li>
+<p>每一個process的記憶體都會擺instructions, data,還有stack。使用者可以透過shell呼叫system calls操作kernel。fork()可以創造child process，在parent會return child的pid，在child則是回傳0，藉此知道在哪個process，parent跟child的記憶體、暫存器是分開的，更改不會互相影響。</p>
+</li>
+<li>
+<p>file descriptor是管理檔案的index， descriptor 0讀取、descriptor 1寫入、descriptor 2錯誤資訊。讀取及寫入都會從上次結束的offset開始。</p>
+</li>
+<li>
+<p>Pipe的read會等沒有檔案正被寫入以及所有指到write end的file descriptor被close才會執行</p>
+</li>
+<li>
+<p>OS必須滿足三點要求:多工、獨立、互動</p>
+<ul>
+<li>多工:同時執行多個程式</li>
+<li>獨立:每個程式都是獨立、互不影響的</li>
+<li>互動:不同的程式可以溝通。</li>
+</ul>
+</li>
+<li>
+<p>monolithic kernel:整個OS放在kernel執行</p>
+<ul>
+<li>缺點:interface較複雜，並且如果出錯整個kernel就會fail導致電腦停止運作。</li>
+</ul>
+</li>
+<li>
+<p>micro kernel:把在kernel run的OS code數量降到最小，大部分都運行在user mode，藉由shell送訊息給kernel，再藉由kernel溝通要使用的服務。</p>
+</li>
+<li>
+<p>User mode不能直接執行privileged instruction，kernel mode可以。User mode可以轉換至kernel mode，但OS會決定entry point並驗證system call的argument。</p>
+</li>
+<li>
+<p>virtual address space從0開始先放user memory，之後從0x80100000開始才是kernel memory， process運行在user mode時只會用到user memory，kernel memory是空的，運行在kernel mode時只會用到kernel memory，但user memory會保存著。</p>
+</li>
+</ul><h1 id="項目三"><a class="anchor hidden-xs" href="#項目三" title="項目三"><span class="octicon octicon-link"></span></a>項目三</h1><h1 id="Code-Buffer-cache"><a class="anchor hidden-xs" href="#Code-Buffer-cache" title="Code-Buffer-cache"><span class="octicon octicon-link"></span></a>Code: Buffer cache</h1><h2 id="binit"><a class="anchor hidden-xs" href="#binit" title="binit"><span class="octicon octicon-link"></span></a>binit</h2><p>binit會從buf陣列b，去初始化一個有NBUF個buffer的list，並存放至bcache。</p><pre><code class="binit hljs"><span class="hljs-function"><span class="hljs-keyword">void</span>
+<span class="hljs-title">binit</span>(<span class="hljs-params"><span class="hljs-keyword">void</span></span>)
+</span>{
+  <span class="hljs-keyword">struct</span> buf *b;
+
+  initlock(&amp;bcache.<span class="hljs-keyword">lock</span>, <span class="hljs-string">"bcache"</span>);
+
+<span class="hljs-comment">//PAGEBREAK!</span>
+  <span class="hljs-comment">// Create linked list of buffers</span>
+  bcache.head.prev = &amp;bcache.head;
+  bcache.head.next = &amp;bcache.head;
+  <span class="hljs-keyword">for</span>(b = bcache.buf; b &lt; bcache.buf+NBUF; b++){
+    b-&gt;next = bcache.head.next;
+    b-&gt;prev = &amp;bcache.head;
+    initsleeplock(&amp;b-&gt;<span class="hljs-keyword">lock</span>, <span class="hljs-string">"buffer"</span>);
+    bcache.head.next-&gt;prev = b;
+    bcache.head.next = b;
+  }
+}
+</code></pre><p><img src="https://i.imgur.com/HC0rSfE.jpg" alt=""></p><h2 id="NBUF"><a class="anchor hidden-xs" href="#NBUF" title="NBUF"><span class="octicon octicon-link"></span></a>NBUF</h2><pre><code class="NBUF hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NBUF (MAXOPBLOCKS*3) <span class="hljs-comment">// size of disk block cache</span></span>
+</code></pre><h2 id="buf"><a class="anchor hidden-xs" href="#buf" title="buf"><span class="octicon octicon-link"></span></a>buf</h2><pre><code class="buf hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">buf</span> {</span>
+  <span class="hljs-keyword">int</span> flags;
+  uint dev;
+  uint blockno;
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">sleeplock</span> <span class="hljs-title">lock</span>;</span>
+  uint refcnt;
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">buf</span> *<span class="hljs-title">prev</span>;</span> <span class="hljs-comment">// LRU cache list</span>
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">buf</span> *<span class="hljs-title">next</span>;</span>
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">buf</span> *<span class="hljs-title">qnext</span>;</span> <span class="hljs-comment">// disk queue</span>
+  uchar data[BSIZE];
+};
+</code></pre><p>buf有三種標記:</p><ul>
+<li>B_BUSY:有process正在進行讀寫</li>
+<li>B_VALID:含有有效的硬碟資料</li>
+<li>B_DIRTY:資料有被修改，需要寫到硬碟去<br>
+利用這三種標記可以確保硬碟資料的一致性</li>
+</ul><pre><code class="buf hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> B_BUSY  0x1  <span class="hljs-comment">// buffer is locked by some process</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> B_VALID 0x2  <span class="hljs-comment">// buffer has been read from disk</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> B_DIRTY 0x4  <span class="hljs-comment">// buffer needs to be written to disk</span></span>
+</code></pre><h2 id="bcache"><a class="anchor hidden-xs" href="#bcache" title="bcache"><span class="octicon octicon-link"></span></a>bcache</h2><pre><code class="bcache hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> {</span>
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">spinlock</span> <span class="hljs-title">lock</span>;</span>
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">buf</span> <span class="hljs-title">buf</span>[<span class="hljs-title">NBUF</span>];</span>
+
+  <span class="hljs-comment">// Linked list of all buffers, through prev/next.</span>
+  <span class="hljs-comment">// head.next is most recently used.</span>
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">buf</span> <span class="hljs-title">head</span>;</span>
+} bcache;
+</code></pre><h2 id="bread"><a class="anchor hidden-xs" href="#bread" title="bread"><span class="octicon octicon-link"></span></a>bread</h2><p>bread會呼叫bget取得buffer，如果buffer要從硬碟讀取，他會呼叫iderw。</p><pre><code class="bread hljs"><span class="hljs-comment">// Return a locked buf with the contents of the indicated block.</span>
+ <span class="hljs-keyword">struct</span> buf*
+bread(<span class="hljs-keyword">uint</span> dev, <span class="hljs-keyword">uint</span> blockno)
+{
+    <span class="hljs-keyword">struct</span> buf *b;
+
+     b = bget(dev, blockno);
+     <span class="hljs-keyword">if</span>((b−&gt;flags &amp; B_VALID) == <span class="hljs-number">0</span>) {
+         iderw(b);
+     }
+     <span class="hljs-keyword">return</span> b;
+}
+</code></pre><p><img src="https://i.imgur.com/jHzrfGt.jpg" alt=""></p><h2 id="bget"><a class="anchor hidden-xs" href="#bget" title="bget"><span class="octicon octicon-link"></span></a>bget</h2><p>bget會在所有buffer中透過指定的device、sector尋找，不是BUSY的，標記BUSY，正在被使用的則會sleep等待release。如果沒有找到，bget會從沒有在用且沒修改過的buffer回收一個，並allocate新的。</p><pre><code class="bget hljs"><span class="hljs-comment">// Look through buffer cache for block on device dev.</span>
+<span class="hljs-comment">// If not found, allocate a buffer.</span>
+<span class="hljs-comment">// In either case, return locked buffer.</span>
+<span class="hljs-keyword">static</span> struct buf*
+bget(uint dev, uint blockno)
+{
+  struct buf *b;
+
+  acquire(&amp;bcache.lock);
+
+  <span class="hljs-comment">// Is the block already cached?</span>
+  <span class="hljs-keyword">for</span>(b = bcache.head.next; b != &amp;bcache.head; b = b-&gt;next){
+    <span class="hljs-keyword">if</span>(b-&gt;dev == dev &amp;&amp; b-&gt;blockno == blockno){
+      b-&gt;refcnt++;
+      release(&amp;bcache.lock);
+      acquiresleep(&amp;b-&gt;lock);
+      <span class="hljs-keyword">return</span> b;
+    }
+  }
+
+  <span class="hljs-comment">// Not cached; recycle some unused buffer and clean buffer</span>
+  <span class="hljs-comment">// "clean" because B_DIRTY and not locked means log.c</span>
+  <span class="hljs-comment">// hasn't yet committed the changes to the buffer.</span>
+  <span class="hljs-keyword">for</span>(b = bcache.head.prev; b != &amp;bcache.head; b = b-&gt;prev){
+    <span class="hljs-keyword">if</span>(b-&gt;refcnt == <span class="hljs-number">0</span> &amp;&amp; (b-&gt;flags &amp; B_DIRTY) == <span class="hljs-number">0</span>) {
+      b-&gt;dev = dev;
+      b-&gt;blockno = blockno;
+      b-&gt;flags = <span class="hljs-number">0</span>;
+      b-&gt;refcnt = <span class="hljs-number">1</span>;
+      release(&amp;bcache.lock);
+      acquiresleep(&amp;b-&gt;lock);
+      <span class="hljs-keyword">return</span> b;
+    }
+  }
+  panic(<span class="hljs-string">"bget: no buffers"</span>);
+}
+</code></pre><h2 id="bwrite"><a class="anchor hidden-xs" href="#bwrite" title="bwrite"><span class="octicon octicon-link"></span></a>bwrite</h2><p>將buffer寫入硬碟</p><pre><code class="bwrite hljs"><span class="hljs-function"><span class="hljs-keyword">void</span>
+<span class="hljs-title">bwrite</span>(<span class="hljs-params"><span class="hljs-keyword">struct</span> buf *b</span>)
+</span>{
+  <span class="hljs-keyword">if</span>(!holdingsleep(&amp;b-&gt;<span class="hljs-keyword">lock</span>))
+    panic(<span class="hljs-string">"bwrite"</span>);
+  b-&gt;flags |= B_DIRTY;
+  iderw(b);
+}
+</code></pre><p><img src="https://i.imgur.com/G5IQ0qM.jpg" alt=""></p><h2 id="brelse"><a class="anchor hidden-xs" href="#brelse" title="brelse"><span class="octicon octicon-link"></span></a>brelse</h2><p>使用完buffer都要呼叫brelse釋放他。brelse會移動buffer往前移動，因為bufferlist較前面的代表越常使用。</p><pre><code class="brelse hljs"><span class="hljs-comment">// Release a locked buffer.</span>
+<span class="hljs-comment">// Move to the head of the MRU list.</span>
+void
+brelse(struct buf *b)
+{
+  <span class="hljs-keyword">if</span>(!holdingsleep(&amp;b-&gt;lock))
+    panic(<span class="hljs-string">"brelse"</span>);
+
+  releasesleep(&amp;b-&gt;lock);
+
+  acquire(&amp;bcache.lock);
+  b-&gt;refcnt--;
+  <span class="hljs-keyword">if</span> (b-&gt;refcnt == <span class="hljs-number">0</span>) {
+    <span class="hljs-comment">// no one is waiting for it.</span>
+    b-&gt;next-&gt;prev = b-&gt;prev;
+    b-&gt;prev-&gt;next = b-&gt;next;
+    b-&gt;next = bcache.head.next;
+    b-&gt;prev = &amp;bcache.head;
+    bcache.head.next-&gt;prev = b;
+    bcache.head.next = b;
+  }
+
+  release(&amp;bcache.lock);
+}
+</code></pre><p><img src="https://i.imgur.com/Xg4b0SW.jpg" alt=""></p><h1 id="Code-logging"><a class="anchor hidden-xs" href="#Code-logging" title="Code-logging"><span class="octicon octicon-link"></span></a>Code: logging</h1><p>log主要是用來在系統崩潰後恢復資料用的。資料會先寫到log區，commit後會寫到資料區，然後從log區刪除。系統發生崩潰後，會先到log區尋找有沒有完整的commit並寫回資料區，然後從log區刪除。</p><pre><code class="log hljs">begin_op();
+...
+bp = bread(...);
+bp-&gt;data[...] = ...;
+log_write(bp);
+brelse(bp);
+end_op();
+</code></pre><h2 id="begin_op"><a class="anchor hidden-xs" href="#begin_op" title="begin_op"><span class="octicon octicon-link"></span></a>begin_op</h2><p>如果有commit正在操作，或是要寫入的資料量大於剩餘的log空間，他都會sleep等待，等可以寫入時會將outstanding+1代表有系統在使用log。</p><pre><code class="begin hljs"> <span class="hljs-comment">// called at the start of each FS system call.</span>
+<span class="hljs-number">4827</span> <span class="hljs-keyword">void</span>
+<span class="hljs-number">4828</span> begin_op(<span class="hljs-keyword">void</span>)
+<span class="hljs-number">4829</span> {
+<span class="hljs-number">4830</span> acquire(&amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4831</span> <span class="hljs-keyword">while</span>(<span class="hljs-number">1</span>){
+<span class="hljs-number">4832</span> <span class="hljs-keyword">if</span>(<span class="hljs-built_in">log</span>.committing){
+<span class="hljs-number">4833</span> sleep(&amp;<span class="hljs-built_in">log</span>, &amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4834</span> } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(<span class="hljs-built_in">log</span>.lh.n + (<span class="hljs-built_in">log</span>.outstanding+<span class="hljs-number">1</span>)*MAXOPBLOCKS &gt; LOGSIZE){
+<span class="hljs-number">4835</span> <span class="hljs-comment">// this op might exhaust log space; wait for commit.</span>
+<span class="hljs-number">4836</span> sleep(&amp;<span class="hljs-built_in">log</span>, &amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4837</span> } <span class="hljs-keyword">else</span> {
+<span class="hljs-number">4838</span> <span class="hljs-built_in">log</span>.outstanding += <span class="hljs-number">1</span>;
+<span class="hljs-number">4839</span> release(&amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4840</span> <span class="hljs-keyword">break</span>;
+<span class="hljs-number">4841</span> }
+<span class="hljs-number">4842</span> }
+<span class="hljs-number">4843</span> }
+</code></pre><p><img src="https://i.imgur.com/GYcIfSt.jpg" alt=""></p><h2 id="log_write"><a class="anchor hidden-xs" href="#log_write" title="log_write"><span class="octicon octicon-link"></span></a>log_write</h2><p>他會把block加入logheader，但還不寫入資料，並修改block的標誌為B_DIRTY，這樣可以確保不會有別的process來使用。</p><pre><code class="log_write hljs"> <span class="hljs-keyword">void</span>
+<span class="hljs-number">4922</span> log_write(struct buf *b)
+<span class="hljs-number">4923</span> {
+<span class="hljs-number">4924</span> <span class="hljs-keyword">int</span> i;
+<span class="hljs-number">4925</span>
+<span class="hljs-number">4926</span> <span class="hljs-keyword">if</span> (<span class="hljs-built_in">log</span>.lh.n &gt;= LOGSIZE || <span class="hljs-built_in">log</span>.lh.n &gt;= <span class="hljs-built_in">log</span>.size − <span class="hljs-number">1</span>)
+<span class="hljs-number">4927</span> panic(<span class="hljs-string">"too big a transaction"</span>);
+<span class="hljs-number">4928</span> <span class="hljs-keyword">if</span> (<span class="hljs-built_in">log</span>.outstanding &lt; <span class="hljs-number">1</span>)
+<span class="hljs-number">4929</span> panic(<span class="hljs-string">"log_write outside of trans"</span>);
+<span class="hljs-number">4930</span>
+<span class="hljs-number">4931</span> acquire(&amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4932</span> <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">log</span>.lh.n; i++) {
+<span class="hljs-number">4933</span> <span class="hljs-keyword">if</span> (<span class="hljs-built_in">log</span>.lh.block[i] == b−&gt;blockno) <span class="hljs-comment">// log absorbtion</span>
+<span class="hljs-number">4934</span> <span class="hljs-keyword">break</span>;
+<span class="hljs-number">4935</span> }
+<span class="hljs-number">4936</span> <span class="hljs-built_in">log</span>.lh.block[i] = b−&gt;blockno;
+<span class="hljs-number">4937</span> <span class="hljs-keyword">if</span> (i == <span class="hljs-built_in">log</span>.lh.n)
+<span class="hljs-number">4938</span> <span class="hljs-built_in">log</span>.lh.n++;
+<span class="hljs-number">4939</span> b−&gt;flags |= B_DIRTY; <span class="hljs-comment">// prevent eviction</span>
+<span class="hljs-number">4940</span> release(&amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4941</span> }
+</code></pre><p><img src="https://i.imgur.com/3mNwwPu.jpg" alt=""></p><pre><code class="log hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">logheader</span> {</span>
+  <span class="hljs-keyword">int</span> n;
+  <span class="hljs-keyword">int</span> block[LOGSIZE];
+};
+
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">log</span> {</span>
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">spinlock</span> <span class="hljs-title">lock</span>;</span>
+  <span class="hljs-keyword">int</span> start;
+  <span class="hljs-keyword">int</span> size;
+  <span class="hljs-keyword">int</span> outstanding; <span class="hljs-comment">// how many FS sys calls are executing.</span>
+  <span class="hljs-keyword">int</span> committing;  <span class="hljs-comment">// in commit(), please wait.</span>
+  <span class="hljs-keyword">int</span> dev;
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">logheader</span> <span class="hljs-title">lh</span>;</span>
+};
+</code></pre><h2 id="end_op"><a class="anchor hidden-xs" href="#end_op" title="end_op"><span class="octicon octicon-link"></span></a>end_op</h2><p>將outstanding-1，如果減完變0就執行commit，不然就叫醒其他在sleep的begin_op的process</p><pre><code class="end hljs"> <span class="hljs-comment">// called at the end of each FS system call.</span>
+<span class="hljs-number">4851</span> <span class="hljs-comment">// commits if this was the last outstanding operation.</span>
+<span class="hljs-number">4852</span> <span class="hljs-keyword">void</span>
+<span class="hljs-number">4853</span> end_op(<span class="hljs-keyword">void</span>)
+<span class="hljs-number">4854</span> {
+<span class="hljs-number">4855</span> <span class="hljs-keyword">int</span> do_commit = <span class="hljs-number">0</span>;
+<span class="hljs-number">4856</span>
+<span class="hljs-number">4857</span> acquire(&amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4858</span> <span class="hljs-built_in">log</span>.outstanding −= <span class="hljs-number">1</span>;
+<span class="hljs-number">4859</span> <span class="hljs-keyword">if</span>(<span class="hljs-built_in">log</span>.committing)
+<span class="hljs-number">4860</span> panic(<span class="hljs-string">"log.committing"</span>);
+<span class="hljs-number">4861</span> <span class="hljs-keyword">if</span>(<span class="hljs-built_in">log</span>.outstanding == <span class="hljs-number">0</span>){
+<span class="hljs-number">4862</span> do_commit = <span class="hljs-number">1</span>;
+<span class="hljs-number">4863</span> <span class="hljs-built_in">log</span>.committing = <span class="hljs-number">1</span>;
+<span class="hljs-number">4864</span> } <span class="hljs-keyword">else</span> {
+<span class="hljs-number">4865</span> <span class="hljs-comment">// begin_op() may be waiting for log space,</span>
+<span class="hljs-number">4866</span> <span class="hljs-comment">// and decrementing log.outstanding has decreased</span>
+<span class="hljs-number">4867</span> <span class="hljs-comment">// the amount of reserved space.</span>
+<span class="hljs-number">4868</span> wakeup(&amp;<span class="hljs-built_in">log</span>);
+<span class="hljs-number">4869</span> }
+<span class="hljs-number">4870</span> release(&amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4871</span>
+<span class="hljs-number">4872</span> <span class="hljs-keyword">if</span>(do_commit){
+<span class="hljs-number">4873</span> <span class="hljs-comment">// call commit w/o holding locks, since not allowed</span>
+<span class="hljs-number">4874</span> <span class="hljs-comment">// to sleep with locks.</span>
+<span class="hljs-number">4875</span> commit();
+<span class="hljs-number">4876</span> acquire(&amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4877</span> <span class="hljs-built_in">log</span>.committing = <span class="hljs-number">0</span>;
+<span class="hljs-number">4878</span> wakeup(&amp;<span class="hljs-built_in">log</span>);
+<span class="hljs-number">4879</span> release(&amp;<span class="hljs-built_in">log</span>.lock);
+<span class="hljs-number">4880</span> }
+</code></pre><p><img src="https://i.imgur.com/wK2P8bm.jpg" alt=""></p><h1 id="Code-Inodes"><a class="anchor hidden-xs" href="#Code-Inodes" title="Code-Inodes"><span class="octicon octicon-link"></span></a>Code: Inodes</h1><p>inode主要是存放文件的資訊，如果要操作文件都會透過inode。inode會集中放在硬碟裡相鄰的block。</p><h2 id="ialloc"><a class="anchor hidden-xs" href="#ialloc" title="ialloc"><span class="octicon octicon-link"></span></a>ialloc</h2><p>他會在硬碟裡尋找一個可用的inode，初始化他並return，並呼叫iget在icache中保留一份。</p><pre><code class="ialloc hljs"><span class="hljs-function">struct inode*
+<span class="hljs-title">ialloc</span><span class="hljs-params">(uint dev, <span class="hljs-keyword">short</span> type)</span>
+</span>{
+  <span class="hljs-keyword">int</span> inum;
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">buf</span> *<span class="hljs-title">bp</span>;</span>
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">dinode</span> *<span class="hljs-title">dip</span>;</span>
+
+  <span class="hljs-keyword">for</span>(inum = <span class="hljs-number">1</span>; inum &lt; sb.ninodes; inum++){
+    bp = bread(dev, IBLOCK(inum, sb));
+    dip = (struct dinode*)bp-&gt;data + inum%IPB;
+    <span class="hljs-keyword">if</span>(dip-&gt;type == <span class="hljs-number">0</span>){  <span class="hljs-comment">// a free inode</span>
+      <span class="hljs-built_in">memset</span>(dip, <span class="hljs-number">0</span>, <span class="hljs-keyword">sizeof</span>(*dip));
+      dip-&gt;type = type;
+      log_write(bp);   <span class="hljs-comment">// mark it allocated on the disk</span>
+      brelse(bp);
+      <span class="hljs-keyword">return</span> iget(dev, inum);
+    }
+    brelse(bp);
+  }
+  panic(<span class="hljs-string">"ialloc: no inodes"</span>);
+}
+</code></pre><p><img src="https://i.imgur.com/Sl7xIGy.jpg" alt=""></p><h2 id="iget"><a class="anchor hidden-xs" href="#iget" title="iget"><span class="octicon octicon-link"></span></a>iget</h2><p>他會return inum的inode，並增加ref引用的數量。</p><pre><code class="iget hljs"><span class="hljs-keyword">static</span> struct inode*
+iget(uint dev, uint inum)
+{
+  struct inode *ip, *<span class="hljs-keyword">empty</span>;
+
+  acquire(&amp;icache.lock);
+
+  <span class="hljs-comment">// Is the inode already cached?</span>
+  <span class="hljs-keyword">empty</span> = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">for</span>(ip = &amp;icache.inode[<span class="hljs-number">0</span>]; ip &lt; &amp;icache.inode[NINODE]; ip++){
+    <span class="hljs-keyword">if</span>(ip-&gt;ref &gt; <span class="hljs-number">0</span> &amp;&amp; ip-&gt;dev == dev &amp;&amp; ip-&gt;inum == inum){
+      ip-&gt;ref++;
+      release(&amp;icache.lock);
+      <span class="hljs-keyword">return</span> ip;
+    }
+    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">empty</span> == <span class="hljs-number">0</span> &amp;&amp; ip-&gt;ref == <span class="hljs-number">0</span>)    <span class="hljs-comment">// Remember empty slot.</span>
+      <span class="hljs-keyword">empty</span> = ip;
+  }
+
+  <span class="hljs-comment">// Recycle an inode cache entry.</span>
+  <span class="hljs-keyword">if</span>(<span class="hljs-keyword">empty</span> == <span class="hljs-number">0</span>)
+    panic(<span class="hljs-string">"iget: no inodes"</span>);
+
+  ip = <span class="hljs-keyword">empty</span>;
+  ip-&gt;dev = dev;
+  ip-&gt;inum = inum;
+  ip-&gt;ref = <span class="hljs-number">1</span>;
+  ip-&gt;flags = <span class="hljs-number">0</span>;
+  release(&amp;icache.lock);
+
+  <span class="hljs-keyword">return</span> ip;
+}
+</code></pre><h2 id="ilock、iunlock"><a class="anchor hidden-xs" href="#ilock、iunlock" title="ilock、iunlock"><span class="octicon octicon-link"></span></a>ilock、iunlock</h2><p>透過修改flag的標記來確一次只會被一個process使用</p><pre><code class="ilock hljs">void
+ilock(struct inode *ip)
+{
+  struct buf *bp;
+  struct dinode *dip;
+
+  <span class="hljs-keyword">if</span>(ip == <span class="hljs-number">0</span> || ip-&gt;ref &lt; <span class="hljs-number">1</span>)
+    panic(<span class="hljs-string">"ilock"</span>);
+
+  acquiresleep(&amp;ip-&gt;lock);
+
+  <span class="hljs-keyword">if</span>(!(ip-&gt;flags &amp; I_VALID)){
+    bp = bread(ip-&gt;dev, IBLOCK(ip-&gt;inum, sb));
+    dip = (struct dinode*)bp-&gt;data + ip-&gt;inum%IPB;
+    ip-&gt;type = dip-&gt;type;
+    ip-&gt;major = dip-&gt;major;
+    ip-&gt;minor = dip-&gt;minor;
+    ip-&gt;nlink = dip-&gt;nlink;
+    ip-&gt;size = dip-&gt;size;
+    memmove(ip-&gt;addrs, dip-&gt;addrs, sizeof(ip-&gt;addrs));
+    brelse(bp);
+    ip-&gt;flags |= I_VALID;
+    <span class="hljs-keyword">if</span>(ip-&gt;type == <span class="hljs-number">0</span>)
+      panic(<span class="hljs-string">"ilock: no type"</span>);
+  }
+}
+</code></pre><p><img src="https://i.imgur.com/BiRrnZB.jpg" alt=""></p><h2 id="iunlock"><a class="anchor hidden-xs" href="#iunlock" title="iunlock"><span class="octicon octicon-link"></span></a>iunlock</h2><pre><code class="iunlock hljs"><span class="hljs-comment">// Unlock the given inode.</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span>
+<span class="hljs-title">iunlock</span>(<span class="hljs-params"><span class="hljs-keyword">struct</span> inode *ip</span>)
+</span>{
+  <span class="hljs-keyword">if</span>(ip == <span class="hljs-number">0</span> || !holdingsleep(&amp;ip-&gt;<span class="hljs-keyword">lock</span>) || ip-&gt;<span class="hljs-keyword">ref</span> &lt; <span class="hljs-number">1</span>)
+    panic(<span class="hljs-string">"iunlock"</span>);
+
+  releasesleep(&amp;ip-&gt;<span class="hljs-keyword">lock</span>);
+}
+</code></pre><p><img src="https://i.imgur.com/aagceda.jpg" alt=""></p><pre><code class="inode hljs"><span class="hljs-comment">// in-memory copy of an inode</span>
+<span class="hljs-keyword">struct</span> inode {
+  <span class="hljs-keyword">uint</span> dev;           <span class="hljs-comment">// Device number</span>
+  <span class="hljs-keyword">uint</span> inum;          <span class="hljs-comment">// Inode number</span>
+  <span class="hljs-keyword">int</span> <span class="hljs-keyword">ref</span>;            <span class="hljs-comment">// Reference count</span>
+  <span class="hljs-keyword">int</span> flags;          <span class="hljs-comment">// I_BUSY, I_VALID</span>
+
+  <span class="hljs-keyword">short</span> type;         <span class="hljs-comment">// copy of disk inode</span>
+  <span class="hljs-keyword">short</span> major;
+  <span class="hljs-keyword">short</span> minor;
+  <span class="hljs-keyword">short</span> nlink;
+  <span class="hljs-keyword">uint</span> size;
+  <span class="hljs-keyword">uint</span> addrs[NDIRECT+<span class="hljs-number">1</span>];
+};
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> I_BUSY 0x1</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> I_VALID 0x2</span>
+
+<span class="hljs-comment">// On-disk inode structure</span>
+<span class="hljs-keyword">struct</span> dinode {
+  <span class="hljs-keyword">short</span> type;           <span class="hljs-comment">// File type 0(free), T_DIR, T_FILE, T_DEV</span>
+  <span class="hljs-keyword">short</span> major;          <span class="hljs-comment">// Major device number (T_DEV only)</span>
+  <span class="hljs-keyword">short</span> minor;          <span class="hljs-comment">// Minor device number (T_DEV only)</span>
+  <span class="hljs-keyword">short</span> nlink;          <span class="hljs-comment">// Number of links to inode in file system</span>
+  <span class="hljs-keyword">uint</span> size;            <span class="hljs-comment">// Size of file (bytes)</span>
+  <span class="hljs-keyword">uint</span> addrs[NDIRECT+<span class="hljs-number">1</span>];   <span class="hljs-comment">// Data block addresses</span>
+};
+
+<span class="hljs-keyword">struct</span> {
+  <span class="hljs-keyword">struct</span> spinlock <span class="hljs-keyword">lock</span>;
+  <span class="hljs-keyword">struct</span> inode inode[NINODE];
+} icache;
+</code></pre><h1 id="Code-directory-layer"><a class="anchor hidden-xs" href="#Code-directory-layer" title="Code-directory-layer"><span class="octicon octicon-link"></span></a>Code: directory layer</h1><p>directory主要是存放這個目錄裡的文件名字及inum，文件名的長度限制設定在DIRSIZ</p><pre><code class="dirent hljs"> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">dirent</span> {</span>
+<span class="hljs-number">4116</span> ushort inum;
+<span class="hljs-number">4117</span> <span class="hljs-keyword">char</span> name[DIRSIZ];
+<span class="hljs-number">4118</span> };
+
+<span class="hljs-number">4113</span> <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DIRSIZ 14</span>
+</code></pre><h2 id="dirlookup"><a class="anchor hidden-xs" href="#dirlookup" title="dirlookup"><span class="octicon octicon-link"></span></a>dirlookup</h2><p>他會在T_DIR類型的檔案裡尋找，如果找到了就會return inode，並設置poff為目錄entry的byte offset。</p><pre><code class="dirlookup hljs"> <span class="hljs-comment">// Look for a directory entry in a directory.</span>
+<span class="hljs-number">5609</span> <span class="hljs-comment">// If found, set *poff to byte offset of entry.</span>
+<span class="hljs-number">5610</span> <span class="hljs-keyword">struct</span> inode*
+<span class="hljs-number">5611</span> dirlookup(<span class="hljs-keyword">struct</span> inode *dp, <span class="hljs-keyword">char</span> *name, <span class="hljs-keyword">uint</span> *poff)
+<span class="hljs-number">5612</span> {
+<span class="hljs-number">5613</span> <span class="hljs-keyword">uint</span> off, inum;
+<span class="hljs-number">5614</span> <span class="hljs-keyword">struct</span> dirent de;
+<span class="hljs-number">5615</span>
+<span class="hljs-number">5616</span> <span class="hljs-keyword">if</span>(dp−&gt;type != T_DIR)
+<span class="hljs-number">5617</span> panic(<span class="hljs-string">"dirlookup not DIR"</span>);
+<span class="hljs-number">5618</span>
+<span class="hljs-number">5619</span> <span class="hljs-keyword">for</span>(off = <span class="hljs-number">0</span>; off &lt; dp−&gt;size; off += <span class="hljs-keyword">sizeof</span>(de)){
+<span class="hljs-number">5620</span> <span class="hljs-keyword">if</span>(readi(dp, (<span class="hljs-keyword">char</span>*)&amp;de, off, <span class="hljs-keyword">sizeof</span>(de)) != <span class="hljs-keyword">sizeof</span>(de))
+<span class="hljs-number">5621</span> panic(<span class="hljs-string">"dirlookup read"</span>);
+<span class="hljs-number">5622</span> <span class="hljs-keyword">if</span>(de.inum == <span class="hljs-number">0</span>)
+<span class="hljs-number">5623</span> <span class="hljs-keyword">continue</span>;
+<span class="hljs-number">5624</span> <span class="hljs-keyword">if</span>(namecmp(name, de.name) == <span class="hljs-number">0</span>){
+<span class="hljs-number">5625</span> <span class="hljs-comment">// entry matches path element</span>
+<span class="hljs-number">5626</span> <span class="hljs-keyword">if</span>(poff)
+<span class="hljs-number">5627</span> *poff = off;
+<span class="hljs-number">5628</span> inum = de.inum;
+<span class="hljs-number">5629</span> <span class="hljs-keyword">return</span> iget(dp−&gt;dev, inum);
+<span class="hljs-number">5630</span> }
+<span class="hljs-number">5631</span> }
+<span class="hljs-number">5632</span>
+<span class="hljs-number">5633</span> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+<span class="hljs-number">5634</span> }
+</code></pre><p><img src="https://i.imgur.com/8V7VG75.jpg" alt=""></p><h2 id="dirlink"><a class="anchor hidden-xs" href="#dirlink" title="dirlink"><span class="octicon octicon-link"></span></a>dirlink</h2><p>他會把名字、inum放入目錄裡對應的inode，如果名字已存在會return error。</p><pre><code class="dirlink hljs"> <span class="hljs-comment">// Write a new directory entry (name, inum) into the directory dp.</span>
+<span class="hljs-number">5651</span> <span class="hljs-keyword">int</span>
+<span class="hljs-number">5652</span> dirlink(struct inode *dp, <span class="hljs-keyword">char</span> *name, uint inum)
+<span class="hljs-number">5653</span> {
+<span class="hljs-number">5654</span> <span class="hljs-keyword">int</span> off;
+<span class="hljs-number">5655</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">dirent</span> <span class="hljs-title">de</span>;</span>
+<span class="hljs-number">5656</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">inode</span> *<span class="hljs-title">ip</span>;</span>
+<span class="hljs-number">5657</span>
+<span class="hljs-number">5658</span> <span class="hljs-comment">// Check that name is not present.</span>
+<span class="hljs-number">5659</span> <span class="hljs-keyword">if</span>((ip = dirlookup(dp, name, <span class="hljs-number">0</span>)) != <span class="hljs-number">0</span>){
+<span class="hljs-number">5660</span> iput(ip);
+<span class="hljs-number">5661</span> <span class="hljs-keyword">return</span> −<span class="hljs-number">1</span>;
+<span class="hljs-number">5662</span> }
+<span class="hljs-number">5663</span>
+<span class="hljs-number">5664</span> <span class="hljs-comment">// Look for an empty dirent.</span>
+<span class="hljs-number">5665</span> <span class="hljs-keyword">for</span>(off = <span class="hljs-number">0</span>; off &lt; dp−&gt;size; off += <span class="hljs-keyword">sizeof</span>(de)){
+<span class="hljs-number">5666</span> <span class="hljs-keyword">if</span>(readi(dp, (<span class="hljs-keyword">char</span>*)&amp;de, off, <span class="hljs-keyword">sizeof</span>(de)) != <span class="hljs-keyword">sizeof</span>(de))
+<span class="hljs-number">5667</span> panic(<span class="hljs-string">"dirlink read"</span>);
+<span class="hljs-number">5668</span> <span class="hljs-keyword">if</span>(de.inum == <span class="hljs-number">0</span>)
+<span class="hljs-number">5669</span> <span class="hljs-keyword">break</span>;
+<span class="hljs-number">5670</span> }
+<span class="hljs-number">5671</span>
+<span class="hljs-number">5672</span> <span class="hljs-built_in">strncpy</span>(de.name, name, DIRSIZ);
+<span class="hljs-number">5673</span> de.inum = inum;
+<span class="hljs-number">5674</span> <span class="hljs-keyword">if</span>(writei(dp, (<span class="hljs-keyword">char</span>*)&amp;de, off, <span class="hljs-keyword">sizeof</span>(de)) != <span class="hljs-keyword">sizeof</span>(de))
+<span class="hljs-number">5675</span> panic(<span class="hljs-string">"dirlink"</span>);
+<span class="hljs-number">5676</span>
+<span class="hljs-number">5677</span> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+<span class="hljs-number">5678</span> }
+</code></pre><p><img src="https://i.imgur.com/Irzyzn9.jpg" alt=""></p><h1 id="Code-Path-names"><a class="anchor hidden-xs" href="#Code-Path-names" title="Code-Path-names"><span class="octicon octicon-link"></span></a>Code: Path names</h1><h2 id="namei"><a class="anchor hidden-xs" href="#namei" title="namei"><span class="octicon octicon-link"></span></a>namei</h2><p>他會計算路徑並return對應的inode。</p><pre><code class="namei hljs"> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">inode</span>*
+5790 <span class="hljs-title">namei</span>(<span class="hljs-title">char</span> *<span class="hljs-title">path</span>)
+5791 {</span>
+<span class="hljs-number">5792</span> <span class="hljs-keyword">char</span> name[DIRSIZ];
+<span class="hljs-number">5793</span> <span class="hljs-keyword">return</span> namex(path, <span class="hljs-number">0</span>, name);
+<span class="hljs-number">5794</span> }
+</code></pre><h2 id="namex"><a class="anchor hidden-xs" href="#namex" title="namex"><span class="octicon octicon-link"></span></a>namex</h2><p>他會計算路徑解析從哪裡開始，如果是’/'開始就是從root開始，其他則會從現在的目錄開始。</p><pre><code class="namex hljs"> <span class="hljs-keyword">static</span> <span class="hljs-keyword">struct</span> inode*
+<span class="hljs-number">5755</span> namex(<span class="hljs-keyword">char</span> *path, <span class="hljs-keyword">int</span> nameiparent, <span class="hljs-keyword">char</span> *name)
+<span class="hljs-number">5756</span> {
+<span class="hljs-number">5757</span> <span class="hljs-keyword">struct</span> inode *ip, *next;
+<span class="hljs-number">5758</span>
+<span class="hljs-number">5759</span> <span class="hljs-keyword">if</span>(*path == ’/’)
+<span class="hljs-number">5760</span> ip = iget(ROOTDEV, ROOTINO);
+<span class="hljs-number">5761</span> <span class="hljs-keyword">else</span>
+<span class="hljs-number">5762</span> ip = idup(myproc()−&gt;cwd);
+<span class="hljs-number">5763</span>
+<span class="hljs-number">5764</span> <span class="hljs-keyword">while</span>((path = skipelem(path, name)) != <span class="hljs-number">0</span>){
+<span class="hljs-number">5765</span> ilock(ip);
+<span class="hljs-number">5766</span> <span class="hljs-keyword">if</span>(ip−&gt;type != T_DIR){
+<span class="hljs-number">5767</span> iunlockput(ip);
+<span class="hljs-number">5768</span> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+<span class="hljs-number">5769</span> }
+<span class="hljs-number">5770</span> <span class="hljs-keyword">if</span>(nameiparent &amp;&amp; *path == ’\<span class="hljs-number">0</span>’){
+<span class="hljs-number">5771</span> <span class="hljs-comment">// Stop one level early.</span>
+<span class="hljs-number">5772</span> iunlock(ip);
+<span class="hljs-number">5773</span> <span class="hljs-keyword">return</span> ip;
+<span class="hljs-number">5774</span> }
+<span class="hljs-number">5775</span> <span class="hljs-keyword">if</span>((next = dirlookup(ip, name, <span class="hljs-number">0</span>)) == <span class="hljs-number">0</span>){
+<span class="hljs-number">5776</span> iunlockput(ip);
+<span class="hljs-number">5777</span> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+<span class="hljs-number">5778</span> }
+<span class="hljs-number">5779</span> iunlockput(ip);
+<span class="hljs-number">5780</span> ip = next;
+<span class="hljs-number">5781</span> }
+<span class="hljs-number">5782</span> <span class="hljs-keyword">if</span>(nameiparent){
+<span class="hljs-number">5783</span> iput(ip);
+<span class="hljs-number">5784</span> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+<span class="hljs-number">5785</span> }
+<span class="hljs-number">5786</span> <span class="hljs-keyword">return</span> ip;
+<span class="hljs-number">5787</span> }
+</code></pre><p><img src="https://i.imgur.com/jpqLGb9.jpg" alt=""></p><h1 id="File-Descriptor"><a class="anchor hidden-xs" href="#File-Descriptor" title="File-Descriptor"><span class="octicon octicon-link"></span></a>File Descriptor</h1><p>xv6利用struct file表示文件</p><pre><code class="file hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">file</span> {</span>
+  <span class="hljs-keyword">enum</span> { FD_NONE, FD_PIPE, FD_INODE } type;
+  <span class="hljs-keyword">int</span> ref; <span class="hljs-comment">// reference count</span>
+  <span class="hljs-keyword">char</span> readable;
+  <span class="hljs-keyword">char</span> writable;
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">pipe</span> *<span class="hljs-title">pipe</span>;</span>
+  <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">inode</span> *<span class="hljs-title">ip</span>;</span>
+  uint off;
+};
+</code></pre></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li class=""><a href="#作業系統作業" title="作業系統作業">作業系統作業</a></li><li><a href="#項目一" title="項目一">項目一</a></li><li><a href="#項目二" title="項目二">項目二</a></li><li><a href="#項目三" title="項目三">項目三</a></li><li><a href="#Code-Buffer-cache" title="Code: Buffer cache">Code: Buffer cache</a><ul class="nav"><li><a href="#binit" title="binit">binit</a></li><li><a href="#NBUF" title="NBUF">NBUF</a></li><li><a href="#buf" title="buf">buf</a></li><li><a href="#bcache" title="bcache">bcache</a></li><li><a href="#bread" title="bread">bread</a></li><li><a href="#bget" title="bget">bget</a></li><li><a href="#bwrite" title="bwrite">bwrite</a></li><li><a href="#brelse" title="brelse">brelse</a></li></ul></li><li><a href="#Code-logging" title="Code: logging">Code: logging</a><ul class="nav"><li><a href="#begin_op" title="begin_op">begin_op</a></li><li><a href="#log_write" title="log_write">log_write</a></li><li><a href="#end_op" title="end_op">end_op</a></li></ul></li><li><a href="#Code-Inodes" title="Code: Inodes">Code: Inodes</a><ul class="nav"><li><a href="#ialloc" title="ialloc">ialloc</a></li><li><a href="#iget" title="iget">iget</a></li><li><a href="#ilock、iunlock" title="ilock、iunlock">ilock、iunlock</a></li><li><a href="#iunlock" title="iunlock">iunlock</a></li></ul></li><li><a href="#Code-directory-layer" title="Code: directory layer">Code: directory layer</a><ul class="nav"><li><a href="#dirlookup" title="dirlookup">dirlookup</a></li><li><a href="#dirlink" title="dirlink">dirlink</a></li></ul></li><li><a href="#Code-Path-names" title="Code: Path names">Code: Path names</a><ul class="nav"><li><a href="#namei" title="namei">namei</a></li><li><a href="#namex" title="namex">namex</a></li></ul></li><li><a href="#File-Descriptor" title="File Descriptor">File Descriptor</a></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li class=""><a href="#作業系統作業" title="作業系統作業">作業系統作業</a></li><li><a href="#項目一" title="項目一">項目一</a></li><li><a href="#項目二" title="項目二">項目二</a></li><li><a href="#項目三" title="項目三">項目三</a></li><li><a href="#Code-Buffer-cache" title="Code: Buffer cache">Code: Buffer cache</a><ul class="nav"><li><a href="#binit" title="binit">binit</a></li><li><a href="#NBUF" title="NBUF">NBUF</a></li><li><a href="#buf" title="buf">buf</a></li><li><a href="#bcache" title="bcache">bcache</a></li><li><a href="#bread" title="bread">bread</a></li><li><a href="#bget" title="bget">bget</a></li><li><a href="#bwrite" title="bwrite">bwrite</a></li><li><a href="#brelse" title="brelse">brelse</a></li></ul></li><li><a href="#Code-logging" title="Code: logging">Code: logging</a><ul class="nav"><li><a href="#begin_op" title="begin_op">begin_op</a></li><li><a href="#log_write" title="log_write">log_write</a></li><li><a href="#end_op" title="end_op">end_op</a></li></ul></li><li><a href="#Code-Inodes" title="Code: Inodes">Code: Inodes</a><ul class="nav"><li><a href="#ialloc" title="ialloc">ialloc</a></li><li><a href="#iget" title="iget">iget</a></li><li><a href="#ilock、iunlock" title="ilock、iunlock">ilock、iunlock</a></li><li><a href="#iunlock" title="iunlock">iunlock</a></li></ul></li><li><a href="#Code-directory-layer" title="Code: directory layer">Code: directory layer</a><ul class="nav"><li><a href="#dirlookup" title="dirlookup">dirlookup</a></li><li><a href="#dirlink" title="dirlink">dirlink</a></li></ul></li><li><a href="#Code-Path-names" title="Code: Path names">Code: Path names</a><ul class="nav"><li><a href="#namei" title="namei">namei</a></li><li><a href="#namex" title="namex">namex</a></li></ul></li><li><a href="#File-Descriptor" title="File Descriptor">File Descriptor</a></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
