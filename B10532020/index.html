@@ -1,1 +1,872 @@
-homework not found!!
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        作業系統報告 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="markdown-body container-fluid" id="doc" style="position: relative;"><h1 id="作業系統報告"><a title="作業系統報告" class="anchor hidden-xs" href="#作業系統報告"><span class="octicon octicon-link"></span></a>作業系統報告</h1><blockquote>
+<p><small><i class="fa fa-user"></i> B10532020 鍾淯丞 <i class="fa fa-clock-o"></i> Oct,2018</small></p>
+</blockquote><h1 id="項目一"><a title="項目一" class="anchor hidden-xs" href="#項目一"><span class="octicon octicon-link"></span></a><strong>項目一:</strong></h1><p><img alt="" src="https://i.imgur.com/ZX680TV.png"><br>
+0x7c00是boot loader的進入點(stack最頂端)，開始往下疊到0x0000，之後才開始C的code載入</p><table>
+<thead>
+<tr>
+<th>暫存器</th>
+<th>高位元</th>
+<th>低位元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eax</td>
+<td>0xaa55</td>
+<td>43605</td>
+</tr>
+<tr>
+<td>ecx</td>
+<td>0x0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>ebx</td>
+<td>0x0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><h1 id="項目二"><a title="項目二" class="anchor hidden-xs" href="#項目二"><span class="octicon octicon-link"></span></a><strong>項目二:</strong></h1><p>OS的工作為共享電腦資源給各程式/管理與提供介面讓程式不受硬體差異進行操作/共用資料，process有各自空間(指令/資料/stack)，呼叫系統功能使用system call</p><h3 id="OS的功能"><a title="OS的功能" class="anchor hidden-xs" href="#OS的功能"><span class="octicon octicon-link"></span></a>OS的功能:</h3><ul>
+<li>
+<dl>
+<dt>IO/File Descriptor:</dt>
+<dd>用於讀寫外部輸入，具抽象化功能讓不同裝置的內容以byte串呈現</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>Pipe:</dt>
+<dd>提供方法讓process互相溝通</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>File system:</dt>
+<dd>管理檔案與資料(可以做link產生數個接口)，樹狀結構</dd>
+</dl>
+</li>
+</ul><blockquote></blockquote><p>OS需要能支援多工，分配時間給所有處理程序，並不讓它們互相影響。Xv6多數低階功能是x86專有的。</p><h3 id="核心類型"><a title="核心類型" class="anchor hidden-xs" href="#核心類型"><span class="octicon octicon-link"></span></a>核心類型:</h3><ul>
+<li>
+<dl>
+<dt>單核心:</dt>
+<dd>應用程式直接使用核心的功能，效能高，但開發一但出錯會整個掛掉</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>微核心:</dt>
+<dd>減少單核心的風險，讓核心功能模組化並獨立於系統，透過其他通訊機制來做操作</dd>
+</dl>
+</li>
+</ul><blockquote></blockquote><p>電腦開機初始化自己後從硬碟載入boot loader到主記憶體並執行。而boot loader將xv6的核心載入0x100000並從entry開始執行(此時x86的paging硬體還沒啟動，虛擬地址直接指向實體地址)，entry開始對各個虛擬地址對應實體地址。之後載入C程式，建立stack指標%esp，然後跳到main。接著main初始化裝置與子系統後呼叫userinit(叫allocproc在process table分配一個空間並初始化其狀態，之後分配核心stack放該process的執行緒)，核心執行緒開始執行暫存器內容(來自p-&gt;context)。userinit呼叫setupkvm建立page table(僅對應核心要用的記憶體)，process初始化後userinit會將其標記為可執行讓排程能用。main執行完userinit後mpmain讓排程器開始執行process(尋找可執行的process，此時只有initproc，呼叫switchuvm讓硬體使用該process的page table)，allocproc將initproc的p-&gt;context-&gt;eip設給forkret讓ret開始執行，之後讓stack頂部p-&gt;context之後的自備pop給trapret接著執行。Trapret用pop從trap frame復原暫存器，最後iret指令pop %cs，%eip，%flag，%esp，%ss，CPU繼續trap frame的%eip。initcode.S觸發system call exec(取代記憶體與暫存器當前的process，但file descriptor/process id/父process不變)，並將argv/$init/$0推到stack並要求核心執行exec。</p><h1 id="項目三"><a title="項目三" class="anchor hidden-xs" href="#項目三"><span class="octicon octicon-link"></span></a><strong>項目三:</strong></h1><h2 id="Page-table"><a title="Page-table" class="anchor hidden-xs" href="#Page-table"><span class="octicon octicon-link"></span></a>Page table:</h2><p>讓OS在執行時知道各記憶體對應位置的機制，一個page為4096byte，以兩層page table方式管理，先用前10bit尋找page table，再用下10bit的虛擬地址找PTE</p><ul>
+<li>
+<dl>
+<dt>PTE狀態</dt>
+<dd>PTE_P:存在<br>
+PTE_W:可寫<br>
+PTE_U:使用者<br>
+PTE_PWT:寫過<br>
+PTE_PCD:不能用cache<br>
+PTE_A:可存取<br>
+PTE_D:髒的<br>
+PTE_PS:大小<br>
+PTE_MBZ:位元需是0</dd>
+</dl>
+</li>
+</ul><blockquote></blockquote><h2 id="Process-address-space"><a title="Process-address-space" class="anchor hidden-xs" href="#Process-address-space"><span class="octicon octicon-link"></span></a>Process address space:</h2><p>main為了另外管理空間呼叫kvmalloc切換到新的page table，每個process有各自page table(隨xv6切換process切換page table)。memlayout.h宣告了記憶體內容的常數以及將虛擬地址轉為實體地址的巨集。當process需要更多空間xv6先找閒置實體page後加入PTE到process的page table並設flag。xv6確保每個process有獨立記憶體(各自page table)且都從虛擬地址0開始。</p><h2 id="Creating-an-address-space"><a title="Creating-an-address-space" class="anchor hidden-xs" href="#Creating-an-address-space"><span class="octicon octicon-link"></span></a>Creating an address space:</h2><p>main呼叫kvmalloc建立並切換到page table對應到KERNBASE之上讓kernel執行，多數工作由setupkvm執行</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code"><span class="token comment">//分配一個page table給核心地址空間讓排程器process</span>
+<span class="token function">voidkvmalloc</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    kpgdir <span class="token operator">=</span> <span class="token function">setupkvm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//此功能主要工作</span>
+    <span class="token function">switchkvm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//切換到核心page table</span>
+<span class="token punctuation">}</span>
+
+</div></div></code></pre><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span></div><div class="code">pde_t<span class="token operator">*</span><span class="token function">setupkvm</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    pde_t <span class="token operator">*</span>pgdir<span class="token punctuation">;</span>
+    <span class="token keyword">struct</span> kmap <span class="token operator">*</span>k<span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>pgdir <span class="token operator">=</span> <span class="token punctuation">(</span>pde_t<span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">kalloc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token function">memset</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> PGSIZE<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//建立page大小記憶體</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">P2V</span><span class="token punctuation">(</span>PHYSTOP<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token operator">*</span><span class="token punctuation">)</span>DEVSPACE<span class="token punctuation">)</span>
+        <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"PHYSTOP too high"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>k <span class="token operator">=</span> kmap<span class="token punctuation">;</span> k <span class="token operator">&lt;</span><span class="token operator">&amp;</span>kmap<span class="token punctuation">[</span><span class="token function">NELEM</span><span class="token punctuation">(</span>kmap<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span> k<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">mappages</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span>k−<span class="token operator">&gt;</span>virt<span class="token punctuation">,</span>k−<span class="token operator">&gt;</span>phys_end−k−<span class="token operator">&gt;</span>phys_start<span class="token punctuation">,</span>uint<span class="token punctuation">)</span>k−<span class="token operator">&gt;</span>phys_start<span class="token punctuation">,</span> k−<span class="token operator">&gt;</span>perm<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//安裝核心需要的轉換(核心指令/資料)</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">freevm</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> pgdir<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</div></div></code></pre><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span></div><div class="code"><span class="token keyword">static</span> <span class="token keyword">struct</span> kmap <span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token operator">*</span>virt<span class="token punctuation">;</span>
+    uint phys_start<span class="token punctuation">;</span>
+    uint phys_end<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> perm<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> 
+kmap<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+<span class="token punctuation">{</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token operator">*</span><span class="token punctuation">)</span>KERNBASE<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> EXTMEM<span class="token punctuation">,</span> PTE_W<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// I/O空間</span>
+<span class="token punctuation">{</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token operator">*</span><span class="token punctuation">)</span>KERNLINK<span class="token punctuation">,</span> <span class="token function">V2P</span><span class="token punctuation">(</span>KERNLINK<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">V2P</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// kern text+rodata</span>
+<span class="token punctuation">{</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token operator">*</span><span class="token punctuation">)</span>data<span class="token punctuation">,</span> <span class="token function">V2P</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">,</span> PHYSTOP<span class="token punctuation">,</span> PTE_W<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// kern data+memory</span>
+<span class="token punctuation">{</span> <span class="token punctuation">(</span><span class="token keyword">void</span><span class="token operator">*</span><span class="token punctuation">)</span>DEVSPACE<span class="token punctuation">,</span> DEVSPACE<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> PTE_W<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// more devices</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</div></div></code></pre><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span></div><div class="code"><span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">mappages</span><span class="token punctuation">(</span>pde_t <span class="token operator">*</span>pgdir<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>va<span class="token punctuation">,</span> uint size<span class="token punctuation">,</span> uint pa<span class="token punctuation">,</span> <span class="token keyword">int</span> perm<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">char</span> <span class="token operator">*</span>a<span class="token punctuation">,</span> <span class="token operator">*</span>last<span class="token punctuation">;</span>
+    pte_t <span class="token operator">*</span>pte<span class="token punctuation">;</span>
+
+    a <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">PGROUNDDOWN</span><span class="token punctuation">(</span><span class="token punctuation">(</span>uint<span class="token punctuation">)</span>va<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    last <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">PGROUNDDOWN</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>uint<span class="token punctuation">)</span>va<span class="token punctuation">)</span> <span class="token operator">+</span> size − <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token comment">//尋找虛擬地址要對應的PTE並獲得資料</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>pte <span class="token operator">=</span> <span class="token function">walkpgdir</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> a<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">*</span>pte <span class="token operator">&amp;</span> PTE_P<span class="token punctuation">)</span>
+            <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"remap"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">*</span>pte <span class="token operator">=</span> pa <span class="token operator">|</span> perm <span class="token operator">|</span> PTE_P<span class="token punctuation">;</span><span class="token comment">//初始化PTE以保留頁碼/所需權限/紀錄成有效</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>a <span class="token operator">==</span> last<span class="token punctuation">)</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        a <span class="token operator">+</span><span class="token operator">=</span> PGSIZE<span class="token punctuation">;</span>
+        pa <span class="token operator">+</span><span class="token operator">=</span> PGSIZE<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</div></div></code></pre><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span></div><div class="code"><span class="token keyword">static</span> pte_t <span class="token operator">*</span><span class="token function">walkpgdir</span><span class="token punctuation">(</span>pde_t <span class="token operator">*</span>pgdir<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>va<span class="token punctuation">,</span> <span class="token keyword">int</span> alloc<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    pde_t <span class="token operator">*</span>pde<span class="token punctuation">;</span>
+    pte_t <span class="token operator">*</span>pgtab<span class="token punctuation">;</span>
+
+    pde <span class="token operator">=</span> <span class="token operator">&amp;</span>pgdir<span class="token punctuation">[</span><span class="token function">PDX</span><span class="token punctuation">(</span>va<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//使用虛擬地址前10bit找page目錄進入點</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">*</span>pde <span class="token operator">&amp;</span> PTE_P<span class="token punctuation">)</span><span class="token comment">//若不存在表示尚未被分配</span>
+    <span class="token punctuation">{</span>
+        pgtab <span class="token operator">=</span> <span class="token punctuation">(</span>pte_t<span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">P2V</span><span class="token punctuation">(</span><span class="token function">PTE_ADDR</span><span class="token punctuation">(</span><span class="token operator">*</span>pde<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> 
+    <span class="token keyword">else</span> 
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>alloc <span class="token operator">||</span> <span class="token punctuation">(</span>pgtab <span class="token operator">=</span> <span class="token punctuation">(</span>pte_t<span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">kalloc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token function">memset</span><span class="token punctuation">(</span>pgtab<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> PGSIZE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">*</span>pde <span class="token operator">=</span> <span class="token function">V2P</span><span class="token punctuation">(</span>pgtab<span class="token punctuation">)</span> <span class="token operator">|</span> PTE_P <span class="token operator">|</span> PTE_W <span class="token operator">|</span> PTE_U<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token operator">&amp;</span>pgtab<span class="token punctuation">[</span><span class="token function">PTX</span><span class="token punctuation">(</span>va<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//使用後10bit在page table page找PTE地址</span>
+<span class="token punctuation">}</span>
+
+</div></div></code></pre><p><img alt="" src="https://i.imgur.com/8Ndt5yI.png"></p><h2 id="Physical-memory-allocation"><a title="Physical-memory-allocation" class="anchor hidden-xs" href="#Physical-memory-allocation"><span class="octicon octicon-link"></span></a>Physical memory allocation:</h2><p>核心在執行期間需要分配與釋放記憶體給page table/process user memory/kernel stack/pipe buffer，每次都是4096byte。xv6在entry用分離的page分配器(不支援釋放且上限為4MB)</p><h2 id="Physical-memory-allocator"><a title="Physical-memory-allocator" class="anchor hidden-xs" href="#Physical-memory-allocator"><span class="octicon octicon-link"></span></a>Physical memory allocator:</h2><p>Allocator的資料結後是個實體記憶體page的free list，每個空page的清單元素都是run的結構</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span></div><div class="code"><span class="token keyword">struct</span> run <span class="token punctuation">{</span>  
+    <span class="token keyword">struct</span> run <span class="token operator">*</span>next<span class="token punctuation">;</span><span class="token comment">//link list</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</div></div></code></pre><p>Free list由spin lock保護</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span></div><div class="code"><span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    <span class="token keyword">struct</span> spinlock lock<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> use_lock<span class="token punctuation">;</span>
+    <span class="token keyword">struct</span> run <span class="token operator">*</span>freelist<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> kmem<span class="token punctuation">;</span>
+
+</div></div></code></pre><p>main透過kinit1和kinit2初始化allocator</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code"><span class="token keyword">void</span> <span class="token function">kinit1</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span>vstart<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>vend<span class="token punctuation">)</span><span class="token comment">//用前4MB建立沒被鎖的分配 </span>
+<span class="token punctuation">{</span>
+    <span class="token function">initlock</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>kmem<span class="token punctuation">.</span>lock<span class="token punctuation">,</span> <span class="token string">"kmem"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    kmem<span class="token punctuation">.</span>use_lock <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token function">freerange</span><span class="token punctuation">(</span>vstart<span class="token punctuation">,</span> vend<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//透過每個page呼叫kfree增加記憶體到free list</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">void</span> <span class="token function">kinit2</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span>vstart<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>vend<span class="token punctuation">)</span><span class="token comment">//使用locking並安排更多可分配的記憶體</span>
+<span class="token punctuation">{</span>
+    <span class="token function">freerange</span><span class="token punctuation">(</span>vstart<span class="token punctuation">,</span> vend<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//透過每個page呼叫kfree增加記憶體到free list</span>
+    kmem<span class="token punctuation">.</span>use_lock <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span></div><div class="code"><span class="token function">freerange</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span>vstart<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>vend<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">char</span> <span class="token operator">*</span>p<span class="token punctuation">;</span>
+    p <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">PGROUNDUP</span><span class="token punctuation">(</span><span class="token punctuation">(</span>uint<span class="token punctuation">)</span>vstart<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//確保只釋放對其的實體地址</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span> p <span class="token operator">+</span> PGSIZE <span class="token operator">&lt;=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span>vend<span class="token punctuation">;</span> p <span class="token operator">+</span><span class="token operator">=</span> PGSIZE<span class="token punctuation">)</span>
+        <span class="token function">kfree</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//allocator起始沒有記憶體，用來管理</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><p>將記憶體中所有byte設為1，讓程式在記憶體被釋放後使用時是讀垃圾而非舊資料</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span></div><div class="code"><span class="token keyword">void</span> <span class="token function">kfree</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span>v<span class="token punctuation">)</span> 
+<span class="token punctuation">{</span> 
+    <span class="token keyword">struct</span> run <span class="token operator">*</span>r<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>uint<span class="token punctuation">)</span>v <span class="token operator">%</span> PGSIZE <span class="token operator">||</span> v <span class="token operator">&lt;</span> end <span class="token operator">||</span> <span class="token function">V2P</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span> <span class="token operator">&gt;=</span> PHYSTOP<span class="token punctuation">)</span>
+    <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"kfree"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">memset</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> PGSIZE<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//所有值都設為1</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>kmem<span class="token punctuation">.</span>use_lock<span class="token punctuation">)</span>
+        <span class="token function">acquire</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>kmem<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    r <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">struct</span> run<span class="token operator">*</span><span class="token punctuation">)</span>v<span class="token punctuation">;</span> 
+    r−<span class="token operator">&gt;</span>next <span class="token operator">=</span> kmem<span class="token punctuation">.</span>freelist<span class="token punctuation">;</span> <span class="token comment">//紀錄舊的free list的start給r-&gt;next</span>
+    kmem<span class="token punctuation">.</span>freelist <span class="token operator">=</span> r<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>kmem<span class="token punctuation">.</span>use_lock<span class="token punctuation">)</span>
+        <span class="token function">release</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>kmem<span class="token punctuation">.</span>lock<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><p><img alt="" src="https://i.imgur.com/Lw4xrwM.png"></p><h2 id="Sbrk"><a title="Sbrk" class="anchor hidden-xs" href="#Sbrk"><span class="octicon octicon-link"></span></a>Sbrk:</h2><p>Process需要增加或減少其記憶體時所用的system call，由growproc實作，此功能會更動process的page table(透過allocuvm與deallocuvm更新)，x86硬體將page table entry快取到TLB且當xv6改變page table就必須使被快取的entry無效(透過重新載入cr3暫存器的地址)</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span></div><div class="code"><span class="token keyword">int</span> <span class="token function">growproc</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    uint sz<span class="token punctuation">;</span>
+    <span class="token keyword">struct</span> proc <span class="token operator">*</span>curproc <span class="token operator">=</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    sz <span class="token operator">=</span> curproc−<span class="token operator">&gt;</span>sz<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//增加更多page對應到該process的頂部</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>sz <span class="token operator">=</span> <span class="token function">allocuvm</span><span class="token punctuation">(</span>curproc−<span class="token operator">&gt;</span>pgdir<span class="token punctuation">,</span> sz<span class="token punctuation">,</span> sz <span class="token operator">+</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//核心更新table</span>
+            <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> 
+    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//解除該process的地址空間對應並釋放對應的實體記憶體</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>sz <span class="token operator">=</span> <span class="token function">deallocuvm</span><span class="token punctuation">(</span>curproc−<span class="token operator">&gt;</span>pgdir<span class="token punctuation">,</span> sz<span class="token punctuation">,</span> sz <span class="token operator">+</span> n<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">//核心更新table</span>
+            <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> 
+    curproc−<span class="token operator">&gt;</span>sz <span class="token operator">=</span> sz<span class="token punctuation">;</span>
+    <span class="token function">switchuvm</span><span class="token punctuation">(</span>curproc<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><p><img alt="" src="https://i.imgur.com/anN2FQc.png"></p><h2 id="Exec"><a title="Exec" class="anchor hidden-xs" href="#Exec"><span class="octicon octicon-link"></span></a>Exec:</h2><p>建立使用者地址空間的system call，從檔案系統中的檔案初始化使用者部分的地址空間。exec從ELF檔案載入記憶體，使用者或process能放任何地址給ELF檔案，因此有風險(地址可指向核心，導致崩潰或顛覆隔離機制)，xv6執行很多檢查避免此問題(像是否overflow)。使用者能用ph.vaddr建立二進位ELF指向核心並讓ph.memsz大到能overflow到0x1000(此方法能通過allocuvm檢查)，之後loaduvm自動傳入ph.vaddr到核心(跳過檢查)從而複製二進位ELF資料到核心，如此使用者程式就能以核心權限執行，因此參數檢查很重要(xv6沒有完整的檢查所以隔離是能被繞過的)</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span>
+<span data-linenumber="22"></span>
+<span data-linenumber="23"></span>
+<span data-linenumber="24"></span>
+<span data-linenumber="25"></span>
+<span data-linenumber="26"></span>
+<span data-linenumber="27"></span>
+<span data-linenumber="28"></span>
+<span data-linenumber="29"></span>
+<span data-linenumber="30"></span>
+<span data-linenumber="31"></span>
+<span data-linenumber="32"></span>
+<span data-linenumber="33"></span>
+<span data-linenumber="34"></span>
+<span data-linenumber="35"></span>
+<span data-linenumber="36"></span>
+<span data-linenumber="37"></span>
+<span data-linenumber="38"></span>
+<span data-linenumber="39"></span>
+<span data-linenumber="40"></span>
+<span data-linenumber="41"></span>
+<span data-linenumber="42"></span>
+<span data-linenumber="43"></span>
+<span data-linenumber="44"></span>
+<span data-linenumber="45"></span>
+<span data-linenumber="46"></span>
+<span data-linenumber="47"></span>
+<span data-linenumber="48"></span>
+<span data-linenumber="49"></span>
+<span data-linenumber="50"></span>
+<span data-linenumber="51"></span>
+<span data-linenumber="52"></span>
+<span data-linenumber="53"></span>
+<span data-linenumber="54"></span>
+<span data-linenumber="55"></span>
+<span data-linenumber="56"></span>
+<span data-linenumber="57"></span>
+<span data-linenumber="58"></span>
+<span data-linenumber="59"></span>
+<span data-linenumber="60"></span>
+<span data-linenumber="61"></span>
+<span data-linenumber="62"></span>
+<span data-linenumber="63"></span>
+<span data-linenumber="64"></span>
+<span data-linenumber="65"></span>
+<span data-linenumber="66"></span>
+<span data-linenumber="67"></span>
+<span data-linenumber="68"></span>
+<span data-linenumber="69"></span>
+<span data-linenumber="70"></span>
+<span data-linenumber="71"></span>
+<span data-linenumber="72"></span>
+<span data-linenumber="73"></span>
+<span data-linenumber="74"></span>
+<span data-linenumber="75"></span>
+<span data-linenumber="76"></span>
+<span data-linenumber="77"></span>
+<span data-linenumber="78"></span>
+<span data-linenumber="79"></span>
+<span data-linenumber="80"></span>
+<span data-linenumber="81"></span>
+<span data-linenumber="82"></span>
+<span data-linenumber="83"></span>
+<span data-linenumber="84"></span>
+<span data-linenumber="85"></span>
+<span data-linenumber="86"></span>
+<span data-linenumber="87"></span>
+<span data-linenumber="88"></span>
+<span data-linenumber="89"></span>
+<span data-linenumber="90"></span>
+<span data-linenumber="91"></span>
+<span data-linenumber="92"></span>
+<span data-linenumber="93"></span>
+<span data-linenumber="94"></span>
+<span data-linenumber="95"></span>
+<span data-linenumber="96"></span></div><div class="code"><span class="token keyword">int</span> <span class="token function">exec</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span>path<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>argv<span class="token punctuation">)</span> 
+<span class="token punctuation">{</span> 
+    <span class="token keyword">char</span> <span class="token operator">*</span>s<span class="token punctuation">,</span> <span class="token operator">*</span>last<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">,</span> off<span class="token punctuation">;</span>
+    uint argc<span class="token punctuation">,</span> sz<span class="token punctuation">,</span> sp<span class="token punctuation">,</span> ustack<span class="token punctuation">[</span><span class="token number">3</span><span class="token operator">+</span>MAXARG<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">struct</span> elfhdr elf<span class="token punctuation">;</span>
+    <span class="token keyword">struct</span> inode <span class="token operator">*</span>ip<span class="token punctuation">;</span>
+    <span class="token keyword">struct</span> proghdr ph<span class="token punctuation">;</span>
+    pde_t <span class="token operator">*</span>pgdir<span class="token punctuation">,</span> <span class="token operator">*</span>oldpgdir<span class="token punctuation">;</span>
+    <span class="token keyword">struct</span> proc <span class="token operator">*</span>curproc <span class="token operator">=</span> <span class="token function">myproc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">begin_op</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ip <span class="token operator">=</span> <span class="token function">namei</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//使用namei開啟被命名的二進位路徑</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">end_op</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">cprintf</span><span class="token punctuation">(</span><span class="token string">"exec: fail\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">ilock</span><span class="token punctuation">(</span>ip<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pgdir <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> 
+    <span class="token comment">// 檢查ELF標頭</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">readi</span><span class="token punctuation">(</span>ip<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>elf<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>elf<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>elf<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">//讀取ELF標頭</span>
+        <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>elf<span class="token punctuation">.</span>magic <span class="token operator">!=</span> ELF_MAGIC<span class="token punctuation">)</span><span class="token comment">//檢查二進位格式是否正確</span>
+        <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>pgdir <span class="token operator">=</span> <span class="token function">setupkvm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//分配沒使用者對應的新page table</span>
+        <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+    <span class="token comment">// 載入程式到記憶體</span>
+    sz <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> off<span class="token operator">=</span>elf<span class="token punctuation">.</span>phoff<span class="token punctuation">;</span> i<span class="token operator">&lt;</span>elf<span class="token punctuation">.</span>phnum<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">,</span> off<span class="token operator">+</span><span class="token operator">=</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>ph<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">readi</span><span class="token punctuation">(</span>ip<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>ph<span class="token punctuation">,</span> off<span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>ph<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>ph<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>ph<span class="token punctuation">.</span>type <span class="token operator">!=</span> ELF_PROG_LOAD<span class="token punctuation">)</span>
+            <span class="token keyword">continue</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>ph<span class="token punctuation">.</span>memsz <span class="token operator">&lt;</span> ph<span class="token punctuation">.</span>filesz<span class="token punctuation">)</span>
+            <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>ph<span class="token punctuation">.</span>vaddr <span class="token operator">+</span> ph<span class="token punctuation">.</span>memsz <span class="token operator">&lt;</span> ph<span class="token punctuation">.</span>vaddr<span class="token punctuation">)</span>
+            <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>sz <span class="token operator">=</span> <span class="token function">allocuvm</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> sz<span class="token punctuation">,</span> ph<span class="token punctuation">.</span>vaddr <span class="token operator">+</span> ph<span class="token punctuation">.</span>memsz<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//為每個ELF區塊分配記憶體並檢查虛擬地址的要求在KERNBASE之下</span>
+            <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>ph<span class="token punctuation">.</span>vaddr <span class="token operator">%</span> PGSIZE <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">loaduvm</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span>ph<span class="token punctuation">.</span>vaddr<span class="token punctuation">,</span> ip<span class="token punctuation">,</span> ph<span class="token punctuation">.</span>off<span class="token punctuation">,</span> ph<span class="token punctuation">.</span>filesz<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//將每個區塊載入記憶體</span>
+            <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">iunlockput</span><span class="token punctuation">(</span>ip<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">end_op</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ip <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token comment">// 在下個page邊界分配兩個page</span>
+    <span class="token comment">// 讓第一個不可用，第二個當使用者stack</span>
+    sz <span class="token operator">=</span> <span class="token function">PGROUNDUP</span><span class="token punctuation">(</span>sz<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>sz <span class="token operator">=</span> <span class="token function">allocuvm</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> sz<span class="token punctuation">,</span> sz <span class="token operator">+</span> <span class="token number">2</span><span class="token operator">*</span>PGSIZE<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+    <span class="token function">clearpteu</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>sz − <span class="token number">2</span><span class="token operator">*</span>PGSIZE<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    sp <span class="token operator">=</span> sz<span class="token punctuation">;</span>
+    <span class="token comment">// 推入字串參數</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>argc <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> argv<span class="token punctuation">[</span>argc<span class="token punctuation">]</span><span class="token punctuation">;</span> argc<span class="token operator">++</span><span class="token punctuation">)</span> 
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>argc <span class="token operator">&gt;=</span> MAXARG<span class="token punctuation">)</span>
+            <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+        sp <span class="token operator">=</span> <span class="token punctuation">(</span>sp − <span class="token punctuation">(</span><span class="token function">strlen</span><span class="token punctuation">(</span>argv<span class="token punctuation">[</span>argc<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token operator">~</span><span class="token number">3</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">copyout</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> sp<span class="token punctuation">,</span> argv<span class="token punctuation">[</span>argc<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token function">strlen</span><span class="token punctuation">(</span>argv<span class="token punctuation">[</span>argc<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//檢查目標page是否可用</span>
+            <span class="token keyword">goto</span> bad<span class="token punctuation">;</span> 
+        ustack<span class="token punctuation">[</span><span class="token number">3</span><span class="token operator">+</span>argc<span class="token punctuation">]</span> <span class="token operator">=</span> sp<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> 
+    ustack<span class="token punctuation">[</span><span class="token number">3</span><span class="token operator">+</span>argc<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    ustack<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0xffffffff</span><span class="token punctuation">;</span> <span class="token comment">// fake return PC</span>
+    ustack<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> argc<span class="token punctuation">;</span>
+    ustack<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> sp − <span class="token punctuation">(</span>argc<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">4</span><span class="token punctuation">;</span> <span class="token comment">// argv 指標</span>
+    sp −<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span>argc<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">4</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">copyout</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> sp<span class="token punctuation">,</span> ustack<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span>argc<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//偵測是否為無效程式(若是則釋放新的image並回傳-1)</span>
+        <span class="token keyword">goto</span> bad<span class="token punctuation">;</span>
+    <span class="token comment">//存程式名用於debug</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>last<span class="token operator">=</span>s<span class="token operator">=</span>path<span class="token punctuation">;</span> <span class="token operator">*</span>s<span class="token punctuation">;</span> s<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">*</span>s <span class="token operator">==</span> ’<span class="token operator">/</span>’<span class="token punctuation">)</span>
+    last <span class="token operator">=</span> s<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token function">safestrcpy</span><span class="token punctuation">(</span>curproc−<span class="token operator">&gt;</span>name<span class="token punctuation">,</span> last<span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>curproc−<span class="token operator">&gt;</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// Commit to the user image.</span>
+    oldpgdir <span class="token operator">=</span> curproc−<span class="token operator">&gt;</span>pgdir<span class="token punctuation">;</span>
+    curproc−<span class="token operator">&gt;</span>pgdir <span class="token operator">=</span> pgdir<span class="token punctuation">;</span>   
+    curproc−<span class="token operator">&gt;</span>sz <span class="token operator">=</span> sz<span class="token punctuation">;</span> 
+    curproc−<span class="token operator">&gt;</span>tf−<span class="token operator">&gt;</span>eip <span class="token operator">=</span> elf<span class="token punctuation">.</span>entry<span class="token punctuation">;</span>  <span class="token comment">// main</span>
+    curproc−<span class="token operator">&gt;</span>tf−<span class="token operator">&gt;</span>esp <span class="token operator">=</span> sp<span class="token punctuation">;</span>
+    <span class="token function">switchuvm</span><span class="token punctuation">(</span>curproc<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//安裝新image</span>
+    <span class="token function">freevm</span><span class="token punctuation">(</span>oldpgdir<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//釋放舊image</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    bad<span class="token punctuation">:</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">)</span>
+            <span class="token function">freevm</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>ip<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">iunlockput</span><span class="token punctuation">(</span>ip<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">end_op</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span></div><div class="code"><span class="token keyword">int</span> <span class="token function">loaduvm</span><span class="token punctuation">(</span>pde_t <span class="token operator">*</span>pgdir<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>addr<span class="token punctuation">,</span> <span class="token keyword">struct</span> inode <span class="token operator">*</span>ip<span class="token punctuation">,</span> uint offset<span class="token punctuation">,</span> uint sz<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    uint i<span class="token punctuation">,</span> pa<span class="token punctuation">,</span> n<span class="token punctuation">;</span>
+    pte_t <span class="token operator">*</span>pte<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>uint<span class="token punctuation">)</span> addr <span class="token operator">%</span> PGSIZE <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"loaduvm: addr must be page aligned"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> sz<span class="token punctuation">;</span> i <span class="token operator">+</span><span class="token operator">=</span> PGSIZE<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>pte <span class="token operator">=</span> <span class="token function">walkpgdir</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> addr<span class="token operator">+</span>i<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//尋找被分配記憶體的實體地址，在內寫入每個page的ELF區塊</span>
+            <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">"loaduvm: address should exist"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pa <span class="token operator">=</span> <span class="token function">PTE_ADDR</span><span class="token punctuation">(</span><span class="token operator">*</span>pte<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>sz − i <span class="token operator">&lt;</span> PGSIZE<span class="token punctuation">)</span>
+            n <span class="token operator">=</span> sz − i<span class="token punctuation">;</span>
+        <span class="token keyword">else</span>
+            n <span class="token operator">=</span> PGSIZE<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">readi</span><span class="token punctuation">(</span>ip<span class="token punctuation">,</span> <span class="token function">P2V</span><span class="token punctuation">(</span>pa<span class="token punctuation">)</span><span class="token punctuation">,</span> offset<span class="token operator">+</span>i<span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token operator">!=</span> n<span class="token punctuation">)</span><span class="token comment">//從檔案讀入</span>
+            <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</div></div></code></pre><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span>
+<span data-linenumber="19"></span>
+<span data-linenumber="20"></span>
+<span data-linenumber="21"></span></div><div class="code">Int <span class="token function">copyout</span><span class="token punctuation">(</span>pde_t <span class="token operator">*</span>pgdir<span class="token punctuation">,</span> uint va<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>p<span class="token punctuation">,</span> uint len<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">char</span> <span class="token operator">*</span>buf<span class="token punctuation">,</span> <span class="token operator">*</span>pa0<span class="token punctuation">;</span>
+    uint n<span class="token punctuation">,</span> va0<span class="token punctuation">;</span>
+    buf <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span>p<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>len <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        va0 <span class="token operator">=</span> <span class="token punctuation">(</span>uint<span class="token punctuation">)</span><span class="token function">PGROUNDDOWN</span><span class="token punctuation">(</span>va<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pa0 <span class="token operator">=</span> <span class="token function">uva2ka</span><span class="token punctuation">(</span>pgdir<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span>va0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>pa0 <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//檢查目標page是否可存取</span>
+            <span class="token keyword">return</span> −<span class="token number">1</span><span class="token punctuation">;</span>
+        n <span class="token operator">=</span> PGSIZE − <span class="token punctuation">(</span>va − va0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">&gt;</span> len<span class="token punctuation">)</span>
+            n <span class="token operator">=</span> len<span class="token punctuation">;</span>
+        <span class="token function">memmove</span><span class="token punctuation">(</span>pa0 <span class="token operator">+</span> <span class="token punctuation">(</span>va − va0<span class="token punctuation">)</span><span class="token punctuation">,</span> buf<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        len −<span class="token operator">=</span> n<span class="token punctuation">;</span>
+        buf <span class="token operator">+</span><span class="token operator">=</span> n<span class="token punctuation">;</span>
+        va <span class="token operator">=</span> va0 <span class="token operator">+</span> PGSIZE<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</div></div></code></pre><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span>
+<span data-linenumber="12"></span>
+<span data-linenumber="13"></span>
+<span data-linenumber="14"></span>
+<span data-linenumber="15"></span>
+<span data-linenumber="16"></span>
+<span data-linenumber="17"></span>
+<span data-linenumber="18"></span></div><div class="code"><span class="token keyword">struct</span> elfhdr <span class="token punctuation">{</span>
+    uint magic<span class="token punctuation">;</span><span class="token comment">// must equal ELF_MAGIC//ELF開頭有4byte(0x7F/E/L/F)或ELF_MAGIC，有此資訊時表示其二進位資料格式正確</span>
+    uchar elf<span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    ushort type<span class="token punctuation">;</span>
+    ushort machine<span class="token punctuation">;</span>
+    uint version<span class="token punctuation">;</span>
+    uint entry<span class="token punctuation">;</span>
+    uint phoff<span class="token punctuation">;</span> 
+    uint shoff<span class="token punctuation">;</span>
+    uint flags<span class="token punctuation">;</span>
+    ushort ehsize<span class="token punctuation">;</span>
+    ushort phentsize<span class="token punctuation">;</span>
+    ushort phnum<span class="token punctuation">;</span>
+    ushort shentsize<span class="token punctuation">;</span>
+    ushort shnum<span class="token punctuation">;</span>
+    ushort shstrndx<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</div></div></code></pre><p>每個proghdr描述應用程式的一個必須被載入記憶體的區塊</p><pre><code class="c hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span>
+<span data-linenumber="11"></span></div><div class="code"><span class="token keyword">struct</span> proghdr <span class="token punctuation">{</span>
+	uint type<span class="token punctuation">;</span>
+	uint off<span class="token punctuation">;</span>
+	uint vaddr<span class="token punctuation">;</span>
+	uint paddr<span class="token punctuation">;</span>
+	uint filesz<span class="token punctuation">;</span>
+	uint memsz<span class="token punctuation">;</span>
+	uint flags<span class="token punctuation">;</span>
+	uint align<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</div></div></code></pre><p><img alt="" src="https://i.imgur.com/1XJrNLu.png"></p><div class="resize-sensor" style="left: -10px; top: -10px; right: 0px; bottom: 0px; overflow: hidden; visibility: hidden; position: absolute; z-index: -1;" dir="ltr"><div class="resize-sensor-expand" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="transition:all; left: 0px; top: 0px; width: 100000px; height: 100000px; position: absolute;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li><a title="作業系統報告" href="#作業系統報告">作業系統報告</a></li><li><a title="項目一:" href="#項目一">項目一:</a></li><li><a title="項目二:" href="#項目二">項目二:</a><ul class="nav"><li><a title="OS的功能:" href="#OS的功能">OS的功能:</a></li><li><a title="核心類型:" href="#核心類型">核心類型:</a></li></ul></li><li><a title="項目三:" href="#項目三">項目三:</a><ul class="nav"><li><a title="Page table:" href="#Page-table">Page table:</a></li><li><a title="Process address space:" href="#Process-address-space">Process address space:</a></li><li><a title="Creating an address space:" href="#Creating-an-address-space">Creating an address space:</a></li><li><a title="Physical memory allocation:" href="#Physical-memory-allocation">Physical memory allocation:</a></li><li><a title="Physical memory allocator:" href="#Physical-memory-allocator">Physical memory allocator:</a></li><li><a title="Sbrk:" href="#Sbrk">Sbrk:</a></li><li><a title="Exec:" href="#Exec">Exec:</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li><a title="作業系統報告" href="#作業系統報告">作業系統報告</a></li><li><a title="項目一:" href="#項目一">項目一:</a></li><li><a title="項目二:" href="#項目二">項目二:</a><ul class="nav"><li><a title="OS的功能:" href="#OS的功能">OS的功能:</a></li><li><a title="核心類型:" href="#核心類型">核心類型:</a></li></ul></li><li><a title="項目三:" href="#項目三">項目三:</a><ul class="nav"><li><a title="Page table:" href="#Page-table">Page table:</a></li><li><a title="Process address space:" href="#Process-address-space">Process address space:</a></li><li><a title="Creating an address space:" href="#Creating-an-address-space">Creating an address space:</a></li><li><a title="Physical memory allocation:" href="#Physical-memory-allocation">Physical memory allocation:</a></li><li><a title="Physical memory allocator:" href="#Physical-memory-allocator">Physical memory allocator:</a></li><li><a title="Sbrk:" href="#Sbrk">Sbrk:</a></li><li><a title="Exec:" href="#Exec">Exec:</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
