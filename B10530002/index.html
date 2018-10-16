@@ -1,1 +1,469 @@
-homework not found!!
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        作業系統Operating System 作業一 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="作業系統Operating-System-作業一"><a class="anchor hidden-xs" href="#作業系統Operating-System-作業一" title="作業系統Operating-System-作業一"><span class="octicon octicon-link"></span></a>作業系統Operating System 作業一</h1><h2 id="B10530002-四資工三甲-彭傑"><a class="anchor hidden-xs" href="#B10530002-四資工三甲-彭傑" title="B10530002-四資工三甲-彭傑"><span class="octicon octicon-link"></span></a>B10530002 四資工三甲 彭傑</h2><hr><h3 id="項目一"><a class="anchor hidden-xs" href="#項目一" title="項目一"><span class="octicon octicon-link"></span></a>項目一</h3><ul>
+<li>記錄kernel執行到0x7c00 當下處理器與Stack上面的值</li>
+</ul><p><img src="https://i.imgur.com/AWv9On2.jpg" alt=""></p><ul>
+<li>ax cx bx的文字敘述</li>
+</ul><ol>
+<li>ax: 0xaa55 43605</li>
+<li>cx: 0x0  0</li>
+<li>bx: 0x0  0</li>
+</ol><hr><h3 id="項目二"><a class="anchor hidden-xs" href="#項目二" title="項目二"><span class="octicon octicon-link"></span></a>項目二</h3><h4 id="作業系統的綱領"><a class="anchor hidden-xs" href="#作業系統的綱領" title="作業系統的綱領"><span class="octicon octicon-link"></span></a>作業系統的綱領</h4><ol>
+<li>將電腦的效能在有限的硬體資源上提供有用的服務給多工的工作</li>
+<li>創造良好的互動介面，使執行時非常方便</li>
+<li>提供複雜的程式但設計的很簡單</li>
+</ol><h4 id="Process"><a class="anchor hidden-xs" href="#Process" title="Process"><span class="octicon octicon-link"></span></a>Process</h4><ol>
+<li>每份執行的程式program稱作process</li>
+<li>當process需要實行核心kernel服務時，它會實行procedure call在作業系統的介面
+<ul>
+<li>稱作「system call」，kernel完成運算後將資料回傳</li>
+</ul>
+</li>
+<li>因此process在user space, kernel space中輪流執行</li>
+</ol><h4 id="Xv6內核"><a class="anchor hidden-xs" href="#Xv6內核" title="Xv6內核"><span class="octicon octicon-link"></span></a>Xv6內核</h4><p>Xv6採用了傳統內核的概念，User經由shell與cat下達指令，將程序(process)傳至kernel進行運算，包含指令、數據、內存空間的資訊。</p><p>Xv6擁有使用者（指令、數據、stack）、內核專用的memory空間，Xv6提供了時間分工的特性，分配CPU與暫存器的互動，例如Process碰上中斷或等待中時能由Xv6保存資料直到下次再度執行</p><h4 id="Xv6-System-Call摘要"><a class="anchor hidden-xs" href="#Xv6-System-Call摘要" title="Xv6-System-Call摘要"><span class="octicon octicon-link"></span></a>Xv6 System Call摘要</h4><p><strong>以下是System的基本System call介紹：</strong></p><p>fork：</p><p>fork可創建子進程，執行過程中等到子進程完成後，父進程的wait()將return並繼續父進程接下來的程式碼，改變其中一邊的變數並不影響</p><p>exit:</p><p>可終止process，釋放memory</p><p>exec:<br>
+可將舊有的資料用來自file system的新資料取代，此舉需兩個參數：包含可執行文件的file名稱、一組字串</p><p>Xv6 shell:</p><p>總和以上</p><ol>
+<li>主循環通常透過指令getcmd讀取輸入的指令</li>
+<li>生成fork的副本</li>
+<li>指令runcmd執行</li>
+<li>若指令中需要exec則子process將執行exec的目標</li>
+<li>結束後exit將返回父process的wait()</li>
+</ol><p>如此便能將上述System call做一個完整的應用</p><h4 id="File-descriptor"><a class="anchor hidden-xs" href="#File-descriptor" title="File-descriptor"><span class="octicon octicon-link"></span></a>File descriptor</h4><p>File descriptor 是個整數，他代表了process可以被內核管理的對象，每個Process都有張表做參考</p><h4 id="Pipe"><a class="anchor hidden-xs" href="#Pipe" title="Pipe"><span class="octicon octicon-link"></span></a>Pipe</h4><p>Pipe身為小的內核kernel緩衝區，提供Process間的溝通互動</p><h4 id="文件系統"><a class="anchor hidden-xs" href="#文件系統" title="文件系統"><span class="octicon octicon-link"></span></a>文件系統</h4><p>Xv6文件系統提供文件(未翻譯的陣列)及目錄(指向文件或其他目錄的地址)</p><h4 id="Process-概覽"><a class="anchor hidden-xs" href="#Process-概覽" title="Process-概覽"><span class="octicon octicon-link"></span></a>Process 概覽</h4><ol>
+<li>
+<p>提供記憶體空間、供人搜尋的地址，並將虛擬地址(X86使用)翻譯(map)為物理地址(處理器chip傳送給main memory)，從地址最低處開始放置</p>
+</li>
+<li>
+<p>在記憶體中儲存內核的指令與數據，將其放置於0x80100000開始</p>
+</li>
+<li>
+<p>使用struct proc來維護process的狀態，保護最重要的page table, kernel stack以及運行狀態</p>
+</li>
+<li>
+<p>Process底下的thread成了執行process的指令，能夠停止等待、轉移執行任務</p>
+</li>
+<li>
+<p>p-&gt;state指示process的狀態</p>
+</li>
+<li>
+<p>p-&gt;pgdir持有page table</p>
+</li>
+</ol><h4 id="PC從開機乃至初始化第一個Process"><a class="anchor hidden-xs" href="#PC從開機乃至初始化第一個Process" title="PC從開機乃至初始化第一個Process"><span class="octicon octicon-link"></span></a>PC從開機乃至初始化第一個Process</h4><ol>
+<li>
+<p>初始化並載入boot loader至記憶體並運行</p>
+</li>
+<li>
+<p>從disk中載入entry</p>
+</li>
+<li>
+<p>將entrypgdir的物理位址載入控制register的%cr3中</p>
+</li>
+<li>
+<p>entry轉至kernel的C語言，並在高地址記憶體中執行，首先將stack pointer指針%esp指向一段被用來當作stack的memory</p>
+</li>
+<li>
+<p>Kernel在高記憶體位址中執行function main</p>
+</li>
+<li>
+<p>Main初始化設備與子系統，透過呼叫userinit建立第一個process</p>
+<ul>
+<li>首先呼叫allocproc (在page table中分配一個slot並初始化process的狀態）</li>
+<li>userinit僅被呼叫一次，allocproc 每次建立process時都會呼叫</li>
+</ul>
+</li>
+<li>
+<p>allocproc在proc中找到標記UNUSED的slot，因為被使用則標記為EMBRYO並提供pid</p>
+</li>
+<li>
+<p>allocproc嘗試分配kernel stack給kernel中的threads，失敗則將slot狀態寫入UNSED並return 0標記失敗</p>
+</li>
+<li>
+<p>allocoproc準備特別的kernel stack, registers，設定第一次執行時將return至使用者空間</p>
+</li>
+<li>
+<p>kernel’s thread從p-&gt;context-&gt;eip指向forkret，讓thread從forkret開始執行</p>
+</li>
+<li>
+<p>執行initcode.S</p>
+</li>
+<li>
+<p>定義_binary_initcode_start和_binary_initcode_size</p>
+</li>
+<li>
+<p>userinit呼叫inituvm，接著把trap frame設為初始用戶模式</p>
+</li>
+<li>
+<p>初始化完成後userinit將p-&gt;state設為RUNNABLE使process能被呼叫</p>
+</li>
+</ol><h4 id="進行第一個Process"><a class="anchor hidden-xs" href="#進行第一個Process" title="進行第一個Process"><span class="octicon octicon-link"></span></a>進行第一個Process</h4><ol>
+<li>
+<p>在main呼叫userinit，mpmain呼叫scheduler開始執行process</p>
+</li>
+<li>
+<p>scheduler找到p-&gt;state為RUNNABLE的process:initproc</p>
+</li>
+<li>
+<p>呼叫switchuvm通知硬體開始目標process的table</p>
+</li>
+<li>
+<p>scheduler將process的p-&gt;state設為RUNNING並呼叫swtch</p>
+</li>
+<li>
+<p>swtch保存當前register並將目標kernel’s thread仔入x86硬體register</p>
+</li>
+<li>
+<p>指令ret pop目標process的%eip，結束context的交換，如此processor就在process p 的kernel stack上執行</p>
+</li>
+</ol><h4 id="第一個system-callexec"><a class="anchor hidden-xs" href="#第一個system-callexec" title="第一個system-callexec"><span class="octicon octicon-link"></span></a>第一個system call:exec</h4><ol>
+<li>
+<p>觸發exec，用新的process代替當前program的memory與register</p>
+<ul>
+<li>file descriptors, process id 和parent process不變</li>
+</ul>
+</li>
+<li>
+<p>initcode.S將$argv, $init $0push進stack中，並將%eax設為SYS_exec，接著執行 int T_SYSCALL</p>
+</li>
+</ol><p><strong>以上的兩項操作目的為告訴kernel執行exec這system call</strong><br>
+操作順利的話exec將不會return，接著執行$init</p><p><strong>大多數的操作系統皆採用了process的概念，且與XV6十分相似</strong></p><p>但真正的OS會利用明顯的free list在constant time內尋找空閒的proc，而不向alloproc花費linear-time</p><p>Xv6為了簡單採納linear-search，找第一個空閒的proc，但Xv6的地址空間無法使用超過2GB的物理RAM<br>
+-&gt;最好的解決方法為使用64-bit的機器</p><hr><h3 id="項目三"><a class="anchor hidden-xs" href="#項目三" title="項目三"><span class="octicon octicon-link"></span></a>項目三</h3><h3 id="Chapter-4-Locking"><a class="anchor hidden-xs" href="#Chapter-4-Locking" title="Chapter-4-Locking"><span class="octicon octicon-link"></span></a><em>Chapter 4 Locking</em></h3><h4 id="摘要"><a class="anchor hidden-xs" href="#摘要" title="摘要"><span class="octicon octicon-link"></span></a>摘要</h4><p>Locks的主要功能為保證每次使用檔案時只有一個CPU會使用，在這情況下所可以保護資料</p><p><img src="https://i.imgur.com/HV3wwcI.jpg" alt=""></p><pre><code class="C hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">list</span> {</span>
+<span class="hljs-keyword">int</span> data;
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">list</span> *<span class="hljs-title">next</span>;</span>
+};
+
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">list</span> *<span class="hljs-title">list</span> = 0;</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span>
+<span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> data)</span>
+</span>{
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">list</span> *<span class="hljs-title">l</span>;</span>
+
+ { = <span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span> *l);
+l-&gt;data = data;
+l-&gt;next = <span class="hljs-built_in">list</span>;
+<span class="hljs-built_in">list</span> = l;
+ }
+}
+</code></pre><p><strong>因此，若在insert時加入輸出語句改變執行時間便可使競爭消失</strong></p><hr><h4 id="競爭關係Race-Condition"><a class="anchor hidden-xs" href="#競爭關係Race-Condition" title="競爭關係Race-Condition"><span class="octicon octicon-link"></span></a>競爭關係(Race Condition)</h4><p>同一個記憶體位置同時被訪問，至少有個訪問是被複寫(write)的<br>
+通常此種情況是個bug，將失去資料更新、獲得不完整的資料</p><p>解決方案<br>
+-&gt;1.兩個CPU的確切時間<br>
+-&gt;2.記憶體如何安排記憶系統，使錯誤減少<br>
+-&gt;3.使用鎖</p><p>Lock保證一次只有一個CPU可執行(稱作互斥mutual exclusion)</p><p>鎖保護一些適用於數據的不變量<br>
+<strong>(Invariant：數據結構在操作中維護的一些狀態)，以上述程式碼的案例中list即為不變量</strong></p><p>操作的正確行為往往取決於不變量是否為真<br>
+雖然操作中有可能暫時破壞不變量，但結束操作前須復原</p><hr><h4 id="鎖"><a class="anchor hidden-xs" href="#鎖" title="鎖"><span class="octicon octicon-link"></span></a>鎖</h4><p>Xv6有兩種鎖：<strong>spin-locks</strong>, <strong>sleep-locks</strong></p><pre><code class="C hljs"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">list</span> *<span class="hljs-title">list</span> = 0;</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">lock</span> <span class="hljs-title">listlock</span>;</span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> data)</span>
+</span>{
+    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">list</span> *<span class="hljs-title">l</span>;</span>
+       acquire(&amp;listlock);
+    l = <span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span> *l);
+    l-&gt;data = data;
+    l-&gt;next = <span class="hljs-built_in">list</span>;
+    <span class="hljs-built_in">list</span> = l;
+       release(&amp;listlock);
+}
+</code></pre><pre><code class="C hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">acquire</span>(<span class="hljs-params"><span class="hljs-keyword">struct</span> spinlock *lk</span>)
+</span>{
+<span class="hljs-number">24</span>    <span class="hljs-keyword">for</span>(;;) {
+<span class="hljs-number">25</span>        <span class="hljs-keyword">if</span>(!lk-&gt;locked) {
+<span class="hljs-number">26</span>            lk-&gt;locked = <span class="hljs-number">1</span>;
+<span class="hljs-number">27</span>           <span class="hljs-keyword">break</span>;
+        }
+    }
+}
+</code></pre><p>----程式碼講解----</p><ul>
+<li>
+<p>Spin-Lock採用結構體(struct spinlock)，當鎖可以被獲得時locked = 0</p>
+</li>
+<li>
+<p>但有可能有兩個以上的CPU同時執行第25行，發現lk-&gt;locked為0，因此而拿到了鎖，<strong>違反了互斥的現象</strong></p>
+</li>
+<li>
+<p>因此，lk-&gt;locked = 1(26行)與break(27行)必須不可分割地同時執行(atomic step</p>
+</li>
+</ul><h4 id="xchg的運用"><a class="anchor hidden-xs" href="#xchg的運用" title="xchg的運用"><span class="octicon octicon-link"></span></a>xchg的運用</h4><p>xchg屬於Xv6中的特殊指令，執行時將記憶體中的word與register內容交換</p><pre class="flow-chart"><svg height="612.4453125" version="1.1" width="240.109375" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; top: -0.925px;" viewBox="0 0 240.109375 612.4453125" preserveAspectRatio="meet"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><marker id="raphael-marker-endblock33" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use></marker></defs><rect x="0" y="0" width="116.375" height="38.390625" r="20" rx="20" ry="20" fill="none" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" stroke-width="2" class="flowchart" id="st" transform="matrix(1,0,0,1,50.3672,37.082)"></rect><text x="10" y="19.1953125" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font: 16px &quot;Andale Mono&quot;, monospace;" id="stt" class="flowchartt" font-size="16px" font-family="'Andale Mono', monospace" transform="matrix(1,0,0,1,50.3672,37.082)" stroke-width="1"><tspan dy="5.21875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">執行Acquire</tspan></text><rect x="0" y="0" width="202.015625" height="38.390625" r="0" rx="0" ry="0" fill="none" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" stroke-width="2" class="flowchart" id="op" transform="matrix(1,0,0,1,7.5469,162.5547)"></rect><text x="10" y="19.1953125" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font: 16px &quot;Andale Mono&quot;, monospace;" id="opt" class="flowchartt" font-size="16px" font-family="'Andale Mono', monospace" transform="matrix(1,0,0,1,7.5469,162.5547)" stroke-width="1"><tspan dy="5.21875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">讀取lk-&gt;locked並設為1</tspan></text><rect x="0" y="0" width="150.4375" height="38.390625" r="0" rx="0" ry="0" fill="none" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" stroke-width="2" class="flowchart" id="op2" transform="matrix(1,0,0,1,33.3359,288.0273)"></rect><text x="10" y="19.1953125" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font: 16px &quot;Andale Mono&quot;, monospace;" id="op2t" class="flowchartt" font-size="16px" font-family="'Andale Mono', monospace" transform="matrix(1,0,0,1,33.3359,288.0273)" stroke-width="1"><tspan dy="5.21875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">檢查鎖是否被持有</tspan></text><path fill="none" stroke="#000000" d="M52.27734375,26.138671875L0,52.27734375L104.5546875,104.5546875L209.109375,52.27734375L104.5546875,0L0,52.27734375" stroke-width="2" font-family="'Andale Mono', monospace" id="cond" class="flowchart" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Andale Mono&quot;, monospace;" transform="matrix(1,0,0,1,4,380.418)"></path><text x="57.27734375" y="52.27734375" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font: 16px &quot;Andale Mono&quot;, monospace;" id="condt" class="flowchartt" font-size="16px" font-family="'Andale Mono', monospace" transform="matrix(1,0,0,1,4,380.418)" stroke-width="1"><tspan dy="-4.39453125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">回傳xchg的值</tspan><tspan dy="19.2" x="57.27734375" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">(yes:0,no:1)</tspan></text><rect x="0" y="0" width="194.8125" height="38.390625" r="20" rx="20" ry="20" fill="none" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" stroke-width="2" class="flowchart" id="e" transform="matrix(1,0,0,1,11.1484,572.0547)"></rect><text x="10" y="19.1953125" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font: 16px &quot;Andale Mono&quot;, monospace;" id="et" class="flowchartt" font-size="16px" font-family="'Andale Mono', monospace" transform="matrix(1,0,0,1,11.1484,572.0547)" stroke-width="1"><tspan dy="5.21875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">離開 atomic step迴圈</tspan></text><path fill="none" stroke="#000000" d="M108.5546875,75.47265625C108.5546875,75.47265625,108.5546875,144.24461944401264,108.5546875,159.55712687392952" stroke-width="2" marker-end="url(#raphael-marker-endblock33)" font-family="'Andale Mono', monospace" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Andale Mono&quot;, monospace;"></path><path fill="none" stroke="#000000" d="M108.5546875,200.9453125C108.5546875,200.9453125,108.5546875,269.71727569401264,108.5546875,285.0297831239295" stroke-width="2" marker-end="url(#raphael-marker-endblock33)" font-family="'Andale Mono', monospace" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Andale Mono&quot;, monospace;"></path><path fill="none" stroke="#000000" d="M108.5546875,326.41796875C108.5546875,326.41796875,108.5546875,366.07206869125366,108.5546875,377.41840783460066" stroke-width="2" marker-end="url(#raphael-marker-endblock33)" font-family="'Andale Mono', monospace" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Andale Mono&quot;, monospace;"></path><path fill="none" stroke="#000000" d="M108.5546875,484.97265625C108.5546875,484.97265625,108.5546875,553.7446194440126,108.5546875,569.0571268739295" stroke-width="2" marker-end="url(#raphael-marker-endblock33)" font-family="'Andale Mono', monospace" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Andale Mono&quot;, monospace;"></path><text x="113.5546875" y="494.97265625" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font: 16px &quot;Andale Mono&quot;, monospace;" font-size="16px" font-family="'Andale Mono', monospace" stroke-width="1"><tspan dy="5.61328125" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">yes</tspan></text><path fill="none" stroke="#000000" d="M213.109375,432.6953125C213.109375,432.6953125,238.109375,432.6953125,238.109375,432.6953125C238.109375,432.6953125,238.109375,137.5546875,238.109375,137.5546875C238.109375,137.5546875,108.5546875,137.5546875,108.5546875,137.5546875C108.5546875,137.5546875,108.5546875,152.92813205718994,108.5546875,159.56393527425826" stroke-width="2" marker-end="url(#raphael-marker-endblock33)" font-family="'Andale Mono', monospace" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Andale Mono&quot;, monospace;"></path><text x="218.109375" y="422.6953125" text-anchor="start" font="10px &quot;Arial&quot;" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: start; font: 16px &quot;Andale Mono&quot;, monospace;" font-size="16px" font-family="'Andale Mono', monospace" stroke-width="1"><tspan dy="5.6171875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">no</tspan></text></svg></pre><p>Acquire透過鎖的幫忙後：</p><ul>
+<li>可獲得鎖的CPU和stack訊息</li>
+<li>當鎖被忘了釋放或debug時可幫助找到問題</li>
+<li>唯有在持有鎖時才能修改</li>
+</ul><p>Release：</p><ul>
+<li>執行Acquire的相反：釋放鎖</li>
+<li>採用集合式指令清除lock，xchg才不會阻擋更新locked</li>
+<li>movl可幫忙不可分割的更新</li>
+</ul><p><strong>Acquire vs Release: critical section</strong></p><hr><h4 id="鎖的運用"><a class="anchor hidden-xs" href="#鎖的運用" title="鎖的運用"><span class="octicon octicon-link"></span></a>鎖的運用</h4><p><strong>該決定該使用幾個Lock、哪些數據與不變量該被保護成了使用鎖的關鍵</strong></p><ol>
+<li>當一變數可被依CPU撰寫時，同一時間第二個CPU亦可讀或寫，Lock要保護避免兩個執行重疊</li>
+<li>若不變量涉入多個記憶體空間，他們全都該被單獨一個鎖保護來維持不變量</li>
+</ol><p><strong>giant kernel lock</strong><br>
+當效率問題不在考量內時：</p><ul>
+<li>可不必考慮鎖的數量</li>
+<li>進入內核kernel上鎖，離開時解鎖</li>
+<li>一段單位時間中只有一個CPU能被運行
+<ul>
+<li>若想依靠kernel進行大量的運算，需使用更精細的鎖來讓CPU可同時輪流運行</li>
+</ul>
+</li>
+</ul><p>給每個Process table中的Thread都上鎖<br>
+-&gt;如此一來Tread就能並行執行了，相反的鎖愈多情況愈複雜</p><hr><h4 id="死鎖與鎖的順序Deadlock-and-lock-ordering"><a class="anchor hidden-xs" href="#死鎖與鎖的順序Deadlock-and-lock-ordering" title="死鎖與鎖的順序Deadlock-and-lock-ordering"><span class="octicon octicon-link"></span></a>死鎖與鎖的順序(Deadlock and lock ordering)</h4><p>若一段code需使用複數個鎖，則<strong>順序必須遵守，否則將發生死鎖deadLock</strong></p><p>以下有例子作為參考：<br>
+<img src="https://i.imgur.com/91B6DkX.jpg" alt=""></p><p>xv6本身追求<strong>簡單</strong>，最長的鎖鍊只有2個鎖<br>
+例如：<br>
+指令ideintr在調用指令wakeup時持有ide鎖-&gt;指令wakeup也只需要ptable.lock</p><h4 id="文件系統刪除文件"><a class="anchor hidden-xs" href="#文件系統刪除文件" title="文件系統刪除文件"><span class="octicon octicon-link"></span></a>文件系統刪除文件</h4><p>Xv6須遵照以下順序：</p><ol>
+<li>獲得文件夾的鎖</li>
+<li>獲得該文件的鎖</li>
+<li>按照以上順序解鎖</li>
+</ol><hr><h4 id="中斷處理程序Interrupt-handlers"><a class="anchor hidden-xs" href="#中斷處理程序Interrupt-handlers" title="中斷處理程序Interrupt-handlers"><span class="octicon octicon-link"></span></a>中斷處理程序Interrupt handlers</h4><p><strong>即便是單一處理器中斷亦可造成併發</strong></p><p><strong>----中斷程序案例1----</strong></p><p>假設中斷處理程序interrupt handler使內核code暫停，指令iderw在持有idelock的情況下將被指令ideintr中斷</p><p>但ideintr需要<strong>idelock&lt;-&gt;ideintr執行完成</strong>才能回到指令iderw並釋放鎖，<br>
+-&gt;<strong>此舉將造成deadlock</strong></p><p>為避免以上情況，當中斷處理程序需要鎖(spin-lock)時，processors處理器就<strong>不能在允許中斷發生時擁有鎖</strong></p><hr><p><strong>----中斷程序案例2----</strong></p><ol>
+<li>產生中斷的處理程式在持有鎖的狀態下發生中斷</li>
+<li>下一個CPU提出要求鎖的指令</li>
+<li>但程式已經中斷鎖尚未釋放-&gt;導致要求鎖的CPU被拒絕請求</li>
+</ol><p><strong>-&gt;導致死鎖</strong></p><hr><p><strong>----Xv6案例----</strong></p><p>若情況危急Xv6會<strong>永遠禁止處理器使用interrupts</strong><br>
+interrputs的acquire必須等待其他處理器的thread釋放鎖</p><p><strong>----屏除中斷----</strong></p><ul>
+<li>Acquire 在獲得鎖之前用 pushcli</li>
+<li>Release 在解除鎖之後用 popclil屏蔽中斷</li>
+</ul><hr><h4 id="Instruction-and-Memory-Ordering"><a class="anchor hidden-xs" href="#Instruction-and-Memory-Ordering" title="Instruction-and-Memory-Ordering"><span class="octicon octicon-link"></span></a>Instruction and Memory Ordering</h4><p>假設程式按照一定的規則處理code、安排鎖</p><p>編譯器與處理器往往為了高效能而打破規則</p><ul>
+<li>若指令需要多個週期，處理器希望指令能盡早開始，其他指令便能並行執行避免耽誤</li>
+<li>例如程序B較快，先做B再做A</li>
+<li>有可能讓軟體暴露於危險之中，導致不正確的結果</li>
+</ul><p>-&gt;Xv6在acquire, release採用_sync_synchronize()<strong>避免編譯器與CPU reorder(重新排序)讀檔與存檔</strong></p><hr><h4 id="Sleep-Locks"><a class="anchor hidden-xs" href="#Sleep-Locks" title="Sleep-Locks"><span class="octicon octicon-link"></span></a>Sleep Locks</h4><p>將常數寫入磁碟時將耗費許多時間，其他處理器可善用這段時間處理其他事</p><p>Xv6提供堪用的lock使交換context變得容易-&gt;<strong>sleep locks</strong></p><p><img src="https://i.imgur.com/OYmXTmx.jpg" alt=""></p><p><strong>Sleep Lock特性</strong></p><ol>
+<li>
+<p>Sleep-lock擁有Locked Field且具Spin-Lock的保護</p>
+</li>
+<li>
+<p>Acquiresleep呼叫sleep時可atomically接受CPU的調度並釋放Spin-Lock，其他threads可在Acquiresleep等待時執行</p>
+</li>
+<li>
+<p>Sleep-lock因留下允許中斷點，則其不可成為中斷點處理者</p>
+</li>
+<li>
+<p>Spin-lock可用於Sleep-lock中，但Sleep-lock不可用於Spin-lock</p>
+</li>
+<li>
+<p>多數時間Xv6採用Spin-lock</p>
+<ul>
+<li>File System才採用Sleep-lock，如此才能維持有如硬碟程序長度般的鎖</li>
+</ul>
+</li>
+</ol><hr><h4 id="Limitations-of-Locks"><a class="anchor hidden-xs" href="#Limitations-of-Locks" title="Limitations-of-Locks"><span class="octicon octicon-link"></span></a>Limitations of Locks</h4><p>Locks通常能解決「同時發生」的問題</p><p>Function 有可能被擁有鎖的程式碼與不需要擁有鎖的程式碼</p><p>因此function需要兩個變數：</p><ol>
+<li>獲得鎖</li>
+<li>期待呼叫者已經持有鎖</li>
+</ol><hr><h4 id="現實情況Real-World"><a class="anchor hidden-xs" href="#現實情況Real-World" title="現實情況Real-World"><span class="octicon octicon-link"></span></a>現實情況Real World</h4><ol>
+<li>
+<p>多數作業系統採用atomic instructions</p>
+<ul>
+<li>支援並行線程pthread(POSIX thread)</li>
+<li>允許使用者同時在不同處理器上執行複數個Thread</li>
+</ul>
+</li>
+<li>
+<p>當一個pthread被System Call阻擋時，同樣Process中別的pthread應該要能夠在同一個處理器上被執行</p>
+</li>
+<li>
+<p>若pthread改變了process的地址空間，Kernel必須通知其他Processor並更新地址資訊</p>
+</li>
+<li>
+<p>當A處理器的鎖被B處理器所需要時，atomic instruction將從A的快取line中找到鎖並轉移至B快取Line</p>
+<ul>
+<li>此舉有可能讓這行緩存的其他備份失效</li>
+<li>從處理器的快取中提領將比Local快取還要來的耗費效能</li>
+</ul>
+</li>
+<li>
+<p>基於使用鎖的困擾與昂貴的代價，許多作業系統採用避免Atomic操作或使用鎖</p>
+<ul>
+<li>例如採用Linked-List取代</li>
+</ul>
+</li>
+</ol><div dir="ltr" class="resize-sensor" style="position: absolute; left: -10px; top: -10px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li class=""><a href="#作業系統Operating-System-作業一" title="作業系統Operating System 作業一">作業系統Operating System 作業一</a><ul class="nav"><li><a href="#B10530002-四資工三甲-彭傑" title="B10530002 四資工三甲 彭傑">B10530002 四資工三甲 彭傑</a><ul class="nav"><li><a href="#項目一" title="項目一">項目一</a></li><li><a href="#項目二" title="項目二">項目二</a></li><li><a href="#項目三" title="項目三">項目三</a></li><li><a href="#Chapter-4-Locking" title="Chapter 4 Locking">Chapter 4 Locking</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li class=""><a href="#作業系統Operating-System-作業一" title="作業系統Operating System 作業一">作業系統Operating System 作業一</a><ul class="nav"><li><a href="#B10530002-四資工三甲-彭傑" title="B10530002 四資工三甲 彭傑">B10530002 四資工三甲 彭傑</a><ul class="nav"><li><a href="#項目一" title="項目一">項目一</a></li><li><a href="#項目二" title="項目二">項目二</a></li><li><a href="#項目三" title="項目三">項目三</a></li><li><a href="#Chapter-4-Locking" title="Chapter 4 Locking">Chapter 4 Locking</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
