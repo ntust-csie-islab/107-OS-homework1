@@ -1,1 +1,647 @@
-homework not found!!
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        項目一 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><p>xv6 作業筆記</p><h1 id="項目一"><a class="anchor hidden-xs" href="#項目一" title="項目一"><span class="octicon octicon-link"></span></a>項目一</h1><p><img src="https://i.imgur.com/WNKcLBU.png" alt=""><br>
+<img src="https://i.imgur.com/2Ytbd6B.png" alt=""><br>
+<img src="https://i.imgur.com/P8j7Vhq.png" alt=""></p><h1 id="項目二"><a class="anchor hidden-xs" href="#項目二" title="項目二"><span class="octicon octicon-link"></span></a>項目二</h1><h2 id="Chapter-0-Operating-system-interfaces"><a class="anchor hidden-xs" href="#Chapter-0-Operating-system-interfaces" title="Chapter-0-Operating-system-interfaces"><span class="octicon octicon-link"></span></a>Chapter 0 Operating system interfaces</h2><h3 id="01-前言"><a class="anchor hidden-xs" href="#01-前言" title="01-前言"><span class="octicon octicon-link"></span></a>0.1 前言</h3><h4 id="011-重點"><a class="anchor hidden-xs" href="#011-重點" title="011-重點"><span class="octicon octicon-link"></span></a>0.1.1 重點</h4><ul>
+<li>OS Main Job
+<ol>
+<li>提供多個 process 比硬體更多有用的服務與資源。</li>
+<li>管理和抽象低階硬體。</li>
+<li>提供多個 process 可同時 (或看起來同時) 運行並使用硬體資源。</li>
+<li>控制多個 process，使process之間可以共享數據及合作。</li>
+</ol>
+</li>
+<li>kernel 使用CPU的硬體保護機制，確保 user process 只能用自己的memory。</li>
+<li>只有kernel擁有這些硬體操作權限。</li>
+<li>當 user process 調用 kernel 時， kernel 會提升這些權限並執行預定義功能。</li>
+<li>xv6中所有system call:<br>
+<img src="https://i.imgur.com/3vaWIPu.png" alt=""></li>
+</ul><h4 id="012-名詞解釋"><a class="anchor hidden-xs" href="#012-名詞解釋" title="012-名詞解釋"><span class="octicon octicon-link"></span></a>0.1.2 名詞解釋</h4><ul>
+<li>kernel: 一個特殊的 program 提供服務給 process.</li>
+<li>process: 運行中的 program，擁有自己的 memory (含指令、data、stack)</li>
+<li>instruction: 指令，實現 program 的運算</li>
+<li>data: 數據，運算時的變量</li>
+<li>stack: 棧，function call.</li>
+<li>system call: shell invokes kernel service.<br>
+<img src="https://i.imgur.com/FMv62q7.png" alt=""></li>
+</ul><h3 id="02-Process-and-Memory"><a class="anchor hidden-xs" href="#02-Process-and-Memory" title="02-Process-and-Memory"><span class="octicon octicon-link"></span></a>0.2 Process and Memory</h3><h4 id="021-重點"><a class="anchor hidden-xs" href="#021-重點" title="021-重點"><span class="octicon octicon-link"></span></a>0.2.1 重點</h4><ul>
+<li>process contains 2 parts:
+<ul>
+<li>user-space memory (指令、數據、棧).</li>
+<li>per-process state private to kernal.</li>
+</ul>
+</li>
+<li>xv6 can time-share processes: 在CPU間不斷切換，決定哪個等待中的 process 被執行。when a process wait to excute, xv6 save its CPU registers, restoring them when it next runs the process.</li>
+<li>a pid &lt;-&gt; a process.</li>
+<li>child and parent 有各自的 memory 和 registers，改變變量並不會影量另一個process.</li>
+<li>xv6 分配 user-space memory implicitly:
+<ul>
+<li>fork: allocate child’s memory to copy of parent’s memory.</li>
+<li>exec: allocate enough memory to hold executable file.</li>
+</ul>
+</li>
+<li>xv6 沒有用戶概念，以 unix 角度就是都用 root 執行。</li>
+</ul><h4 id="022-System-call-說明"><a class="anchor hidden-xs" href="#022-System-call-說明" title="022-System-call-說明"><span class="octicon octicon-link"></span></a>0.2.2 System call 說明</h4><ul>
+<li>fork: 一次調用兩次返回(parent: return child pid, child: return 0)</li>
+<li>exit: 停止當前process運行，並關閉資源(ex. memory and open files)</li>
+<li>wait: return (當前process)已退出的child process pid，若沒有會一直等到有一個child退出為止。</li>
+<li>sbrk: return location of new memory. when process needs more memory in runtime, call sbrk(n) to grow n bytes.</li>
+<li>exec: replaces the calling process’s memory with a new memory image loaded from a file stored in the file system.
+<ul>
+<li>file should contain which part hold the instructions, which part is data, at which part instruction to start.</li>
+<li>xv6 use ELF format.</li>
+</ul>
+</li>
+</ul><h4 id="023-Shell’s-structure"><a class="anchor hidden-xs" href="#023-Shell’s-structure" title="023-Shell’s-structure"><span class="octicon octicon-link"></span></a>0.2.3 Shell’s structure</h4><p><img src="https://i.imgur.com/0k952m8.png" alt=""></p><h3 id="03-IO-and-File-descriptors"><a class="anchor hidden-xs" href="#03-IO-and-File-descriptors" title="03-IO-and-File-descriptors"><span class="octicon octicon-link"></span></a>0.3 I/O and File descriptors</h3><h4 id="031-重點"><a class="anchor hidden-xs" href="#031-重點" title="031-重點"><span class="octicon octicon-link"></span></a>0.3.1 重點</h4><ul>
+<li>file descriptor(fd):
+<ul>
+<li>a fd &lt;-&gt; a “file”
+<ul>
+<li>a “file” could be 文件、目錄、device、pipe、copy of fd.</li>
+</ul>
+</li>
+<li>a small integer as a kernal object that process can read or write, like stream bytes.</li>
+<li>every process has a private space of fd starting at zero.</li>
+<li>console default’s fd (always open):
+<ul>
+<li>standard input : 0</li>
+<li>standard output: 1</li>
+<li>standard error : 2</li>
+</ul>
+</li>
+<li>透過 fd 做 I/O 重定向.</li>
+</ul>
+</li>
+<li>ls file1 file2 &gt; tmp.txt 2&gt;&amp;1
+<ul>
+<li>file1 file2 的錯誤輸出都會出現在 tmp.txt</li>
+<li>2&gt;&amp;1 : fd2 is dup of fd1.</li>
+</ul>
+</li>
+</ul><h4 id="032-System-call-說明"><a class="anchor hidden-xs" href="#032-System-call-說明" title="032-System-call-說明"><span class="octicon octicon-link"></span></a>0.3.2 System call 說明</h4><ul>
+<li>read(fd, buf, n): return 讀取的字節數(最多為n), n=0讀取結束.</li>
+<li>write(fd, buf, n): return 寫入的字節數(不為n是發生錯誤).</li>
+<li>close(fd): free the fd, so that open, pipe, dup can reuse.</li>
+</ul><h4 id="033-example-of-“cat”"><a class="anchor hidden-xs" href="#033-example-of-“cat”" title="033-example-of-“cat”"><span class="octicon octicon-link"></span></a>0.3.3 example of “cat”:</h4><p><img src="https://i.imgur.com/Ymi2W1U.png" alt=""></p><h4 id="034-example"><a class="anchor hidden-xs" href="#034-example" title="034-example"><span class="octicon octicon-link"></span></a>0.3.4 example</h4><ul>
+<li>fork 雖然 copy fd, 但文件當前偏移仍然是共享:(用 wait 確保順序進行，印出 hello world )<br>
+<img src="https://i.imgur.com/1JcLXkn.png" alt=""></li>
+<li>另一種印出 hello world (dup):<br>
+<img src="https://i.imgur.com/JX3yXGd.png" alt=""></li>
+</ul><h3 id="04-Pipes"><a class="anchor hidden-xs" href="#04-Pipes" title="04-Pipes"><span class="octicon octicon-link"></span></a>0.4 Pipes</h3><h4 id="041-重點"><a class="anchor hidden-xs" href="#041-重點" title="041-重點"><span class="octicon octicon-link"></span></a>0.4.1 重點</h4><ul>
+<li>pipe
+<ul>
+<li>a kernel buffer</li>
+<li>a pair of fd, one for write, one for read.</li>
+<li>create process tree, leaves are command, process waits for left and right both complete.</li>
+</ul>
+</li>
+<li>pipe 比 no pipe 更好:
+<ol>
+<li>clean tmp file auto.</li>
+<li>pass arbitrarily long streams of data.</li>
+<li>allow for parallel execution of pipeline stages.</li>
+<li>in inter-process communication, pipes’ blocking reads and writes are more efficient than the non-blocking semantics of files.</li>
+</ol>
+</li>
+</ul><h4 id="042-example-of-“wc”在執行-wc-之前要先關閉-write-以免沒有-EOF-nerver-close"><a class="anchor hidden-xs" href="#042-example-of-“wc”在執行-wc-之前要先關閉-write-以免沒有-EOF-nerver-close" title="042-example-of-“wc”在執行-wc-之前要先關閉-write-以免沒有-EOF-nerver-close"><span class="octicon octicon-link"></span></a>0.4.2 example of “wc”:(在執行 wc 之前要先關閉 write, 以免沒有 EOF (nerver close))</h4><p><img src="https://i.imgur.com/89w7uLw.png" alt=""></p><ul>
+<li>use pipe<br>
+<img src="https://i.imgur.com/uZEbWvg.png" alt=""></li>
+<li>no pipe<br>
+<img src="https://i.imgur.com/Z713DO1.png" alt=""></li>
+</ul><h3 id="05-File-System"><a class="anchor hidden-xs" href="#05-File-System" title="05-File-System"><span class="octicon octicon-link"></span></a>0.5 File System</h3><h4 id="051-重點"><a class="anchor hidden-xs" href="#051-重點" title="051-重點"><span class="octicon octicon-link"></span></a>0.5.1 重點</h4><ul>
+<li>data file(file): uninterpreted byte arrays</li>
+<li>directory(dir): named referance to file or dir.</li>
+<li>root(/): 根目錄, form a tree.</li>
+<li>current directory(.): 當前目錄.</li>
+<li>xv6 所有對 file system 的操作都是實作成 user-level program，使得 shell 容易被擴充，但 UNIX 時代是將這些command建在 shell 裡 (並且將 shell 建在 kernel).</li>
+<li>cd 是例外，它必須建在 shell 裡. 若是做為一般 command 會變成 fork child process，改變 child process 的當前目錄並不會影響到 parent process 的當前目錄.</li>
+</ul><h4 id="052-System-call-說明"><a class="anchor hidden-xs" href="#052-System-call-說明" title="052-System-call-說明"><span class="octicon octicon-link"></span></a>0.5.2 System call 說明</h4><ul>
+<li>chdir(dirname): 改變當前目錄.</li>
+<li>mkdir(dirname): 當前目錄下建新目錄.</li>
+<li>open(filename, O_CREATE): 開新文件.</li>
+<li>mknod(name, major, minor): 建新 device 文件.
+<ul>
+<li>device 文件
+<ul>
+<li>沒有文件內容</li>
+<li>透過 metadata as a device file, and major and minor device numbers define a kernal device.</li>
+<li>open device file 是將讀寫直接指向 kernal device 實現，而非指向 file system.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>fstat(fd): return inode.
+<ul>
+<li>實際文件 data structure
+<ul>
+<li>uniqe inode number</li>
+<li>可以有多個名字</li>
+<li>inode and 磁碟空間是當 nlink=0 時才會清空。<br>
+<img src="https://i.imgur.com/Z9trvBZ.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>link(f1, f2): 對 f1 指向的文件新建另一個新名稱 f2.
+<ul>
+<li>link(‘a’,‘b’): 如果後續對a讀寫, 由於b也是指向同一文件所以也同樣是對b讀寫</li>
+</ul>
+</li>
+<li>unlink(f1): 移除 f1 對文件的指向.</li>
+</ul><h3 id="06-Real-World"><a class="anchor hidden-xs" href="#06-Real-World" title="06-Real-World"><span class="octicon octicon-link"></span></a>0.6 Real World</h3><h4 id="061-重點"><a class="anchor hidden-xs" href="#061-重點" title="061-重點"><span class="octicon octicon-link"></span></a>0.6.1 重點</h4><ul>
+<li>UNIX 整合"標準的" fd、pipe、shell command 在一起，這種通用與可重用想法促使發展強大的"軟體工具"文化。</li>
+<li>Portable Operating System Interface (POSIX) standard 是 UNIX system call 的標準. xv6 並沒有服從POSIX標準，只實作了部分 (ex. 沒有 lseek ).</li>
+<li>morden kernals 發展快速，usually are beyond POSIX standard，提供更多的服務。</li>
+<li>文件系統抽象的概念被應用在 WWW 網路資源.</li>
+<li>Multics 複雜的設計讓 UNIX 的設計者想把文件系統寫的更簡單.</li>
+</ul><h2 id="Chapter-1-Operating-system-organization"><a class="anchor hidden-xs" href="#Chapter-1-Operating-system-organization" title="Chapter-1-Operating-system-organization"><span class="octicon octicon-link"></span></a>Chapter 1 Operating system organization</h2><h3 id="11-前言"><a class="anchor hidden-xs" href="#11-前言" title="11-前言"><span class="octicon octicon-link"></span></a>1.1 前言</h3><h4 id="111-重點"><a class="anchor hidden-xs" href="#111-重點" title="111-重點"><span class="octicon octicon-link"></span></a>1.1.1 重點</h4><ul>
+<li>os start new process with fork.</li>
+<li>os must time-share amnog processes.</li>
+<li>os 必須確保 process 的 isolation.</li>
+<li>xv6 只適用 intel 80386 及往後的 x86 架構.</li>
+</ul><h3 id="12-Abstracting-physical-resources"><a class="anchor hidden-xs" href="#12-Abstracting-physical-resources" title="12-Abstracting-physical-resources"><span class="octicon octicon-link"></span></a>1.2 Abstracting physical resources</h3><h4 id="121-重點"><a class="anchor hidden-xs" href="#121-重點" title="121-重點"><span class="octicon octicon-link"></span></a>1.2.1 重點</h4><ul>
+<li>embedded devices or real-time systems 可以直接與硬體溝通.</li>
+<li>strong isolation 設計可避免直接使用敏感性硬體資源，也可避免 processes 之間因為 bug 而 crash 最後彼此干擾.</li>
+<li>time sharing 設計可避免單一 process 占用cpu.</li>
+</ul><h3 id="13-User-mode-kernel-mode-and-system-calls"><a class="anchor hidden-xs" href="#13-User-mode-kernel-mode-and-system-calls" title="13-User-mode-kernel-mode-and-system-calls"><span class="octicon octicon-link"></span></a>1.3 User mode, kernel mode, and system calls</h3><h4 id="131-重點"><a class="anchor hidden-xs" href="#131-重點" title="131-重點"><span class="octicon octicon-link"></span></a>1.3.1 重點</h4><ul>
+<li>kernel mode: 允許 processor 執行 privileged instructions.
+<ul>
+<li>ex. read/write disk</li>
+</ul>
+</li>
+<li>user mode: application 只被允許執行 user-mode instructions, 並且只在 user space 運行.
+<ul>
+<li>ex. adding numbers</li>
+</ul>
+</li>
+<li>kernel: software running in the kernal space.</li>
+<li>application 若要執行 privileged instructions, 必須轉換到 kernel mode at an entry point, 由 kernel 檢驗這些 system call 是否合法執行。</li>
+</ul><h3 id="14-Kernel-organization"><a class="anchor hidden-xs" href="#14-Kernel-organization" title="14-Kernel-organization"><span class="octicon octicon-link"></span></a>1.4 Kernel organization</h3><h4 id="141-重點"><a class="anchor hidden-xs" href="#141-重點" title="141-重點"><span class="octicon octicon-link"></span></a>1.4.1 重點</h4><ul>
+<li>monolithic kernel: 整個 OS 放在 kernal, 包括所有 system call 實作都在 kernel mode.
+<ul>
+<li>優: 不必區分哪些不需要 hardware privilege, 也容易讓 OS 之間更容易協作, 例如一個 buffer cache 可以同時分享給 file system 和虛擬記憶體使用.</li>
+<li>缺: 如果發生錯誤，直接當機.</li>
+</ul>
+</li>
+<li>microkernel: 大部分放在 user-level, 只保留低階 function 給啟動、發訊息、連接 device 等. 將大部分放在 user-level，可減少因為發生錯誤直接當機的風險。</li>
+<li>大部分的作業系統都是混和模式.</li>
+</ul><h3 id="15-Process-overview"><a class="anchor hidden-xs" href="#15-Process-overview" title="15-Process-overview"><span class="octicon octicon-link"></span></a>1.5 Process overview</h3><h4 id="151-重點"><a class="anchor hidden-xs" href="#151-重點" title="151-重點"><span class="octicon octicon-link"></span></a>1.5.1 重點</h4><ul>
+<li>page table: 由硬體實作，將虛擬地址對應至實體地址.</li>
+<li>xv6 使用頁表來提供 process 各自的虛擬地址.</li>
+<li>xv6 從 0x80100000 開始，0-0x80000000 是給 user-level 使用.</li>
+<li>process 運行時 kstack 為空，processor 使用 state；process 被中斷或進行 system call 時 processor 會改用 kstack 而 state 保存數據不使用. thread 會在 kstack 與 state 之間切換.<br>
+<img src="https://i.imgur.com/Y4T4Aw0.png" alt=""></li>
+</ul><h4 id="152-資料結構"><a class="anchor hidden-xs" href="#152-資料結構" title="152-資料結構"><span class="octicon octicon-link"></span></a>1.5.2 資料結構</h4><ul>
+<li>proc ( p ) : process</li>
+<li>p-&gt;kstack: kernel state.</li>
+<li>p-&gt;state : process state (user-level).</li>
+<li>p-&gt;pgdir : process page table.<br>
+<img src="https://i.imgur.com/KYL512s.png" alt=""><br>
+<img src="https://i.imgur.com/z60r8dx.png" alt=""><br>
+<img src="https://i.imgur.com/heWyI7a.png" alt=""><br>
+<img src="https://i.imgur.com/1I6jyLQ.png" alt=""><br>
+<img src="https://i.imgur.com/2YKMFE3.png" alt=""><br>
+<img src="https://i.imgur.com/uRmqK2E.png" alt=""><br>
+<img src="https://i.imgur.com/kJw8MIG.png" alt=""></li>
+</ul><h3 id="16-Code-the-first-address-space"><a class="anchor hidden-xs" href="#16-Code-the-first-address-space" title="16-Code-the-first-address-space"><span class="octicon octicon-link"></span></a>1.6 Code: the first address space</h3><h4 id="161-重點"><a class="anchor hidden-xs" href="#161-重點" title="161-重點"><span class="octicon octicon-link"></span></a>1.6.1 重點</h4><ul>
+<li>PC 開機時會將 boot loader 從硬碟載入記憶體，entry 開始執行，此時 paging hardware 還沒開始工作.</li>
+<li>0xa0000:0x100000 is for I/O devices.</li>
+<li>kernal starts at 0x100000.</li>
+<li>KERNBASE=0x80000000.</li>
+<li>限制: kernel instructions and data 必須在 4mb 以內.</li>
+<li>entry: 執行設定 page table 工作.
+<ul>
+<li>運行中，將虛擬地址 0:0x400000 映射到實體地址 0:0x400000.</li>
+<li>結束後，將虛擬地址 KERNBASE:KERNBASE+0x400000 映射到實體地址 0:0x400000.</li>
+</ul>
+</li>
+<li>entrypgdir 的實體地址放入暫存器 %cr3
+<ul>
+<li>V2P_WO - KERNBASE 就是 entrypgdir 的實體地址 (因為 entrypgdir 指向高處)</li>
+<li>%cr0=CR0_PG，設定 paging hardware 開始工作</li>
+</ul>
+</li>
+<li>entry 轉到 kernel’s C code, 必須設置在高位處 (KERNBASE) 執行 kernal (因為 PC-relative direct jump would execute the low-memory version of main).<br>
+<img src="https://i.imgur.com/SKbHoto.png" alt=""></li>
+</ul><h4 id="162-資料結構"><a class="anchor hidden-xs" href="#162-資料結構" title="162-資料結構"><span class="octicon octicon-link"></span></a>1.6.2 資料結構</h4><ul>
+<li>entry<br>
+<img src="https://i.imgur.com/7IYYHxC.png" alt=""><br>
+<img src="https://i.imgur.com/k19atIh.png" alt=""></li>
+<li>main<br>
+<img src="https://i.imgur.com/J4XUYaz.png" alt=""></li>
+</ul><h3 id="17-Code-creating-the-first-process"><a class="anchor hidden-xs" href="#17-Code-creating-the-first-process" title="17-Code-creating-the-first-process"><span class="octicon octicon-link"></span></a>1.7 Code: creating the first process</h3><h4 id="171-重點"><a class="anchor hidden-xs" href="#171-重點" title="171-重點"><span class="octicon octicon-link"></span></a>1.7.1 重點</h4><ul>
+<li>userinit 只有在第一次新建 proc 才有被呼叫到.</li>
+<li>allocproc 每次新建 proc 都會被呼叫到.</li>
+<li>allocproc 會去查 proc table 找到 state 為 UNUSED 的 proc, 然後將 UNUSED 改成 EMBRYO 並給它 pid; 然後嘗試分配 kernal stack, 如果分配失敗, allocproc 會改回 UNUSED 並 return 0 表示失敗.<br>
+<img src="https://i.imgur.com/oX0GTtk.png" alt=""></li>
+</ul><h4 id="172-資料結構"><a class="anchor hidden-xs" href="#172-資料結構" title="172-資料結構"><span class="octicon octicon-link"></span></a>1.7.2 資料結構</h4><ul>
+<li>userinit<br>
+<img src="https://i.imgur.com/OCDWYhx.png" alt=""><br>
+<img src="https://i.imgur.com/31spPNt.png" alt=""></li>
+<li>allocproc<br>
+<img src="https://i.imgur.com/zJAMwoK.png" alt=""><br>
+<img src="https://i.imgur.com/yQUyc7V.png" alt=""></li>
+</ul><h3 id="18-Code-Running-the-first-process"><a class="anchor hidden-xs" href="#18-Code-Running-the-first-process" title="18-Code-Running-the-first-process"><span class="octicon octicon-link"></span></a>1.8 Code: Running the first process</h3><h4 id="181-重點"><a class="anchor hidden-xs" href="#181-重點" title="181-重點"><span class="octicon octicon-link"></span></a>1.8.1 重點</h4><ul>
+<li>mpmain -&gt; scheduler -&gt; switchuvm -&gt; swtch</li>
+<li>allocproc -&gt; forkret -&gt; trapret</li>
+</ul><h4 id="182-資料結構"><a class="anchor hidden-xs" href="#182-資料結構" title="182-資料結構"><span class="octicon octicon-link"></span></a>1.8.2 資料結構</h4><ul>
+<li>mpmain<br>
+<img src="https://i.imgur.com/1Ri50Nk.png" alt=""></li>
+<li>scheduler<br>
+<img src="https://i.imgur.com/FgCXfoQ.png" alt=""></li>
+<li>switchuvm<br>
+<img src="https://i.imgur.com/hd5EAZp.png" alt=""></li>
+<li>swtch<br>
+<img src="https://i.imgur.com/YSCznmB.png" alt=""></li>
+<li>forkret<br>
+<img src="https://i.imgur.com/3D0X9ag.png" alt=""></li>
+<li>trapret<br>
+<img src="https://i.imgur.com/FjzGBH2.png" alt=""></li>
+<li>allocuvm<br>
+<img src="https://i.imgur.com/SL6ldH4.png" alt=""><br>
+<img src="https://i.imgur.com/YRVQmRq.png" alt=""></li>
+</ul><h3 id="19-The-first-system-call-exec"><a class="anchor hidden-xs" href="#19-The-first-system-call-exec" title="19-The-first-system-call-exec"><span class="octicon octicon-link"></span></a>1.9 The first system call: exec</h3><h4 id="191-重點"><a class="anchor hidden-xs" href="#191-重點" title="191-重點"><span class="octicon octicon-link"></span></a>1.9.1 重點</h4><ul>
+<li>Initcode.S start
+<ol>
+<li>將 $argv $init $0 三個值 push to stack</li>
+<li>%eax=$SYS_exec</li>
+<li>int $T_SYSCALL 告訴 kernel 執行 exec</li>
+</ol>
+</li>
+<li>如果運行正常，exec 不會返回，並調用 init</li>
+<li>如果運行失敗，exec 會返回，並調用 exit</li>
+</ul><h4 id="192-資料結構"><a class="anchor hidden-xs" href="#192-資料結構" title="192-資料結構"><span class="octicon octicon-link"></span></a>1.9.2 資料結構</h4><ul>
+<li>Initcode.S<br>
+<img src="https://i.imgur.com/WoPQh34.png" alt=""></li>
+<li>init.c<br>
+<img src="https://i.imgur.com/PR8Bovq.png" alt=""></li>
+</ul><h3 id="110-Real-world"><a class="anchor hidden-xs" href="#110-Real-world" title="110-Real-world"><span class="octicon octicon-link"></span></a>1.10 Real world</h3><h4 id="1101-重點"><a class="anchor hidden-xs" href="#1101-重點" title="1101-重點"><span class="octicon octicon-link"></span></a>1.10.1 重點</h4><ul>
+<li>real os find free proc with explicit free list in constant-time search, but xv6 in linear-time search in allocproc.</li>
+<li>xv6 在地址空間規劃上有缺點，無法使用超過2GB實體記憶體.</li>
+</ul><h1 id="項目三"><a class="anchor hidden-xs" href="#項目三" title="項目三"><span class="octicon octicon-link"></span></a>項目三</h1><h2 id="Chapter-5-Scheduling"><a class="anchor hidden-xs" href="#Chapter-5-Scheduling" title="Chapter-5-Scheduling"><span class="octicon octicon-link"></span></a>Chapter 5 Scheduling</h2><h3 id="51-前言"><a class="anchor hidden-xs" href="#51-前言" title="51-前言"><span class="octicon octicon-link"></span></a>5.1 前言</h3><h4 id="511-重點"><a class="anchor hidden-xs" href="#511-重點" title="511-重點"><span class="octicon octicon-link"></span></a>5.1.1 重點</h4><ul>
+<li>本章節說明 xv6 如何實現 multiplexing.</li>
+<li>multiplex: 將單一 process 模擬為多個 process.</li>
+</ul><h3 id="52-Multiplexing"><a class="anchor hidden-xs" href="#52-Multiplexing" title="52-Multiplexing"><span class="octicon octicon-link"></span></a>5.2 Multiplexing</h3><h4 id="521-重點"><a class="anchor hidden-xs" href="#521-重點" title="521-重點"><span class="octicon octicon-link"></span></a>5.2.1 重點</h4><ul>
+<li>xv6 Multiplexing (forces a switch) 兩種情況:
+<ol>
+<li>sleep/wakeup 機制</li>
+<li>當 process 執行 user instructions</li>
+</ol>
+</li>
+</ul><h3 id="53-Code-Context-switching"><a class="anchor hidden-xs" href="#53-Code-Context-switching" title="53-Code-Context-switching"><span class="octicon octicon-link"></span></a>5.3 Code: Context switching</h3><h4 id="531-重點"><a class="anchor hidden-xs" href="#531-重點" title="531-重點"><span class="octicon octicon-link"></span></a>5.3.1 重點</h4><p><img src="https://i.imgur.com/HSzm9rC.png" alt=""></p><ol>
+<li>swtch(3059) 一開始從 stack 彈出 %esp，放入暫存器 %eax, %edx (3059-3060);</li>
+<li>swtch 顯式壓入舊的 e %ebp, %ebx, %esi, %edi (3063-3066);</li>
+<li>swtch 隱式 save old context (3069).</li>
+<li>%eip has already been saved on the stack by the call instruction that invoked swtch.</li>
+<li>反過來恢復新的%edi, %esi, %ebx, %ebp. (3073-3077)</li>
+<li>由於 cpu-&gt;scheduler，所以不會回到 sched 會返回 scheduler.</li>
+</ol><h4 id="532-資料結構-與-function"><a class="anchor hidden-xs" href="#532-資料結構-與-function" title="532-資料結構-與-function"><span class="octicon octicon-link"></span></a>5.3.2 資料結構 與 function</h4><ul>
+<li>swtch<br>
+<img src="https://i.imgur.com/BkPb0Wv.png" alt=""></li>
+</ul><h3 id="54-Code-Scheduling"><a class="anchor hidden-xs" href="#54-Code-Scheduling" title="54-Code-Scheduling"><span class="octicon octicon-link"></span></a>5.4 Code: Scheduling</h3><h4 id="541-重點"><a class="anchor hidden-xs" href="#541-重點" title="541-重點"><span class="octicon octicon-link"></span></a>5.4.1 重點</h4><ul>
+<li>scheduler 和 sched 彼此是協同程式(coroutines):
+<ul>
+<li>切換 pattern: scheduler(2781) -&gt; sched(2822) -&gt; scheduler(2781) -&gt; sched(2822)</li>
+</ul>
+</li>
+<li>sched: 檢查兩次狀態，確定持有鎖(CPU不能進行中斷)，最後 call swtch 將當前 context 存在 proc-&gt;context，並在 cpu-&gt;scheduler 轉換到 scheduler context. scheduler 繼續執行 and for loop.</li>
+<li>在一種特殊情況下 scheduler’s call to swtch, 不會在sched結束: 當 proc 第一次被 scheduler 時，從 forkret 開始(為了釋放 ptable.lock);否則直接從 trapret 開始.</li>
+<li>scheduler: 找到一個狀態為 RUNNABLE 的 proc，執行它直到它結束，重複上述動作。scheduler 在迴圈外層開始取得 ptable.lock，在結束時釋放(允許顯式中斷)。</li>
+</ul><h4 id="542-資料結構-與-function1"><a class="anchor hidden-xs" href="#542-資料結構-與-function1" title="542-資料結構-與-function1"><span class="octicon octicon-link"></span></a>5.4.2 資料結構 與 function</h4><ul>
+<li>scheduler<br>
+<img src="https://i.imgur.com/nBQpOtO.png" alt=""></li>
+<li>sched<br>
+<img src="https://i.imgur.com/LzmnyaE.png" alt=""></li>
+<li>swtch<br>
+<img src="https://i.imgur.com/BkPb0Wv.png" alt=""></li>
+<li>yield<br>
+<img src="https://i.imgur.com/sA2Bps1.png" alt=""></li>
+<li>forkret<br>
+<img src="https://i.imgur.com/buNJZNG.png" alt=""></li>
+</ul><h4 id="543-流程圖0"><a class="anchor hidden-xs" href="#543-流程圖0" title="543-流程圖0"><span class="octicon octicon-link"></span></a>5.4.3 流程圖</h4><p><img src="https://i.imgur.com/NN5AfUB.png" alt=""></p><h3 id="55-Code-mycpu-and-myproc"><a class="anchor hidden-xs" href="#55-Code-mycpu-and-myproc" title="55-Code-mycpu-and-myproc"><span class="octicon octicon-link"></span></a>5.5 Code: mycpu and myproc</h3><h4 id="551-重點"><a class="anchor hidden-xs" href="#551-重點" title="551-重點"><span class="octicon octicon-link"></span></a>5.5.1 重點</h4><ul>
+<li>mycpu 透過 lapicid 取得 apicid (cpu識別).</li>
+<li>lapicid return hardware identifier 給 processor.</li>
+<li>myproc 對應到當前 process (process識別).</li>
+</ul><h4 id="552-資料結構-與-function"><a class="anchor hidden-xs" href="#552-資料結構-與-function" title="552-資料結構-與-function"><span class="octicon octicon-link"></span></a>5.5.2 資料結構 與 function</h4><ul>
+<li>cpu<br>
+<img src="https://i.imgur.com/Vb1EAOM.png" alt=""></li>
+<li>mycpu<br>
+<img src="https://i.imgur.com/mOmC2YK.png" alt=""><br>
+<img src="https://i.imgur.com/FLywReq.png" alt=""></li>
+<li>proc<br>
+<img src="https://i.imgur.com/gyzwHrr.png" alt=""><br>
+<img src="https://i.imgur.com/UqRbw9O.png" alt=""></li>
+<li>myproc<br>
+<img src="https://i.imgur.com/AqMsNWR.png" alt=""></li>
+<li>lapicid<br>
+<img src="https://i.imgur.com/VZGdC3E.png" alt=""></li>
+</ul><h3 id="56-Sleep-and-wakeup"><a class="anchor hidden-xs" href="#56-Sleep-and-wakeup" title="56-Sleep-and-wakeup"><span class="octicon octicon-link"></span></a>5.6 Sleep and wakeup</h3><h4 id="561-重點"><a class="anchor hidden-xs" href="#561-重點" title="561-重點"><span class="octicon octicon-link"></span></a>5.6.1 重點</h4><ul>
+<li>Scheduling 使得 processes 可以共享 CPU.</li>
+<li>Sleep and wakeup 經常被稱作 sequence coordination or conditional synchronization mechanisms.</li>
+<li>recv holds q-&gt;lock prevents send from trying to wake it up between recv’s check of q-&gt;ptr and its call to sleep. We need sleep to atomically release q-&gt;lock and put the receiving process to sleep. A complete sender/receiver implementation would also sleep in send when waiting for a receiver to consume the value from a previous send.<br>
+<img src="https://i.imgur.com/CVPwWg0.png" alt=""></li>
+</ul><h3 id="57-Code-Sleep-and-wakeup"><a class="anchor hidden-xs" href="#57-Code-Sleep-and-wakeup" title="57-Code-Sleep-and-wakeup"><span class="octicon octicon-link"></span></a>5.7 Code: Sleep and wakeup</h3><h4 id="571-重點"><a class="anchor hidden-xs" href="#571-重點" title="571-重點"><span class="octicon octicon-link"></span></a>5.7.1 重點</h4><ul>
+<li>sleep 將 proc state 改為 SLEEPING 並調用 sched 釋放 CPU；wakeup 將找一個 SLEEPING proc 並標記為 RUNNABLE.</li>
+<li>sleep :
+<ol>
+<li>會檢查存在當前 proc(2878) 和 sleep 持有鎖 lk (2881-2882).</li>
+<li>當 lk != &amp;ptable.lock， sleep 獲取 ptable.lock (2891)，釋放鎖 lk (2892).</li>
+<li>調用 sched (2895-2898).</li>
+<li>當 lk != &amp;ptable.lock，sleep 釋放 ptable.lock (2905), 獲取鎖 lk(2906)</li>
+</ol>
+</li>
+<li>wait (2671): 當 wait 獲得 ptable.lock 會使 proc sleep.</li>
+<li>必須跳過 lk == &amp;ptable.lock 的情況 (2890-2892)，否則會出現死鎖。</li>
+<li>wakeup:
+<ol>
+<li>獲得 ptable.lock (2966) 並調用 wakeup1，實際工作由 wakeup1 完成。</li>
+<li>wakeup 必須在持有 ptable.lock 的情況下才能執行.</li>
+<li>找到chan對應的p−&gt;state == SLEEPING(2958)，state 修改為 RUNNABLE.</li>
+</ol>
+</li>
+<li>sleep/wakeup 機制優點:
+<ul>
+<li>lightweight: 不需要額外的資料結構作為 sleep channel.</li>
+<li>抽象化: caller 不需要知道哪個 process 在運作.</li>
+</ul>
+</li>
+</ul><h4 id="572-資料結構-與-function"><a class="anchor hidden-xs" href="#572-資料結構-與-function" title="572-資料結構-與-function"><span class="octicon octicon-link"></span></a>5.7.2 資料結構 與 function</h4><ul>
+<li>sleep<br>
+<img src="https://i.imgur.com/AJU3djp.png" alt=""><br>
+<img src="https://i.imgur.com/3e8E4bY.png" alt=""></li>
+<li>wakeup<br>
+<img src="https://i.imgur.com/iiaUem8.png" alt=""></li>
+</ul><h4 id="573-流程圖0"><a class="anchor hidden-xs" href="#573-流程圖0" title="573-流程圖0"><span class="octicon octicon-link"></span></a>5.7.3 流程圖</h4><p><img src="https://i.imgur.com/VyLx9dV.png" alt=""></p><h3 id="58-Code-Pipes"><a class="anchor hidden-xs" href="#58-Code-Pipes" title="58-Code-Pipes"><span class="octicon octicon-link"></span></a>5.8 Code: Pipes</h3><h4 id="581-重點"><a class="anchor hidden-xs" href="#581-重點" title="581-重點"><span class="octicon octicon-link"></span></a>5.8.1 重點</h4><ul>
+<li>pipewrite/piperead:
+<ol>
+<li>先取得 pipe lock，確保 pipe 屬性值不變 (6834).</li>
+<li>pipewrite 先取得 pipe lock，piperead 停在 acquire 等待獲取鎖 (sleep).</li>
+<li>pipewrite for loop write bytes.</li>
+<li>pipewrite 緩衝區填滿 (6836)，wakeup 通知睡眠中 readers 緩衝區有資料可讀. 並釋放 pipe lock and sleep.</li>
+<li>pipe lock 釋放，piperead 嘗試取得 pipe lock.</li>
+<li>piperead 檢查發現 p-&gt;nread != p-&gt;nwrite (因為pipewrite sleep, p-&gt;nwrite == p-&gt;nread+PIPESIZE)</li>
+<li>for loop read  bytes (6863-6867).</li>
+<li>讀完 wakeup 通知睡眠中 writers 緩衝區已空出. 並釋放 pipe lock.</li>
+</ol>
+</li>
+</ul><h4 id="582-資料結構-與-function"><a class="anchor hidden-xs" href="#582-資料結構-與-function" title="582-資料結構-與-function"><span class="octicon octicon-link"></span></a>5.8.2 資料結構 與 function</h4><ul>
+<li>pipe<br>
+<img src="https://i.imgur.com/I5pOfZv.png" alt=""></li>
+<li>pipewrite<br>
+<img src="https://i.imgur.com/g3boxTt.png" alt=""></li>
+<li>piperead<br>
+<img src="https://i.imgur.com/VOjO4sU.png" alt=""></li>
+<li>acquire<br>
+<img src="https://i.imgur.com/OxlBU2o.png" alt=""></li>
+</ul><h4 id="583-流程圖0"><a class="anchor hidden-xs" href="#583-流程圖0" title="583-流程圖0"><span class="octicon octicon-link"></span></a>5.8.3 流程圖</h4><p><img src="https://i.imgur.com/sKm70nr.png" alt=""></p><h3 id="59-Code-Wait-exit-and-kill"><a class="anchor hidden-xs" href="#59-Code-Wait-exit-and-kill" title="59-Code-Wait-exit-and-kill"><span class="octicon octicon-link"></span></a>5.9 Code: Wait, exit, and kill</h3><h4 id="591-重點"><a class="anchor hidden-xs" href="#591-重點" title="591-重點"><span class="octicon octicon-link"></span></a>5.9.1 重點</h4><ul>
+<li>child proc 要退出時，會先將 p-&gt;state 改成 ZOMBIE，等待 parent proc 調用 wait 時才真正釋放 memory (真正退出).</li>
+<li>struct proc 擁有屬性 proc parent，當 parent 比 child 提早退出，init process 會接收這些 child 並等待他們退出.</li>
+<li>wait:
+<ol>
+<li>獲得 ptable.lock</li>
+<li>查看 ptable 是否有 child p-&gt;state = ZOMBIE</li>
+<li>沒有 ZOMBIE，調用 sleep 等其中一個 child proc 退出.</li>
+</ol>
+</li>
+<li>exit: process 自我消滅
+<ol>
+<li>獲得 ptable.lock</li>
+<li>wakeup 當前 parent proc (2651)，parent proc 進入 wait (因為 ptable.lock 被 child proc 鎖定)</li>
+<li>把所有 child proc 交給 initproc (2653-2660)</li>
+<li>當前 proc call sched to relinquish the CPU (2667).</li>
+<li>parent proc wakeup 然後查表 child p-&gt;state = ZOMBIE (2657)</li>
+<li>清理 struct proc (2687-2694).</li>
+</ol>
+</li>
+<li>kill: 消滅其他 process
+<ol>
+<li>獲得 ptable.lock</li>
+<li>查表設定為 p-&gt;killed</li>
+<li>如果在睡眠中，喚醒它.</li>
+<li>釋放資源.</li>
+<li>如果 p-&gt;killed 被設定，透過 exit 終結自己.</li>
+</ol>
+</li>
+</ul><h4 id="592-資料結構-與-function"><a class="anchor hidden-xs" href="#592-資料結構-與-function" title="592-資料結構-與-function"><span class="octicon octicon-link"></span></a>5.9.2 資料結構 與 function</h4><ul>
+<li>wait<br>
+<img src="https://i.imgur.com/bLjWFO6.png" alt=""><br>
+<img src="https://i.imgur.com/4N1GfAf.png" alt=""></li>
+<li>exit<br>
+<img src="https://i.imgur.com/bjk55zG.png" alt=""><br>
+<img src="https://i.imgur.com/xxc2JvQ.png" alt=""></li>
+<li>kill<br>
+<img src="https://i.imgur.com/MAZOOjA.png" alt=""></li>
+</ul><h4 id="593-流程圖"><a class="anchor hidden-xs" href="#593-流程圖" title="593-流程圖"><span class="octicon octicon-link"></span></a>5.9.3 流程圖</h4><p><img src="https://i.imgur.com/QvBWCPI.png" alt=""></p><h3 id="510-Real-world"><a class="anchor hidden-xs" href="#510-Real-world" title="510-Real-world"><span class="octicon octicon-link"></span></a>5.10 Real world</h3><h4 id="5101-重點"><a class="anchor hidden-xs" href="#5101-重點" title="5101-重點"><span class="octicon octicon-link"></span></a>5.10.1 重點</h4><ul>
+<li>xv6 使用較簡單的 scheduling policy: round robin, 真實的 OS 是有優先級順序的.</li>
+<li>priority inversion: 優先級低的 process 先取得鎖，則優先級高的 process 無法執行。</li>
+<li>convoys: 指當很多個優先級高的 process 等待一個已經先取得鎖的優先級低的 process.</li>
+<li>同步必須先解決 lost wakeups 問題。
+<ul>
+<li>xv6 給 sleep 增加一個鎖來解決這個問題.</li>
+</ul>
+</li>
+<li>wakeup 分成兩種: signal、broadcast，以避免有 thundering herd 現象。</li>
+<li>Semaphores
+<ul>
+<li>整數</li>
+<li>兩種操作: 加、減</li>
+<li>當小於0時會進入睡眠，直到另一個 process 進行加操作被喚醒.</li>
+</ul>
+</li>
+</ul><div dir="ltr" class="resize-sensor" style="position: absolute; left: -10px; top: -10px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li><a href="#項目一" title="項目一">項目一</a></li><li><a href="#項目二" title="項目二">項目二</a><ul class="nav"><li><a href="#Chapter-0-Operating-system-interfaces" title="Chapter 0 Operating system interfaces">Chapter 0 Operating system interfaces</a><ul class="nav"><li><a href="#01-前言" title="0.1 前言">0.1 前言</a></li><li><a href="#02-Process-and-Memory" title="0.2 Process and Memory">0.2 Process and Memory</a></li><li><a href="#03-IO-and-File-descriptors" title="0.3 I/O and File descriptors">0.3 I/O and File descriptors</a></li><li><a href="#04-Pipes" title="0.4 Pipes">0.4 Pipes</a></li><li><a href="#05-File-System" title="0.5 File System">0.5 File System</a></li><li><a href="#06-Real-World" title="0.6 Real World">0.6 Real World</a></li></ul></li><li><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#11-前言" title="1.1 前言">1.1 前言</a></li><li><a href="#12-Abstracting-physical-resources" title="1.2 Abstracting physical resources">1.2 Abstracting physical resources</a></li><li><a href="#13-User-mode-kernel-mode-and-system-calls" title="1.3 User mode, kernel mode, and system calls">1.3 User mode, kernel mode, and system calls</a></li><li><a href="#14-Kernel-organization" title="1.4 Kernel organization">1.4 Kernel organization</a></li><li><a href="#15-Process-overview" title="1.5 Process overview">1.5 Process overview</a></li><li><a href="#16-Code-the-first-address-space" title="1.6 Code: the first address space">1.6 Code: the first address space</a></li><li><a href="#17-Code-creating-the-first-process" title="1.7 Code: creating the first process">1.7 Code: creating the first process</a></li><li><a href="#18-Code-Running-the-first-process" title="1.8 Code: Running the first process">1.8 Code: Running the first process</a></li><li><a href="#19-The-first-system-call-exec" title="1.9 The first system call: exec">1.9 The first system call: exec</a></li><li><a href="#110-Real-world" title="1.10 Real world">1.10 Real world</a></li></ul></li></ul></li><li class=""><a href="#項目三" title="項目三">項目三</a><ul class="nav"><li class=""><a href="#Chapter-5-Scheduling" title="Chapter 5 Scheduling">Chapter 5 Scheduling</a><ul class="nav"><li><a href="#51-前言" title="5.1 前言">5.1 前言</a></li><li><a href="#52-Multiplexing" title="5.2 Multiplexing">5.2 Multiplexing</a></li><li><a href="#53-Code-Context-switching" title="5.3 Code: Context switching">5.3 Code: Context switching</a></li><li><a href="#54-Code-Scheduling" title="5.4 Code: Scheduling">5.4 Code: Scheduling</a></li><li><a href="#55-Code-mycpu-and-myproc" title="5.5 Code: mycpu and myproc">5.5 Code: mycpu and myproc</a></li><li><a href="#56-Sleep-and-wakeup" title="5.6 Sleep and wakeup">5.6 Sleep and wakeup</a></li><li><a href="#57-Code-Sleep-and-wakeup" title="5.7 Code: Sleep and wakeup">5.7 Code: Sleep and wakeup</a></li><li><a href="#58-Code-Pipes" title="5.8 Code: Pipes">5.8 Code: Pipes</a></li><li class=""><a href="#59-Code-Wait-exit-and-kill" title="5.9 Code: Wait, exit, and kill">5.9 Code: Wait, exit, and kill</a></li><li><a href="#510-Real-world" title="5.10 Real world">5.10 Real world</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li><a href="#項目一" title="項目一">項目一</a></li><li><a href="#項目二" title="項目二">項目二</a><ul class="nav"><li><a href="#Chapter-0-Operating-system-interfaces" title="Chapter 0 Operating system interfaces">Chapter 0 Operating system interfaces</a><ul class="nav"><li><a href="#01-前言" title="0.1 前言">0.1 前言</a></li><li><a href="#02-Process-and-Memory" title="0.2 Process and Memory">0.2 Process and Memory</a></li><li><a href="#03-IO-and-File-descriptors" title="0.3 I/O and File descriptors">0.3 I/O and File descriptors</a></li><li><a href="#04-Pipes" title="0.4 Pipes">0.4 Pipes</a></li><li><a href="#05-File-System" title="0.5 File System">0.5 File System</a></li><li><a href="#06-Real-World" title="0.6 Real World">0.6 Real World</a></li></ul></li><li><a href="#Chapter-1-Operating-system-organization" title="Chapter 1 Operating system organization">Chapter 1 Operating system organization</a><ul class="nav"><li><a href="#11-前言" title="1.1 前言">1.1 前言</a></li><li><a href="#12-Abstracting-physical-resources" title="1.2 Abstracting physical resources">1.2 Abstracting physical resources</a></li><li><a href="#13-User-mode-kernel-mode-and-system-calls" title="1.3 User mode, kernel mode, and system calls">1.3 User mode, kernel mode, and system calls</a></li><li><a href="#14-Kernel-organization" title="1.4 Kernel organization">1.4 Kernel organization</a></li><li><a href="#15-Process-overview" title="1.5 Process overview">1.5 Process overview</a></li><li><a href="#16-Code-the-first-address-space" title="1.6 Code: the first address space">1.6 Code: the first address space</a></li><li><a href="#17-Code-creating-the-first-process" title="1.7 Code: creating the first process">1.7 Code: creating the first process</a></li><li><a href="#18-Code-Running-the-first-process" title="1.8 Code: Running the first process">1.8 Code: Running the first process</a></li><li><a href="#19-The-first-system-call-exec" title="1.9 The first system call: exec">1.9 The first system call: exec</a></li><li><a href="#110-Real-world" title="1.10 Real world">1.10 Real world</a></li></ul></li></ul></li><li class=""><a href="#項目三" title="項目三">項目三</a><ul class="nav"><li class=""><a href="#Chapter-5-Scheduling" title="Chapter 5 Scheduling">Chapter 5 Scheduling</a><ul class="nav"><li><a href="#51-前言" title="5.1 前言">5.1 前言</a></li><li><a href="#52-Multiplexing" title="5.2 Multiplexing">5.2 Multiplexing</a></li><li><a href="#53-Code-Context-switching" title="5.3 Code: Context switching">5.3 Code: Context switching</a></li><li><a href="#54-Code-Scheduling" title="5.4 Code: Scheduling">5.4 Code: Scheduling</a></li><li><a href="#55-Code-mycpu-and-myproc" title="5.5 Code: mycpu and myproc">5.5 Code: mycpu and myproc</a></li><li><a href="#56-Sleep-and-wakeup" title="5.6 Sleep and wakeup">5.6 Sleep and wakeup</a></li><li><a href="#57-Code-Sleep-and-wakeup" title="5.7 Code: Sleep and wakeup">5.7 Code: Sleep and wakeup</a></li><li><a href="#58-Code-Pipes" title="5.8 Code: Pipes">5.8 Code: Pipes</a></li><li class=""><a href="#59-Code-Wait-exit-and-kill" title="5.9 Code: Wait, exit, and kill">5.9 Code: Wait, exit, and kill</a></li><li><a href="#510-Real-world" title="5.10 Real world">5.10 Real world</a></li></ul></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
