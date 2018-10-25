@@ -1,1 +1,935 @@
-homework not found!!
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        OS HW1 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="OS-HW1"><a class="anchor hidden-xs" href="#OS-HW1" title="OS-HW1"><span class="octicon octicon-link"></span></a>OS HW1</h1><hr><p>Operating System<br>
+Homework 1<br>
+四工管三乙 B10501109 王蔚</p><hr><blockquote>
+<p><strong>項目一</strong></p>
+</blockquote><p>截圖瞬間：<br>
+<img src="https://i.imgur.com/WZnMpMT.png" alt=""></p><p>kernel 執行到 0x7c00</p><p><strong>暫存器內容:</strong><br>
+(gdb) info reg<br>
+意思：暫存器資訊</p><table>
+<thead>
+<tr>
+<th>暫存器</th>
+<th>暫存器值(16進位)</th>
+<th>暫存器值(10進位)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eax</td>
+<td>0xaa55</td>
+<td>43605</td>
+</tr>
+<tr>
+<td>ecx</td>
+<td>0x0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>edx</td>
+<td>0x80</td>
+<td>128</td>
+</tr>
+<tr>
+<td>ebx</td>
+<td>0x0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><p><strong>Stack內容:</strong></p><p>(gdb) x/24x $esp<br>
+命令意思：  以16進位顯示出24個值/字  (從esp地方開始顯示)</p><p>從上面截圖可以知道，esp 是從 0x6f2c 開始的，依序 0x6f3c, 0x6f4c, 0x6f5c, 0x6f6c, 0x6f7c 直到出現24個完畢</p><hr><blockquote>
+<p><strong>項目二</strong></p>
+</blockquote><p>作業系統若要對程式提供服務，就需要用到接口。接口設計得良好之標準是"簡單"與"精準"。</p><p><strong>作業系統接口:</strong><br>
+<img src="https://th0ar.gitbooks.io/xv6-chinese/content/pic/f0-1.png" alt=""></p><p>裏頭使用了Kernel概念。每個process裏頭都含有instruction(實現process之運算功能), data(用在運算的variables), stack(組織、管理程序的call) 的memory。</p><p><strong>進程與內存:</strong></p><p>xv6分為兩部分: “用戶內存空間” 與 “只讓Kernel看見的process狀態”。xv6的分時性: 在可用CPU之間不停切換，當其中一個process沒在執行時，xv6會保存其CPU暫存器，待process再次執行時即復原暫存器中的值。</p><p><strong>管道:</strong></p><p>管道是一個小的Kernel緩衝地帶，它包括了一個write操作與read操作，以文件描述成對的方式呈現給process看。自管道一端寫得data可以自由地從另一端讀取，是一種process之間的交互模式。管道特性: 自我清掃(shell要在任務完成後自己刪除) 、 得以傳輸任意長度之data 、 允許同步(多個process可以只用一對管道進行訊息傳遞)。</p><p><strong>進程(Process):</strong><br>
+<img src="https://th0ar.gitbooks.io/xv6-chinese/content/pic/f1-1.png" alt=""></p><ul>
+<li>xv6使用頁表為每個process提供其獨有的地址空間(其他process無法讀寫)</li>
+<li>頁表將虛擬地址翻譯成物理地址</li>
+<li>每個process都有一個stack來執行process的指令</li>
+<li>用戶(p stack) for 用戶指令; kernel(k stack) for kernel指令</li>
+</ul><p><strong>地址空間</strong><br>
+<img src="https://th0ar.gitbooks.io/xv6-chinese/content/pic/f1-2.png" alt=""></p><ul>
+<li>左為虛擬地址(x86指令所用)、右為物理地址(處理器向memory發送的地址)</li>
+</ul><hr><blockquote>
+<p><strong>項目三</strong></p>
+</blockquote><p><strong>第六章: 文件系統</strong></p><p><strong>運作原理</strong></p><p>0263 void binit(void);<br>
+0264 struct buf* bread(uint, uint);<br>
+0265 void brelse(struct buf*);<br>
+0266 void bwrite(struct buf*);</p><ul>
+<li><code>bio.c</code><br>
+4428 struct {<br>
+4429 struct spinlock lock;<br>
+4430 struct buf buf[NBUF];<br>
+塊緩衝是緩衝區的雙向鏈表。 binit會從一個靜態陣列 buf 中構建出一個     有 NBUF 個元素的雙向鏈表。所有對塊緩衝的訪問都通過鏈表而非靜態陣列。  4434 struct buf head;<br>
+4435 } bcache;<br>
+4436<br>
+4437 void<br>
+4438 binit(void)<br>
+4439 {<br>
+4440 struct buf *b;<br>
+4441<br>
+4442 initlock(&amp;bcache.lock, “bcache”);<br>
+<em>創建緩衝的Link list<br>
+4451 bcache.head.prev = &amp;bcache.head;<br>
+4452 bcache.head.next = &amp;bcache.head;<br>
+4453 for(b = bcache.buf; b &lt; bcache.buf+NBUF; b++){<br>
+4454 b−&gt;next = bcache.head.next;<br>
+4455 b−&gt;prev = &amp;bcache.head;<br>
+4456 initsleeplock(&amp;b−&gt;lock, “buffer”);<br>
+4457 bcache.head.next−&gt;prev = b;<br>
+4458 bcache.head.next = b;<br>
+4459 }<br>
+4460 }<br>
+4461<br>
+Bget scans the buffer list for a buffer with the given device and sector numbers. If there is such a buffer, bget acquires the sleep-lock for the buffer.<br>
+bget then returns the locked buffer.<br>
+4465 static struct buf</em><br>
+4466 bget(uint dev, uint blockno)<br>
+4467 {<br>
+4468 struct buf *b;<br>
+4469<br>
+4470 acquire(&amp;bcache.lock);<br>
+4471<br>
+4472 // Is the block already cached?<br>
+4473 for(b = bcache.head.next; b != &amp;bcache.head; b = b−&gt;next){<br>
+4474 if(b−&gt;dev == dev &amp;&amp; b−&gt;blockno == blockno){<br>
+4475 b−&gt;refcnt++;<br>
+4476 release(&amp;bcache.lock);<br>
+4477 acquiresleep(&amp;b−&gt;lock);<br>
+4478 return b;<br>
+4479 }<br>
+4480 }<br>
+4481<br>
+Not cached; recycle an unused buffer.<br>
+Even if refcnt==0, B_DIRTY indicates a buffer is in use<br>
+because log.c has modified it but not yet committed it.<br>
+4485 for(b = bcache.head.prev; b != &amp;bcache.head; b = b−&gt;prev){<br>
+4486 if(b−&gt;refcnt == 0 &amp;&amp; (b−&gt;flags &amp; B_DIRTY) == 0) {<br>
+4487 b−&gt;dev = dev;<br>
+4488 b−&gt;blockno = blockno;<br>
+4489 b−&gt;flags = 0;<br>
+4490 b−&gt;refcnt = 1;<br>
+4491 release(&amp;bcache.lock);<br>
+4492 acquiresleep(&amp;b−&gt;lock);<br>
+4493 return b;<br>
+4494 }<br>
+4495 }<br>
+4496 panic(“bget: no buffers”);<br>
+4497 }</li>
+</ul><p><img src="https://th0ar.gitbooks.io/xv6-chinese/content/pic/f6-3.png" alt=""></p><ul>
+<li><code>sysfile.c</code><br>
+6056 #include "types.h"<br>
+6057 #include "defs.h"<br>
+6058 #include "param.h"<br>
+6059 #include "stat.h"<br>
+6060 #include "mmu.h"<br>
+6061 #include "proc.h"<br>
+6062 #include "fs.h"<br>
+6063 #include "spinlock.h"<br>
+6064 #include "sleeplock.h"<br>
+6065 #include "file.h"<br>
+6066 #include "fcntl.h"<br>
+6067<br>
+//Fetch the nth word−sized system call argument as a file descriptor and return both the descriptor and the corresponding struct file.<br>
+6070 static int<br>
+6071 argfd(int n, int *pfd, struct file **pf)<br>
+6072 {<br>
+6073 int fd;<br>
+6074 struct file *f;<br>
+6075<br>
+6076 if(argint(n, &amp;fd) &lt; 0)<br>
+6077 return −1;<br>
+6078 if(fd &lt; 0 || fd &gt;= NOFILE || (f=myproc()−&gt;ofile[fd]) == 0)<br>
+6079 return −1;<br>
+6080 if(pfd)<br>
+6081 *pfd = fd;<br>
+6082 if(pf)<br>
+6083 *pf = f;<br>
+6084 return 0;<br>
+6085 }</li>
+</ul><p><strong>Functions &amp; Data Structures</strong></p><ul>
+<li>
+<p>bread<br>
+4501 struct buf*<br>
+4502 bread(uint dev, uint blockno)<br>
+4503 {<br>
+4504 struct buf *b;<br>
+4505<br>
+4506 b = bget(dev, blockno);<br>
+4507 if((b−&gt;flags &amp; B_VALID) == 0) {<br>
+4508 iderw(b);<br>
+4509 }<br>
+4510 return b;<br>
+4511 }<br>
+4512<br>
+// Write b’s contents to disk. Must be locked.<br>
+4514 void<br>
+4515 bwrite(struct buf *b)<br>
+4516 {<br>
+4517 if(!holdingsleep(&amp;b−&gt;lock))<br>
+4518 panic(“bwrite”);<br>
+4519 b−&gt;flags |= B_DIRTY;<br>
+4520 iderw(b);<br>
+4521 }</p>
+</li>
+<li>
+<p>bget<br>
+4465 static struct buf*<br>
+4466 bget(uint dev, uint blockno)<br>
+4467 {<br>
+4468 struct buf *b;<br>
+4469<br>
+4470 acquire(&amp;bcache.lock);<br>
+4471<br>
+//Is the block already cached?<br>
+4473 for(b = bcache.head.next; b != &amp;bcache.head; b = b−&gt;next){<br>
+4474 if(b−&gt;dev == dev &amp;&amp; b−&gt;blockno == blockno){<br>
+4475 b−&gt;refcnt++;<br>
+4476 release(&amp;bcache.lock);<br>
+4477 acquiresleep(&amp;b−&gt;lock);<br>
+4478 return b;<br>
+4479 }<br>
+4480 }</p>
+</li>
+<li>
+<p>binit<br>
+4437 void<br>
+4438 binit(void)<br>
+4439 {<br>
+4440 struct buf *b;<br>
+4441<br>
+4442 initlock(&amp;bcache.lock, “bcache”);<br>
+//創建緩衝Link list<br>
+4451 bcache.head.prev = &amp;bcache.head;<br>
+4452 bcache.head.next = &amp;bcache.head;<br>
+4453 for(b = bcache.buf; b &lt; bcache.buf+NBUF; b++){<br>
+4454 b−&gt;next = bcache.head.next;<br>
+4455 b−&gt;prev = &amp;bcache.head;<br>
+4456 initsleeplock(&amp;b−&gt;lock, “buffer”);<br>
+4457 bcache.head.next−&gt;prev = b;<br>
+4458 bcache.head.next = b;<br>
+4459 }<br>
+4460 }</p>
+</li>
+<li>
+<p>recover_from_log<br>
+4817 static void<br>
+4818 recover_from_log(void)<br>
+4819 {<br>
+4820 read_head();<br>
+4821 install_trans(); // if committed, copy from log to disk<br>
+4822 log.lh.n = 0;<br>
+4823 write_head(); // 清除log<br>
+4824 }</p>
+</li>
+<li>
+<p>sys_link<br>
+6201 int<br>
+6202 sys_link(void)<br>
+6203 {<br>
+6204 char name[DIRSIZ], *new, *old;<br>
+6205 struct inode *dp, *ip;<br>
+6206<br>
+6207 if(argstr(0, &amp;old) &lt; 0 || argstr(1, &amp;new) &lt; 0)<br>
+6208 return −1;<br>
+6209<br>
+6210 begin_op();<br>
+6211 if((ip = namei(old)) == 0){<br>
+6212 end_op();<br>
+6213 return −1;<br>
+6214 }<br>
+6215<br>
+6216 ilock(ip);<br>
+6217 if(ip−&gt;type == T_DIR){<br>
+6218 iunlockput(ip);<br>
+6219 end_op();<br>
+6220 return −1;<br>
+6221 }<br>
+6222<br>
+6223 ip−&gt;nlink++;<br>
+6224 iupdate(ip);<br>
+6225 iunlock(ip);<br>
+6226<br>
+6227 if((dp = nameiparent(new, name)) == 0)<br>
+6228 goto bad;<br>
+6229 ilock(dp);<br>
+6230 if(dp−&gt;dev != ip−&gt;dev || dirlink(dp, name, ip−&gt;inum) &lt; 0){<br>
+6231 iunlockput(dp);<br>
+6232 goto bad;<br>
+6233 }<br>
+6234 iunlockput(dp);<br>
+6235 iput(ip);<br>
+6236<br>
+6237 end_op();<br>
+6238<br>
+6239 return 0;<br>
+6240<br>
+6241 bad:<br>
+6242 ilock(ip);<br>
+6243 ip−&gt;nlink−−;<br>
+6244 iupdate(ip);<br>
+6245 iunlockput(ip);<br>
+6246 end_op();<br>
+6247 return −1;<br>
+6248 }</p>
+</li>
+<li>
+<p>sys_unlink<br>
+6300 int<br>
+6301 sys_unlink(void)<br>
+6302 {<br>
+6303 struct inode *ip, *dp;<br>
+6304 struct dirent de;<br>
+6305 char name[DIRSIZ], <em>path;<br>
+6306 uint off;<br>
+6307<br>
+6308 if(argstr(0, &amp;path) &lt; 0)<br>
+6309 return −1;<br>
+6310<br>
+6311 begin_op();<br>
+6312 if((dp = nameiparent(path, name)) == 0){<br>
+6313 end_op();<br>
+6314 return −1;<br>
+6315 }<br>
+6316<br>
+6317 ilock(dp);<br>
+6318<br>
+6319 // Cannot unlink “.” or “…”.<br>
+6320 if(namecmp(name, “.”) == 0 || namecmp(name, “…”) == 0)<br>
+6321 goto bad;<br>
+6322<br>
+6323 if((ip = dirlookup(dp, name, &amp;off)) == 0)<br>
+6324 goto bad;<br>
+6325 ilock(ip);<br>
+6326<br>
+6327 if(ip−&gt;nlink &lt; 1)<br>
+6328 panic(“unlink: nlink &lt; 1”);<br>
+6329 if(ip−&gt;type == T_DIR &amp;&amp; !isdirempty(ip)){<br>
+6330 iunlockput(ip);<br>
+6331 goto bad;<br>
+6332 }<br>
+6333<br>
+6334 memset(&amp;de, 0, sizeof(de));<br>
+6335 if(writei(dp, (char</em>)&amp;de, off, sizeof(de)) != sizeof(de))<br>
+6336 panic(“unlink: writei”);<br>
+6337 if(ip−&gt;type == T_DIR){<br>
+6338 dp−&gt;nlink−−;<br>
+6339 iupdate(dp);<br>
+6340 }<br>
+6341 iunlockput(dp);<br>
+6342<br>
+6343 ip−&gt;nlink−−;<br>
+6344 iupdate(ip);<br>
+6345 iunlockput(ip);<br>
+6346<br>
+6347 end_op();<br>
+6348<br>
+6349 return 0;<br>
+6350 bad:<br>
+6351 iunlockput(dp);<br>
+6352 end_op();<br>
+6353 return −1;<br>
+6354 }</p>
+</li>
+<li>
+<p>sys_pipe<br>
+6550 int<br>
+6551 sys_pipe(void)<br>
+6552 {<br>
+6553 int *fd;<br>
+6554 struct file <em>rf, <em>wf;<br>
+6555 int fd0, fd1;<br>
+6556<br>
+6557 if(argptr(0, (void</em>)&amp;fd, 2</em>sizeof(fd[0])) &lt; 0)<br>
+6558 return −1;<br>
+6559 if(pipealloc(&amp;rf, &amp;wf) &lt; 0)<br>
+6560 return −1;<br>
+6561 fd0 = −1;<br>
+6562 if((fd0 = fdalloc(rf)) &lt; 0 || (fd1 = fdalloc(wf)) &lt; 0){<br>
+6563 if(fd0 &gt;= 0)<br>
+6564 myproc()−&gt;ofile[fd0] = 0;<br>
+6565 fileclose(rf);<br>
+6566 fileclose(wf);<br>
+6567 return −1;<br>
+6568 }<br>
+6569 fd[0] = fd0;<br>
+6570 fd[1] = fd1;<br>
+6571 return 0;<br>
+6572 }</p>
+</li>
+<li>
+<p>sys_open<br>
+6400 int<br>
+6401 sys_open(void)<br>
+6402 {<br>
+6403 char *path;<br>
+6404 int fd, omode;<br>
+6405 struct file *f;<br>
+6406 struct inode *ip;<br>
+6407<br>
+6408 if(argstr(0, &amp;path) &lt; 0 || argint(1, &amp;omode) &lt; 0)<br>
+6409 return −1;<br>
+6410<br>
+6411 begin_op();<br>
+6412<br>
+6413 if(omode &amp; O_CREATE){<br>
+6414 ip = create(path, T_FILE, 0, 0);<br>
+6415 if(ip == 0){<br>
+6416 end_op();<br>
+6417 return −1;<br>
+6418 }<br>
+6419 } else {<br>
+6420 if((ip = namei(path)) == 0){<br>
+6421 end_op();<br>
+6422 return −1;<br>
+6423 }<br>
+6424 ilock(ip);<br>
+6425 if(ip−&gt;type == T_DIR &amp;&amp; omode != O_RDONLY){<br>
+6426 iunlockput(ip);<br>
+6427 end_op();<br>
+6428 return −1;<br>
+6429 }<br>
+6430 }<br>
+6431<br>
+6432 if((f = filealloc()) == 0 || (fd = fdalloc(f)) &lt; 0){<br>
+6433 if(f)<br>
+6434 fileclose(f);<br>
+6435 iunlockput(ip);<br>
+6436 end_op();<br>
+6437 return −1;<br>
+6438 }<br>
+6439 iunlock(ip);<br>
+6440 end_op();<br>
+6441<br>
+6442 f−&gt;type = FD_INODE;<br>
+6443 f−&gt;ip = ip;<br>
+6444 f−&gt;off = 0;<br>
+6445 f−&gt;readable = !(omode &amp; O_WRONLY);<br>
+6446 f−&gt;writable = (omode &amp; O_WRONLY) || (omode &amp; O_RDWR);<br>
+6447 return fd;<br>
+6448 }</p>
+</li>
+<li>
+<p>namex<br>
+5755 namex(char *path, int nameiparent, char *name)<br>
+5756 {<br>
+5757 struct inode *ip, *next;<br>
+5758<br>
+5759 if(*path == ’/’)<br>
+5760 ip = iget(ROOTDEV, ROOTINO);<br>
+5761 else<br>
+5762 ip = idup(myproc()−&gt;cwd);<br>
+5763<br>
+5764 while((path = skipelem(path, name)) != 0){<br>
+5765 ilock(ip);<br>
+5766 if(ip−&gt;type != T_DIR){<br>
+5767 iunlockput(ip);<br>
+5768 return 0;<br>
+5769 }<br>
+5770 if(nameiparent &amp;&amp; <em>path == ’\0’){<br>
+5771 // Stop one level early.<br>
+5772 iunlock(ip);<br>
+5773 return ip;<br>
+5774 }<br>
+5775 if((next = dirlookup(ip, name, 0)) == 0){<br>
+5776 iunlockput(ip);<br>
+5777 return 0;<br>
+5778 }<br>
+5779 iunlockput(ip);<br>
+5780 ip = next;<br>
+5781 }<br>
+5782 if(nameiparent){<br>
+5783 iput(ip);<br>
+5784 return 0;<br>
+5785 }<br>
+5786 return ip;<br>
+5787 }<br>
+5788<br>
+5789 struct inode</em><br>
+5790 namei(char *path)<br>
+5791 {<br>
+5792 char name[DIRSIZ];<br>
+5793 return namex(path, 0, name);<br>
+5794 }</p>
+</li>
+<li>
+<p>create<br>
+6357 create(char *path, short type, short major, short minor)<br>
+6358 {<br>
+6359 uint off;<br>
+6360 struct inode *ip, *dp;<br>
+6361 char name[DIRSIZ];<br>
+6362<br>
+6363 if((dp = nameiparent(path, name)) == 0)<br>
+6364 return 0;<br>
+6365 ilock(dp);<br>
+6366<br>
+6367 if((ip = dirlookup(dp, name, &amp;off)) != 0){<br>
+6368 iunlockput(dp);<br>
+6369 ilock(ip);<br>
+6370 if(type == T_FILE &amp;&amp; ip−&gt;type == T_FILE)<br>
+6371 return ip;<br>
+6372 iunlockput(ip);<br>
+6373 return 0;<br>
+6374 }<br>
+6375<br>
+6376 if((ip = ialloc(dp−&gt;dev, type)) == 0)<br>
+6377 panic(“create: ialloc”);<br>
+6378<br>
+6379 ilock(ip);<br>
+6380 ip−&gt;major = major;<br>
+6381 ip−&gt;minor = minor;<br>
+6382 ip−&gt;nlink = 1;<br>
+6383 iupdate(ip);<br>
+6384<br>
+6385 if(type == T_DIR){ // Create . and … entries.<br>
+6386 dp−&gt;nlink++; // for "…"<br>
+6387 iupdate(dp);<br>
+6388 // No ip−&gt;nlink++ for “.”: avoid cyclic ref count.<br>
+6389 if(dirlink(ip, “.”, ip−&gt;inum) &lt; 0 || dirlink(ip, “…”, dp−&gt;inum) &lt; 0)<br>
+6390 panic(“create dots”);<br>
+6391 }<br>
+6392<br>
+6393 if(dirlink(dp, name, ip−&gt;inum) &lt; 0)<br>
+6394 panic(“create: dirlink”);<br>
+6395<br>
+6396 iunlockput(dp);<br>
+6397<br>
+6398 return ip;<br>
+6399</p>
+</li>
+<li>
+<p>dirlink<br>
+5651 int<br>
+5652 dirlink(struct inode *dp, char <em>name, uint inum)<br>
+5653 {<br>
+5654 int off;<br>
+5655 struct dirent de;<br>
+5656 struct inode <em>ip;<br>
+5657<br>
+5658 // Check that name is not present.<br>
+5659 if((ip = dirlookup(dp, name, 0)) != 0){<br>
+5660 iput(ip);<br>
+5661 return −1;<br>
+5662 }<br>
+5663<br>
+5664 // Look for an empty dirent.<br>
+5665 for(off = 0; off &lt; dp−&gt;size; off += sizeof(de)){<br>
+5666 if(readi(dp, (char</em>)&amp;de, off, sizeof(de)) != sizeof(de))<br>
+5667 panic(“dirlink read”);<br>
+5668 if(de.inum == 0)<br>
+5669 break;<br>
+5670 }<br>
+5671<br>
+5672 strncpy(<a href="http://de.name" target="_blank">de.name</a>, name, DIRSIZ);<br>
+5673 de.inum = inum;<br>
+5674 if(writei(dp, (char</em>)&amp;de, off, sizeof(de)) != sizeof(de))<br>
+5675 panic(“dirlink”);<br>
+5676<br>
+5677 return 0;<br>
+5678 }</p>
+</li>
+<li>
+<p>stati<br>
+5487 void<br>
+5488 stati(struct inode *ip, struct stat *st)<br>
+5489 {<br>
+5490 st−&gt;dev = ip−&gt;dev;<br>
+5491 st−&gt;ino = ip−&gt;inum;<br>
+5492 st−&gt;type = ip−&gt;type;<br>
+5493 st−&gt;nlink = ip−&gt;nlink;<br>
+5494 st−&gt;size = ip−&gt;size;<br>
+5495 }</p>
+</li>
+<li>
+<p>bmap<br>
+5409 static uint<br>
+5410 bmap(struct inode *ip, uint bn)<br>
+5411 {<br>
+5412 uint addr, *a;<br>
+5413 struct buf <em>bp;<br>
+5414<br>
+5415 if(bn &lt; NDIRECT){<br>
+5416 if((addr = ip−&gt;addrs[bn]) == 0)<br>
+5417 ip−&gt;addrs[bn] = addr = balloc(ip−&gt;dev);<br>
+5418 return addr;<br>
+5419 }<br>
+5420 bn −= NDIRECT;<br>
+5421<br>
+5422 if(bn &lt; NINDIRECT){<br>
+5423 // Load indirect block, allocating if necessary.<br>
+5424 if((addr = ip−&gt;addrs[NDIRECT]) == 0)<br>
+5425 ip−&gt;addrs[NDIRECT] = addr = balloc(ip−&gt;dev);<br>
+5426 bp = bread(ip−&gt;dev, addr);<br>
+5427 a = (uint</em>)bp−&gt;data;<br>
+5428 if((addr = a[bn]) == 0){<br>
+5429 a[bn] = addr = balloc(ip−&gt;dev);<br>
+5430 log_write(bp);<br>
+5431 }<br>
+5432 brelse(bp);<br>
+5433 return addr;<br>
+5434 }<br>
+5435<br>
+5436 panic(“bmap: out of range”);<br>
+5437 }</p>
+</li>
+<li>
+<p>ilock<br>
+5302 void<br>
+5303 ilock(struct inode *ip)<br>
+5304 {<br>
+5305 struct buf *bp;<br>
+5306 struct dinode <em>dip;<br>
+5307<br>
+5308 if(ip == 0 || ip−&gt;ref &lt; 1)<br>
+5309 panic(“ilock”);<br>
+5310<br>
+5311 acquiresleep(&amp;ip−&gt;lock);<br>
+5312<br>
+5313 if(ip−&gt;valid == 0){<br>
+5314 bp = bread(ip−&gt;dev, IBLOCK(ip−&gt;inum, sb));<br>
+5315 dip = (struct dinode</em>)bp−&gt;data + ip−&gt;inum%IPB;<br>
+5316 ip−&gt;type = dip−&gt;type;<br>
+5317 ip−&gt;major = dip−&gt;major;<br>
+5318 ip−&gt;minor = dip−&gt;minor;<br>
+5319 ip−&gt;nlink = dip−&gt;nlink;<br>
+5320 ip−&gt;size = dip−&gt;size;<br>
+5321 memmove(ip−&gt;addrs, dip−&gt;addrs, sizeof(ip−&gt;addrs));<br>
+5322 brelse(bp);<br>
+5323 ip−&gt;valid = 1;<br>
+5324 if(ip−&gt;type == 0)<br>
+5325 panic(“ilock: no type”);<br>
+5326 }<br>
+5327 }<br>
+5328<br>
+5329 // Unlock the given inode.<br>
+5330 void<br>
+5331 iunlock(struct inode *ip)<br>
+5332 {<br>
+5333 if(ip == 0 || !holdingsleep(&amp;ip−&gt;lock) || ip−&gt;ref &lt; 1)<br>
+5334 panic(“iunlock”);<br>
+5335<br>
+5336 releasesleep(&amp;ip−&gt;lock);<br>
+5337 }</p>
+</li>
+<li>
+<p>iput<br>
+5357 void<br>
+5358 iput(struct inode *ip)<br>
+5359 {<br>
+5360 acquiresleep(&amp;ip−&gt;lock);<br>
+5361 if(ip−&gt;valid &amp;&amp; ip−&gt;nlink == 0){<br>
+5362 acquire(&amp;icache.lock);<br>
+5363 int r = ip−&gt;ref;<br>
+5364 release(&amp;icache.lock);<br>
+5365 if(r == 1){<br>
+5366 // inode has no links and no other references: truncate and free.<br>
+5367 itrunc(ip);<br>
+5368 ip−&gt;type = 0;<br>
+5369 iupdate(ip);<br>
+5370 ip−&gt;valid = 0;<br>
+5371 }<br>
+5372 }<br>
+5373 releasesleep(&amp;ip−&gt;lock);<br>
+5374<br>
+5375 acquire(&amp;icache.lock);<br>
+5376 ip−&gt;ref−−;<br>
+5377 release(&amp;icache.lock);<br>
+5378 }<br>
+5379<br>
+5380 // Common idiom: unlock, then put.<br>
+5381 void<br>
+5382 iunlockput(struct inode *ip)<br>
+5383 {<br>
+5384 iunlock(ip);<br>
+5385 iput(ip);<br>
+5386 }</p>
+</li>
+<li>
+<p>iget<br>
+5253 static struct inode*<br>
+5254 iget(uint dev, uint inum)<br>
+5255 {<br>
+5256 struct inode *ip, *empty;<br>
+5257<br>
+5258 acquire(&amp;icache.lock);<br>
+5259<br>
+5260 // Is the inode already cached?<br>
+5261 empty = 0;<br>
+5262 for(ip = &amp;icache.inode[0]; ip &lt; &amp;icache.inode[NINODE]; ip++){<br>
+5263 if(ip−&gt;ref &gt; 0 &amp;&amp; ip−&gt;dev == dev &amp;&amp; ip−&gt;inum == inum){<br>
+5264 ip−&gt;ref++;<br>
+5265 release(&amp;icache.lock);<br>
+5266 return ip;<br>
+5267 }<br>
+5268 if(empty == 0 &amp;&amp; ip−&gt;ref == 0) // Remember empty slot.<br>
+5269 empty = ip;<br>
+5270 }<br>
+5271<br>
+5272 // Recycle an inode cache entry.<br>
+5273 if(empty == 0)<br>
+5274 panic(“iget: no inodes”);<br>
+5275<br>
+5276 ip = empty;<br>
+5277 ip−&gt;dev = dev;<br>
+5278 ip−&gt;inum = inum;<br>
+5279 ip−&gt;ref = 1;<br>
+5280 ip−&gt;valid = 0;<br>
+5281 release(&amp;icache.lock);<br>
+5282<br>
+5283 return ip;<br>
+5284 }</p>
+</li>
+<li>
+<p>bfree<br>
+5051 static void<br>
+5052 bfree(int dev, uint b)<br>
+5053 {<br>
+5054 struct buf *bp;<br>
+5055 int bi, m;<br>
+5056<br>
+5057 readsb(dev, &amp;sb);<br>
+5058 bp = bread(dev, BBLOCK(b, sb));<br>
+5059 bi = b % BPB;<br>
+5060 m = 1 &lt;&lt; (bi % 8);<br>
+5061 if((bp−&gt;data[bi/8] &amp; m) == 0)<br>
+5062 panic(“freeing free block”);<br>
+5063 bp−&gt;data[bi/8] &amp;= ~m;<br>
+5064 log_write(bp);<br>
+5065 brelse(bp);<br>
+5066 }</p>
+</li>
+<li>
+<p>balloc<br>
+5015 static uint<br>
+5016 balloc(uint dev)<br>
+5017 {<br>
+5018 int b, bi, m;<br>
+5019 struct buf *bp;<br>
+5020<br>
+5021 bp = 0;<br>
+5022 for(b = 0; b &lt; sb.size; b += BPB){<br>
+5023 bp = bread(dev, BBLOCK(b, sb));<br>
+5024 for(bi = 0; bi &lt; BPB &amp;&amp; b + bi &lt; sb.size; bi++){<br>
+5025 m = 1 &lt;&lt; (bi % 8);<br>
+5026 if((bp−&gt;data[bi/8] &amp; m) == 0){ // Is block free?<br>
+5027 bp−&gt;data[bi/8] |= m; // Mark block in use.<br>
+5028 log_write(bp);<br>
+5029 brelse(bp);<br>
+5030 bzero(dev, b + bi);<br>
+5031 return b + bi;<br>
+5032 }<br>
+5033 }<br>
+5034 brelse(bp);<br>
+5035 }<br>
+5036 panic(“balloc: out of blocks”);<br>
+5037 }</p>
+</li>
+<li>
+<p>iunlock<br>
+5330 void<br>
+5331 iunlock(struct inode *ip)<br>
+5332 {<br>
+5333 if(ip == 0 || !holdingsleep(&amp;ip−&gt;lock) || ip−&gt;ref &lt; 1)<br>
+5334 panic(“iunlock”);<br>
+5335<br>
+5336 releasesleep(&amp;ip−&gt;lock);<br>
+5337 }</p>
+</li>
+</ul><div dir="ltr" class="resize-sensor" style="position: absolute; left: -10px; top: -10px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: -10px; top: -10px; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li class=""><a href="#OS-HW1" title="OS HW1">OS HW1</a></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li class=""><a href="#OS-HW1" title="OS HW1">OS HW1</a></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
